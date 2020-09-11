@@ -15,7 +15,7 @@ const Component = ({ members, guest, className }) => {
           </div>
         ))}
       </div>
-      {guest.length && (
+      {guest && guest.length && (
         <>
           <h2>ゲスト</h2>
           <ul>

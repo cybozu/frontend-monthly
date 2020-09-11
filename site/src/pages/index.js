@@ -14,16 +14,16 @@ export const pageQuery = graphql`
 export default function Home({ data }) {
   const { posts } = data.allSitePage
   return (
-    <div>
-      <h1>Frontend Monthly</h1>
+    <div className="markdown-body">
+      <h1>Cybozu Frontend Monthly</h1>
       <div>
-        <ol>
+        <ul>
           {posts.map(({ path }, index) => (
             <li key={index}>
               <Link to={path}>{path.replace("/posts/", "")}</Link>
             </li>
           ))}
-        </ol>
+        </ul>
       </div>
     </div>
   )
