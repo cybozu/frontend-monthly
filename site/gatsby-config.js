@@ -8,8 +8,9 @@ module.exports = {
   pathPrefix: "/frontend-monthly",
   siteMetadata: {
     title: "Cybozu Frontend Monthly",
-    siteUrl: "https://cybozu.github.io/frontend-monthly",
-    description: "Website for Cybozu Frontend Montyly",
+    siteUrl: "https://cybozu.github.io",
+    description:
+      "サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報",
     author: "Cybozu Frontend Expert Team",
   },
   plugins: [

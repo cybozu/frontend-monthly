@@ -11,6 +11,7 @@ export const Head = ({ description, title }) => {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -57,7 +58,9 @@ export const Head = ({ description, title }) => {
         },
         {
           property: "og:image",
-          content: withPrefix("/img/header.png"),
+          content: `${site.siteMetadata.siteUrl}${withPrefix(
+            "/img/header.png"
+          )}`,
         },
       ]}
     />
