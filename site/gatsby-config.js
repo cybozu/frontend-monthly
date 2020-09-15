@@ -30,6 +30,15 @@ module.exports = {
       },
     },
     "gatsby-transformer-json",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+          },
+        ],
+      },
+    },
   ],
 }
