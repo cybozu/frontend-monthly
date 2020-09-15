@@ -1,13 +1,14 @@
 import React from "react"
 import dayjs from "dayjs"
 import { TeamMembers } from "./TeamMembers"
+import { withPrefix } from "gatsby"
 
 const Component = ({ frontmatter, members }) => {
   const startDate = dayjs(frontmatter.date)
   const format = "HH:mm"
   return (
     <>
-      <img src="/img/header.png" alt={frontmatter.title} />
+      <img src={withPrefix(`/img/header.png`)} alt={frontmatter.title} />
       <h2>イベント概要</h2>
       <p>
         サイボウズフロントエンドウィークリーは、 普段{" "}

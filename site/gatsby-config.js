@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: "frontend-monthly",
+  pathPrefix: "/frontend-monthly",
   siteMetadata: {
     title: "Cybozu Frontend Monthly",
     siteUrl: "https://cybozu.github.io/frontend-monthly",

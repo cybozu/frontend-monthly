@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, withPrefix } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 
@@ -57,7 +57,7 @@ export const Head = ({ description, title }) => {
         },
         {
           property: "og:image",
-          content: "/img/header.png",
+          content: withPrefix("/img/header.png"),
         },
       ]}
     />

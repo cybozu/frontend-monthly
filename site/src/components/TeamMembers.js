@@ -1,3 +1,4 @@
+import { withPrefix } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
@@ -8,7 +9,11 @@ const Component = ({ members, guest, className }) => {
       <div className={`${className} members`}>
         {members.map(({ name, link }) => (
           <div key={name} className="member">
-            <img src={`/img/${name}.jpg`} className="thumbnail" alt={name} />
+            <img
+              src={withPrefix(`/img/${name}.jpg`)}
+              className="thumbnail"
+              alt={name}
+            />
             <a href={link} target="_blank" rel="noopener noreferrer">
               {name}
             </a>
