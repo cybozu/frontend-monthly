@@ -8,7 +8,12 @@ const Component = ({ frontmatter, members }) => {
   const format = "HH:mm"
   return (
     <>
-      <img src={withPrefix(`/img/header.png`)} alt={frontmatter.title} />
+      <img
+        src={withPrefix(`/img/header.png`)}
+        alt={frontmatter.title}
+        width="659"
+        height="229"
+      />
       <h2>イベント概要</h2>
       <p>
         サイボウズフロントエンドウィークリーは、 普段{" "}

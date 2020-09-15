@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-emotion",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -30,6 +31,15 @@ module.exports = {
       },
     },
     "gatsby-transformer-json",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+          },
+        ],
+      },
+    },
   ],
 }
