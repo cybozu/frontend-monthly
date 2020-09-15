@@ -45,13 +45,14 @@ const StyledComponent = styled(Component)`
   justify-content: center;
 
   .member {
+    flex-grow: 1;
+    flex-basis: 20%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-width: 150px;
-    max-width: 25%;
     margin: 15px;
     text-align: center;
+    min-width: 105px;
   }
   .thumbnail {
     max-width: 100px;
