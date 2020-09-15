@@ -1,6 +1,6 @@
 import { withPrefix } from "gatsby"
 import React from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 const Component = ({ members, guest, className }) => {
   return (

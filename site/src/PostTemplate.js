@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import "github-markdown-css/github-markdown.css"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import { EventSummary } from "./components/EventSummary"
 import { Head } from "./components/Head"
 
@@ -54,7 +54,7 @@ const StyledComponent = styled(Component)`
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 15px 45px;
 
   @media (max-width: 767px) {
     padding: 15px;
