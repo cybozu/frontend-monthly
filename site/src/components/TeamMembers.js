@@ -36,12 +36,16 @@ const Component = ({ members, guest, className }) => {
 const StyledComponent = styled(Component)`
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
 
   .member {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-basis: 25%;
-    margin-top: 30px;
+    min-width: 150px;
+    max-width: 25%;
+    margin: 15px;
     text-align: center;
   }
   .thumbnail {

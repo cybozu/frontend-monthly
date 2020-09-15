@@ -5,8 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Cybozu Frontend Monthly",
+    siteUrl: "https://cybozu.github.io/frontend-monthly",
+    description: "Website for Cybozu Frontend Montyly",
+    author: "Cybozu Frontend Expert Team",
+  },
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
       options: {
