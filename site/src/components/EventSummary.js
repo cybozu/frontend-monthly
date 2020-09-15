@@ -13,6 +13,10 @@ const Component = ({ frontmatter, members }) => {
         alt={frontmatter.title}
         width="659"
         height="229"
+        style={{
+          height: "auto",
+          maxWidth: "100%",
+        }}
       />
       <h2>イベント概要</h2>
       <p>
