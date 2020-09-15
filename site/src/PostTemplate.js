@@ -50,10 +50,7 @@ const Component = function (props) {
 
   return (
     <article className={`${props.className} markdown-body`}>
-      <Head
-        title={`${post.frontmatter.title} #${post.frontmatter.no}`}
-        description={`${post.frontmatter.title} #${post.frontmatter.no}`}
-      />
+      <Head title={`${post.frontmatter.title} #${post.frontmatter.no}`} />
       <h1>{`${post.frontmatter.title} #${post.frontmatter.no}`}</h1>
       <EventSummary frontmatter={post.frontmatter} members={members} />
 
