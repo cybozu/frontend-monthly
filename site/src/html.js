@@ -15,6 +15,10 @@ export default function HTML(props) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"
+        ></link>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
