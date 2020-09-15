@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[3],{RXBc:function(e,t,n){"use strict";n.r(t),n.d(t,"pageQuery",(function(){return u})),n.d(t,"default",(function(){return c}));var a=n("q1tI"),r=n.n(a),l=n("Wbzz"),u="371496742";function c(e){var t=e.data.allSitePage.posts;return r.a.createElement("div",{className:"markdown-body"},r.a.createElement("h1",null,"Cybozu Frontend Monthly"),r.a.createElement("div",null,r.a.createElement("ul",null,t.map((function(e,t){var n=e.path;return r.a.createElement("li",{key:t},r.a.createElement(l.a,{to:n},n.replace("/posts/","")))})))))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-7b53be51908cfdd120ea.js.map
+//# sourceMappingURL=component---src-pages-index-js-29a63e01e75bfe75b81b.js.map
