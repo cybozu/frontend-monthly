@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import "github-markdown-css/github-markdown.css"
 import { EventSummary } from "./components/EventSummary"
 import { Layout } from "./Layout"
+import { TeamIntroduceSlide } from "./components/TeamIntroduceSlide"
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -44,6 +45,8 @@ const PostTemplate = function (props) {
           className="markdown-body"
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
+
+        <TeamIntroduceSlide />
       </article>
     </Layout>
   )
