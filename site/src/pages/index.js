@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "@emotion/styled"
-import { Head } from "../components/Head"
+import { Layout } from "../Layout"
 
 export const pageQuery = graphql`
   {
@@ -40,10 +40,9 @@ const Component = ({ data, className }) => {
   })
 
   return (
-    <div className={`${className} markdown-body`}>
-      <Head />
+    <Layout>
       <h1>Cybozu Frontend Monthly</h1>
-      <div>
+      <div className={className}>
         <ul className="posts">
           {posts.map(
             ({
@@ -71,20 +70,11 @@ const Component = ({ data, className }) => {
           )}
         </ul>
       </div>
-    </div>
+    </Layout>
   )
 }
 
 const StyledComponent = styled(Component)`
-  box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 15px 45px;
-
-  @media (max-width: 767px) {
-    padding: 15px;
-  }
   .posts {
     list-style: none;
     margin: 0;

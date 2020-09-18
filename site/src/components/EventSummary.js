@@ -11,7 +11,7 @@ const Component = ({ frontmatter, members, className }) => {
     <>
       <img
         src={withPrefix(`/img/header.png`)}
-        alt={frontmatter.title}
+        alt=""
         width="659"
         height="229"
         style={{
