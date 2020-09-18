@@ -44,7 +44,7 @@ const Component = ({ frontmatter, members, className }) => {
       </p>
 
       <pre className={`${className} note`}>
-        <h4>※フロントエンドウィークリーとは</h4>
+        <h3>※フロントエンドウィークリーとは</h4>
         <p>
           毎週火曜の 17:00 〜 18:00
           で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
@@ -119,7 +119,7 @@ const Component = ({ frontmatter, members, className }) => {
 
 const StyledComponent = styled(Component)`
   &.note {
-    h4 {
+    h3 {
       margin-top: 0;
     }
     p {
