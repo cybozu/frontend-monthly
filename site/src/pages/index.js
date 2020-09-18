@@ -22,7 +22,7 @@ export const pageQuery = graphql`
           date
           formattedDate: date(formatString: "YYYY/MM/DD")
         }
-        headings(depth: h2) {
+        headings(depth: h3) {
           value
         }
       }
