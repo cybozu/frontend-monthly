@@ -1,31 +1,66 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Head } from "./components/Head"
+import { Global, css } from "@emotion/core"
+import { Link } from "gatsby"
 
 const Component = ({ className, title, children }) => (
   <div className={`${className} markdown-body`}>
+    <Global
+      styles={css`
+        body {
+          margin: 0;
+        }
+      `}
+    />
     <Head title={title} />
-    {children}
+    <main className="main">{children}</main>
+    <footer className="footer">
+      <Link to="/">Cybozu Frontend Monthly</Link>
+    </footer>
   </div>
 )
 
 const StyledComponent = styled(Component)`
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  border-top: 4px solid #64bdd4;
   box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 15px 45px;
+  .main {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 45px;
+    color: #24292e;
 
-  @media (max-width: 767px) {
-    padding: 15px;
     h1 {
-      font-size: 1.6em;
+      margin-top: 0;
     }
-    h2 {
-      font-size: 1.3em;
+
+    @media (max-width: 767px) {
+      padding: 12px;
+      h1 {
+        font-size: 1.55em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      h3 {
+        font-size: 1.1em;
+      }
     }
-    h3 {
-      font-size: 1.1em;
+  }
+  .footer {
+    background-color: #31424e;
+    text-align: center;
+    color: #f8f8ff;
+    font-size: 0.75em;
+    padding: 5px 0;
+    a {
+      color: inherit;
     }
   }
 `

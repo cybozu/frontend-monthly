@@ -17,7 +17,7 @@ const Component = ({ className }) => {
 
   return (
     <>
-      <h2>チームについて</h2>
+      <h2>フロントエンドエキスパートチームについて</h2>
       <div ref={ref} className={className} />
       <p>
         <a href={slideUrl} target="_blank" rel="nofollow noopener noreferrer">

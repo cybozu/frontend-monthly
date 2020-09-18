@@ -50,8 +50,8 @@ const Component = ({ data, className }) => {
               frontmatter: { formattedDate, title, no, date },
               headings,
             }) => (
-              <li key={date}>
-                <Link to={path} className="post">
+              <li key={date} className="post">
+                <Link to={path}>
                   <h2>
                     #{no} - {formattedDate}
                   </h2>
@@ -81,18 +81,22 @@ const StyledComponent = styled(Component)`
     padding: 0;
   }
   .post {
-    display: block;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #eaecef;
+    a {
+      display: block;
+      padding-bottom: 24px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
     h2 {
       border: none;
     }
-    &:hover {
-      text-decoration: none;
-    }
+  }
+  .post + .post {
+    border-top: 1px solid #eaecef;
   }
   .headings {
-    color: #000;
+    color: #24292e;
   }
 `
 
