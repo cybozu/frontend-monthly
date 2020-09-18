@@ -44,7 +44,7 @@ const Component = ({ frontmatter, members, className }) => {
       </p>
 
       <pre className={`${className} note`}>
-        <h3>※フロントエンドウィークリーとは</h4>
+        <h3>※フロントエンドウィークリーとは</h3>
         <p>
           毎週火曜の 17:00 〜 18:00
           で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
