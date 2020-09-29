@@ -14,17 +14,22 @@
     "test": "echo exit 1"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "dayjs": "^1.8.35",
-    "gatsby": "^2.24.54",
+    "gatsby": "^2.24.62",
+    "gatsby-plugin-emotion": "^4.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-prismjs": "^3.5.13",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.34",
     "github-markdown-css": "^4.0.0",
+    "prismjs": "^1.21.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.1.1"
