@@ -2,26 +2,27 @@ import React from "react"
 import dayjs from "dayjs"
 import { TeamMembers } from "./TeamMembers"
 import { withPrefix } from "gatsby"
+import styled from "@emotion/styled"
 
-const Component = ({ frontmatter, members }) => {
+const Component = ({ frontmatter, members, className }) => {
   const startDate = dayjs(frontmatter.date)
   const format = "HH:mm"
   return (
     <>
-      <img src={withPrefix(`/img/header.png`)} alt={frontmatter.title} />
+      <img
+        src={withPrefix(`/img/header.png`)}
+        alt=""
+        width="659"
+        height="229"
+        style={{
+          height: "auto",
+          maxWidth: "100%",
+        }}
+      />
       <h2>イベント概要</h2>
       <p>
-        サイボウズフロントエンドウィークリーは、 普段{" "}
-        <a
-          href={`https://twitter.com/search?q=${encodeURIComponent(
-            "#サイボウズフロントエンドウィークリー"
-          )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          #サイボウズフロントエンドウィークリー
-        </a>{" "}
-        のハッシュタグを使ってTwitterで実況している、サイボウズ社内のフロントエンド情報共有会のパブリック版です。
+        <strong>サイボウズフロントエンドマンスリー</strong>
+        は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
       </p>
       <p>
         その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
@@ -41,6 +42,26 @@ const Component = ({ frontmatter, members }) => {
           です。
         </strong>
       </p>
+
+      <pre className={`${className} note`}>
+        <h3>※フロントエンドウィークリーとは</h3>
+        <p>
+          毎週火曜の 17:00 〜 18:00
+          で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+          <br />
+          ハッシュタグ{" "}
+          <a
+            href={`https://twitter.com/search?q=${encodeURIComponent(
+              "#サイボウズフロントエンドウィークリー"
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            #サイボウズフロントエンドウィークリー
+          </a>{" "}
+          で実況しています。
+        </p>
+      </pre>
 
       <h3>イベントページ</h3>
       <p>
@@ -89,13 +110,6 @@ const Component = ({ frontmatter, members }) => {
         </tbody>
       </table>
 
-      <h3>フロントエンドウィークリーとは</h3>
-      <p>
-        毎週火曜の 17:00 〜 18:00
-        で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016
-        年 3 月 15 日から行われています。
-      </p>
-
       <TeamMembers members={members} guest={frontmatter.guest} />
 
       <hr />
@@ -103,4 +117,16 @@ const Component = ({ frontmatter, members }) => {
   )
 }
 
-export const EventSummary = Component
+const StyledComponent = styled(Component)`
+  &.note {
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+      white-space: pre-line;
+    }
+  }
+`
+
+export const EventSummary = StyledComponent
