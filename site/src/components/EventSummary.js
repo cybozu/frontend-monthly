@@ -63,6 +63,9 @@ const Component = ({ frontmatter, members, className }) => {
         </p>
       </pre>
 
+      <h3>開催日</h3>
+      <p>{dayjs(frontmatter.date).format("YYYY年MM月DD日")}</p>
+
       <h3>イベントページ</h3>
       <p>
         <a
