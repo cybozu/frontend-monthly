@@ -26,6 +26,7 @@ const StyledComponent = styled(Component)`
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  justify-content: center;	
 `
 
 export const TeamMembers = StyledComponent
