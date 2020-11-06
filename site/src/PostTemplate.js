@@ -50,6 +50,15 @@ const Article = ({ post, className, members }) => {
 }
 
 const StyledArticle = styled(Article)`
+  .markdown-body {
+    img {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      max-width: 90%;
+      height: auto;
+      margin: 12px auto;
+      display: block;
+    }
+  }
   @media screen and (max-width: 420px) {
     .markdown-body {
       font-size: 14px;
