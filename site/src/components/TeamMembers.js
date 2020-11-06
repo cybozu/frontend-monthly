@@ -6,7 +6,7 @@ import { Member } from "./Member"
 const Component = ({ members, guest, className }) => {
   return (
     <>
-      <h2>チーム紹介</h2>
+      <h2>メンバー</h2>
       <div className={`${className} members`}>
         {members.map(member => (
           <Member key={member.name} member={member} />

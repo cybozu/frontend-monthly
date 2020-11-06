@@ -17,26 +17,27 @@ export const pageQuery = graphql`
         connpass
         streamUrl
         hashTag
+        members {
+          name
+          link
+        }
         guest {
           name
           link
         }
       }
     }
-    allMembersJson {
-      members: nodes {
-        name
-        link
-      }
-    }
   }
 `
 
-const Article = ({ post, className, members }) => {
+const Article = ({ post, className }) => {
   return (
     <article className={`${className} markdown-body`}>
       <h1>{`${post.frontmatter.title} #${post.frontmatter.no}`}</h1>
-      <EventSummary frontmatter={post.frontmatter} members={members} />
+      <EventSummary
+        frontmatter={post.frontmatter}
+        members={post.frontmatter.members}
+      />
 
       <h2>紹介記事</h2>
       <div
@@ -71,11 +72,10 @@ const StyledArticle = styled(Article)`
 
 const PostTemplate = function (props) {
   const post = props.data.markdownRemark
-  const members = props.data.allMembersJson.members
 
   return (
     <Layout title={`${post.frontmatter.title} #${post.frontmatter.no}`}>
-      <StyledArticle post={post} members={members} />
+      <StyledArticle post={post} />
     </Layout>
   )
 }
