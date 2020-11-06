@@ -29,6 +29,8 @@ const Component = ({ streamUrl, className }) => {
 const StyledComponent = styled(Component)`
   .embed {
     display: block;
+    max-width: 100%;
+    max-height: 280px;
   }
 `
 export const StreamView = StyledComponent
