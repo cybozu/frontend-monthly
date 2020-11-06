@@ -8,13 +8,17 @@ const Component = ({ members, guest, className }) => {
     <>
       <h2>チーム紹介</h2>
       <div className={`${className} members`}>
-        {members.map((member) => <Member key={member.name} member={member} />)}
+        {members.map(member => (
+          <Member key={member.name} member={member} />
+        ))}
       </div>
       {guest && guest.length && (
         <>
           <h2>ゲスト</h2>
           <div className={`${className} members`}>
-            {guest.map((guest) => <Member key={guest.name} member={guest} />)}
+            {guest.map(guest => (
+              <Member key={guest.name} member={guest} />
+            ))}
           </div>
         </>
       )}
@@ -23,10 +27,10 @@ const Component = ({ members, guest, className }) => {
 }
 
 const StyledComponent = styled(Component)`
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;	
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 24px 12px;
+  padding: 12px;
 `
 
 export const TeamMembers = StyledComponent

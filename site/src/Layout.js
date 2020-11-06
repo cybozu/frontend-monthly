@@ -42,14 +42,27 @@ const StyledComponent = styled(Component)`
 
     @media (max-width: 767px) {
       padding: 12px;
+      font-size: 14px;
+      .markdown-body {
+        font-size: 14px;
+      }
       h1 {
         font-size: 1.55em;
+        margin-bottom: 0.25em;
+        margin-top: 0.5em;
       }
       h2 {
         font-size: 1.3em;
+        margin-bottom: 0.25em;
+        margin-top: 0.5em;
       }
       h3 {
         font-size: 1.1em;
+        margin-bottom: 0.25em;
+        margin-top: 0.5em;
+      }
+      hr {
+        margin: 12px 0;
       }
     }
   }

@@ -129,6 +129,9 @@ const Component = ({ frontmatter, members, className }) => {
 }
 
 const StyledComponent = styled(Component)`
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+  }
   &.note {
     h3 {
       margin-top: 0;
