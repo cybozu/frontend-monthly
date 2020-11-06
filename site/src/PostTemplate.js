@@ -14,6 +14,7 @@ export const pageQuery = graphql`
         date
         no
         connpass
+        streamUrl
         hashTag
         guest {
           name

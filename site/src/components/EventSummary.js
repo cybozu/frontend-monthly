@@ -3,6 +3,7 @@ import dayjs from "dayjs"
 import { TeamMembers } from "./TeamMembers"
 import { withPrefix } from "gatsby"
 import styled from "@emotion/styled"
+import { StreamView } from "./StreamView"
 
 const Component = ({ frontmatter, members, className }) => {
   const startDate = dayjs(frontmatter.date)
@@ -76,6 +77,13 @@ const Component = ({ frontmatter, members, className }) => {
           {frontmatter.connpass}
         </a>
       </p>
+
+      {frontmatter.streamUrl && (
+        <>
+          <h3>配信URL</h3>
+          <StreamView streamUrl={frontmatter.streamUrl} />
+        </>
+      )}
 
       <h3>タイムテーブル</h3>
       <table>
