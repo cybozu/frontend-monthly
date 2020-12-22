@@ -160,11 +160,11 @@ Prettier2.1 はフロントエンドエキスパートチームに所属して�
 
 ブラウザ関連では、セキュリティ関連の記事が目立ちました。
 
-またセキュリティ関連では、https から http に送る form に対して警告が出るようになる変更がアナウンスされたり、Firefox では Cookie 　が SameSite=Lax デフォルトになりました。その他では、Microsotft が Office 365 での Internet Explorer 11 サポートを 2021 年 8 月 17 日で終了するという発表を行いました。
+またセキュリティ関連では、https から http に送る form に対して警告が出るようになる変更がアナウンスされたり、Firefox では Cookie が SameSite=Lax デフォルトになりました。その他では、Microsotft が Office 365 での Internet Explorer 11 サポートを 2021 年 8 月 17 日で終了するという発表を行いました。
 
-注目記事としては、Adobe が PhoneGap 　の開発を終了し Cordova への投資を止めることを発表した記事や、新しい Facebook.com 　での accessibility への取り組みについてのがありました。
+注目記事としては、Adobe が PhoneGap の開発を終了し Cordova への投資を止めることを発表した記事や、新しい Facebook.com での accessibility への取り組みについてのがありました。
 
-他には、CloudFlare が発表した　 Cloudflare Workers で、データの永続化と worker 間通信が可能になる仕組みである Durable Objects のベータリリースについてや、select などの要素をカスタマイズ出来るようにするためのプロポーザルについても盛り上がりました。
+他には、Cloudflare が発表した Cloudflare Workers で、データの永続化と worker 間通信が可能になる仕組みである Durable Objects のベータリリースについてや、select などの要素をカスタマイズ出来るようにするためのプロポーザルについても盛り上がりました。
 
 ---
 
