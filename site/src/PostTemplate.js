@@ -59,7 +59,11 @@ const StyledArticle = styled(Article)`
       margin: 12px auto;
       display: block;
     }
+    li > p {
+      margin: 8px 0;
+    }
   }
+
   @media screen and (max-width: 420px) {
     .markdown-body {
       font-size: 14px;
