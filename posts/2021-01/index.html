@@ -69,19 +69,19 @@ JS のネイティブに置き換えることでどれくらいバンドルサ�
 <h4>新しい構文を追加するプロポーザル</h4>
 <ul>
 <li>⭐<a href="https://github.com/tc39/proposal-class-static-block" target="_blank" rel="nofollow noopener noreferrer">Class static Initialization Blocks</a> for Stage 3</li>
-<li>⭐<a href="https://github.com/tc39/proposal-json-modules" target="_blank" rel="nofollow noopener noreferrer">JS Module Blocks</a> for stage 2</li>
+<li>⭐<a href="https://github.com/tc39/proposal-js-module-blocks" target="_blank" rel="nofollow noopener noreferrer">JS Module Blocks</a> for stage 2</li>
 <li>⭐<a href="https://github.com/bakkot/do-expressions-v2" target="_blank" rel="nofollow noopener noreferrer">do expressions</a> for stage 2</li>
 <li><a href="https://github.com/bakkot/proposal-async-do-expressions" target="_blank" rel="nofollow noopener noreferrer">async do expressions</a> for stage 1</li>
 <li><a href="https://github.com/mathiasbynens/proposal-regexp-set-notation" target="_blank" rel="nofollow noopener noreferrer">Adopting Unicode behavior for set notation in regular expressions</a></li>
-<li>⭐<a href="https://github.com/codehag/proposal-lazy-import" target="_blank" rel="nofollow noopener noreferrer">defer module import eval</a> for stage 1</li>
+<li><a href="https://github.com/codehag/proposal-lazy-import" target="_blank" rel="nofollow noopener noreferrer">defer module import eval</a> for stage 1</li>
 </ul>
 <h4>新しい API を追加するプロポーザル</h4>
 <ul>
 <li>⭐<a href="https://github.com/tc39/proposal-relative-indexing-method" target="_blank" rel="nofollow noopener noreferrer">Relative indexing method</a> for stage 4</li>
 <li><a href="https://github.com/tc39/proposal-array-is-template-object" target="_blank" rel="nofollow noopener noreferrer">Array.isTemplateObject</a> for stage 3</li>
-<li>⭐<a href="https://github.com/tc39/proposal-temporal" target="_blank" rel="nofollow noopener noreferrer">Temporal</a> updates</li>
+<li><a href="https://github.com/tc39/proposal-temporal" target="_blank" rel="nofollow noopener noreferrer">Temporal</a> updates</li>
 <li><a href="https://github.com/tc39/proposal-resizablearraybuffer" target="_blank" rel="nofollow noopener noreferrer">ResizableArrayBuffer and GrowableSharedArrayBuffer</a> updates</li>
-<li>⭐<a href="https://github.com/tc39/proposal-realms" target="_blank" rel="nofollow noopener noreferrer">Realms</a> update</li>
+<li><a href="https://github.com/tc39/proposal-realms" target="_blank" rel="nofollow noopener noreferrer">Realms</a> update</li>
 <li><a href="https://github.com/Kingwl/proposal-array-find-from-last" target="_blank" rel="nofollow noopener noreferrer">Array find from last</a> for stage 1</li>
 </ul>
 <h4>その他</h4>
@@ -92,6 +92,122 @@ JS のネイティブに置き換えることでどれくらいバンドルサ�
 <li>⭐<a href="https://github.com/tc39/proposal-json-modules" target="_blank" rel="nofollow noopener noreferrer">JSON modules</a> for stage 3</li>
 <li><a href="https://github.com/tc39/proposal-regexp-match-indices" target="_blank" rel="nofollow noopener noreferrer">RegExp Match Indices</a> update</li>
 </ul>
+<p>数が多くて全部は紹介しきれないので、僕が個人的に気になったもの、多くの JavaScript 開発者にとって影響が大きそうなもの、かつステージが進みそうなものを紹介していきます。</p>
+<details>
+  <div>
+<h4>Class static initilization Blocks for Stage 3</h4>
+<p><a href="https://github.com/tc39/proposal-class-static-block" target="_blank" rel="nofollow noopener noreferrer">https://github.com/tc39/proposal-class-static-block</a></p>
+<p>これは、クラスのスタティックプロパティの初期化を行うことができるブロックの構文を導入するプロポーザルです。</p>
+<p>今のクラスの仕様だと、何かしらの外部の計算に依存してスタティックプロパティを決定したいとき、クラスの中だけでは不可能でした。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> x <span class="token operator">=</span> <span class="token operator">...</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token constant">C</span><span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token constant">C</span><span class="token punctuation">.</span>y <span class="token operator">=</span> obj<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">{</span>
+  <span class="token comment">// doSomething が失敗したときのフォールバック</span>
+  <span class="token constant">C</span><span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token operator">...</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>このプロポーザルで追加するクラススタティックブロックを使うと、このような処理をクラス内のブロックに書くことができます。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">C</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> x <span class="token operator">=</span> <span class="token operator">...</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> y<span class="token punctuation">;</span>
+  <span class="token keyword">static</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> obj<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token operator">...</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>JS Module Blocks for Stage 2</h4>
+<p><a href="https://github.com/tc39/proposal-js-module-blocks" target="_blank" rel="nofollow noopener noreferrer">https://github.com/tc39/proposal-js-module-blocks</a></p>
+<p>ちょっと前のマンスリーでも紹介しました。</p>
+<p>インラインでモジュールを定義できる新しい式の構文を導入するプロポーザル。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> moduleBlock <span class="token operator">=</span> module <span class="token punctuation">{</span>
+  <span class="token keyword">export</span> <span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> moduleExports <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span>moduleBlock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">assert</span><span class="token punctuation">(</span>moduleExports<span class="token punctuation">.</span>y <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>module 式で作ったモジュールは、Worker コンストラクタにそのまま渡すことができます。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> workerCode <span class="token operator">=</span> module <span class="token punctuation">{</span>
+  <span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> mod <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">postMessage</span><span class="token punctuation">(</span>mod<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> worker <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span>workerCode<span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> <span class="token string">"module"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+worker<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">alert</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+worker<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>module <span class="token punctuation">{</span> <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">"hello!"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>著者のツイートからすでにステージ2にあがっているようです。</p>
+<h4><code class="language-text">do</code> expression for Stage 2</h4>
+<p><a href="https://github.com/bakkot/do-expressions-v2" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bakkot/do-expressions-v2</a></p>
+<p>長らく Stage 1 のままだった <code class="language-text">do</code> expression です。</p>
+<p>ブロックの中で最後の評価されたものが式の結果になります。また、変数のスコープは <code class="language-text">do</code> のブロックの中で閉じます。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token keyword">do</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> tmp <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  tmp <span class="token operator">*</span> tmp <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>読みにくいネストした三項演算子の代わりに <code class="language-text">if else</code> で書けるようになります。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token keyword">do</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+  <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>特に、JSX などの中に書くと便利です。</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">return</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Home</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token punctuation">{</span>
+      <span class="token keyword">do</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>loggedIn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LogoutButton</span></span> <span class="token punctuation">/></span></span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LoginButton</span></span> <span class="token punctuation">/></span></span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
+<span class="token punctuation">)</span></code></pre></div>
+<h4>Relative indexing method</h4>
+<p><a href="https://github.com/tc39/proposal-relative-indexing-method" target="_blank" rel="nofollow noopener noreferrer">https://github.com/tc39/proposal-relative-indexing-method</a></p>
+<p><code class="language-text">Array.prototype.at</code> のことです。</p>
+<p>配列の後ろから要素を取得するのが楽になります。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"b"</span><span class="token punctuation">,</span> <span class="token string">"c"</span><span class="token punctuation">,</span> <span class="token string">"d"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+arr<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "a"</span>
+arr<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "b"</span>
+arr<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "d"</span></code></pre></div>
+<h4>JSON modules for Stage 3</h4>
+<p><a href="https://github.com/tc39/proposal-json-modules" target="_blank" rel="nofollow noopener noreferrer">https://github.com/tc39/proposal-json-modules</a></p>
+<p>JSON を JavaScript からモジュールとして読み込むときの挙動についての仕様です。</p>
+<p>もともとは、<a href="https://github.com/tc39/proposal-import-assertions/" target="_blank" rel="nofollow noopener noreferrer">Import Assertions</a>の一部でしたが別の仕様として切り出されました。</p>
+<p>ブラウザ上では JSON modules を使う場合は、セキュリティ上の都合から Import Assertions の構文を使って import する必要があります。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> json <span class="token keyword">from</span> <span class="token string">"./foo.json"</span> assert <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">"json"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">"foo.json"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> assert<span class="token operator">:</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">"json"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>ただ、これはブラウザ特有のセキュリティの問題なので、JSON modules を import するときにアサートを必須にするかどうかは各ランタイムに委ねられています(Import Assertions の構文を解釈できる必要はある)。</p>
+<p>次のような JSON を考えます。</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+ <span class="token property">"foo"</span><span class="token operator">:</span> <span class="token string">"ふー"</span><span class="token punctuation">,</span>
+ <span class="token property">"bar"</span><span class="token operator">:</span> <span class="token string">"ばー"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>これを JavaScript から import するときは default export として解釈します。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> json <span class="token keyword">from</span> <span class="token string">"./foobar.json"</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ふー</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ばー</span></code></pre></div>
+<p>JSON のキーには JavaScript の識別子として妥当でないものを使用できるため、named export はサポートされていません。</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"32"</span><span class="token operator">:</span> <span class="token string">"さんじゅうに"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// 数字は識別子として認められていない</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token number">32</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"numbers.json"</span><span class="token punctuation">;</span></code></pre></div>
+  </div>
+</details>
 <hr>
 <h3><a href="https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Popup/explainer.md" target="_blank" rel="nofollow noopener noreferrer">Enabling Popups - MicrosoftEdge/MSEdgeExplainers</a></h3>
 <ul>
