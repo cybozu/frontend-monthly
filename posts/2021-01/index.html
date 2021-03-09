@@ -144,36 +144,38 @@ JS のネイティブに置き換えることでどれくらいバンドルサ�
 <span class="token keyword">let</span> worker <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span>workerCode<span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> <span class="token string">"module"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 worker<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>data<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">alert</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
 worker<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>module <span class="token punctuation">{</span> <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">"hello!"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>著者のツイートからすでにステージ2にあがっているようです。</p>
+<p>著者のツイートからすでにステージ 2 にあがっているようです。</p>
 <h4><code class="language-text">do</code> expression for Stage 2</h4>
 <p><a href="https://github.com/bakkot/do-expressions-v2" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bakkot/do-expressions-v2</a></p>
 <p>長らく Stage 1 のままだった <code class="language-text">do</code> expression です。</p>
 <p>ブロックの中で最後の評価されたものが式の結果になります。また、変数のスコープは <code class="language-text">do</code> のブロックの中で閉じます。</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token keyword">do</span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> tmp <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  tmp <span class="token operator">*</span> tmp <span class="token operator">+</span> <span class="token number">1</span>
+  tmp <span class="token operator">*</span> tmp <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
 <p>読みにくいネストした三項演算子の代わりに <code class="language-text">if else</code> で書けるようになります。</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token keyword">do</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-  <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">h</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
 <p>特に、JSX などの中に書くと便利です。</p>
 <div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">return</span> <span class="token punctuation">(</span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><span class="token plain-text">
     </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Home</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
-    </span><span class="token punctuation">{</span>
-      <span class="token keyword">do</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>loggedIn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LogoutButton</span></span> <span class="token punctuation">/></span></span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LoginButton</span></span> <span class="token punctuation">/></span></span>
-        <span class="token punctuation">}</span>
+    </span><span class="token punctuation">{</span><span class="token keyword">do</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>loggedIn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LogoutButton</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LoginButton</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token plain-text">
+    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token plain-text">
   </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
-<span class="token punctuation">)</span></code></pre></div>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <h4>Relative indexing method</h4>
 <p><a href="https://github.com/tc39/proposal-relative-indexing-method" target="_blank" rel="nofollow noopener noreferrer">https://github.com/tc39/proposal-relative-indexing-method</a></p>
 <p><code class="language-text">Array.prototype.at</code> のことです。</p>
@@ -192,8 +194,8 @@ arr<span class="token punctuation">.</span><span class="token function">at</span
 <p>ただ、これはブラウザ特有のセキュリティの問題なので、JSON modules を import するときにアサートを必須にするかどうかは各ランタイムに委ねられています(Import Assertions の構文を解釈できる必要はある)。</p>
 <p>次のような JSON を考えます。</p>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
- <span class="token property">"foo"</span><span class="token operator">:</span> <span class="token string">"ふー"</span><span class="token punctuation">,</span>
- <span class="token property">"bar"</span><span class="token operator">:</span> <span class="token string">"ばー"</span>
+  <span class="token property">"foo"</span><span class="token operator">:</span> <span class="token string">"ふー"</span><span class="token punctuation">,</span>
+  <span class="token property">"bar"</span><span class="token operator">:</span> <span class="token string">"ばー"</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>これを JavaScript から import するときは default export として解釈します。</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> json <span class="token keyword">from</span> <span class="token string">"./foobar.json"</span><span class="token punctuation">;</span>
