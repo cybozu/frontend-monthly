@@ -7,7 +7,7 @@ exports.createPages = async ({ actions, graphql }) => {
         posts: nodes {
           id
           frontmatter {
-            date(formatString: "YYYY-MM")
+            slug
           }
         }
       }
@@ -16,7 +16,7 @@ exports.createPages = async ({ actions, graphql }) => {
   if (sources.errors) return
   const posts = sources.data.allMarkdownRemark.posts
   posts.forEach(({ id, frontmatter }) => {
-    const outputPath = path.join("posts", frontmatter.date)
+    const outputPath = path.join("posts", frontmatter.slug)
     actions.createPage({
       path: outputPath,
       component: path.resolve(__dirname, "./src/PostTemplate.js"),
