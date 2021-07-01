@@ -1,12 +1,17 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
-import { css } from "@emotion/css";
+import { css } from "@emotion/react";
 import Link from "next/link";
 import "github-markdown-css/github-markdown.css";
 import Head from "next/head";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={`${style} markdown-body`}>
+    <div className={`markdown-body`} css={style}>
+      <main className="main">{children}</main>
+      <footer className="footer">
+        <Link href="/">Cybozu Frontend Monthly</Link>
+      </footer>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -16,10 +21,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"
         ></link>
       </Head>
-      <main className="main">{children}</main>
-      <footer className="footer">
-        <Link href="/">Cybozu Frontend Monthly</Link>
-      </footer>
     </div>
   );
 };
@@ -28,7 +29,6 @@ const style = css`
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  border-top: 4px solid #64bdd4;
   box-sizing: border-box;
   .main {
     box-sizing: border-box;

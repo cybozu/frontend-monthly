@@ -1,7 +1,8 @@
+/** @jsxImportSource @emotion/react */
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
-import { css } from "@emotion/css";
+import { css } from "@emotion/react";
 import matter from "gray-matter";
 import dayjs from "dayjs";
 import { Layout } from "../components/Layout";
@@ -23,7 +24,7 @@ export default function Home({
   return (
     <Layout>
       <PageHead />
-      <div className={style}>
+      <div css={style}>
         <h1>Cybozu Frontend Monthly</h1>
         <div>
           <ul className="posts">

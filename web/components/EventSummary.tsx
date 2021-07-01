@@ -1,7 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
 import dayjs from "dayjs";
-import { css } from "@emotion/css";
-import Image from "next/image";
+import { css } from "@emotion/react";
 import { Frontmatter } from "../types";
 import { StreamView } from "./StreamView";
 
@@ -39,7 +39,18 @@ export const EventSummary = ({ frontmatter }: Props) => {
         </strong>
       </p>
 
-      <pre className={style}>
+      <pre
+        css={css`
+          h3 {
+            margin-top: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+            white-space: pre-line;
+          }
+        `}
+      >
         <h3>※フロントエンドウィークリーとは</h3>
         <p>
           毎週火曜の 17:00 〜 18:00
@@ -106,13 +117,3 @@ export const EventSummary = ({ frontmatter }: Props) => {
     </>
   );
 };
-
-const style = css`
-  h3 {
-    margin-top: 0;
-  }
-  p {
-    margin-bottom: 0;
-    white-space: pre-line;
-  }
-`;

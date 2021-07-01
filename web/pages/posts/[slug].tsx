@@ -1,11 +1,11 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import fs from "fs";
 import path from "path";
-import Image from "next/image";
 import { markdownToHtml } from "../../lib/markdownToHtml";
 import matter from "gray-matter";
 import { Layout } from "../../components/Layout";
 import { Frontmatter } from "../../types";
-import { css } from "@emotion/css";
 import { EventSummary } from "../../components/EventSummary";
 import { Attendees } from "../../components/Attendees";
 import { TeamIntroduceSlide } from "../../components/TeamIntroduceSlide";
@@ -25,10 +25,10 @@ export default function PostPage({
   return (
     <Layout>
       <PageHead frontmatter={frontmatter} />
-      <article className={style}>
+      <article css={style}>
         <h1>{`${frontmatter.title} #${frontmatter.no}`}</h1>
         <div>
-          <Image src="/assets/img/header.png" width={659} height={229} alt="" />
+          <img src="/assets/img/header.png" width={659} height={229} alt="" />
         </div>
         <EventSummary frontmatter={frontmatter} />
         <Attendees {...frontmatter} membersPhotoUrl={membersPhotoUrl} />

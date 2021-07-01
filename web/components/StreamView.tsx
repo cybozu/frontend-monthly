@@ -1,11 +1,12 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
-import { css } from "@emotion/css";
+import { css } from "@emotion/react";
 
 export const StreamView = ({ streamUrl }: { streamUrl: string }) => {
   const isYouTube = /youtube\.com/.test(streamUrl);
   const embedUrl = isYouTube ? streamUrl.replace("watch?v=", "embed/") : "";
   return (
-    <p className={style}>
+    <p css={style}>
       {embedUrl && (
         <iframe
           title={embedUrl}

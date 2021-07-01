@@ -1,5 +1,6 @@
+/** @jsxImportSource @emotion/react */
 import React, { useEffect, useRef } from "react";
-import { css } from "@emotion/css";
+import { css } from "@emotion/react";
 
 const slideUrl = "https://speakerdeck.com/cybozuinsideout/frontendexpert-team";
 const slideId = "0efec8a9dd224baebfb2aaf30fbe9a28";
@@ -20,7 +21,7 @@ export const TeamIntroduceSlide = () => {
   return (
     <>
       <h2>フロントエンドエキスパートチームについて</h2>
-      <div ref={ref} className={style} />
+      <div ref={ref} css={style} />
       <p style={{ marginBottom: 0 }}>
         <a href={slideUrl} target="_blank" rel="nofollow noopener noreferrer">
           {slideUrl}

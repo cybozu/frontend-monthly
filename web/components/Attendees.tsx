@@ -1,7 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
-import { css } from "@emotion/css";
-import { AttendeesJson, Frontmatter } from "../types";
-import Image from "next/image";
+import { css } from "@emotion/react";
+import { Frontmatter } from "../types";
 
 export const Attendees = ({
   members,
@@ -11,10 +11,10 @@ export const Attendees = ({
   return (
     <>
       <h2>メンバー</h2>
-      <div className={style}>
+      <div css={style}>
         {members.map(({ name, link }) => (
           <div key={name} className="member">
-            <Image
+            <img
               className="thumbnail"
               src={membersPhotoUrl[name]}
               width={100}
@@ -30,10 +30,10 @@ export const Attendees = ({
       {guest?.length && (
         <>
           <h2>ゲスト</h2>
-          <div className={style}>
+          <div css={style}>
             {guest.map(({ name, link }) => (
               <div key={name} className="member">
-                <Image
+                <img
                   className="thumbnail"
                   src={membersPhotoUrl[name]}
                   width={100}
