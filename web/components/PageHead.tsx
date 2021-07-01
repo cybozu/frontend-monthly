@@ -4,7 +4,9 @@ import metaJson from "../meta.json";
 import { Frontmatter } from "../types";
 
 export const PageHead = ({ frontmatter }: { frontmatter?: Frontmatter }) => {
-  const title = frontmatter?.no ? `${metaJson.title} #${frontmatter.no}` : metaJson.title;
+  const title = frontmatter?.no
+    ? `${metaJson.title} #${frontmatter.no}`
+    : frontmatter?.title || metaJson.title;
   return (
     <Head>
       <title>{title}</title>
