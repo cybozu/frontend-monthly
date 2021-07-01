@@ -24,8 +24,8 @@ export default function PostPage({
 }) {
   return (
     <Layout>
-      <div className={style}>
-        <PageHead frontmatter={frontmatter} />
+      <PageHead frontmatter={frontmatter} />
+      <article className={style}>
         <h1>{`${frontmatter.title} #${frontmatter.no}`}</h1>
         <div>
           <Image src="/assets/img/header.png" width={659} height={229} />
@@ -36,7 +36,7 @@ export default function PostPage({
         <h2>紹介記事</h2>
         <div className={`markdown-body`} dangerouslySetInnerHTML={{ __html: html }} />
         <TeamIntroduceSlide />
-      </div>
+      </article>
     </Layout>
   );
 }
@@ -143,6 +143,12 @@ const style = css`
         margin: 4px 0;
       }
     }
+  }
+  h1 {
+    margin-top: 0;
+  }
+  > h1:first-of-type {
+    margin-top: 0 !important;
   }
   h3 {
     position: relative;
