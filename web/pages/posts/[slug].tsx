@@ -28,7 +28,7 @@ export default function PostPage({
       <article className={style}>
         <h1>{`${frontmatter.title} #${frontmatter.no}`}</h1>
         <div>
-          <Image src="/assets/img/header.png" width={659} height={229} />
+          <Image src="/assets/img/header.png" width={659} height={229} alt="" />
         </div>
         <EventSummary frontmatter={frontmatter} />
         <Attendees {...frontmatter} membersPhotoUrl={membersPhotoUrl} />
