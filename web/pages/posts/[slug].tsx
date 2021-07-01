@@ -10,15 +10,17 @@ import { EventSummary } from "../../components/EventSummary";
 import { Attendees } from "../../components/Attendees";
 import { TeamIntroduceSlide } from "../../components/TeamIntroduceSlide";
 import { PageHead } from "../../components/PageHead";
+import attendeesJson from "../../attendees.json";
+const fetch = require("node-fetch");
 
 export default function PostPage({
   html,
   frontmatter,
+  membersPhotoUrl,
 }: {
-  slug: string;
-  md: string;
   html: string;
   frontmatter: Frontmatter;
+  membersPhotoUrl: { [name: string]: string };
 }) {
   return (
     <Layout>
@@ -29,7 +31,9 @@ export default function PostPage({
           <Image src="/assets/img/header.png" width={659} height={229} />
         </div>
         <EventSummary frontmatter={frontmatter} />
-        <Attendees {...frontmatter} />
+        <Attendees {...frontmatter} membersPhotoUrl={membersPhotoUrl} />
+        <hr />
+        <h2>紹介記事</h2>
         <div className={`markdown-body`} dangerouslySetInnerHTML={{ __html: html }} />
         <TeamIntroduceSlide />
       </div>
@@ -72,8 +76,46 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   );
   const { data, content } = matter(md);
 
+  const allMembers = data.members.concat(data.guest || []);
+
+  const membersPhotoUrl = await Promise.all<Promise<{ [name: string]: string }>>(
+    allMembers.map(async ({ name, link }: { name: keyof typeof attendeesJson; link: string }) => {
+      if (!attendeesJson[name] || !attendeesJson[name].photoUrl) {
+        return { [name]: "/assets/img/user.png" };
+      }
+      const fileName = path.basename(attendeesJson[name].photoUrl);
+      const filePath = path.join(__dirname, "../../../../public/assets/photo", fileName);
+      const assetPath = `/assets/photo/${fileName}`;
+
+      if (
+        await fs.promises
+          .stat(filePath)
+          .then(() => true)
+          .catch(() => false)
+      ) {
+        return { [name]: assetPath };
+      }
+
+      return fetch(attendeesJson[name].photoUrl)
+        .then((response: any) => response.buffer())
+        .then(async (image: Buffer) => {
+          await fs.promises.writeFile(
+            path.join(__dirname, "../../../../public/assets/photo", fileName),
+            image
+          );
+          return { [name]: assetPath };
+        });
+    })
+  );
+
   return {
     props: {
+      membersPhotoUrl: membersPhotoUrl.reduce((acc, value) => {
+        return {
+          ...acc,
+          ...value,
+        };
+      }, {}),
       frontmatter: data,
       html: await markdownToHtml(content),
     },

@@ -103,10 +103,6 @@ export const EventSummary = ({ frontmatter }: Props) => {
           </tr>
         </tbody>
       </table>
-
-      {/*<TeamMembers members={members} guest={frontmatter.guest} />*/}
-
-      <hr />
     </>
   );
 };
