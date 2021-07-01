@@ -84,7 +84,7 @@ const style = css`
   > h1:first-of-type {
     margin-top: 0 !important;
   }
-  h2 {
+  h2, h3 {
     position: relative;
     margin-left: -5px;
     padding-left: 5px;
