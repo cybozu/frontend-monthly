@@ -2,6 +2,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Frontmatter } from "../types";
+import { withPrefix } from "../lib/withPrefix";
 
 export const Attendees = ({
   members,
@@ -16,7 +17,7 @@ export const Attendees = ({
           <div key={name} className="member">
             <img
               className="thumbnail"
-              src={membersPhotoUrl[name]}
+              src={withPrefix(membersPhotoUrl[name])}
               width={100}
               height={100}
               alt=""
@@ -35,7 +36,7 @@ export const Attendees = ({
               <div key={name} className="member">
                 <img
                   className="thumbnail"
-                  src={membersPhotoUrl[name]}
+                  src={withPrefix(membersPhotoUrl[name])}
                   width={100}
                   height={100}
                   alt=""

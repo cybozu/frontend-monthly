@@ -11,6 +11,7 @@ import { Attendees } from "../../components/Attendees";
 import { TeamIntroduceSlide } from "../../components/TeamIntroduceSlide";
 import { PageHead } from "../../components/PageHead";
 import attendeesJson from "../../attendees.json";
+import { withPrefix } from "../../lib/withPrefix";
 const fetch = require("node-fetch");
 
 export default function PostPage({
@@ -28,7 +29,7 @@ export default function PostPage({
       <article css={style}>
         <h1>{`${frontmatter.title} #${frontmatter.no}`}</h1>
         <div>
-          <img src="/assets/img/header.png" width={659} height={229} alt="" />
+          <img src={withPrefix("/assets/img/header.png")} width={659} height={229} alt="" />
         </div>
         <EventSummary frontmatter={frontmatter} />
         <Attendees {...frontmatter} membersPhotoUrl={membersPhotoUrl} />
