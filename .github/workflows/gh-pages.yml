@@ -25,13 +25,13 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and build
         run: |
-          yarn
-          yarn run build
-          yarn run export
+          cd site
+          npm install
+          npm run build
       - name: Deploy gh-pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
-          FOLDER: out
-          CLEAN: true
+          FOLDER: site/public
+          CLEAN: true  
