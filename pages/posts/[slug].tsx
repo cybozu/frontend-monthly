@@ -43,13 +43,12 @@ export default function PostPage({
 }
 
 export async function getStaticPaths() {
-  const directories = await fs.promises.readdir(path.resolve(__dirname, "../../../../../posts"));
+  const postsDir = path.resolve(__dirname, "../../../../posts");
+  const directories = await fs.promises.readdir(postsDir);
   const files = await Promise.all([
     await Promise.all(
       directories.map(async (directoryPath) => {
-        const paths = await fs.promises.readdir(
-          path.resolve(__dirname, "../../../../../posts", directoryPath)
-        );
+        const paths = await fs.promises.readdir(path.join(postsDir, directoryPath));
         return paths.map((filePath) => {
           return {
             params: {
@@ -72,7 +71,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   const [year, month] = slug.split("-");
 
   const md = await fs.promises.readFile(
-    path.resolve(__dirname, "../../../../../posts", year, `${month}.md`),
+    path.resolve(__dirname, "../../../../posts", year, `${month}.md`),
     "utf-8"
   );
   const { data, content } = matter(md);

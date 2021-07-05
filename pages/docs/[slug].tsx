@@ -27,7 +27,8 @@ export default function DocsPage({
 }
 
 export async function getStaticPaths() {
-  const files = await fs.promises.readdir(path.resolve(__dirname, "../../../../../docs"));
+  const docsDir = path.resolve(__dirname, "../../../../docs");
+  const files = await fs.promises.readdir(docsDir);
   return {
     paths: files.map((fileName) => {
       return {
@@ -41,11 +42,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
+  const docsDir = path.resolve(__dirname, "../../../../docs");
   const { slug } = params;
-  const md = await fs.promises.readFile(
-    path.resolve(__dirname, "../../../../../docs", `${slug}.md`),
-    "utf-8"
-  );
+  const md = await fs.promises.readFile(path.join(docsDir, `${slug}.md`), "utf-8");
   const { data, content } = matter(md);
 
   return {
@@ -84,7 +83,8 @@ const style = css`
   > h1:first-of-type {
     margin-top: 0 !important;
   }
-  h2, h3 {
+  h2,
+  h3 {
     position: relative;
     margin-left: -5px;
     padding-left: 5px;

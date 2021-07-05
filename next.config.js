@@ -5,4 +5,5 @@ module.exports = {
   publicRuntimeConfig: {
     basePath: process.env.BASE_PATH || "",
   },
+  trailingSlash: true,
 };

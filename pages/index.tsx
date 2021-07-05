@@ -53,7 +53,7 @@ export default function Home({
 }
 
 export const getStaticProps = async () => {
-  const postsDir = path.resolve(__dirname, "../../../../posts");
+  const postsDir = path.resolve(__dirname, "../../../posts");
   const directories = await fs.promises.readdir(postsDir);
   const files = await Promise.all([
     await Promise.all(
