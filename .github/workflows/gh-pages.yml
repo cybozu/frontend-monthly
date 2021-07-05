@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,11 +29,11 @@ jobs:
         run: |
           yarn
           yarn run build
-          yarn run export
+          yarn run export -o frontend-monthly
       - name: Deploy gh-pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
-          FOLDER: out
+          FOLDER: frontend-monthly
           CLEAN: true
