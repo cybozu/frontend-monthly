@@ -242,12 +242,12 @@ Microsoft Teams が 11/30 に、Microsoft 365 アプリが 2021/08/17 に IE の
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// .storybook/main.js</span>
 
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  typescript<span class="token operator">:</span> <span class="token punctuation">{</span>
-    check<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-    checkOptions<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-    reactDocgen<span class="token operator">:</span> <span class="token string">"react-docgen-typescript"</span><span class="token punctuation">,</span>
-    reactDocgenTypescriptOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
-      shouldExtractLiteralValuesFromEnum<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">typescript</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">check</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">checkOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">reactDocgen</span><span class="token operator">:</span> <span class="token string">"react-docgen-typescript"</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">reactDocgenTypescriptOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">shouldExtractLiteralValuesFromEnum</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
       <span class="token function-variable function">propFilter</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">prop</span><span class="token punctuation">)</span> <span class="token operator">=></span>
         prop<span class="token punctuation">.</span>parent <span class="token operator">?</span> <span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>prop<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>fileName<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
