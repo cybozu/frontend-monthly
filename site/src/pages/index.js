@@ -24,6 +24,7 @@ export const pageQuery = graphql`
           no
           date
           formattedDate: date(formatString: "YYYY/MM/DD")
+          skipEtc
         }
         headings(depth: h3) {
           value
@@ -50,7 +51,7 @@ const Component = ({ data, className }) => {
           {posts.map(
             ({
               path,
-              frontmatter: { formattedDate, title, no, date },
+              frontmatter: { formattedDate, title, no, date, skipEtc },
               headings,
             }) => (
               <li key={date} className="post">
@@ -65,7 +66,7 @@ const Component = ({ data, className }) => {
                         dangerouslySetInnerHTML={{ __html: value }}
                       />
                     ))}
-                    <li>他</li>
+                    {!skipEtc && <li>他</li>}
                   </ul>
                 </Link>
               </li>
