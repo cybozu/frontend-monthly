@@ -1,0 +1,1882 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"/><style data-href="/frontend-monthly/styles.97fe93893c1d5fe8ae17.css">.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1:hover .anchor .octicon-link:before,.markdown-body h2:hover .anchor .octicon-link:before,.markdown-body h3:hover .anchor .octicon-link:before,.markdown-body h4:hover .anchor .octicon-link:before,.markdown-body h5:hover .anchor .octicon-link:before,.markdown-body h6:hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E")}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body details{display:block}.markdown-body summary{display:list-item}.markdown-body a{background-color:initial}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body strong{font-weight:inherit;font-weight:bolder}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body code,.markdown-body kbd,.markdown-body pre{font-family:monospace,monospace;font-size:1em}.markdown-body hr{box-sizing:initial;overflow:visible}.markdown-body input{font:inherit;margin:0;overflow:visible}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body a{color:#0366d6;text-decoration:none}.markdown-body a:hover{text-decoration:underline}.markdown-body strong{font-weight:600}.markdown-body hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid #dfe2e5}.markdown-body hr:after,.markdown-body hr:before{display:table;content:""}.markdown-body hr:after{clear:both}.markdown-body table{border-spacing:0;border-collapse:collapse}.markdown-body td,.markdown-body th{padding:0}.markdown-body details summary{cursor:pointer}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:0;margin-bottom:0}.markdown-body h1{font-size:32px}.markdown-body h1,.markdown-body h2{font-weight:600}.markdown-body h2{font-size:24px}.markdown-body h3{font-size:20px}.markdown-body h3,.markdown-body h4{font-weight:600}.markdown-body h4{font-size:16px}.markdown-body h5{font-size:14px}.markdown-body h5,.markdown-body h6{font-weight:600}.markdown-body h6{font-size:12px}.markdown-body p{margin-top:0;margin-bottom:10px}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:0;margin-top:0;margin-bottom:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown-body pre{margin-top:0;margin-bottom:0}.markdown-body input::-webkit-inner-spin-button,.markdown-body input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .border{border:1px solid #e1e4e8!important}.markdown-body .border-0{border:0!important}.markdown-body .border-bottom{border-bottom:1px solid #e1e4e8!important}.markdown-body .rounded-1{border-radius:3px!important}.markdown-body .bg-white{background-color:#fff!important}.markdown-body .bg-gray-light{background-color:#fafbfc!important}.markdown-body .text-gray-light{color:#6a737d!important}.markdown-body .pl-3,.markdown-body .px-3{padding-left:16px!important}.markdown-body .px-3{padding-right:16px!important}.markdown-body .f6{font-size:12px!important}.markdown-body .lh-condensed{line-height:1.25!important}.markdown-body .text-bold{font-weight:600!important}.markdown-body .pl-c{color:#6a737d}.markdown-body .pl-c1,.markdown-body .pl-s .pl-v{color:#005cc5}.markdown-body .pl-e,.markdown-body .pl-en{color:#6f42c1}.markdown-body .pl-s .pl-s1,.markdown-body .pl-smi{color:#24292e}.markdown-body .pl-ent{color:#22863a}.markdown-body .pl-k{color:#d73a49}.markdown-body .pl-pds,.markdown-body .pl-s,.markdown-body .pl-s .pl-pse .pl-s1,.markdown-body .pl-sr,.markdown-body .pl-sr .pl-cce,.markdown-body .pl-sr .pl-sra,.markdown-body .pl-sr .pl-sre{color:#032f62}.markdown-body .pl-smw,.markdown-body .pl-v{color:#e36209}.markdown-body .pl-bu{color:#b31d28}.markdown-body .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown-body .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown-body .pl-c2:before{content:"^M"}.markdown-body .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown-body .pl-ml{color:#735c0f}.markdown-body .pl-mh,.markdown-body .pl-mh .pl-en,.markdown-body .pl-ms{font-weight:700;color:#005cc5}.markdown-body .pl-mi{font-style:italic;color:#24292e}.markdown-body .pl-mb{font-weight:700;color:#24292e}.markdown-body .pl-md{color:#b31d28;background-color:#ffeef0}.markdown-body .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown-body .pl-mc{color:#e36209;background-color:#ffebda}.markdown-body .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown-body .pl-mdr{font-weight:700;color:#6f42c1}.markdown-body .pl-ba{color:#586069}.markdown-body .pl-sg{color:#959da5}.markdown-body .pl-corl{text-decoration:underline;color:#032f62}.markdown-body .mb-0{margin-bottom:0!important}.markdown-body .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown-body .pl-0{padding-left:0!important}.markdown-body .py-0{padding-top:0!important;padding-bottom:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .py-2{padding-top:8px!important;padding-bottom:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body .pl-7{padding-left:48px!important}.markdown-body .pl-8{padding-left:64px!important}.markdown-body .pl-9{padding-left:80px!important}.markdown-body .pl-10{padding-left:96px!important}.markdown-body .pl-11{padding-left:112px!important}.markdown-body .pl-12{padding-left:128px!important}.markdown-body hr{border-bottom-color:#eee}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body blockquote,.markdown-body details,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e1e4e8;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li{word-wrap:break-all}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:initial;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:initial;border:0}.markdown-body .commit-tease-sha{display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%;color:#444d56}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown-body .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown-body .blob-num{width:1%;min-width:50px;padding-right:10px;padding-left:10px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;vertical-align:top;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none}.markdown-body .blob-num:hover{color:rgba(27,31,35,.6)}.markdown-body .blob-num:before{content:attr(data-line-number)}.markdown-body .blob-code{position:relative;padding-right:10px;padding-left:10px;line-height:20px;vertical-align:top}.markdown-body .blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:#24292e;word-wrap:normal;white-space:pre}.markdown-body .pl-token.active,.markdown-body .pl-token:hover{cursor:pointer;background:#ffea7f}.markdown-body .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown-body .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown-body .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown-body .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown-body .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown-body .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown-body .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown-body .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown-body .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown-body .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown-body .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown-body .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}</style><meta name="generator" content="Gatsby 2.24.62"/><title data-react-helmet="true">Cybozu Frontend Monthly #30</title><meta data-react-helmet="true" name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"/><meta data-react-helmet="true" property="og:title" content="Cybozu Frontend Monthly #30"/><meta data-react-helmet="true" property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Cybozu Frontend Expert Team"/><meta data-react-helmet="true" name="twitter:title" content="Cybozu Frontend Monthly #30"/><meta data-react-helmet="true" name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"/><meta data-react-helmet="true" property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link as="script" rel="preload" href="/frontend-monthly/webpack-runtime-c51f9a472dc3791c3d11.js"/><link as="script" rel="preload" href="/frontend-monthly/framework-a23b24beacc21a89e7ba.js"/><link as="script" rel="preload" href="/frontend-monthly/app-afbbbc55a5f2beade197.js"/><link as="script" rel="preload" href="/frontend-monthly/styles-c2fe8482057191dca484.js"/><link as="script" rel="preload" href="/frontend-monthly/e50ecfc4f9fb2d593cad78a86a1d89fd7571e869-26507b3c2b86fbf9df34.js"/><link as="script" rel="preload" href="/frontend-monthly/component---src-post-template-js-88916894c10306045a1f.js"/><link as="fetch" rel="preload" href="/frontend-monthly/page-data/posts/2022-12/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frontend-monthly/page-data/sq/d/764694655.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/frontend-monthly/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="14qlf2i">.css-14qlf2i{display:grid;grid-template-rows:auto 1fr auto;height:100vh;border-top:4px solid #64bdd4;box-sizing:border-box;}.css-14qlf2i .main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e;}.css-14qlf2i .main h1{margin-top:0;}@media (max-width:767px){.css-14qlf2i .main{padding:12px;font-size:14px;}.css-14qlf2i .main .markdown-body{font-size:14px;}.css-14qlf2i .main h1{font-size:1.55em;margin-bottom:0.25em;margin-top:0.5em;}.css-14qlf2i .main h2{font-size:1.3em;margin-bottom:0.25em;margin-top:0.5em;}.css-14qlf2i .main h3{font-size:1.1em;margin-bottom:0.25em;margin-top:0.5em;}.css-14qlf2i .main hr{margin:12px 0;}}.css-14qlf2i .footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:0.75em;padding:5px 0;}.css-14qlf2i .footer a{color:inherit;}</style><div class="css-14qlf2i e1x29k110 markdown-body"><style data-emotion-css="1o1js1e">body{margin:0;}</style><main class="main"><style data-emotion-css="1chv08s">.css-1chv08s .markdown-body img{border:1px solid rgba(0,0,0,0.1);max-width:90%;height:auto;margin:12px auto;display:block;}.css-1chv08s .markdown-body li > p{margin:8px 0;}@media screen and (max-width:420px){.css-1chv08s .markdown-body{font-size:14px;}.css-1chv08s .markdown-body li > p{margin:4px 0;}}</style><article class="css-1chv08s e1e11pn10 markdown-body"><h1>Cybozu Frontend Monthly #30</h1><style data-emotion-css="f4ek91">@media screen and (max-width:420px){.css-f4ek91{font-size:14px;}}.css-f4ek91.note h3{margin-top:0;}.css-f4ek91.note p{margin-bottom:0;white-space:pre-line;}</style><img src="/frontend-monthly/img/header.png" alt="" width="659" height="229" style="height:auto;max-width:100%"/><h2>イベント概要</h2><p><strong>サイボウズフロントエンドマンスリー</strong>は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。</p><p>その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。</p><p><strong>このイベントのハッシュタグは<!-- --> <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer">#サイボウズフロントエンドマンスリー</a> <!-- -->です。</strong></p><pre class="css-f4ek91 efa2qgu0 note"><h3>※フロントエンドウィークリーとは</h3><p>毎週火曜の 17:00 〜 18:00 で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。<br/>ハッシュタグ<!-- --> <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer">#サイボウズフロントエンドウィークリー</a> <!-- -->で実況しています。</p></pre><h3>開催日</h3><p>2022年12月23日</p><h3>イベントページ</h3><p><a href="https://cybozu.connpass.com/event/269123/" target="_blank" rel="noopener noreferrer">https://cybozu.connpass.com/event/269123/</a></p><h3>タイムテーブル</h3><table><tbody><tr><td>07:50 - 08:00</td><td>配信開始</td></tr><tr><td>08:00 - 08:05</td><td>オープニング</td></tr><tr><td>08:05 - 08:55</td><td>本編</td></tr><tr><td>08:55 - 09:00</td><td>クロージング</td></tr></tbody></table><style data-emotion-css="1a54a0h">.css-1a54a0h{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));grid-gap:24px 12px;padding:12px;}</style><h2>メンバー</h2><div class="css-1a54a0h exfv8sh0 members"><style data-emotion-css="k3z37x">.css-k3z37x{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;min-width:105px;white-space:nowrap;}.css-k3z37x .thumbnail{max-width:100px;height:auto;border-radius:50%;margin:0 auto 5px;}</style><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@nakajmg.jpg" class="thumbnail" alt="@nakajmg"/><a href="https://twitter.com/nakajmg" target="_blank" rel="noopener noreferrer">@nakajmg</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@__sosukesuzuki.jpg" class="thumbnail" alt="@__sosukesuzuki"/><a href="https://twitter.com/__sosukesuzuki" target="_blank" rel="noopener noreferrer">@__sosukesuzuki</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno"/><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer">@mugi_uno</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t"/><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer">@b4h0_c4t</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix"/><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer">@sajikix</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_"/><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer">@nus3_</a></div></div><h2>ゲスト</h2><div class="css-1a54a0h exfv8sh0 members"><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@shisama_.jpg" class="thumbnail" alt="@shisama_"/><a href="https://twitter.com/shisama_" target="_blank" rel="noopener noreferrer">@shisama_</a></div><div class="css-k3z37x e1cp8fxf0"><img src="/frontend-monthly/img/@koba04.jpg" class="thumbnail" alt="@koba04"/><a href="https://twitter.com/koba04" target="_blank" rel="noopener noreferrer">@koba04</a></div></div><hr/><h2>紹介記事</h2><div class="markdown-body"><h3 id="上期-202201-202206" style="position:relative;"><a href="#%E4%B8%8A%E6%9C%9F-202201-202206" aria-label="上期 202201 202206 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>上期 (2022/01-2022/06)</h3>
+<ul>
+<li>担当: <a href="https://twitter.com/mugi_uno" target="_blank" rel="nofollow noopener noreferrer">@mugi_uno</a> <a href="https://twitter.com/b4h0_c4t" target="_blank" rel="nofollow noopener noreferrer">@b4h0_c4t</a></li>
+</ul>
+<h4 id="リリース" style="position:relative;"><a href="#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9" aria-label="リリース permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>リリース</h4>
+<ul>
+<li>
+<p><a href="https://github.com/vercel/swr/releases/tag/1.2.0-beta.0" target="_blank" rel="nofollow noopener noreferrer">Release 1.2.0-beta.0 · vercel/swr</a></p>
+<ul>
+<li>optimistic update が可能に</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/vitebook/vitebook" target="_blank" rel="nofollow noopener noreferrer">vitebook/vitebook: Blazing fast alternative to Storybook.</a></p>
+<ul>
+<li>Vite をベースにした Storybook 相当のツール</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/griffel" target="_blank" rel="nofollow noopener noreferrer">microsoft/griffel: CSS-in-JS with ahead-of-time compilation ⚡️</a></li>
+<li>
+<p><a href="https://github.com/kodansha/eslint-config" target="_blank" rel="nofollow noopener noreferrer">kodansha/eslint-config: Set of KODANSHA ESLint Configurations</a></p>
+<ul>
+<li>講談社の ESLint 設定</li>
+</ul>
+</li>
+<li>
+<p><a href="https://tailwindcss.com/blog/automatic-class-sorting-with-prettier" target="_blank" rel="nofollow noopener noreferrer">Automatic Class Sorting with Prettier - Tailwind CSS</a></p>
+<ul>
+<li>Tailwind CSS 公式による、クラスをソートする Prettier プラグイン</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/griffel" target="_blank" rel="nofollow noopener noreferrer">microsoft/griffel: CSS-in-JS with ahead-of-time compilation ⚡️</a></p>
+<ul>
+<li>Microsoft 製 の CSS in JS ライブラリ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://rome.tools/blog/2022/02/08/rome-formatter-and-rust-update/" target="_blank" rel="nofollow noopener noreferrer">Rome Formatter and Rust Update</a></p>
+<ul>
+<li>Rome Formatter の VS Code 拡張がリリース</li>
+</ul>
+</li>
+<li>
+<p><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-6-rc/" target="_blank" rel="nofollow noopener noreferrer">Announcing TypeScript 4.6 RC - TypeScript</a></p>
+<ul>
+<li>社内では Control Flow Analysis for Destructured Discriminated Unions が話題になった</li>
+</ul>
+</li>
+<li>
+<p><a href="https://unlighthouse.dev/" target="_blank" rel="nofollow noopener noreferrer">Unlighthouse - Scan your entire website with Google Lighthouse | Unlighthouse</a></p>
+<ul>
+<li>Lighthouse を利用した UI 付きのスキャンツール</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nextjs.org/blog/next-12-1" target="_blank" rel="nofollow noopener noreferrer">Blog - Next.js 12.1 | Next.js</a></p>
+<ul>
+<li>On-demand ISR や、SWC 導入など</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/unocss/unocss" target="_blank" rel="nofollow noopener noreferrer">unocss/unocss: The instant on-demand atomic CSS engine.</a></p>
+<ul>
+<li>Atomic CSS を Tailwind などとは違うアプローチで実装したもの</li>
+<li>解説記事: <a href="https://antfu.me/posts/reimagine-atomic-css" target="_blank" rel="nofollow noopener noreferrer">Reimagine Atomic CSS</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://ultrajs.dev/" target="_blank" rel="nofollow noopener noreferrer">Ultra: The Quest for Zero-Legacy</a></p>
+<ul>
+<li>Deno の React フレームワーク</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-7-beta/" target="_blank" rel="nofollow noopener noreferrer">Announcing TypeScript 4.7 Beta</a></li>
+<li>
+<p><a href="https://github.com/nuxt/framework/discussions/3447" target="_blank" rel="nofollow noopener noreferrer">Nuxt 3 Release Candidate</a></p>
+<ul>
+<li>4/20 に nuxt3 の rc 版をリリースするリリース予告</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/reduxjs/react-redux/releases/tag/v8.0.0" target="_blank" rel="nofollow noopener noreferrer">reduxjs/react-redux v8.0.0</a></p>
+<ul>
+<li>react-redux v8 リリース</li>
+</ul>
+</li>
+<li><a href="https://github.com/vercel/swr/releases" target="_blank" rel="nofollow noopener noreferrer">vercel/swr v2.0.0-rc.3</a>
+-SWR v2 リリース</li>
+<li>
+<p><a href="https://github.com/Microsoft/playwright/releases/v1.22.0" target="_blank" rel="nofollow noopener noreferrer">Playwright v1.22.0</a></p>
+<ul>
+<li>React・Vue のコンポーネントテストや aria 属性の取得などの機能が盛り込まれた</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/storybookjs/storybook/releases/tag/v6.5.0" target="_blank" rel="nofollow noopener noreferrer">storybookjs/storybook v6.5.0</a></p>
+<ul>
+<li>Interaction のテストがブラウザ上できるテストランナーや Storybook と連携できる Figma plugin 等</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/typescript-eslint/typescript-eslint/releases/tag/v5.26.0" target="_blank" rel="nofollow noopener noreferrer"> typescript-eslint/typescript-eslint v5.26.0</a></p>
+<ul>
+<li>typescript-eslint v5.26.0 リリース</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/lerna/lerna/releases/tag/v5.0.0" target="_blank" rel="nofollow noopener noreferrer">lerna/lerna v5.0.0</a></p>
+<ul>
+<li>lerna、Nx に管理が委譲されてから初のアップデート</li>
+</ul>
+</li>
+<li>
+<p><a href="https://prettier.io/blog/2022/06/14/2.7.0.html" target="_blank" rel="nofollow noopener noreferrer">Prettier 2.7: new --cache CLI option and TypeScript 4.7 syntax!</a></p>
+<ul>
+<li>Prettier 2.7 のリリースブログ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://astro.build/blog/astro-1-release-update/" target="_blank" rel="nofollow noopener noreferrer">Astro 1.0 Release Update | Astro</a></p>
+<ul>
+<li>Astro v1.0.0 のリリースが 7 月下旬ごろになるそう</li>
+</ul>
+</li>
+</ul>
+<h4 id="ブラウザ関連" style="position:relative;"><a href="#%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E9%96%A2%E9%80%A3" aria-label="ブラウザ関連 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ブラウザ関連</h4>
+<ul>
+<li>
+<p><a href="https://www.mozilla.org/en-US/firefox/96.0/releasenotes/" target="_blank" rel="nofollow noopener noreferrer">Firefox 96.0, See All New Features, Updates and Fixes</a></p>
+<ul>
+<li>Firefox で <code class="language-text">&lt;dialog></code> が ship された</li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12209/introducing-the-dialog-element/" target="_blank" rel="nofollow noopener noreferrer">Introducing the Dialog Element | WebKit</a></p>
+<ul>
+<li>モダンブラウザで一通り <code class="language-text">&lt;dialog></code> が実装された</li>
+<li>Firefox での ship: <a href="https://groups.google.com/a/mozilla.org/g/dev-platform/c/swi3i7Pvs40/m/p5naTEJMAAAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to ship: HTML <dialog> element.</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://wolvic.com/en/" target="_blank" rel="nofollow noopener noreferrer">Welcome to Wolvic</a></p>
+<ul>
+<li>Igalia による、Firefox Reality をフォークした VR フォーカスブラウザ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/docs/devtools/css/flexbox/" target="_blank" rel="nofollow noopener noreferrer">Inspect and debug CSS flexbox layouts - Chrome Developers</a></p>
+<ul>
+<li>Chrome DevTools の CSS Flexbox のデバッグツールについて</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/chrome-firefox-100/" target="_blank" rel="nofollow noopener noreferrer">Chrome and Firefox soon to reach major version 100</a></p>
+<ul>
+<li>Chrome と Firefox のバージョンが 100 に到達することでの影響</li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12303/css-variables-web-inspector/" target="_blank" rel="nofollow noopener noreferrer">Taming CSS Variables with Web Inspector | WebKit</a></p>
+<ul>
+<li>Safari で CSS Variables のデバッグができるように</li>
+</ul>
+</li>
+<li>
+<p><a href="https://devblogs.microsoft.com/surface-duo/dual-screen-web-edge/" target="_blank" rel="nofollow noopener noreferrer">Microsoft Edge dual-screen web APIs - Surface Duo Blog</a></p>
+<ul>
+<li>デュアルスクリーン用の Web API について</li>
+<li>関連して、レスポンシブ対応の実装方法を紹介する記事: <a href="https://www.smashingmagazine.com/2022/03/building-web-layouts-dual-screen-foldable-devices/" target="_blank" rel="nofollow noopener noreferrer">Building Web Layouts For Dual-Screen And Foldable Devices — Smashing Magazine</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://hacks.mozilla.org/2022/03/interop-2022/" target="_blank" rel="nofollow noopener noreferrer">Announcing Interop 2022 - Mozilla Hacks - the Web developer blog</a></p>
+<ul>
+<li>ブラウザの相互運用指標について</li>
+<li>メジャーブラウザがどの程度準拠しているかのダッシュボードページ: <a href="https://wpt.fyi/interop-2022" target="_blank" rel="nofollow noopener noreferrer">web-platform-tests dashboard</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/" target="_blank" rel="nofollow noopener noreferrer">New WebKit Features in Safari 15.4 | WebKit</a></p>
+<ul>
+<li><code class="language-text">&lt;dialog></code> サポートや lazy-loading、 <code class="language-text">:has()</code> など</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/new-in-devtools-100/" target="_blank" rel="nofollow noopener noreferrer">What's New In DevTools (Chrome 100) - Chrome Developers</a></p>
+<ul>
+<li>Chrome が バージョン 100 に到達。DevTools の改善などを含む</li>
+</ul>
+</li>
+<li><a href="https://www.paypay-bank.co.jp/news/2022/0307.html" target="_blank" rel="nofollow noopener noreferrer">Microsoft Internet Explorer 11.0 および Firefox のサポート終了について - PayPay 銀行</a></li>
+<li>
+<p><a href="https://developer.chrome.com/en/blog/chips-origin-trial/" target="_blank" rel="nofollow noopener noreferrer">Cookies Having Independent Partitioned State (CHIPS) origin trial - Chrome Developers</a></p>
+<ul>
+<li>Cookie を分割して保存する sandbox の提案</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blogs.windows.com/msedgedev/2022/03/17/appears-to-say-microsoft-edge-auto-generated-image-labels/" target="_blank" rel="nofollow noopener noreferrer">Appears to say: Microsoft Edge now provides auto-generated image labels</a></p>
+<ul>
+<li>MS Edge で Alt を自動生成する話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/100/" target="_blank" rel="nofollow noopener noreferrer">#100CoolWebMoments</a></p>
+<ul>
+<li>Chrome 100 までの思い出</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/E4Vd7w70OsU/m/Q43yNphBEwAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to Ship: Media Queries Level 4 Syntax &#x26; Evaluation</a></p>
+<ul>
+<li>メディアクエリの条件式がより直感的に書けるようになった</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/7xXO407jFPA/m/S-p7NlUUEAAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to Experiment: Remove clamping of setTimeout(..., 0)</a></p>
+<ul>
+<li><code class="language-text">setTimeout(fn, 0)</code> は今まで 1ms 扱いになっていたが、標準に合わせて 0 としてすぐコールバックされるように。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/VS9UgOC7Wqc/m/P0vG6qfEEwAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to Ship: Subresource Loading with Web Bundles</a></p>
+<ul>
+<li>サブリソースを WebBundle して fetch で一括ロードする仕組み</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/5iuGWgO8aMo/m/A9vvTY61AQAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to Ship: Navigation API</a></p>
+<ul>
+<li>History API の改善版</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/3Ga0Y2BEz7E/m/3U5zwXjWGwAJ" target="_blank" rel="nofollow noopener noreferrer">Intent to Ship: Speculation Rules (Prefetch)</a></p>
+<ul>
+<li>このページは Prefetch しておいてね、って Declarative に定義する API</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/inp-in-frameworks/" target="_blank" rel="nofollow noopener noreferrer">How do modern frameworks perform on the new INP metric</a></p>
+<ul>
+<li>INP という新しいパフォーマンスの指標の話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/preload-scanner/" target="_blank" rel="nofollow noopener noreferrer">Don't fight the browser preload scanner</a></p>
+<ul>
+<li>重要なリソースの発見を遅らせるような処理は preload scanner と相性が悪く、かえってパフォーマンスが落ちることがあるので気をつけようねという記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.mnot.net/blog/2022/06/06/http-core" target="_blank" rel="nofollow noopener noreferrer">A New Definition of HTTP</a></p>
+<ul>
+<li>HTTP 関連 RFC がどばっと公開されました</li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12824/news-from-wwdc-webkit-features-in-safari-16-beta/" target="_blank" rel="nofollow noopener noreferrer">News from WWDC22: WebKit Features in Safari 16 Beta</a></p>
+<ul>
+<li>Safari 16 Beta がきますという記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12662/customizing-color-fonts-on-the-web/" target="_blank" rel="nofollow noopener noreferrer">Customizing Color Fonts on the Web</a></p>
+<ul>
+<li><code class="language-text">@font-palette-values</code> が Safari 15.4 以降でサポートされたカラーフォントに関しての記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://deep-space.blue/web/2263" target="_blank" rel="nofollow noopener noreferrer">IE11 とさよならしたら全力で使える HTML/CSS まとめ【40 個以上】</a></p>
+<ul>
+<li>IE11 のサポートを考えなくて良くなった場合に使えるようになる HTML, CSS のまとめ</li>
+</ul>
+</li>
+</ul>
+<h4 id="イベント" style="position:relative;"><a href="#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88" aria-label="イベント permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>イベント</h4>
+<ul>
+<li><a href="https://remix.run/conf/2023" target="_blank" rel="nofollow noopener noreferrer">Remix Conf — May 2023</a></li>
+<li>
+<p><a href="https://blog.koba04.com/post/2022/05/14/speaking-about-useevent-at-techfeed-conf" target="_blank" rel="nofollow noopener noreferrer">TechFeed Conference 2022 で React の useEvent について話した</a></p>
+<ul>
+<li>koba さんが TechFeedConference で登壇した内容のブログ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://speakerdeck.com/sakito/reactdeapurikesiyonwogou-zhu-suruduo-yang-hua" target="_blank" rel="nofollow noopener noreferrer">React でアプリケーションを構築する多様化</a></p>
+<ul>
+<li>sakito さんが TechFeed Conference で登壇した資料</li>
+</ul>
+</li>
+<li>
+<p><a href="https://docs.google.com/presentation/d/1pj1azprtCUM9b1tLWEO82wqHuX9lYOoacROfmbzRTmY/mobilepresent#slide=id.g129f6bb0506_2_32" target="_blank" rel="nofollow noopener noreferrer">アクセシビリティツリーを読む</a></p>
+<ul>
+<li>コパさんが TechFeed Conference で登壇した資料</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDKuCU73tmdRN_-mI3tKFPD" target="_blank" rel="nofollow noopener noreferrer">Web at I/O 2022</a></p>
+<ul>
+<li>Google I/O 2022 のアーカイブ動画</li>
+</ul>
+</li>
+<li>
+<p><a href="https://remix.run/conf" target="_blank" rel="nofollow noopener noreferrer">Remix Conf</a></p>
+<ul>
+<li>Remix のカンファレンス</li>
+</ul>
+</li>
+<li>
+<p><a href="https://docs.google.com/presentation/d/1tPaimqwJEXinPYifwUvA4gLCI6SezZsViuJvieWGAug" target="_blank" rel="nofollow noopener noreferrer">State of Vuenion</a></p>
+<ul>
+<li>Vue Amsterdam での Evan you の発表資料</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web-study.connpass.com/event/250730/" target="_blank" rel="nofollow noopener noreferrer">HTTP RFC Publication Study </a></p>
+<ul>
+<li>複数人の方で公開された RFC の内容をキャッチアップするイベント</li>
+</ul>
+</li>
+</ul>
+<h4 id="oss-関連" style="position:relative;"><a href="#oss-%E9%96%A2%E9%80%A3" aria-label="oss 関連 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OSS 関連</h4>
+<ul>
+<li>
+<p><a href="https://github.com/advisories/GHSA-5rqg-jm4f-cqx7" target="_blank" rel="nofollow noopener noreferrer">Infinite loop causing Denial of Service in colors · GHSA-5rqg-jm4f-cqx7 · GitHub Advisory Database</a></p>
+<ul>
+<li>faker.js と color.js の開発者が自身が意図的にコード上に無限ループを含む改変を行った</li>
+<li>関連記事</li>
+<li><a href="https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/" target="_blank" rel="nofollow noopener noreferrer">The story behind colors.js and faker.js | Revenera Blog</a></li>
+<li><a href="https://note.com/takahiroyte/n/nd6cceae3af04" target="_blank" rel="nofollow noopener noreferrer">OSS のゆく道：Faker.js の顛末｜ Takahiro Ito ｜ note</a></li>
+<li>その後 fork され、コミュニティベースでのメンテナンスになった: <a href="https://fakerjs.dev/about/announcements/2022-01-14.html" target="_blank" rel="nofollow noopener noreferrer">An update from the Faker team | Faker</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://picocss.com/" target="_blank" rel="nofollow noopener noreferrer">Pico.css • Minimal CSS Framework for semantic HTML</a></p>
+<ul>
+<li>Semantics HTML を対象にした、独自クラスなどに頼らない CSS フレームワーク</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sosukesuzuki.dev/posts/prettier-begins-paying-maintainers/" target="_blank" rel="nofollow noopener noreferrer">翻訳: Prettier はメンテナーへの報酬の支払いを始めます</a></p>
+<ul>
+<li>Prettier への寄付金から、一部をメンテナーに対して報酬として支払うことを決定</li>
+</ul>
+</li>
+<li><a href="https://eh-career.com/engineerhub/entry/2022/01/13/090000" target="_blank" rel="nofollow noopener noreferrer">React を取り巻く状態管理の潮流を学ぼう。Hooks や Server Components などの登場で何が変わるか - エンジニア Hub ｜ Web エンジニアのキャリアを考える！</a></li>
+<li><a href="https://github.com/webpack-contrib/mini-css-extract-plugin/issues/896" target="_blank" rel="nofollow noopener noreferrer">Breaking change with import via CommonJS in <code class="language-text">2.5.0</code> · Issue #896 · webpack-contrib/mini-css-extract-plugin</a></li>
+<li><a href="https://zenn.dev/ubie/articles/44d0eab3458cc0" target="_blank" rel="nofollow noopener noreferrer">Ubie で利用しているアイコンを npm パッケージとして公開しました！</a></li>
+<li>
+<p><a href="https://github.com/nodejs/node/pull/41749" target="_blank" rel="nofollow noopener noreferrer">lib: add fetch by targos · Pull Request #41749 · nodejs/node</a></p>
+<ul>
+<li><code class="language-text">--exprimental-fetch</code> を付与することで <code class="language-text">fetch()</code> が利用可能に (後の v18 以降はフラグは不要)</li>
+</ul>
+</li>
+<li>
+<p><a href="https://openjsf.org/blog/2022/02/14/node-js-trademarks-transferred-to-openjs-foundation/" target="_blank" rel="nofollow noopener noreferrer">Node.js Trademarks Transferred to OpenJS Foundation - OpenJS Foundation</a></p>
+<ul>
+<li>Node.js の商標が OpenJS Foundation へ移った</li>
+</ul>
+</li>
+<li>
+<p><a href="https://changelog.com/jsparty/212" target="_blank" rel="nofollow noopener noreferrer">A deep-dive on Vite featuring Evan You (JS Party #212) |> Changelog</a></p>
+<ul>
+<li>Vite 作者 Evan you がゲスト出演し、Vite などについて語っている PodCast</li>
+</ul>
+</li>
+<li>
+<p><a href="https://koba04.medium.com/revalidating-options-of-swr-4d9f08bee813" target="_blank" rel="nofollow noopener noreferrer">Revalidating options of SWR. SWR is a React Hooks for data fetching… | by Toru Kobayashi | Medium</a></p>
+<ul>
+<li>SWR で間違えやすいオプションについて</li>
+</ul>
+</li>
+<li>
+<p><a href="https://t.co/Xt1fi69ZEB" target="_blank" rel="nofollow noopener noreferrer">https://github.com/facebook/jest/pull/12546</a></p>
+<ul>
+<li>Jest で <code class="language-text">--shared</code> オプションの追加。それにより、Jest 自体のテストも 18 分 →3 分になった</li>
+<li><a href="https://twitter.com/cpojer/status/1500276672045543424" target="_blank" rel="nofollow noopener noreferrer">https://twitter.com/cpojer/status/1500276672045543424</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.igalia.com/open-prioritization/" target="_blank" rel="nofollow noopener noreferrer">Open Prioritization | Igalia - Open Source Consultancy and Development</a></p>
+<ul>
+<li>igalia の個々の機能開発に関しての Cloud Founding</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/nicolo-ribaudo/jest-light-runner" target="_blank" rel="nofollow noopener noreferrer">jest-light-runner</a></p>
+<ul>
+<li>jest のランナー。vm での isolation なしで実行するので速い。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.ladle.dev/blog/introducing-ladle/" target="_blank" rel="nofollow noopener noreferrer">Introducing Ladle</a></p>
+<ul>
+<li>Vite をベースに使用した Storybook のようなツール</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/blog/figma-plugin-beta/" target="_blank" rel="nofollow noopener noreferrer">Figma plugin beta</a></p>
+<ul>
+<li>storybook の Figma プラグインが出た</li>
+</ul>
+</li>
+<li>
+<p><a href="https://styles.master.co/" target="_blank" rel="nofollow noopener noreferrer">Master Styles</a></p>
+<ul>
+<li>CSS のスタイリングを全て class 名で完結させる軽量の CSS ライブラリ</li>
+</ul>
+</li>
+<li>
+<p>[docs: Japanese translation v0.1 - still needs brush-up(<a href="https://github.com/eslint/eslint.org/pull/193" target="_blank" rel="nofollow noopener noreferrer">https://github.com/eslint/eslint.org/pull/193</a>)</p>
+<ul>
+<li>eslint の日本語翻訳プロジェクトが進行中</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/alphacep/vosk-api" target="_blank" rel="nofollow noopener noreferrer">alphacep/vosk-api</a></p>
+<ul>
+<li>オフラインで使える音声認識ライブラリ。node でも使える</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/changelog/automatic-pnpm-v7-support" target="_blank" rel="nofollow noopener noreferrer">Automatic pnpm v7 Support</a></p>
+<ul>
+<li>Vercel で pnpm の v7 がサポートされた</li>
+</ul>
+</li>
+<li>
+<p><a href="https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/" target="_blank" rel="nofollow noopener noreferrer">Meta Open Source is transferring Jest to the OpenJS Foundation</a></p>
+<ul>
+<li>Jest が Meta から OpenJS Foundation に移管された</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.hyperui.dev/" target="_blank" rel="nofollow noopener noreferrer">Free Open Source Tailwind CSS Components | HyperUI</a></p>
+<ul>
+<li>Tailwind CSS のオープンソースコンポーネント集</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/TypeScript/issues/49074" target="_blank" rel="nofollow noopener noreferrer">TypeScript 4.8 Iteration Plan</a></p>
+<ul>
+<li>TS4.8 に入りそうな機能</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nextjs.org/blog/layouts-rfc" target="_blank" rel="nofollow noopener noreferrer">Layouts RFC | Next/js</a></p>
+<ul>
+<li>Next.js の Layouts の RFC が出た</li>
+</ul>
+</li>
+<li>
+<p><a href="https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects" target="_blank" rel="nofollow noopener noreferrer">Synchronizing with Effects</a></p>
+<ul>
+<li>React Docs(新しい方)に Effects のドキュメントが追加</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/nvh95/jest-preview" target="_blank" rel="nofollow noopener noreferrer"> nvh95/jest-preview</a></p>
+<ul>
+<li>testing-library で実装したテストがどのように動いているか視覚的に確認できるツール</li>
+</ul>
+</li>
+<li>
+<p><a href="https://astro.build/blog/netlify-edge-functions/" target="_blank" rel="nofollow noopener noreferrer">Astro on Netlify Edge Functions</a></p>
+<ul>
+<li>Astro で Netlify の Edge Functions が使える話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/eslint/rfcs/pull/91" target="_blank" rel="nofollow noopener noreferrer">feat: create "@eslint-community GitHub organization" RFC</a></p>
+<ul>
+<li>eslint-community org を作ってナガシマさんのリポジトリ等のメンテを引き取ろうという提案が進行しているようです</li>
+</ul>
+</li>
+<li>
+<p><a href="https://tailwindcss.com/blog/2022-05-23-headless-ui-v1-6-tailwind-ui-team-management" target="_blank" rel="nofollow noopener noreferrer">Headless UI v1.6, Tailwind UI team management, Tailwind Play improvements, and more</a></p>
+<ul>
+<li>Tailwind CSS のチームが最近行ったことまとめ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://twitter.com/_jessicasachs/status/1532283507145420801" target="_blank" rel="nofollow noopener noreferrer">Vue “vapor” - an experimental, Solid.js-inspired compilation strategy.</a></p>
+<ul>
+<li><code class="language-text">vue/vapor</code> というライブラリが Vue Amsterdam で発表されました。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nodejs.org/en/blog/announcements/nodejs16-eol/" target="_blank" rel="nofollow noopener noreferrer">Bringing forward the End-of-Life Date for Node.js 16 | Node.js</a></p>
+<ul>
+<li>Node.js v16 の EOL が 当初の予定より 7 ヶ月早まり 2023/9/11 になるとのこと</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/blog/component-encyclopedia/" target="_blank" rel="nofollow noopener noreferrer">Component Encyclopedia</a></p>
+<ul>
+<li>さまざまなプロダクトの StoryBook コンポーネントを見れる Component Encyclopedia がアップデートされた</li>
+</ul>
+</li>
+</ul>
+<h4 id="その他" style="position:relative;"><a href="#%E3%81%9D%E3%81%AE%E4%BB%96" aria-label="その他 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>その他</h4>
+<ul>
+<li>
+<p><a href="https://www.patterns.dev/" target="_blank" rel="nofollow noopener noreferrer">Patterns.dev - Modern Web App Design Patterns</a></p>
+<ul>
+<li>フロントエンドにおけるデザインパターンの解説</li>
+<li>和訳: <a href="https://zenn.dev/morinokami/books/learning-patterns-1" target="_blank" rel="nofollow noopener noreferrer">フロントエンドのデザインパターン</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://note.com/morois/n/n04022db1f76c" target="_blank" rel="nofollow noopener noreferrer">最高裁無罪判決のご報告｜モロ｜ note</a></p>
+<ul>
+<li>通称 Coinhive 事件について、最高裁で無罪判決が出た</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.whatwg.org/newline-normalizations-in-form-submission" target="_blank" rel="nofollow noopener noreferrer">The WHATWG Blog — Newline normalizations in form submission</a></p>
+<ul>
+<li>FormData の扱い＆標準化について</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/blog/541-components-from-styled-components-to-emotion/" target="_blank" rel="nofollow noopener noreferrer">How we migrated 541 components from Styled Components to Emotion with zero bugs</a></p>
+<ul>
+<li>Storybook において、Styled Components から Emotion へバグなしで移行した話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.openreplay.com/form-validation-using-javascript-s-constraint-validation-api" target="_blank" rel="nofollow noopener noreferrer">Form Validation Using JavaScript's Constraint Validation API</a></p>
+<ul>
+<li>HTML form validation の実装方法についての記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/ja-jp/lp/javascript-25/" target="_blank" rel="nofollow noopener noreferrer">25 年に渡る JavaScript の歴史 | JetBrains: プロデベロッパーとチーム向けの開発ツール | JetBrains: Developer Tools for Professionals and Teams</a></p>
+<ul>
+<li>Jet Brain による、JavaScript の歴史をまとめた Web ページ。1996 年の誕生から始まる。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.bram.us/2021/12/27/css-in-2022/" target="_blank" rel="nofollow noopener noreferrer">CSS in 2022 – Bram.us</a></p>
+<ul>
+<li>2022 年に入りそうな CSS 機能のまとめ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/webpack-contrib/mini-css-extract-plugin/issues/896" target="_blank" rel="nofollow noopener noreferrer">Breaking change with import via CommonJS in <code class="language-text">2.5.0</code> · Issue #896 · webpack-contrib/mini-css-extract-plugin</a></p>
+<ul>
+<li>webpack 経由で ESM→CJS の互換性問題で Create React App が動作しなくなった問題</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.replit.com/code-editors" target="_blank" rel="nofollow noopener noreferrer">Replit - Ace, CodeMirror, and Monaco: A Comparison of the Code Editors You Use in the Browser</a></p>
+<ul>
+<li>JavaScript で動作するブラウザ上のエディタ Ace, CodeMirror, Monaco の比較</li>
+</ul>
+</li>
+<li>
+<p><a href="https://csstracking.dev/" target="_blank" rel="nofollow noopener noreferrer">CSS Fingerprint</a></p>
+<ul>
+<li>CSS のみで Fingerprint を実現する方法についての考察記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://css-speedrun.netlify.app/" target="_blank" rel="nofollow noopener noreferrer">CSS Speedrun | Test your CSS Skills</a></p>
+<ul>
+<li>実際に入力できる、CSS のクイズページ。全 10 問で時間を計測できる</li>
+</ul>
+</li>
+<li>
+<p><a href="https://big-web-almanac-game.web.app/" target="_blank" rel="nofollow noopener noreferrer">The Big Web Almanac Quiz</a></p>
+<ul>
+<li>2021 年度の <a href="https://almanac.httparchive.org/en/2021/" target="_blank" rel="nofollow noopener noreferrer">Web Almanac</a> の内容をベースにしたクイズページ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://monorepo.tools/" target="_blank" rel="nofollow noopener noreferrer">Monorepo Explained</a></p>
+<ul>
+<li>Monorepo の解説やツールの比較</li>
+</ul>
+</li>
+<li>
+<p><a href="https://webkit.org/blog/12179/the-focus-indicated-pseudo-class-focus-visible/" target="_blank" rel="nofollow noopener noreferrer">The Focus-Indicated Pseudo-class :focus-visible | WebKit</a></p>
+<ul>
+<li><code class="language-text">:focus-visible</code> についての解説記事</li>
+</ul>
+</li>
+<li><a href="https://developers.cyberagent.co.jp/blog/archives/34364/" target="_blank" rel="nofollow noopener noreferrer">100 万行の大規模な JavaScript 製システムを TypeScript に移行するためにやったこと | CyberAgent Developers Blog</a></li>
+<li>
+<p><a href="https://privacy.yahoo.co.jp/notice/globalaccess.html" target="_blank" rel="nofollow noopener noreferrer">【重要】欧州などからご利用のお客様へ - Yahoo! JAPAN</a></p>
+<ul>
+<li>Yahoo! JAPAN が GDPR の影響から EEA および イギリスで利用不可になった。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.matuzo.at/blog/2022/heres-what-i-didnt-know-about-where/" target="_blank" rel="nofollow noopener noreferrer">Here’s what I didn’t know about :where() - Manuel Matuzović</a></p>
+<ul>
+<li>CSS における <code class="language-text">:where</code> の使い所について。ブラウザのデフォルトスタイルの打ち消しや、種類に応じた入力フォームへのスタイリングなど。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.amazon.science/blog/how-prime-video-updates-its-app-for-more-than-8-000-device-types" target="_blank" rel="nofollow noopener noreferrer">How Prime Video updates its app for more than 8,000 device types - Amazon Science</a></p>
+<ul>
+<li>Amazon Prime Vide での Wasm の利用事例</li>
+</ul>
+</li>
+<li><a href="https://www.itmedia.co.jp/news/articles/2202/03/news127.html" target="_blank" rel="nofollow noopener noreferrer">GitHub 傘下の npm、上位 100 のパッケージメンテナは 2FA 必須に - ITmedia NEWS</a></li>
+<li>
+<p><a href="https://ishadeed.com/article/building-components-svg-css/" target="_blank" rel="nofollow noopener noreferrer">Building UI Components With SVG and CSS - Ahmad Shadeed</a></p>
+<ul>
+<li>SVG と CSS のみで UI コンポーネントを構築する方法についての記事</li>
+</ul>
+</li>
+<li>
+<p><a href="http://nmi.jp/2022-02-03-dont-use-parseInt" target="_blank" rel="nofollow noopener noreferrer">JavaScript で parseInt / parseFloat を使わない方が良い理由</a></p>
+<ul>
+<li>parseInt に関する<a href="https://twitter.com/jedisct1/status/1488472046489190411" target="_blank" rel="nofollow noopener noreferrer">ツイート</a>を受けて、挙動に関しての解説と推奨される方法の紹介</li>
+</ul>
+</li>
+<li>
+<p><a href="https://bradfrost.com/blog/post/atomic-design-and-storybook/" target="_blank" rel="nofollow noopener noreferrer">Atomic Design and Storybook | Brad Frost</a></p>
+<ul>
+<li>Atomic Design と Storybook について掘り下げた記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/blog/structuring-your-storybook/" target="_blank" rel="nofollow noopener noreferrer">Structuring your Storybook</a></p>
+<ul>
+<li>Storybook の活用事例紹介</li>
+</ul>
+</li>
+<li>
+<p><a href="https://bradfrost.com/blog/post/design-system-versioning-single-library-or-individual-components/" target="_blank" rel="nofollow noopener noreferrer">Design system versioning: single library or individual components? | Brad Frost</a></p>
+<ul>
+<li>Design System Component を単一パッケージにするか個別パッケージにするかについて、それぞれの Pros/Cons など</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nathanbierema.com/redux-devtools-jira/" target="_blank" rel="nofollow noopener noreferrer">The Perfect Storm: How Redux DevTools broke Jira for 14 hours | Nathan Bierema's Blog</a></p>
+<ul>
+<li>Redux DevTools の挙動によって、Jira が表示不可になった問題について</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.leemeichin.com/posts/yes-i-can-connect-to-a-db-in-css.html" target="_blank" rel="nofollow noopener noreferrer">Yes, I can connect to a DB in CSS</a></p>
+<ul>
+<li>CSS Houdini を利用して、CSS から SQL を実行してみた記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/showcase" target="_blank" rel="nofollow noopener noreferrer">Component Encyclopedia | Storybook</a></p>
+<ul>
+<li>Storybook を利用したコンポーネントカタログや Design System の公開されている事例一覧</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/" target="_blank" rel="nofollow noopener noreferrer">Include diagrams in your Markdown files with Mermaid | The GitHub Blog</a></p>
+<ul>
+<li>GitHub のコメントで Mermaid によるグラフを描画機能が追加された話と、どう動作してるか</li>
+</ul>
+</li>
+<li><a href="https://techblog.yahoo.co.jp/entry/2022021630265506/" target="_blank" rel="nofollow noopener noreferrer">ヤフーの IE11 サポート終了の進め方 - Yahoo! JAPAN Tech Blog</a></li>
+<li>
+<p><a href="http://nmi.jp/2022-02-18-Understanding-ReDoS" target="_blank" rel="nofollow noopener noreferrer">正規表現の脆弱性 (ReDoS) を JavaScript で学ぶ</a></p>
+<ul>
+<li>正規表現における検索コストによる脆弱性(ReDoS)について</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ishadeed.com/article/cascade-layers/" target="_blank" rel="nofollow noopener noreferrer">Hello, CSS Cascade Layers - Ahmad Shadeed</a></p>
+<ul>
+<li>CSS Cascade Layers についての解説記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/antfu/vscode-file-nesting-config" target="_blank" rel="nofollow noopener noreferrer">antfu/vscode-file-nesting-config: Config of File Nesting for VS Code</a></p>
+<ul>
+<li>VSCode 上で config 系や dotfiles などをまとめてくれる拡張。作者は Anthony Fu</li>
+</ul>
+</li>
+<li>
+<p><a href="https://hacks.mozilla.org/2022/03/a-new-year-a-new-mdn/" target="_blank" rel="nofollow noopener noreferrer">A new year, a new MDN - Mozilla Hacks - the Web developer blog</a></p>
+<ul>
+<li>MDN のデザインが刷新</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/blog/monorepos" target="_blank" rel="nofollow noopener noreferrer">Monorepos are changing how teams build software – Vercel</a></p>
+<ul>
+<li>Vercel による Monorepo と Turborepo に関する記事</li>
+<li>FEE チームの nus3 からも Monorepo に関しての記事が出ている</li>
+<li><a href="https://cybozu.github.io/frontend-expert/posts/turborepo" target="_blank" rel="nofollow noopener noreferrer">workspace を使ったコマンドを最適化して実行する Turborepo について | サイボウズ フロントエンドエキスパートチーム</a></li>
+<li><a href="https://cybozu.github.io/frontend-expert/posts/considerations-for-monorepo" target="_blank" rel="nofollow noopener noreferrer">フロントエンドのモノレポ構成はスケーリングの夢を見るか | サイボウズ フロントエンドエキスパートチーム</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://medium.com/@nirbenyair/headless-components-in-react-and-why-i-stopped-using-ui-libraries-a8208197c268" target="_blank" rel="nofollow noopener noreferrer">Headless components in React and why I stopped using a UI library for our design system | by Nir Ben-Yair | Medium</a></p>
+<ul>
+<li>UI Library の利用をやめて、Headless Component に移行した話</li>
+<li>利用したのは Radix UI とのこと: <a href="https://www.radix-ui.com/" target="_blank" rel="nofollow noopener noreferrer">Primitives – Radix UI</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://engineering.q42.nl/optimizing-full-screen-images/" target="_blank" rel="nofollow noopener noreferrer">Big images, blazingly fast</a></p>
+<ul>
+<li>アムステルダム国立美術館の Web サイトを新しくするときに行ったフルスクリーン画像の最適化について</li>
+</ul>
+</li>
+<li>
+<p><a href="https://open-web-advocacy.org/" target="_blank" rel="nofollow noopener noreferrer">Open Web Advocacy</a></p>
+<ul>
+<li>オープンな Web を目的とする団体が立ち上げられた</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.freecodecamp.org/news/web-animation-performance-fundamentals/" target="_blank" rel="nofollow noopener noreferrer">Web Animation Performance Fundamentals – How to Make Your Pages Look Smooth</a></p>
+<ul>
+<li>Web アニメーション実装時にパフォーマンス面において考慮すべき点を、コード付きで解説した記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://css-tricks.com/the-selectmenu-element/" target="_blank" rel="nofollow noopener noreferrer">The selectmenu HTML Tag | CSS-Tricks - CSS-Tricks</a></p>
+<ul>
+<li>スタイリング可能な <code class="language-text">&lt;select></code> にあたる、<code class="language-text">&lt;selectmenu></code> についての話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://storybook.js.org/blog/how-storybook-helps-designers-developers-stay-in-sync/" target="_blank" rel="nofollow noopener noreferrer">How Storybook helps designers &#x26; developers stay in sync</a></p>
+<ul>
+<li>Storybook 上でデザイナーと開発者がコラボレーションするためのツールや手法の解説</li>
+</ul>
+</li>
+<li>
+<p><a href="https://itnext.io/front-end-testing-strategy-5fddfd463feb" target="_blank" rel="nofollow noopener noreferrer">Front-end Testing Strategy | by Alexis Regnaud | Medium | ITNEXT</a></p>
+<ul>
+<li>フロントエンドのテスト戦略について。なぜテストを書くのか、どういったテストが存在するのか</li>
+</ul>
+</li>
+<li>
+<p><a href="https://devblogs.microsoft.com/typescript/a-proposal-for-type-syntax-in-javascript/" target="_blank" rel="nofollow noopener noreferrer">A Proposal For Type Syntax in JavaScript - TypeScript</a></p>
+<ul>
+<li>ECMAScript 上での型サポートについて、TypeScript から Stage 0 proposal が提出された</li>
+</ul>
+</li>
+<li><a href="https://postd.cc/top-web-developer-pain-points-in-2021/" target="_blank" rel="nofollow noopener noreferrer">Web 開発者の悩みの種ランキング（2021 年版） | POSTD</a></li>
+<li>
+<p><a href="https://blog.flatt.tech/entry/xss_risk" target="_blank" rel="nofollow noopener noreferrer">開発者が知っておきたい「XSS の発生原理以外」の話 - Flatt Security Blog</a></p>
+<ul>
+<li>XSS で "アラートが出た!" の向こう側として、実際どういった被害になるのかなどについて解説</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/jxck/scraps/80c3e1c272c02b" target="_blank" rel="nofollow noopener noreferrer">ロシア情勢が Web / Internet / Tech に与えた影響の記録 2022 年 3 月</a></li>
+<li>
+<p><a href="https://blog.chromium.org/2022/03/how-chrome-became-highest-scoring.html" target="_blank" rel="nofollow noopener noreferrer">Chromium Blog: How Chrome Became the Highest Scoring Browser on Speedometer, Ever</a></p>
+<ul>
+<li>Chrome が <a href="https://browserbench.org/Speedometer2.0/" target="_blank" rel="nofollow noopener noreferrer">Speedmeter</a> で最高スコアを出すまでの話</li>
+</ul>
+</li>
+<li><a href="https://reactnative.dev/blog/2022/03/15/an-update-on-the-new-architecture-rollout" target="_blank" rel="nofollow noopener noreferrer">An update on the New Architecture Rollout · React Native</a></li>
+<li>
+<p><a href="https://www.digitalocean.com/blog/css-tricks-joins-digitalocean" target="_blank" rel="nofollow noopener noreferrer">CSS-Tricks joins DigitalOcean, expanding our commitment to community</a></p>
+<ul>
+<li>DigitalOcean が CSS-Tricks を買収した。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://cybozu.github.io/frontend-expert/posts/css-cascade-layers" target="_blank" rel="nofollow noopener noreferrer">主要ブラウザで使える！CSS Cascade Layers で新しい CSS 設計の手法を考える</a></p>
+<ul>
+<li>Chrome、Firefox、Edge、Safari の最新版で導入された Cascade Layers の解説記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://remix.run/blog/remix-stacks" target="_blank" rel="nofollow noopener noreferrer">Remix Stacks</a></p>
+<ul>
+<li>Remix で CICD、データベース、ユーザー認証を含んだアプリケーションが簡単に構築できるセットのようなもの</li>
+</ul>
+</li>
+<li>
+<p><a href="https://medium.com/getaround-eu/colors-that-make-sense-505d0f3509c1" target="_blank" rel="nofollow noopener noreferrer">Colors that make sense</a></p>
+<ul>
+<li>色の命名規則についての話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.smashingmagazine.com/2022/03/windows-high-contrast-colors-mode-css-custom-properties/" target="_blank" rel="nofollow noopener noreferrer">Windows High Contrast Mode, Forced Colors Mode And CSS Custom Properties</a></p>
+<ul>
+<li>メディアクエリの forced-colors の紹介</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.bitsrc.io/when-try-catch-doesnt-catch-errors-in-node-js-d2f339ed9cf4" target="_blank" rel="nofollow noopener noreferrer">When Try-Catch Doesn’t Catch Errors in Node.js</a></p>
+<ul>
+<li>Node.js で EventEmitter 利用時に try-catch で catch できないケースの話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.joshwcomeau.com/operator-lookup/" target="_blank" rel="nofollow noopener noreferrer">Operator Lookup</a></p>
+<ul>
+<li>JS の演算子の名前なんだっけなってなったらこちら</li>
+</ul>
+</li>
+<li>
+<p><a href="https://goodereader.com/blog/electronic-readers/amazon-kindle-ui-is-switching-from-javascript-to-react-native" target="_blank" rel="nofollow noopener noreferrer">Amazon Kindle UI is switching from Java to React Native</a></p>
+<ul>
+<li>Kindle の UI が新しく ReactNative で実装された話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://typescriptbook.jp/code-reading-assistant" target="_blank" rel="nofollow noopener noreferrer">TypeScript 解読アシスタント</a></p>
+<ul>
+<li>TS のあれこれがなんだっけなってなったらこちら</li>
+</ul>
+</li>
+<li>
+<p><a href="https://aws.amazon.com/jp/about-aws/whats-new/2022/04/aws-lambda-function-urls-built-in-https-endpoints/" target="_blank" rel="nofollow noopener noreferrer">AWS Lambda 関数 URL: Lambda 関数用の組み込み HTTPS エンドポイント</a></p>
+<ul>
+<li>AWS Lambda が 単体で HTTPS エンドポイント生やせるようになった</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.joshwcomeau.com/css/understanding-layout-algorithms/" target="_blank" rel="nofollow noopener noreferrer">Understanding Layout Algorithms</a></p>
+<ul>
+<li>CSS のプロパティの値を理解するだけでなく、レイアウトアルゴリズムを理解するのも大事だよって記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://meyerweb.com/eric/thoughts/2022/03/14/if-or-when/" target="_blank" rel="nofollow noopener noreferrer">When or If</a></p>
+<ul>
+<li>CSS の条件構文の標準化の話し合いで <code class="language-text">@if ~ @else</code> にするか <code class="language-text">@when ~ @else</code> にするかでわちゃわちゃしてる話。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.sitepen.com/blog/doing-it-all-with-deno" target="_blank" rel="nofollow noopener noreferrer">Doing It All With Deno</a></p>
+<ul>
+<li>クライアントサイドからサーバーサイドまで全てを Deno で作ってみよう</li>
+</ul>
+</li>
+<li>
+<p><a href="https://spreadprivacy.com/introducing-duckduckgo-for-mac/" target="_blank" rel="nofollow noopener noreferrer">Introducing DuckDuckGo for Mac: A Private, Fast, and Secure Browsing App</a></p>
+<ul>
+<li>プライベートで高速らしいブラウザ DuckDuckGo for Mac のベータ版がリリース</li>
+</ul>
+</li>
+<li>
+<p><a href="https://devblog.thebase.in/entry/2022/04/13/114714" target="_blank" rel="nofollow noopener noreferrer">なぜ我々は session.cookie を変更しなければならなかったのか</a></p>
+<ul>
+<li>Public Suffix List への追加とそれによって起きた障害？についての話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.blog/2022-04-15-security-alert-stolen-oauth-user-tokens/" target="_blank" rel="nofollow noopener noreferrer">Security alert: Attack campaign involving stolen OAuth user tokens issued to two third-party integrators</a></p>
+<ul>
+<li>Heroku と Travis CI から OAuth のアクセストークンが流出、npm などのプライベートリポジトリに対して不正アクセスが発生した</li>
+</ul>
+</li>
+<li>
+<p><a href="https://trap.jp/post/1549/" target="_blank" rel="nofollow noopener noreferrer">350 行でつくる Vite⚡</a></p>
+<ul>
+<li>Vite の仕組みをざっくり理解するのに良さそう</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/introducing-d1/" target="_blank" rel="nofollow noopener noreferrer">Announcing D1: our first SQL database</a></p>
+<ul>
+<li>CloudFlare から D1 リリースのお知らせ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/introducing-the-wintercg/" target="_blank" rel="nofollow noopener noreferrer">A Community Group for Web-interoperable JavaScript runtimes</a></p>
+<ul>
+<li>CloudFlare,Vercel,Shopify と Node.js,Deno のコアコントリビューターで Web-interoperable Runtimes Community Group を設立。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/state-of-css-2022/" target="_blank" rel="nofollow noopener noreferrer">State of CSS 2022</a></p>
+<ul>
+<li>最近の CSS について一気に紹介されているまとめページ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=5b4YcLB4DVI" target="_blank" rel="nofollow noopener noreferrer">What’s new for the web platform</a></p>
+<ul>
+<li>Web API や CSS の情報まとめ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=CF5zZZy0R9U" target="_blank" rel="nofollow noopener noreferrer">Bringing Adobe’s Creative Cloud to the web: Starting with Photoshop</a></p>
+<ul>
+<li>Photoshop の Web 版を作った話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://nekorails.hatenablog.com/entry/2022/05/16/170434" target="_blank" rel="nofollow noopener noreferrer">Hotwire の良かった点、辛かった点、向いているケース、向いていないケース</a></p>
+<ul>
+<li>Rails の Hotwire の話。つらみがにじみ出ている</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/r2-open-beta/" target="_blank" rel="nofollow noopener noreferrer">A New Hope for Object Storage: R2 enters open beta</a></p>
+<ul>
+<li>S3 互換な CloudFlare の object storage</li>
+</ul>
+</li>
+<li>
+<p><a href="https://tinyclouds.org/javascript_containers" target="_blank" rel="nofollow noopener noreferrer">JavaScript Containers</a></p>
+<ul>
+<li>Node.js や Deno の Original Author である Ryan Dahl が書いた、JavaScript が Universal Language になってきているという話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.builder.io/blog/hydration-is-pure-overhead" target="_blank" rel="nofollow noopener noreferrer">Hydration is Pure Overhead</a></p>
+<ul>
+<li>SSR したとき Client Hydration がムダという問題を解決するアプローチとして、イベントハンドラの JS を遅延読み込みするライブラリを開発した話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/articles/inert/" target="_blank" rel="nofollow noopener noreferrer">Introducing inert</a></p>
+<ul>
+<li>クリックやフォーカス、支援技術を使ったユーザー操作から無視されるようになる inert 属性の紹介</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/changelog/astro-projects-can-now-be-deployed-with-zero-configuration" target="_blank" rel="nofollow noopener noreferrer">Astro projects can now be deployed with zero configuration</a></p>
+<ul>
+<li>ゼロコンフィグで Vercel に Astor がデプロイできるようになった</li>
+</ul>
+</li>
+<li>
+<p><a href="https://stripe.com/blog/migrating-to-typescript" target="_blank" rel="nofollow noopener noreferrer">Migrating millions of lines of code to TypeScript</a></p>
+<ul>
+<li>Stripe が 370 万行の Flowtype を TypeScript に変換した話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/mugi/articles/334f9556095a07" target="_blank" rel="nofollow noopener noreferrer">RedwoodJS を Ruby on Rails と比較してみる</a></p>
+<ul>
+<li>RedwoodJS と Ruby on Rails の比較記事</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/" target="_blank" rel="nofollow noopener noreferrer">The Surprising Truth About Pixels and Accessibility</a></p>
+<ul>
+<li>px と rem/em どっち使う？という話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://material.io/blog/roboto-flex" target="_blank" rel="nofollow noopener noreferrer">Roboto … But Make It Flex</a></p>
+<ul>
+<li>Google Fonts に Roboto Flex という新しい Variable Fonts が追加されました。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/building-a-button-component/" target="_blank" rel="nofollow noopener noreferrer">Building a button component</a></p>
+<ul>
+<li>ダークモード・ライトモードや a11y を意識したボタンコンポーネントの作り方について</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/jxck/articles/cache-anatomia-release-note" target="_blank" rel="nofollow noopener noreferrer">Web 技術解体新書「第二章 Cache 解体新書」リリース</a></p>
+<ul>
+<li>Jxck さんによる Cache を解き明かした Zenn book</li>
+</ul>
+</li>
+</ul>
+<h3 id="下期-202207-202212" style="position:relative;"><a href="#%E4%B8%8B%E6%9C%9F-202207-202212" aria-label="下期 202207 202212 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>下期 (2022/07-2022/12)</h3>
+<ul>
+<li>担当: <a href="https://twitter.com/nakajmg" target="_blank" rel="nofollow noopener noreferrer">@nakajmg</a> <a href="https://twitter.com/b4h0_c4t" target="_blank" rel="nofollow noopener noreferrer">@nus3_</a></li>
+</ul>
+<h4 id="リリースなど" style="position:relative;"><a href="#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AA%E3%81%A9" aria-label="リリースなど permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>リリースなど</h4>
+<ul>
+<li><a href="https://twitter.com/Browserslist/status/1539338868230705152" target="_blank" rel="nofollow noopener noreferrer">Browserslist 4.21 で IE11 が "dead" に追加され、デフォルトブラウザ一覧から外された</a></li>
+<li><a href="https://tailwindui.com/templates" target="_blank" rel="nofollow noopener noreferrer">Tailwind CSS から React, Next.js で作られた template がリリース</a></li>
+<li><a href="https://github.com/nuxt/framework/pull/5443/files" target="_blank" rel="nofollow noopener noreferrer">Nuxt v3 のリリースが延期</a></li>
+<li><a href="https://github.com/vitejs/vite/blob/v3.0.0-beta.0/packages/vite/CHANGELOG.md" target="_blank" rel="nofollow noopener noreferrer">Vite 3.0.0-beta</a></li>
+<li>
+<p><a href="https://deno.com/blog/fresh-is-stable" target="_blank" rel="nofollow noopener noreferrer">Fresh 1.0</a></p>
+<ul>
+<li>Deno からでた full stack web framework。クライアントサイドは Preact。Astro と同じ Island アーキテクチャを採用。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-12-2" target="_blank" rel="nofollow noopener noreferrer">Next.js 12.2</a></li>
+<li><a href="https://twitter.com/tannerlinsley/status/1542925072502968320?s=20&#x26;t=1b-n50PGax_zoV846EnHrQ" target="_blank" rel="nofollow noopener noreferrer">TanStack Table v8</a></li>
+<li><a href="https://github.com/prisma/prisma/releases/tag/4.0.0" target="_blank" rel="nofollow noopener noreferrer">Prisma v4</a></li>
+<li>
+<p><a href="https://deno.com/blog/deploy-beta4" target="_blank" rel="nofollow noopener noreferrer">Deno Deploy Beta 4</a></p>
+<ul>
+<li>Deno が始めた Deno 向けのエッジコンピューティングサービス「DenoDeploy」。</li>
+</ul>
+</li>
+<li><a href="https://code.visualstudio.com/updates/v1_69" target="_blank" rel="nofollow noopener noreferrer">Visual Studio Code June 2022</a></li>
+<li>
+<p><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-8-beta/" target="_blank" rel="nofollow noopener noreferrer">Announcing TypeScript 4.8 Beta - TypeScript</a></p>
+<ul>
+<li>unknown の型の定義が厳格に。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vitejs.dev/blog/announcing-vite3.html" target="_blank" rel="nofollow noopener noreferrer">Vite 3.0 is out! | Vite</a></p>
+<ul>
+<li>ドキュメントが刷新。</li>
+<li>開発用サーバーのポート番号の変更。</li>
+<li>サポートブラウザバージョンの変更など。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/playwright/releases/tag/v1.24.0" target="_blank" rel="nofollow noopener noreferrer">Release v1.24.0 · microsoft/playwright</a></p>
+<ul>
+<li>describe の title なしが可能になって、Component Test に使用できる beforeMount と afterMount が追加。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0" target="_blank" rel="nofollow noopener noreferrer">Announcing Docusaurus 2.0 | Docusaurus</a></p>
+<ul>
+<li>MDX が利用できるようになったり、プラグインが作れるようになったり、なぜこのタイミングで 2.0 になったか、また 3.0 ではどのようなことをするかが紹介。</li>
+</ul>
+</li>
+<li><a href="https://github.com/withastro/astro/releases/tag/astro%401.0.0-rc.1" target="_blank" rel="nofollow noopener noreferrer">Release astro@1.0.0-rc.1 · withastro/astro</a></li>
+<li>
+<p><a href="https://storybook.js.org/blog/storybook-7-0-design-sneak-peek/" target="_blank" rel="nofollow noopener noreferrer">Storybook 7.0 design sneak peek</a></p>
+<ul>
+<li>Storybook7.0 の紹介。</li>
+<li>ツールバーが新しくなる。</li>
+<li>7.0 からは Storybook があらかじめバンドルされる。</li>
+<li>バンドルサイズを削減するための依存関係の見直し。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://astro.build/blog/astro-1/" target="_blank" rel="nofollow noopener noreferrer">Astro 1.0 | Astro</a></p>
+<ul>
+<li>画像の最適化や MDX のサポート、Vite の 3.0 の採用などが新しく含まれる。</li>
+</ul>
+</li>
+<li><a href="https://github.com/npm/rfcs/blob/3d5b2130504139bdc8a3b599923aa07d2ff79c96/accepted/0000-dependency-selector-syntax.md" target="_blank" rel="nofollow noopener noreferrer">npm v8.16.0 で npm query が追加</a></li>
+<li>
+<p><a href="https://github.com/prettier/prettier/releases/tag/3.0.0-alpha.0" target="_blank" rel="nofollow noopener noreferrer">Release 3.0.0-alpha.0 · prettier/prettier</a></p>
+<ul>
+<li>影響が大きそうな breaking change として</li>
+<li>trailingComma のデフォルト値が "all"。</li>
+<li>Node.js の最低要件が v14。</li>
+</ul>
+</li>
+<li><a href="https://github.com/rollup/rollup/pull/4549" target="_blank" rel="nofollow noopener noreferrer">Rollup v3</a></li>
+<li><a href="https://remix.run/blog/react-router-v6.4" target="_blank" rel="nofollow noopener noreferrer">React Router 6.4 Release | Remix</a></li>
+<li>
+<p><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/" target="_blank" rel="nofollow noopener noreferrer">Announcing TypeScript 4.9 Beta - TypeScript</a></p>
+<ul>
+<li>as よりも強力に型推論してくれる satisfies operator の追加</li>
+<li>in operator による型の絞り込みがより使いやすくなった</li>
+<li>NaN との直接比較がエラーになる</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-140/" target="_blank" rel="nofollow noopener noreferrer">Astro 1.4.0 Release | Astro</a></li>
+<li><a href="https://blog.vuejs.org/posts/volar-1.0.html" target="_blank" rel="nofollow noopener noreferrer">Volar 1.0 "Nika" Released! | The Vue Point</a></li>
+<li><a href="https://eslint.org/blog/2022/10/eslint-v8.25.0-released/" target="_blank" rel="nofollow noopener noreferrer">ESLint v8.25.0 released - ESLint - Pluggable JavaScript Linter</a></li>
+<li><a href="https://github.com/microsoft/playwright/releases/tag/v1.27.0" target="_blank" rel="nofollow noopener noreferrer">Release v1.27.0 · microsoft/playwright</a></li>
+<li><a href="https://www.gatsbyjs.com/blog/gatsby-v5-alpha-is-here-and-its-pretty-exciting/" target="_blank" rel="nofollow noopener noreferrer">Gatsby v5 Alpha is Here (and it’s Pretty Exciting!) | Gatsby</a></li>
+<li>
+<p><a href="https://nextjs.org/blog/next-13" target="_blank" rel="nofollow noopener noreferrer">Blog - Next.js 13 | Next.js</a></p>
+<ul>
+<li>app ディレクトリによる Layouts や Server Components の利用や、Data Fetching 周りで変更などが含まれます。加えて、Alpha 機能として ビルドに Turbopack が利用可能になっています。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vuetifyjs/vuetify/releases/tag/v3.0.0" target="_blank" rel="nofollow noopener noreferrer">Release v3.0.0 · vuetifyjs/vuetify</a></li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-rc/" target="_blank" rel="nofollow noopener noreferrer">Announcing TypeScript 4.9 RC - TypeScript</a></li>
+<li><a href="https://turbo.build/blog/turbo-1-6-0" target="_blank" rel="nofollow noopener noreferrer">Turborepo 1.6 – Turbo</a></li>
+<li>
+<p><a href="https://www.solidjs.com/blog/introducing-solidstart" target="_blank" rel="nofollow noopener noreferrer">Introducing SolidStart</a></p>
+<ul>
+<li>SolidJS のフレームワークの SolidStart が beta に</li>
+</ul>
+</li>
+<li>
+<p><a href="https://rome.tools/blog/2022/11/08/rome-10/" target="_blank" rel="nofollow noopener noreferrer">Announcing Rome v10</a></p>
+<ul>
+<li>Rust で rewrite してから初めての stable リリース</li>
+</ul>
+</li>
+<li>
+<p><a href="https://deno.com/blog/v1.28" target="_blank" rel="nofollow noopener noreferrer">Deno 1.28: Featuring 1.3 Million New Modules</a></p>
+<ul>
+<li>Deno で npm パッケージを stable に使えるようになった</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/13584/release-notes-for-safari-technology-preview-158/" target="_blank" rel="nofollow noopener noreferrer">Release Notes for Safari Technology Preview 158 | WebKit</a></li>
+</ul>
+<h4 id="ブラウザ関連-1" style="position:relative;"><a href="#%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E9%96%A2%E9%80%A3-1" aria-label="ブラウザ関連 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ブラウザ関連</h4>
+<ul>
+<li>
+<p><a href="https://www.w3.org/TR/css-color-5/" target="_blank" rel="nofollow noopener noreferrer">CSS Working Group の W3C のドキュメントで web-platform-tests の状況が分かりやすくなった</a></p>
+<ul>
+<li><a href="https://wpt.fyi/results/?label=experimental&#x26;label=master&#x26;aligned" target="_blank" rel="nofollow noopener noreferrer">web-platform-tests dashboard</a></li>
+</ul>
+</li>
+<li>
+<p>Webkit が Github に移行</p>
+<ul>
+<li><a href="https://github.com/WebKit/WebKit" target="_blank" rel="nofollow noopener noreferrer">https://github.com/WebKit/WebKit</a></li>
+<li><a href="https://github.com/WebKit/standards-positions" target="_blank" rel="nofollow noopener noreferrer">https://github.com/WebKit/standards-positions</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://twitter.com/intenttoship/status/1546410938991104000?s=20&#x26;t=7LrqibrGtZsj315xVW-S3w" target="_blank" rel="nofollow noopener noreferrer">Blink: Intent to Ship: fetch() upload streaming</a></p>
+<ul>
+<li>Chrome 105 で fetch() upload streaming が ship。</li>
+<li>今ままで WebRTC とかでやっていた stream が fetch で扱えるように。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/help-css-nesting/" target="_blank" rel="nofollow noopener noreferrer">Help pick a syntax for CSS nesting - Chrome Developers</a></p>
+<ul>
+<li>CSS をネストさせる際にどのような構文がいいかを Chrome でアンケート。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.chromium.org/2022/06/chrome-104-beta-new-media-query-syntax.html" target="_blank" rel="nofollow noopener noreferrer">Chromium Blog: Chrome 104 Beta: New Media Query Syntax, Region Capture, and More</a></p>
+<ul>
+<li>Chrome 104 で実装される機能などのまとめ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/has-m105/" target="_blank" rel="nofollow noopener noreferrer">:has(): the family selector - Chrome Developers</a></p>
+<ul>
+<li>Chrome 105 で新しく追加される CSS の疑似要素 <code class="language-text">:has()</code> の紹介記事。</li>
+<li><code class="language-text">:has()</code> が適用される要素が特定のセレクターを持つ子要素を含んでいるかを判別することができる。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/has-with-cq-m105/" target="_blank" rel="nofollow noopener noreferrer">@container and :has(): two powerful new responsive APIs landing in Chromium 105 - Chrome Developers</a></p>
+<ul>
+<li>Chrome 105 で新しく追加される <code class="language-text">@container</code> クエリと上述されている <code class="language-text">has()</code> の紹介記事。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/Pw4cLvAUGco" target="_blank" rel="nofollow noopener noreferrer">Intent to Ship: CSS 'ic' Length Unit</a></p>
+<ul>
+<li><code class="language-text">ic</code> という新しいサイズ指定単位の話。</li>
+<li>"水"という漢字一個分の横幅を <code class="language-text">1ic</code> と定める。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/css-individual-transform-properties/" target="_blank" rel="nofollow noopener noreferrer">Finer grained control over CSS transforms with individual transform properties</a></p>
+<ul>
+<li>主要 3 ブラウザに <code class="language-text">transform</code> プロパティを個別で指定できる機能が実装。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/blog/framework-fund-2022/" target="_blank" rel="nofollow noopener noreferrer">An Update On Chrome’s Web Framework Funding for 2022 - Chrome Developers</a></p>
+<ul>
+<li>Chrome がパフォーマンスやユーザー体験、開発体験を向上させるプロジェクトに対して Open Collective を通して 50 万ドルの寄付。</li>
+<li>対象のプロジェクトは Nuxt.js や Vue.js、Vite、Astor、Svelte、Preact、ESLint、Rollup など。</li>
+</ul>
+</li>
+<li><a href="https://blog.chromium.org/2022/09/chrome-106-beta-new-css-features.html" target="_blank" rel="nofollow noopener noreferrer">Chromium Blog: Chrome 106 Beta: New CSS Features, WebCodecs and WebXR Improvements, and More</a></li>
+<li>
+<p><a href="https://developer.chrome.com/docs/devtools/performance-insights/" target="_blank" rel="nofollow noopener noreferrer">Performance insights: Get actionable insights on your website's performance - Chrome Developers</a></p>
+<ul>
+<li>Chrome DevTools の Performance insights の機能について。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/2022/WD-trusted-types-20220927/" target="_blank" rel="nofollow noopener noreferrer">Trusted Types が working draft に</a></p>
+<ul>
+<li>型レベルで特定の validator を通ったことを保証できる。XSS などを防ぐのに有用</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/en/blog/help-css-nesting-results/" target="_blank" rel="nofollow noopener noreferrer">Help pick a syntax for CSS nesting survey results - Chrome Developers</a></p>
+<ul>
+<li>CSS のネストの仕様について</li>
+</ul>
+</li>
+<li><a href="https://hidde.blog/dialog-modal-popover-differences/" target="_blank" rel="nofollow noopener noreferrer">Dialogs, modality and popovers seem similar. How are they different? | hidde.blog</a></li>
+<li>
+<p><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/zV9K3hdBwDM" target="_blank" rel="nofollow noopener noreferrer">Intent to Experiment: CSS Initial Letters</a></p>
+<ul>
+<li>CSS で先頭の文字だけ大きくするやつの Experiment が Chrome で開始した。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/tc39/agendas/blob/main/2022/11.md" target="_blank" rel="nofollow noopener noreferrer">agendas/11.md at main · tc39/agendas</a></p>
+<ul>
+<li>TC39 のミーティングに向けたアジェンダが公開されてる。Stage3 の文法に対する議論や Stage3 へ上げる議論が結構ある。</li>
+</ul>
+</li>
+<li>
+<p><a href="http://nmi.jp/2022-11-21-Understanding-setTimeout-completely" target="_blank" rel="nofollow noopener noreferrer">setTimeout を完璧に理解する</a></p>
+<ul>
+<li>setTimeout の仕様や挙動について各ブラウザやランタイムでの比較を交えながら詳しく解説している記事</li>
+</ul>
+</li>
+<li><a href="https://hacks.mozilla.org/2022/10/revamp-of-mdn-web-docs-contribution-docs/" target="_blank" rel="nofollow noopener noreferrer">Revamp of MDN Web Docs Contribution Docs - Mozilla Hacks - the Web developer blog</a></li>
+<li><a href="https://twitter.com/FirefoxDevTools/status/1595076200199749633" target="_blank" rel="nofollow noopener noreferrer">Container queries are enabled on latest @FirefoxNightly</a></li>
+<li><a href="https://github.com/mozilla/standards-positions/pull/704" target="_blank" rel="nofollow noopener noreferrer">Add position for WebMIDI (Add-On Gated) by bholley · Pull Request #704 · mozilla/standards-positions</a></li>
+<li>
+<p><a href="https://github.com/whatwg/html/issues/8538" target="_blank" rel="nofollow noopener noreferrer">An iframe whose history can be transferred across parent navigations · Issue #8538 · whatwg/html</a></p>
+<ul>
+<li>画面遷移しても消えない(リセットされない) iframe の提案</li>
+</ul>
+</li>
+</ul>
+<h4 id="イベント-1" style="position:relative;"><a href="#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88-1" aria-label="イベント 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>イベント</h4>
+<ul>
+<li>
+<p><a href="https://viteconf.org/" target="_blank" rel="nofollow noopener noreferrer">ViteConf</a></p>
+<ul>
+<li>Vite 　のオンラインカンファレンスが 10/11-12 で開催。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/conf" target="_blank" rel="nofollow noopener noreferrer">Next.js Conf 2022</a></li>
+<li><a href="https://vuefes.jp/2022/" target="_blank" rel="nofollow noopener noreferrer">Vue Fes Japan Online 2022</a></li>
+</ul>
+<h4 id="oss-関連-1" style="position:relative;"><a href="#oss-%E9%96%A2%E9%80%A3-1" aria-label="oss 関連 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OSS 関連</h4>
+<ul>
+<li><a href="https://deno.com/blog/series-a" target="_blank" rel="nofollow noopener noreferrer">Deno が 2100 万ドルを調達</a></li>
+<li><a href="https://twitter.com/geteslint/status/1540032964087623681?s=20&#x26;t=Pemg-gaTC8n8amlhmU6vTQ" target="_blank" rel="nofollow noopener noreferrer">ESLint のサイトがリデザイン</a></li>
+<li><a href="https://v8.dev/features/regexp-v-flag" target="_blank" rel="nofollow noopener noreferrer">V8 チームの RegExp v フラグについての記事</a></li>
+<li><a href="https://www.snowpack.dev/" target="_blank" rel="nofollow noopener noreferrer">snowpack のメンテナンスが終了</a></li>
+<li><a href="https://remix.run/blog/remix-data-flow" target="_blank" rel="nofollow noopener noreferrer">Remix でのデータの流れの解説</a></li>
+<li><a href="https://zenn.dev/nissy_dev/articles/create-swc-plugin" target="_blank" rel="nofollow noopener noreferrer">SWC plugin を作成し、 Next.js に導入する方法</a></li>
+<li><a href="https://the-guild.dev/blog/houdini-and-kitql" target="_blank" rel="nofollow noopener noreferrer">Svelte での GraphQL 体験を最高にする KitQL + Houdini 構成について</a></li>
+<li><a href="https://dev.to/hypeddev/the-react-core-team-finally-have-opinions-about-css-16f0" target="_blank" rel="nofollow noopener noreferrer">React コアチームの dan が React での CSS について回答してたまとめ</a></li>
+<li><a href="https://blog.koh.dev/2022-07-02-jest-speedup/" target="_blank" rel="nofollow noopener noreferrer">Jest でテストを分割して実行できる--shard オプションについて</a></li>
+<li>
+<p><a href="https://bun.sh/" target="_blank" rel="nofollow noopener noreferrer">Bun — fast all-in-one JavaScript runtime</a></p>
+<ul>
+<li>新しい JS ランタイムとして Bun がリリース。</li>
+<li>edge で動くことを想定。</li>
+<li>バンドラー、トランスパイラー、パッケージマネージャーを含む。</li>
+<li>Bun 内部は ESM。</li>
+<li>npm パッケージが利用できる。</li>
+<li>TS, JSX がトランスパイルできる。</li>
+<li>SQLite クライアントがビルトイン。</li>
+<li>Jest ライクのテストランナーがビルトイン。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank" rel="nofollow noopener noreferrer">Synchronizing with Effects</a></p>
+<ul>
+<li>React Docs BETA に記載されている useEffect についてのページ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://reactnative.dev/blog/2022/07/08/hermes-as-the-default" target="_blank" rel="nofollow noopener noreferrer">Hermes as the Default · React Native</a></p>
+<ul>
+<li>React Native 0.70.0 から　 JS エンジンのデフォルトが Hermes になる。</li>
+<li>以前のバージョンと比べてどの程度速くなるかの比較の解説もある。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/akfm/articles/next-js-scroll-restore" target="_blank" rel="nofollow noopener noreferrer">Next.js はどうやってスクロール位置を復元するのか</a></p>
+<ul>
+<li>Next.js の実験的なオプション scrollRestoration に関しての記事。</li>
+<li>Chrome/Safari などでの挙動の差異などについても説明されている。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://dev.to/haykerman/say-no-to-tailwind-embrace-plain-css-5cn7" target="_blank" rel="nofollow noopener noreferrer">Say no to Tailwind, embrace plain CSS - DEV Community 👩‍💻👨‍💻</a></p>
+<ul>
+<li>Tailwind CSS の採用の是非を議論している記事。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/aidenybai/million" target="_blank" rel="nofollow noopener noreferrer">aidenybai/million: Virtual DOM into the future! 🔟🔼6️⃣</a></p>
+<ul>
+<li>ライブラリに依存しない軽量な VirtualDOM。</li>
+<li>Vercel がスポンサーをしている。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/remix-run/remix/blob/deferred/docs/guides/streaming.md" target="_blank" rel="nofollow noopener noreferrer">remix/streaming.md at deferred · remix-run/remix</a></p>
+<ul>
+<li>Remix の deferred api についてのドキュメント。</li>
+<li>React 18 の Suspense を使用する際に起こるデータの流れとそのソリューションについての解説も合わせられている。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/ronami/HypeScript" target="_blank" rel="nofollow noopener noreferrer">ronami/HypeScript: 🐬 A simplified implementation of TypeScript's type system written in TypeScript's type system</a></p>
+<ul>
+<li>TypeScript の型システムを TypeScript の型システムで実装したリポジトリ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://postd.cc/how-react-server-components-work/" target="_blank" rel="nofollow noopener noreferrer">React Server Components の仕組み：詳細ガイド | POSTD</a></p>
+<ul>
+<li><a href="https://www.plasmic.app/blog/how-react-server-components-work" target="_blank" rel="nofollow noopener noreferrer">How React server components work: an in-depth guide</a>の日本語での解説記事。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/tc39/proposal-object-pick-or-omit" target="_blank" rel="nofollow noopener noreferrer">tc39/proposal-object-pick-or-omit: Ergonomic Dynamic Object Restructuring.</a></p>
+<ul>
+<li>Stage 1 になった Object に対して omit と pick ができるようになる proposal。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://twitter.com/nextjs/status/1549841497822056454?s=20&#x26;t=KZQlJD8bZKNyAiGECb5H9Q" target="_blank" rel="nofollow noopener noreferrer">Next.js の Layout RFC がどのように動くかのデモ</a></p>
+<ul>
+<li>Next.js の Layouts RFC を使った挙動を動画付きで紹介。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://eslint.org/blog/2022/08/new-config-system-part-2/" target="_blank" rel="nofollow noopener noreferrer">ESLint's new config system, Part 2: Introduction to flat config - ESLint - Pluggable JavaScript Linter</a></p>
+<ul>
+<li>ESLint が flat config と呼ばれる新しい設定方法を紹介。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/react-native-community/discussions-and-proposals/pull/496" target="_blank" rel="nofollow noopener noreferrer">RFC: Reduce API fragmentation across platforms by necolas · Pull Request #496 · react-native-community/discussions-and-proposals</a></p>
+<ul>
+<li>React Native の API を Web 標準に準拠させる活動を進めている。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://deno.com/blog/changes" target="_blank" rel="nofollow noopener noreferrer">Big Changes Ahead for Deno</a></p>
+<ul>
+<li>Deno が npm との互換性に対応する方針を発表。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/ankitpokhrel/jira-cli" target="_blank" rel="nofollow noopener noreferrer">ankitpokhrel/jira-cli: 🔥 [WIP] Feature-rich interactive Jira command line.</a></p>
+<ul>
+<li><code class="language-text">gh</code>のような Jira 用の CLI。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://deno-ja.deno.dev/" target="_blank" rel="nofollow noopener noreferrer">deno-ja | Deno Japan Users Group</a></p>
+<ul>
+<li>Deno の日本コミュニティ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/facebook/react/pull/25084" target="_blank" rel="nofollow noopener noreferrer">experimental_use(promise) by acdlite · Pull Request #25084 · facebook/react</a></p>
+<ul>
+<li>React に promise に関する内部 api が実装される予定。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/mugi/articles/prisma-orm-4_2" target="_blank" rel="nofollow noopener noreferrer">Prisma OpenTelemetry tracing で Prisma のボトルネックを追う</a></li>
+<li>
+<p><a href="https://github.com/sakofchit/system.css" target="_blank" rel="nofollow noopener noreferrer">sakofchit/system.css: A design system for building retro Apple interfaces</a></p>
+<ul>
+<li>昔の Mac 風 UI を再現できる CSS。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank" rel="nofollow noopener noreferrer">tailwindlabs/tailwindcss-forms</a></p>
+<ul>
+<li>上書きも容易な tailwind 用の form plugin。</li>
+</ul>
+</li>
+<li><a href="https://opencollective.com/open-web-docs/updates/apple-joins-the-open-web-docs-steering-committee" target="_blank" rel="nofollow noopener noreferrer">Apple joins the Open Web Docs Steering Committee - Open Collective</a></li>
+<li>
+<p>React Docs BETA に新しいドキュメントが追加</p>
+<ul>
+<li><a href="https://beta.reactjs.org/learn/separating-events-from-effects" target="_blank" rel="nofollow noopener noreferrer">Separating Events from Effects</a></li>
+<li><a href="https://beta.reactjs.org/learn/lifecycle-of-reactive-effects" target="_blank" rel="nofollow noopener noreferrer">Lifecycle of Reactive Effects</a></li>
+<li><a href="https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks" target="_blank" rel="nofollow noopener noreferrer">Reusing Logic with Custom Hooks</a></li>
+</ul>
+</li>
+<li><a href="https://blog.uhy.ooo/entry/2022-10-01/tailwind/" target="_blank" rel="nofollow noopener noreferrer">Tailwind 考 - uhyo/blog</a></li>
+<li>
+<p><a href="https://bucketeer.io/" target="_blank" rel="nofollow noopener noreferrer">Bucketeer - Feature Flag Management and A/B Testing platform</a></p>
+<ul>
+<li>CyberAgent 製の A/B テスト用プラットフォームが公開されました。</li>
+</ul>
+</li>
+<li>
+<p><a href="http://blog.unicode.org/2022/09/announcing-icu4x-10.html" target="_blank" rel="nofollow noopener noreferrer">The Unicode Blog: Announcing ICU4X 1.0</a></p>
+<ul>
+<li>主要デバイスや OS に組み込まれる国際化ライブラリ ICU の派生版として、ICU4X の stable リリースが公開されました。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/blog/improving-the-accessibility-of-our-nextjs-site" target="_blank" rel="nofollow noopener noreferrer">Improving the accessibility of our Next.js site – Vercel</a></p>
+<ul>
+<li>Next.js Conf の登録サイトにおいて、具体的に実施されたアクセシビリティ施策について。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://qwik.builder.io/" target="_blank" rel="nofollow noopener noreferrer">Framework reimagined for the edge! - Qwik</a></p>
+<ul>
+<li>パフォーマンスに特化し、エッジランタイム上での動作も考慮された Web フレームワーク。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.expo.dev/rfc-file-system-based-routing-in-react-native-7a35474722a" target="_blank" rel="nofollow noopener noreferrer">RFC: File System-Based Native Routing with Expo and React Native | by Evan Bacon | Exposition</a></p>
+<ul>
+<li>Expo と React Native において、Next.js のような ファイルシステムベースのルーティング機能が RFC として提案されました。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://twitter.com/ljharb/status/1579610392414007299" target="_blank" rel="nofollow noopener noreferrer">substack パッケージのサルベージが始まってる</a></p>
+<ul>
+<li>多くのパッケージが依存するパッケージを作成していた substack が gituhub のリポジトリを削除してしまっていたが、そのサルベージが始まっているよという話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images" target="_blank" rel="nofollow noopener noreferrer">Introducing OG Image Generation: Fast, dynamic social card images at the Edge – Vercel</a></p>
+<ul>
+<li>vercel が HTML/CSS から SVG の OGP 画像を生成するツールを公開。
+内部的には RN の layout engine である Yoga を利用している</li>
+</ul>
+</li>
+<li>
+<p><a href="https://tailwindcss.com/showcase" target="_blank" rel="nofollow noopener noreferrer">Example Showcase - Tailwind CSS</a></p>
+<ul>
+<li>Taliwind CSS を実際に使用している Web サイトを紹介するページ(Showcase)ができた</li>
+</ul>
+</li>
+<li>
+<p><a href="https://whyframe.dev/" target="_blank" rel="nofollow noopener noreferrer">whyframe</a></p>
+<ul>
+<li>iframe でコンポーネントのレンダリングをするライブラリ。iframe 内部はスタイルなどが独立できるのでデザインシステムの用例集にような使い方で便利そう</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/25360" target="_blank" rel="nofollow noopener noreferrer">Add no-nested-components ESLint rule by eps1lon · Pull Request #25360 · facebook/react</a></li>
+<li><a href="https://devblogs.microsoft.com/typescript/ten-years-of-typescript/" target="_blank" rel="nofollow noopener noreferrer">Ten Years of TypeScript - TypeScript</a></li>
+<li><a href="https://github.com/reactwg/server-components/discussions/2" target="_blank" rel="nofollow noopener noreferrer">[Draft RFC] First-class support for promises and async/await · Discussion #2 · reactwg/server-components</a></li>
+<li><a href="https://github.com/reactwg/server-components" target="_blank" rel="nofollow noopener noreferrer">reactwg/server-components</a></li>
+<li><a href="https://storybook.js.org/blog/first-class-vite-support-in-storybook/" target="_blank" rel="nofollow noopener noreferrer">First-class Vite support in Storybook</a></li>
+<li>
+<p><a href="https://material.io/blog/color-fonts-are-here" target="_blank" rel="nofollow noopener noreferrer">First Batch of Color Fonts Arrives on Google Fonts - Material Design</a></p>
+<ul>
+<li>Google Fonts にカラーフォントが登場！</li>
+</ul>
+</li>
+<li><a href="https://github.com/tailwindlabs/tailwindcss/discussions/9574" target="_blank" rel="nofollow noopener noreferrer">Tailwind CSS v3.2 Beta 2 · Discussion #9574 · tailwindlabs/tailwindcss</a></li>
+<li>
+<p><a href="https://github.com/testing-library/playwright-testing-library/issues/558" target="_blank" rel="nofollow noopener noreferrer">Future of this library · Issue #558 · testing-library/playwright-testing-library</a></p>
+<ul>
+<li>testing-library like のクエリについて playwright-testing-library に作られた issue。testing-library と playwright で実装されたものの差分や playwright-testing-library をどうしていくかなどについて議論されている</li>
+</ul>
+</li>
+<li>
+<p><a href="https://randoma11y.com/" target="_blank" rel="nofollow noopener noreferrer">Randoma11y - Accessible color combinations</a></p>
+<ul>
+<li>アクセシブルな配色をランダムで生成してくれるツール</li>
+</ul>
+</li>
+<li><a href="https://github.com/marcj/TypeRunner" target="_blank" rel="nofollow noopener noreferrer">marcj/TypeRunner: High-performance TypeScript compiler</a></li>
+<li>
+<p><a href="https://github.com/shadcn/taxonomy" target="_blank" rel="nofollow noopener noreferrer">shadcn/taxonomy: An open source application built using the new router, server components and everything new in Next.js 13.</a></p>
+<ul>
+<li>Next.js 13 の機能をフルに利用したサンプルリポジトリ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/azukiazusa/scraps/92aa2a0905be93" target="_blank" rel="nofollow noopener noreferrer">React がネイティブの fetch を patch しようとしてる話</a></p>
+<ul>
+<li>Next.js や React で fetch を独自拡張している話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/radar-domain-rankings/" target="_blank" rel="nofollow noopener noreferrer">Goodbye, Alexa. Hello, Cloudflare Radar Domain Rankings</a></p>
+<ul>
+<li>ウェブサイトのアクセス数のランク付けする Alexa traffic rank が、2022/5 にサービスを終了したが、それに相当するものを Cloudflare が公開した。</li>
+</ul>
+</li>
+<li><a href="https://github.com/shadcn/taxonomy" target="_blank" rel="nofollow noopener noreferrer">shadcn/taxonomy: An open source application built using the new router, server components and everything new in Next.js 13.</a></li>
+<li>
+<p><a href="https://github.com/eslint/eslint/discussions/16557" target="_blank" rel="nofollow noopener noreferrer">Complete rewrite of ESLint · Discussion #16557 · eslint/eslint</a></p>
+<ul>
+<li>ESLint は歴史的経緯から古い記法などが残っており辛い部分が増えてきたので、完全な書き直しを行なっていきたいという提案。いろいろな要望や提案が盛り込まれている。</li>
+</ul>
+</li>
+<li><a href="https://github.com/endojs/Jessie" target="_blank" rel="nofollow noopener noreferrer">endojs/Jessie: Tiny subset of JavaScript for ocap-safe universal mobile code</a></li>
+<li><a href="https://github.com/adobe/fetch" target="_blank" rel="nofollow noopener noreferrer">adobe/fetch: Simplified HTTP/1(.1) and HTTP/2 requests with Server Push Support</a></li>
+</ul>
+<h4 id="その他-1" style="position:relative;"><a href="#%E3%81%9D%E3%81%AE%E4%BB%96-1" aria-label="その他 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>その他</h4>
+<ul>
+<li>
+<p><a href="https://defensivecss.dev/articles/intro-defensive-css/" target="_blank" rel="nofollow noopener noreferrer">Defensive CSS</a></p>
+<ul>
+<li>動的なコンテンツによってレイアウトが崩れないような CSS の実装方法のまとめ</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/ja-jp/zaraz-use-workers-to-make-third-party-tools-secure-and-fast-ja-jp/" target="_blank" rel="nofollow noopener noreferrer">Cloudflare Workers と Zaraz を使ってサードパーティツールを安全に実行する</a></li>
+<li><a href="https://edge-runtime.vercel.app/#developing-edge-functions-locally" target="_blank" rel="nofollow noopener noreferrer">Vercel の Edge Functions を local で動かす</a></li>
+<li><a href="https://twitter.com/steventey/status/1544840187167084544?s=20&#x26;t=DNuJRhLqu6qW_cdlrwb7uA" target="_blank" rel="nofollow noopener noreferrer">Vercel の Edge Functions が Cloudflare Workers で動いてる</a></li>
+<li>
+<p><a href="https://ui.docs.amplify.aws/" target="_blank" rel="nofollow noopener noreferrer">Amplify UI - Build UI fast with Amplify on React</a></p>
+<ul>
+<li>Amplify が公開している UI コンポーネントライブラリ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://una.im/style-queries/" target="_blank" rel="nofollow noopener noreferrer">✨Style Queries | Una Kravets Online✨</a></p>
+<ul>
+<li>特定のスタイルが当たっていてる要素を selector にできる機能の提案</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.oddbird.net/2022/06/21/cascade-layers-polyfill/" target="_blank" rel="nofollow noopener noreferrer">Cascade Layers – There's a Polyfill for That! | OddBird</a></p>
+<ul>
+<li>作成した Cascade Layer の Polyfill について、できることできないことなどのまとめ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://min-max-calculator.9elements.com/" target="_blank" rel="nofollow noopener noreferrer">Min-Max-Value Interpolation</a></p>
+<ul>
+<li>サイズの最大最小とそれに対応する viewport サイズを入力すると clamp の値を計算してくれるサイト</li>
+</ul>
+</li>
+<li><a href="https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/" target="_blank" rel="nofollow noopener noreferrer">SPAs: theory versus practice | Read the Tea Leaves</a></li>
+<li>
+<p><a href="https://vercel.com/changelog/osaka-japan-is-now-available-on-the-edge-network" target="_blank" rel="nofollow noopener noreferrer">Osaka (Japan) is now available on the Edge Network – Vercel</a></p>
+<ul>
+<li>Vercel の Edge Network に大阪リージョンが追加。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.nngroup.com/articles/using-grids-in-interface-designs/" target="_blank" rel="nofollow noopener noreferrer">Using Grids in Interface Designs</a></p>
+<ul>
+<li>グリッドを使ったデザイン・レイアウトに関して、どういった種類が存在するかや、それらの実例、注意点などのまとめ。</li>
+<li>8px の倍数を意識するとよいとのこと。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/vercel-labs/react-on-the-edge" target="_blank" rel="nofollow noopener noreferrer">vercel-labs/react-on-the-edge: Server-rendered React using Vercel Edge Functions.</a></p>
+<ul>
+<li>Vercel の Edge Functions 上で React コンポーネントを SSR するサンプルコード。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/mjhd/articles/680a19ae893c1e" target="_blank" rel="nofollow noopener noreferrer">Flutter 前史: Chrome が Flutter になるまで</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xqGAC5QCYuQ&#x26;list=TLGGp4ABzxMuimsyMDA3MjAyMg" target="_blank" rel="nofollow noopener noreferrer">Flutter 開発者の動画</a>をもとに内容を翻訳・解説している記事。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://css-tricks.com/building-interoperable-web-components-react/" target="_blank" rel="nofollow noopener noreferrer">Building Interoperable Web Components That Work | CSS-Tricks - CSS-Tricks</a></p>
+<ul>
+<li>React で Web Component を動かすための方法についてのまとめ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://dev.to/this-is-learning/the-cost-of-consistency-in-ui-frameworks-4agi" target="_blank" rel="nofollow noopener noreferrer">The Cost of Consistency in UI Frameworks - DEV Community 👩‍💻👨‍💻</a></p>
+<ul>
+<li>SolidJS の作者の人が書かれた記事で、React, Vue, Svelte, SolidJS で状態を更新する同じような処理を実装すると、それぞれで異なる挙動をする話。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://liveblocks.io/blog/how-to-animate-multiplayer-cursors" target="_blank" rel="nofollow noopener noreferrer">How to animate multiplayer cursors - Liveblocks blog</a></p>
+<ul>
+<li>マウスカーソルを動かすようなアニメーションの実装方法</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.canidev.tools/" target="_blank" rel="nofollow noopener noreferrer">Can I DevTools?</a></p>
+<ul>
+<li>各ブラウザの Devtool 対応機能の一覧。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.smashingmagazine.com/2022/07/testable-frontend-architecture/" target="_blank" rel="nofollow noopener noreferrer">Testable Frontend: The Good, The Bad And The Flaky — Smashing Magazine</a></p>
+<ul>
+<li>フロントエンドのテストがなぜ難しいのか、どのように関心を分離してテストを書いていくといいのかについて考察している記事。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://engineering.linecorp.com/ja/blog/vue3-migration-with-improved-line-music-performance/" target="_blank" rel="nofollow noopener noreferrer">LINE MUSIC のパフォーマンスを向上させた Vue3 マイグレーション</a></p>
+<ul>
+<li>LINE MUSIC Web 版がフロントエンドフレームワークを Vue.js v2 から v3 へマイグレートしてパフォーマンスが上がった話。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://vercel.com/changelog/enhanced-geolocation-information-available-for-vercel-functions" target="_blank" rel="nofollow noopener noreferrer">Enhanced geolocation information for Vercel Functions – Vercel</a></p>
+<ul>
+<li>Vercel Functions でクライアントの public IP をもとにクライアントの位置情報を生成して origin へフォワードできるようになった話。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/new-patterns-july-2022/" target="_blank" rel="nofollow noopener noreferrer">New patterns</a></p>
+<ul>
+<li>web.dev の patterns(コードのスニペット集)にコンポーネント、アニメーション、テーマの新しいパターンが追加。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://benmyers.dev/blog/semantic-selectors/" target="_blank" rel="nofollow noopener noreferrer">Style with Stateful, Semantic Selectors</a></p>
+<ul>
+<li>aria 属性の selector を使ったステートフルなスタイルの定義方法</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.kinto-technologies.com/posts/2022-08-16-Protocol-Buffers-GraphQL-Schema-Swagger-Spec%E3%81%A7%E5%A7%8B%E3%82%81%E3%82%8B%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E9%96%8B%E7%99%BA%E5%85%A5%E9%96%80/" target="_blank" rel="nofollow noopener noreferrer">Protocol Buffers, GraphQL Schema, Swagger Spec で始めるスキーマファースト開発入門 | KINTO Tech Blog | キントテックブログ</a></p>
+<ul>
+<li>各スキーマへの変換について利用できるツールや対応状況などのまとめ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://future-architect.github.io/articles/20220819a/" target="_blank" rel="nofollow noopener noreferrer">gRPC がフロントエンド通信の第一の選択肢になる時代がやってきたかも？ | フューチャー技術ブログ</a></p>
+<ul>
+<li>ブラウザから RPC サーバを呼び出す TypeScript ファーストサポートなライブラリである connect-web がリリース。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.smashingmagazine.com/2022/08/back-button-ux-design/" target="_blank" rel="nofollow noopener noreferrer">Designing A Better Back Button UX — Smashing Magazine</a></p>
+<ul>
+<li>戻るボタンの UX についてのまとめ。</li>
+</ul>
+</li>
+<li><a href="http://nmi.jp/2022-08-16-Let-Initializer-In-For-Loop" target="_blank" rel="nofollow noopener noreferrer">JavaScript のクロージャーと for 文の let 初期化の例外</a></li>
+<li>
+<p><a href="https://www.nikkei.com/article/DGXZQOGD0859R0Y1A100C2000000/" target="_blank" rel="nofollow noopener noreferrer">消費者操る「ダークパターン」　国内サイト 6 割該当: 日本経済新聞</a></p>
+<ul>
+<li>ユーザーを騙すような UI/UX は「ダークパターン」と呼ばれており、最近増加傾向にあることから海外などでは規制の対象になり始めている。</li>
+<li><a href="https://www.deceptive.design/" target="_blank" rel="nofollow noopener noreferrer">Deceptive Design - user interfaces crafted to trick you</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.crunchydata.com/blog/learn-postgres-at-the-playground" target="_blank" rel="nofollow noopener noreferrer">Learn Postgres at the Playground</a></p>
+<ul>
+<li>WASM 上で PostgreSQL が動くような playground を実装した。</li>
+</ul>
+</li>
+<li><a href="https://www.publickey1.jp/blog/22/phpsqlitewebassemblywebwordpressvmware.html" target="_blank" rel="nofollow noopener noreferrer">PHP と SQLite を WebAssembly 化し、Web ブラウザ上で WordPress を実行可能にしたデモを VMware が公開 － Publickey</a></li>
+<li>
+<p><a href="https://oven.sh/" target="_blank" rel="nofollow noopener noreferrer">Oven: the company behind Bun</a></p>
+<ul>
+<li>JavaScript ラインタイムの Bun の会社 Oven が設立。</li>
+<li>Oven は Bun 開発の主導と高速なサーバレスのホスティングとフロントエンド・バックエンドの JS アプリの CI を提供を行う。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.figma.com/community/file/1138254942249677742" target="_blank" rel="nofollow noopener noreferrer">Fluent emoji — 1 | Figma Community</a></p>
+<ul>
+<li>Microsoft から OSS として公開された 3D の絵文字</li>
+</ul>
+</li>
+<li><a href="https://developer.hatenastaff.com/entry/2022/09/01/093000" target="_blank" rel="nofollow noopener noreferrer">CSS Modules の歴史、現在、これから - Hatena Developer Blog</a></li>
+<li><a href="https://www.publickey1.jp/blog/22/denojavascript.html" target="_blank" rel="nofollow noopener noreferrer">Deno のライアン・ダール氏「親愛なるオラクル殿、どうか JavaScript の商標を手放して」と呼びかけ － Publickey</a></li>
+<li>
+<p><a href="https://ishadeed.com/article/container-queries-are-finally-here/" target="_blank" rel="nofollow noopener noreferrer">CSS container queries are finally here - Ahmad Shadeed</a></p>
+<ul>
+<li>CSS Container Queries の実装方法まとめ。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://daverupert.com/2022/08/modern-alternatives-to-bem" target="_blank" rel="nofollow noopener noreferrer">Modern alternatives to BEM - daverupert.com</a></p>
+<ul>
+<li>BEM 以外の CSS 設計的な話。GPC や WILS は新しい CSS のプロパティを活用している。</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/tomayac/status/1559449034628243456?s=20&#x26;t=hO0nGuEQjqwD4QV3cyFUvw" target="_blank" rel="nofollow noopener noreferrer">focus()に focusVisible の option が追加</a></li>
+<li>
+<p><a href="https://insidegovuk.blog.gov.uk/2022/08/11/how-and-why-we-removed-jquery-from-gov-uk/" target="_blank" rel="nofollow noopener noreferrer">How and why we removed jQuery from GOV.UK - Inside GOV.UK</a></p>
+<ul>
+<li>GOV.UK で jQuery を削除した話。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://speakerdeck.com/yosuke_furukawa/bun-first-impressions" target="_blank" rel="nofollow noopener noreferrer">Bun first impressions - Speaker Deck</a></p>
+<ul>
+<li>Node 学園で発表された Bun の話で使用されたスライド。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://almanac.httparchive.org/en/2022/" target="_blank" rel="nofollow noopener noreferrer">The 2022 Web Almanac</a></p>
+<ul>
+<li>Web のリアルな状態の統計レポートである Web Almanac の 2022 版が公開されました。</li>
+</ul>
+</li>
+<li><a href="https://web.dev/introducing-learn-html/" target="_blank" rel="nofollow noopener noreferrer">Introducing Learn HTML</a></li>
+<li>
+<p><a href="https://web.dev/introducing-learn-accessibility/" target="_blank" rel="nofollow noopener noreferrer">Introducing Learn Accessibility</a></p>
+<ul>
+<li>Google が提供する web.dev にて、HTML と アクセシビリティ に関する学習コンテンツが追加されました。</li>
+</ul>
+</li>
+<li><a href="https://survey.devographics.com/survey/state-of-css/2022" target="_blank" rel="nofollow noopener noreferrer">State of CSS 2022</a></li>
+<li>
+<p><a href="https://www.fastly.com/jp/blog/run-your-next-js-app-on-fastly" target="_blank" rel="nofollow noopener noreferrer">Fastly で Next.js アプリケーションを実行 | Fastly</a></p>
+<ul>
+<li>Faslty の Compute@Edge 上で Next.js のアプリをホスティングできるようになった</li>
+</ul>
+</li>
+<li>
+<p><a href="https://web.dev/new-patterns-for-amazing-apps/" target="_blank" rel="nofollow noopener noreferrer">New patterns for amazing apps</a></p>
+<ul>
+<li>webdev のコンポーネントやレイアウトの実装パターンを集めた Patterns に下記の実装パターンが追加された</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.epicweb.dev/the-webs-next-transition" target="_blank" rel="nofollow noopener noreferrer">The Web’s Next Transition | Epic Web Dev by Kent C. Dodds</a></p>
+<ul>
+<li>Web アプリケーションは MPA→PEMPA→SPA→PESPA に変遷していってるよってお話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://yusukebe.com/posts/2022/dcs/" target="_blank" rel="nofollow noopener noreferrer">動的コンテツをエッジの KV にキャッシュする - ゆーすけべー日記</a></p>
+<ul>
+<li>パフォーマンス向上や負荷を下げる目的で、エッジの KV ストアに動的コンテンツを保存するのはいかがってお話</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/_gsathya/status/1578816177371250688?s=20&#x26;t=2zEEpVl0jaChMvXpBnYqbw" target="_blank" rel="nofollow noopener noreferrer">V8 の人が meta(react core team)へ転職</a></li>
+<li><a href="https://www.docomo.ne.jp/info/news_release/2022/10/17_00.html" target="_blank" rel="nofollow noopener noreferrer">d アカウントのログインにおける新たな認証手段（Web 認証・パスキー）の提供を開始</a></li>
+<li>
+<p><a href="https://roadmap.sh/" target="_blank" rel="nofollow noopener noreferrer">Developer Roadmaps</a></p>
+<ul>
+<li>roadmap.sh に色々追加されてる</li>
+</ul>
+</li>
+<li>
+<p><a href="https://rome.tools/" target="_blank" rel="nofollow noopener noreferrer">Rome — Unified developer tools for JavaScript, TypeScript, and the web</a></p>
+<ul>
+<li>次世代のフロントエンドツールとして開発が進められている Rome について、サイトがリニューアルされた。</li>
+</ul>
+</li>
+<li><a href="https://gigazine.net/news/20221107-meta-large-scale-layoffs/" target="_blank" rel="nofollow noopener noreferrer">Facebook の親会社「Meta」が数千人規模の大規模レイオフを間もなく実施予定 - GIGAZINE</a></li>
+<li>
+<p><a href="https://remix.run/blog/remixing-shopify" target="_blank" rel="nofollow noopener noreferrer">Remixing Shopify | Remix</a></p>
+<ul>
+<li>Remix が Shopify と提携した話。（正式には Remix 側が買収された）</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/next-on-pages/" target="_blank" rel="nofollow noopener noreferrer">And here's another one: the Next.js Edge Runtime becomes the fourth full-stack framework supported by Cloudflare Pages</a></p>
+<ul>
+<li>Cloudflare Workers の Pages Functions 上に Next.js をデプロイできるようになった</li>
+</ul>
+</li>
+<li><a href="https://gigazine.net/news/20221109-mark-zuckerburg-meta-leyoffs/" target="_blank" rel="nofollow noopener noreferrer">マーク・ザッカーバーグが「Meta の大量解雇は自分の責任、成長を楽観視しすぎて人員過剰につながった」と反省の弁 - GIGAZINE</a></li>
+<li><a href="https://www.nikkei.com/article/DGXZQOGN09CFT0Z01C22A1000000/" target="_blank" rel="nofollow noopener noreferrer">メタ、1.1 万人削減を発表　全社員の 13%: 日本経済新聞</a></li>
+<li><a href="https://smashing-next.vercel.app/" target="_blank" rel="nofollow noopener noreferrer">Advanced Next.js Masterclass</a></li>
+<li><a href="https://twitter.com/alexxubyte/status/1594008281340530688" target="_blank" rel="nofollow noopener noreferrer">Twitter のアーキテクチャの話</a></li>
+<li>
+<p><a href="https://yusukebe.com/posts/2022/wsh/" target="_blank" rel="nofollow noopener noreferrer">500 点出す！ - ゆーすけべー日記</a></p>
+<ul>
+<li>Web Speed Hackathon 2022 で満点とったよという話</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank" rel="nofollow noopener noreferrer">メタフロントエンド開発者 プロフェッショナル認定証 | Coursera</a></p>
+<ul>
+<li>HTML/CSS/JavaScript から React までを学ぶ。週６時間未満の学習で７ヶ月という結構しっかりめの内容。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/introducing-workers-browser-rendering-api/" target="_blank" rel="nofollow noopener noreferrer">Automate an isolated browser instance with just a few lines of code</a></p>
+<ul>
+<li>Cloudflare Worker 上で VRT や Performance Tests の環境が簡単に作れるようになるっぽい</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/nodejs/performance" target="_blank" rel="nofollow noopener noreferrer">nodejs/performance: Node.js team focusing on performance</a></p>
+<ul>
+<li>Node.js にパフォーマンス改善チ/ームができた</li>
+</ul>
+</li>
+<li><a href="https:/stateofjs.com/en-us/" target="_blank" rel="nofollow noopener noreferrer">State of JavaScript</a></li>
+<li><a href="https://zenn.dev/uhyo/books/rsc-without-nextjs" target="_blank" rel="nofollow noopener noreferrer">Next.js が出てこない React Server Components ハンズオン</a></li>
+<li>
+<p><a href="https://www.mizdra.net/entry/2022/11/24/153459" target="_blank" rel="nofollow noopener noreferrer">Prisma で本物の DBMS を使って自動テストを書く - mizdra's blog</a></p>
+<ul>
+<li>Prisma＆DBMS を使った自動テストについてのブログ</li>
+</ul>
+</li>
+<li>
+<p><a href="https://qwik.builder.io/qwikcity/adaptors/vercel-edge/" target="_blank" rel="nofollow noopener noreferrer">Qwik City - Vercel Edge Adaptor and Middleware - Qwik</a></p>
+<ul>
+<li>qwik が Vercel の Edge にデプロイできるように</li>
+</ul>
+</li>
+<li>
+<p><a href="https://twitter.com/lydiahallie/status/1591120215189749760" target="_blank" rel="nofollow noopener noreferrer">Comparison between Next.js 12 and the Next.js 13 experimental app dir!</a></p>
+<ul>
+<li>Next.js の v12 と v13 の比較。v12 の pages ディレクトリから apps ディレクトリにどのように書き換えられるかが一枚の画像にまとまっている</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="印象に残っている記事など" style="position:relative;"><a href="#%E5%8D%B0%E8%B1%A1%E3%81%AB%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B%E3%81%AA%E3%81%A9" aria-label="印象に残っている記事など permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>印象に残っている記事など</h3>
+<h4 id="ie11-とさよならしたら全力で使える-htmlcss-まとめ【40-個以上】--b4h0-c4t" style="position:relative;"><a href="#ie11-%E3%81%A8%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%97%E3%81%9F%E3%82%89%E5%85%A8%E5%8A%9B%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B-htmlcss-%E3%81%BE%E3%81%A8%E3%82%81%E3%80%9040-%E5%80%8B%E4%BB%A5%E4%B8%8A%E3%80%91--b4h0-c4t" aria-label="ie11 とさよならしたら全力で使える htmlcss まとめ【40 個以上】  b4h0 c4t permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://deep-space.blue/web/2263" target="_blank" rel="nofollow noopener noreferrer">IE11 とさよならしたら全力で使える HTML/CSS まとめ【40 個以上】</a> : @b4h0-c4t</h4>
+<p>IE 卒業おめでとうございます！
+今年は IE 卒業元年(要出典)だったこともあり、多くの企業や団体で IE の利用が終了したと思います。
+6/22 には弊社オフィスを利用して <a href="https://web-study.connpass.com/event/250191/" target="_blank" rel="nofollow noopener noreferrer">IE 卒業式</a>なんかが開催されたりしましたね。</p>
+<p>この記事は IE を卒業した人たちが利用できるブラウザ API や CSS プロパティなどがまとめられています。
+去年まで IE 対応に泣かされていた人もそうでない人も一度閲覧して今年の始めとの違いを振り返ってみるのも良いと思います。</p>
+<hr>
+<h4 id="bun--fast-all-in-one-javascript-runtime-sosukesuzuki" style="position:relative;"><a href="#bun--fast-all-in-one-javascript-runtime-sosukesuzuki" aria-label="bun  fast all in one javascript runtime sosukesuzuki permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://bun.sh/" target="_blank" rel="nofollow noopener noreferrer">Bun — fast all-in-one JavaScript runtime</a>: @sosukesuzuki</h4>
+<p>2022 年 7 月に Bun が公開されました(それ以前もクローズドで開発中であることは公開されていた)。</p>
+<p>Bun は、Node.js や Deno のような JavaScript ランタイムです。
+起動時間の速さや、高いパフォーマンス、バンドラーやトランスパイラーなどを含むオールインワンなツールであるなどの特徴があります。</p>
+<p>Node.js や Deno とは違い、JavaScript エンジンとして V8 ではなく JavaScriptCore を採用しています(スタートアップが速いらしい)。</p>
+<p>Node.js は C++、Deno は Rust で記述されていますが Bun は Zig で書かれています。Zig は Rust のように所有権やライフタイムによって型システムのレベルでメモリの安全性を高めようとするのではなく、C や C++ のようにプログラマーが手動でメモリ管理を行う必要があります。しかし、C++ や D、Rust などのプログラミング言語と比べてシンプルであることが意識されているようです。Zig のウェブサイトに <a href="https://ziglang.org/learn/why_zig_rust_d_cpp/" target="_blank" rel="nofollow noopener noreferrer">Why Zig When There is Already C++, D, and Rust?</a> というページがあるので興味がある人は読んで見ることをおすすめします。</p>
+<p>また、トランスパイラやバンドラ、npm クライアント、sqlite クライアント、HTTP クライアントなど、ほとんどのコンポーネントがスクラッチで記述されているようです。</p>
+<p>Bun は、作者である Jerrad Summer が立ち上げた会社 Oven によって開発されています。Oven 社のウェブサイト ( <a href="https://oven.sh" target="_blank" rel="nofollow noopener noreferrer">https://oven.sh</a> ) によると、$7m を調達しフルタイムの開発者の採用を行っているようです。GitHub の Contributors を見ると今のところまだ Jerrad Summer が主な開発をしているようですが、最近では他の Oven 社のメンバーのコミットも見られるようになってきています。</p>
+<hr>
+<h4 id="the-story-behind-colorsjs-and-fakerjs--revenera-blog--mugi_uno" style="position:relative;"><a href="#the-story-behind-colorsjs-and-fakerjs--revenera-blog--mugi_uno" aria-label="the story behind colorsjs and fakerjs  revenera blog  mugi_uno permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/" target="_blank" rel="nofollow noopener noreferrer">The story behind colors.js and faker.js | Revenera Blog</a> : @mugi_uno</h4>
+<p>年始に、広く利用されている faker.js・color.js の作者自身が、意図的にコード内に無限ループの処理を含め Publish するという出来事がありました。
+善意によって成り立っていることもある OSS を日々利用させて貰っている中、とてもインパクトの大きい事件で、行動の是非も含めて多く話題にあがっていた印象です。</p>
+<p>別件にはなりますが <a href="https://github.com/pnpm/pnpm" target="_blank" rel="nofollow noopener noreferrer">pnpm</a>のリポジトリトップの README に、ウクライナ・ロシア情勢に絡む文章が追記されたのも今年で、
+最近では Meta 社のレイオフの兼ね合いで React チームの今後を心配する声があがったりもしていました。</p>
+<p>OSS の存続とその向こうにいるメンテナの皆様について考えるきっかけの多い一年だったかなと思います。</p>
+<hr>
+<h4 id="new-patterns--nus3_" style="position:relative;"><a href="#new-patterns--nus3_" aria-label="new patterns  nus3_ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://web.dev/new-patterns-july-2022/" target="_blank" rel="nofollow noopener noreferrer">New patterns</a> : @nus3_</h4>
+<p>2022 年は、<a href="https://web.dev/patterns/" target="_blank" rel="nofollow noopener noreferrer">web.dev の Patterns(Web アプリケーションを最適化するためのコードスニペット集)</a>に Clipboard や Animation、Theme など新しいパターンが追加されました。</p>
+<p>新しく追加されたパターンの一つに <a href="https://web.dev/patterns/components/" target="_blank" rel="nofollow noopener noreferrer">Component patterns</a>というクロスブラウザでの UI コンポーネントのコードスニペット集があります。</p>
+<p>パンくずリストやボタン、ダイアログなどの UI コンポーネントのコードスニペットが提供されているだけでなく、各々のコンポーネント実装時のポイントをマークアップ・アクセシビリティ・スタイル・アニメーション・JavaScript の観点でまとめた記事が、それぞれ用意されています。</p>
+<p>実際にいくつかのコンポーネントの記事を見てみると、たとえば、ボタンのキーボード操作からのクリックを視覚的にわかりやすくするスタイル方法など、参考になる情報がまとまっていました。</p>
+<p>来年も新しい Patterns は増えていくと思うので楽しみですね！</p>
+<hr>
+<h4 id="announcing-30-·-nuxt--nakajmg" style="position:relative;"><a href="#announcing-30-%C2%B7-nuxt--nakajmg" aria-label="announcing 30 · nuxt  nakajmg permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://nuxt.com/v3" target="_blank" rel="nofollow noopener noreferrer">Announcing 3.0 · Nuxt</a> : @nakajmg</h4>
+<p>Vue 3 のリリースから 2 年の時を経て 2022 年 11 月に満を持して Nuxt 3.0 が正式リリースされました！👏</p>
+<p>Composition API への対応や、TypeScript サポートの充実などが大きなポイントです。Nuxt ユーザーが首を長くして待っていた正式リリースで、これから 2 系から 3 系への以降の話などが多く出てきそうです。</p>
+<p>すでに「<a href="https://product.st.inc/entry/2022/12/11/112330" target="_blank" rel="nofollow noopener noreferrer">Nuxt 3 への移行に向けて頑張ってます - STORES Product Blog</a>」や「<a href="https://zenn.dev/skmt3p/articles/5c119886956cc9" target="_blank" rel="nofollow noopener noreferrer">Nuxt2からNuxt3に移行してサービスをリリースするまでの1年9ヶ月の道程</a>」といった記事も見られるようになってきました。</p>
+<p>めでたいリリースの一方で、Vue 3 がリリースされてからの 2 年でフロントエンドフレームワーク界隈では変化がありました。Next.js の大きなアップデートや、Remix・Astro・Qwik などのフレームワークのリリースによって、選択肢が増えてきています。フロントエンドフレームワークはユースケースによって使い分けるものだと思いますが、Nuxt 3 がどういったユースケースにマッチするのか、ほかフレームワークとポジション争いをするのか、また既存の Nuxt ユーザーが満足できる体験が得られるのか、2023 年の Nuxt 3 の動向が楽しみです！</p>
+<hr>
+<h4 id="nextjs-13--koba04" style="position:relative;"><a href="#nextjs-13--koba04" aria-label="nextjs 13  koba04 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://nextjs.org/blog/next-13" target="_blank" rel="nofollow noopener noreferrer">Next.js 13</a> : @koba04</h4>
+<p><a href="https://nextjs.org/conf" target="_blank" rel="nofollow noopener noreferrer">Next.js Conf</a> で Next.js 13 が発表されました。React Core Team のメンバーがこれが本当の React 18 のリリースだと言っていた通り、Beta ではありますが、<code class="language-text">app/</code> ディレクトリは React Server Components を含む　 React の新しい機能をフルに活用したようなリリースになっています。</p>
+<p>React がフレームワークとしてのユースケースを満たすのではなく、プリミティブを提供しておいて各種フレームワークがそれぞれのユースケースを満たすためにそれらを活用するという形であることを再確認したリリースでした。その点においては、Next.js は React におけるフラッグシップなフレームワークだと感じます。</p>
+<p>技術的な内容については、Edge と言うユーザーにも近くスケール可能な環境を前提としたサーバーファーストなアプローチに変化していると感じました。実現方法は異なりますが方向性としては別のフレームワークにも通じるものがあると思います。</p>
+<p>2023 年以降、どこまでコミュニティが <code class="language-text">app/</code> に移行できるのかはこれからの React にとっても重要になりそうです。</p>
+<hr>
+<h4 id="a-community-group-for-web-interoperable-javascript-runtimes--shisama_" style="position:relative;"><a href="#a-community-group-for-web-interoperable-javascript-runtimes--shisama_" aria-label="a community group for web interoperable javascript runtimes  shisama_ permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://blog.cloudflare.com/introducing-the-wintercg/" target="_blank" rel="nofollow noopener noreferrer">A Community Group for Web-interoperable JavaScript runtimes</a> : @shisama_</h4>
+<p>日本語版: <a href="https://blog.cloudflare.com/ja-jp/introducing-the-wintercg-ja-jp/" target="_blank" rel="nofollow noopener noreferrer">https://blog.cloudflare.com/ja-jp/introducing-the-wintercg-ja-jp/</a></p>
+<p>Web ブラウザ以外の JS ラインタイムが Web 互換を保ってそれぞれの互換性を高めていきましょうという活動をする Web-interoperable Runtimes Community Group (通称 WinterCG)というコミュニティが設立されました。</p>
+<p>WinterCG には以下の企業・OSS のメンバーがいます。</p>
+<ul>
+<li>Bloomberg</li>
+<li>Cloudflare</li>
+<li>Deno</li>
+<li>Igalia</li>
+<li>Node.js</li>
+<li>Shopify</li>
+<li>Vercel</li>
+</ul>
+<p>今年は Deno が npm 互換を実装したり、Bun が登場したりと、JS ランタイム関連の話題が目立ったと感じました。また、Cloudflare Workers や Vercel の Edge Runtime などのエッジもあり、JS を動かす環境が増えていってます。</p>
+<p>その中で、Web との互換やそれぞれの互換性を高めていく活動は重要だと思います。<br>
+Node.js 以外の JS ランタイムをサポートすることを意識した<a href="https://qwik.builder.io/" target="_blank" rel="nofollow noopener noreferrer">Qwik</a>や<a href="https://honojs.dev/" target="_blank" rel="nofollow noopener noreferrer">Hono</a>のようなフレームワークも出てきたり、すでにメジャーな npm package が Deno 上でも動くようになってきていたり、JS を動かす環境として Node.js 以外も選択肢として入ってくるのはそう遠くない未来かもしれないと考えています。</p>
+<p>この記事を書いた James M Snell (<a href="https://twitter.com/jasnell" target="_blank" rel="nofollow noopener noreferrer">@jasnell</a>)は Cloudflare で働きながらにして長年 Node.js の TSC（技術的な仕様を決めたりする委員会）にも所属しています。<br>
+James は今年の JSConf.jp でもキーノートとしてこの WinterCG や Web 互換の話をしてくれているので、興味がある方は<a href="https://youtu.be/luiNGMM9ZGU?t=21753" target="_blank" rel="nofollow noopener noreferrer">動画</a>も観てみてください。</p></div><style data-emotion-css="1ruxp1v">.css-1ruxp1v{padding:20px;}</style><h2>フロントエンドエキスパートチームについて</h2><div class="css-1ruxp1v ets3oo30"></div><p><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer">https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></article></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2022-12";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-939b6eeea0ccf3d28b32.js"],"app":["/app-afbbbc55a5f2beade197.js"],"component---src-doc-template-js":["/component---src-doc-template-js-d7f727a8092ed85b9d59.js"],"component---src-pages-404-js":["/component---src-pages-404-js-cccf48d0c19e0c313870.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b5ba2bc09927bb2a80c5.js"],"component---src-post-template-js":["/component---src-post-template-js-88916894c10306045a1f.js"]};/*]]>*/</script><script src="/frontend-monthly/polyfill-939b6eeea0ccf3d28b32.js" nomodule=""></script><script src="/frontend-monthly/component---src-post-template-js-88916894c10306045a1f.js" async=""></script><script src="/frontend-monthly/e50ecfc4f9fb2d593cad78a86a1d89fd7571e869-26507b3c2b86fbf9df34.js" async=""></script><script src="/frontend-monthly/styles-c2fe8482057191dca484.js" async=""></script><script src="/frontend-monthly/app-afbbbc55a5f2beade197.js" async=""></script><script src="/frontend-monthly/framework-a23b24beacc21a89e7ba.js" async=""></script><script src="/frontend-monthly/webpack-runtime-c51f9a472dc3791c3d11.js" async=""></script></body></html>
