@@ -60,6 +60,31 @@ const { title } = Astro.props
       margin: 0 auto;
       padding: 15px 45px;
       color: #24292e;
+      @media (max-width: 767px) {
+        padding: 12px;
+        font-size: 14px;
+        .markdown-body {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 1.55em;
+          margin-bottom: 0.25em;
+          margin-top: 0.5em;
+        }
+        h2 {
+          font-size: 1.3em;
+          margin-bottom: 0.25em;
+          margin-top: 0.5em;
+        }
+        h3 {
+          font-size: 1.1em;
+          margin-bottom: 0.25em;
+          margin-top: 0.5em;
+        }
+        hr {
+          margin: 12px 0;
+        }
+      }
     }
     .footer {
       background-color: #31424e;
