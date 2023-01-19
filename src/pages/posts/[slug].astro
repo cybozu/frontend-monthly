@@ -1,5 +1,8 @@
 ---
 import PostLayout from "../../layouts/PostLayout.astro"
+import EventSummary from "../../components/EventSummary.astro"
+import MembersList from "../../components/MembersList.astro"
+import EmbedIntroduceSlide from "../../components/EmbedIntroduceSlide.astro"
 
 export const getStaticPaths = async () => {
   const posts = await Astro.glob("../../../posts/**/*.md")
@@ -9,10 +12,17 @@ export const getStaticPaths = async () => {
   }))
 }
 
-const { slug } = Astro.params
-const { Content } = Astro.props.post
+const post = Astro.props.post
 ---
 
-<PostLayout title="Welcome to Astro.">
-  <Content />
+<PostLayout title={`${post.frontmatter.title} #${post.frontmatter.no}`}>
+  <EventSummary frontmatter={post.frontmatter} />
+  <MembersList
+    members={post.frontmatter.members}
+    guest={post.frontmatter.guest}
+  />
+  <hr />
+  <h2>コンテンツ</h2>
+  <post.Content />
+  <EmbedIntroduceSlide />
 </PostLayout>

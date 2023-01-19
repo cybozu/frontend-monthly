@@ -8,6 +8,7 @@ const { title } = Astro.props
 ---
 
 <Layout title={title}>
+  <h1 class="post-title">{title}</h1>
   <div class="markdown-body">
     <slot />
   </div>
@@ -17,5 +18,17 @@ const { title } = Astro.props
   .markdown-body li > *:first-child {
     display: inline-flex;
     margin: 8px 0px;
+  }
+</style>
+
+<style>
+  .post-title {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+    font-size: 2em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 0;
   }
 </style>

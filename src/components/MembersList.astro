@@ -1,0 +1,76 @@
+---
+export interface Props {
+  members?: {
+    name: string
+    link: string
+  }[]
+  guest?: {
+    name: string
+    link: string
+  }[]
+}
+import { staticPath } from "../lib/helper"
+const { members, guest } = Astro.props
+---
+
+<h2>メンバー</h2>
+<div class="members">
+  {
+    members?.map(({ name, link }) => (
+      <div class="member">
+        <img
+          src={staticPath(`/img/${name}.jpg`)}
+          class="thumbnail"
+          alt={name}
+        />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {name}
+        </a>
+      </div>
+    ))
+  }
+</div>
+{
+  guest && guest.length && (
+    <>
+      <h2>ゲスト</h2>
+      <div class="members">
+        {guest.map(({ name, link }) => (
+          <div class="member">
+            <img
+              src={staticPath(`/img/${name}.jpg`)}
+              class="thumbnail"
+              alt={name}
+            />
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              {name}
+            </a>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
+
+<style lang="scss">
+  .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 24px 12px;
+    padding: 12px;
+  }
+  .member {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 105px;
+    white-space: nowrap;
+    .thumbnail {
+      max-width: 100px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto 5px;
+    }
+  }
+</style>
