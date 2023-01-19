@@ -1,24 +1,96 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { Test } from "../components/Test"
+import path from "path"
+import dayjs from "dayjs"
+
+const posts = await Astro.glob("../../posts/**/*.md")
+
+const contents = await Promise.all(
+  posts
+    ?.map(async post => {
+      const pagePath = `/posts/${post.frontmatter.slug}`
+      const date = dayjs(post.frontmatter.date).format("YYYY/MM/DD")
+      const title = `#${post.frontmatter.no} - ${date}`
+      const headings = await post
+        .getHeadings()
+        .filter(heading => heading.depth <= 3)
+      return { pagePath, title, headings }
+    })
+    .reverse()
+)
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <Test />
-  </main>
+<Layout title="Cybozu Frontend Monthly">
+  <h1 class="title">Cybozu Frontend Monthly</h1>
+  <ul class="posts">
+    {
+      contents.map(content => {
+        return (
+          <li class="post">
+            <a href={content.pagePath}>
+              <h2>{content.title}</h2>
+              <ul>
+                {content.headings.slice(0, 8).map(heading => {
+                  return <li>{heading.text}</li>
+                })}
+                {content.headings.length > 8 && <li>他</li>}
+              </ul>
+            </a>
+          </li>
+        )
+      })
+    }
+  </ul>
 </Layout>
 
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
+<style lang="scss">
+  .title {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
+  .posts {
+    list-style: none;
     margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .post {
+    a {
+      display: block;
+      padding-bottom: 24px;
+      text-decoration: none;
+      color: #0366d6;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    ul {
+      color: #24292e;
+      padding-left: 2em;
+    }
+    li + li {
+      margin-top: 0.25em;
+    }
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      border: none;
+      font-size: 1.5em;
+      padding-bottom: 0.3em;
+    }
+  }
+  .post + .post {
+    border-top: 1px solid #eaecef;
+  }
+  .headings {
+    color: #24292e;
   }
   .text-gradient {
     background-image: var(--accent-gradient);

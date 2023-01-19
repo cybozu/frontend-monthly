@@ -1,0 +1,18 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro"
+
+export const getStaticPaths = async () => {
+  const posts = await Astro.glob("../../../posts/**/*.md")
+  return posts?.map(post => ({
+    params: { slug: post.frontmatter.slug },
+    props: { post },
+  }))
+}
+
+const { slug } = Astro.params
+const { Content } = Astro.props.post
+---
+
+<PostLayout title="Welcome to Astro.">
+  <Content />
+</PostLayout>

@@ -1,0 +1,21 @@
+---
+export interface Props {
+  title: string
+}
+import "github-markdown-css/github-markdown.css"
+import Layout from "./Layout.astro"
+const { title } = Astro.props
+---
+
+<Layout title={title}>
+  <div class="markdown-body">
+    <slot />
+  </div>
+</Layout>
+
+<style is:global>
+  .markdown-body li > *:first-child {
+    display: inline-flex;
+    margin: 8px 0px;
+  }
+</style>
