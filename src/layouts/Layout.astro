@@ -1,0 +1,128 @@
+---
+export interface Props {
+  title: string
+}
+import * as path from "path"
+import { staticPath } from "../lib/helper"
+const { title } = Astro.props
+
+const description =
+  "サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"
+const author = "Cybozu Frontend Expert Team"
+const site = Astro.site?.toString() || ""
+const ogImage = path.join(site, staticPath("/img/header.png"))
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={author} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"
+    />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <a href={staticPath("/")}>Cybozu Frontend Monthly</a>
+    </footer>
+  </body>
+
+  <style is:global lang="scss">
+    :root {
+      --accent: 124, 58, 237;
+      --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        #da62c4 30%,
+        white 60%
+      );
+    }
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    }
+    body {
+      margin: 0;
+      border-top: 4px solid #64bdd4;
+    }
+    code {
+      font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+    .main {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px 45px;
+      color: #24292e;
+      @media (max-width: 767px) {
+        padding: 12px;
+        font-size: 14px;
+        .markdown-body {
+          font-size: 14px;
+          h1 {
+            font-size: 1.55em;
+            margin-bottom: 0.25em;
+            margin-top: 0.5em;
+          }
+          h2 {
+            font-size: 1.3em;
+            margin-bottom: 0.25em;
+            margin-top: 0.5em;
+          }
+          h3 {
+            font-size: 1.1em;
+            margin-bottom: 0.25em;
+            margin-top: 0.5em;
+          }
+        }
+        hr {
+          margin: 12px 0;
+        }
+      }
+    }
+    .footer {
+      background-color: #31424e;
+      text-align: center;
+      color: #f8f8ff;
+      font-size: 0.75em;
+      padding: 5px 0;
+      line-height: 1.5;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    .markdown-body li > *:first-child {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .markdown-body li > ul {
+      margin-top: 8px;
+    }
+    .markdown-body li + li {
+      margin: 8px 0;
+    }
+  </style>
+</html>

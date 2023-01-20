@@ -1,0 +1,29 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro"
+import EventSummary from "../../components/EventSummary.astro"
+import MembersList from "../../components/MembersList.astro"
+import EmbedIntroduceSlide from "../../components/EmbedIntroduceSlide.astro"
+import type { MarkdownInstance } from "astro"
+
+export const getStaticPaths = async () => {
+  const posts = await Astro.glob("../../../posts/**/*.md")
+  return posts?.map(post => ({
+    params: { slug: post.frontmatter.slug },
+    props: { post },
+  }))
+}
+
+const post: MarkdownInstance<Record<string, any>> = Astro.props.post
+---
+
+<PostLayout title={`${post.frontmatter.title} #${post.frontmatter.no}`}>
+  <EventSummary frontmatter={post.frontmatter} />
+  <MembersList
+    members={post.frontmatter.members}
+    guest={post.frontmatter.guest}
+  />
+  <hr />
+  <h2>コンテンツ</h2>
+  <post.Content />
+  <EmbedIntroduceSlide />
+</PostLayout>

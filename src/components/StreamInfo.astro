@@ -1,0 +1,38 @@
+---
+export interface Props {
+  streamUrl?: string
+}
+const { streamUrl } = Astro.props
+
+const isYouTube = /youtube\.com/.test(streamUrl || "")
+const embedUrl = isYouTube ? streamUrl?.replace("watch?v=", "embed/") : ""
+---
+
+<p>
+  {
+    embedUrl && (
+      <iframe
+        title={embedUrl}
+        width="560"
+        height="315"
+        src={embedUrl}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="embed"
+      />
+    )
+  }
+
+  <a href={streamUrl} target="_blank" rel="noreferrer noopner">
+    {streamUrl}
+  </a>
+</p>
+
+<style>
+  .embed {
+    display: block;
+    max-width: 100%;
+    max-height: 280px;
+  }
+</style>
