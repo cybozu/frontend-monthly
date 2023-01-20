@@ -3,6 +3,7 @@ import PostLayout from "../../layouts/PostLayout.astro"
 import EventSummary from "../../components/EventSummary.astro"
 import MembersList from "../../components/MembersList.astro"
 import EmbedIntroduceSlide from "../../components/EmbedIntroduceSlide.astro"
+import type { MarkdownInstance } from "astro"
 
 export const getStaticPaths = async () => {
   const posts = await Astro.glob("../../../posts/**/*.md")
@@ -12,7 +13,7 @@ export const getStaticPaths = async () => {
   }))
 }
 
-const post = Astro.props.post
+const post: MarkdownInstance<Record<string, any>> = Astro.props.post
 ---
 
 <PostLayout title={`${post.frontmatter.title} #${post.frontmatter.no}`}>
