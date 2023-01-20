@@ -2,8 +2,15 @@
 export interface Props {
   title: string
 }
+import * as path from "path"
 import { staticPath } from "../lib/helper"
 const { title } = Astro.props
+
+const description =
+  "サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"
+const author = "Cybozu Frontend Expert Team"
+const site = Astro.site?.toString() || ""
+const ogImage = path.join(site, staticPath("/img/header.png"))
 ---
 
 <!DOCTYPE html>
@@ -11,6 +18,15 @@ const { title } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={author} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link
