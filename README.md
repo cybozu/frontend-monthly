@@ -3,18 +3,14 @@
 ## local preview
 
 ```
-cd site
-```
-
-```
 npm ci
 ```
 
 ```
-npm run start
+npm run dev
 ```
 
-open `http://localhost:8000`
+open `http://localhost:3000`
 
 ## add post
 
@@ -22,7 +18,7 @@ create md file into the `/posts` dir.
 
 ## add profile image
 
-add image({userName}.jpg) file into the `/static` dir.
+add image({userName}.jpg) file into the `/public/img` dir.
 
 ## publish
 
