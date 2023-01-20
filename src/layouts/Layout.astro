@@ -27,7 +27,18 @@ const ogImage = path.join(site, staticPath("/img/header.png"))
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={ogImage} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href={staticPath("/icons/favicon-32x32.png")}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href={staticPath("/icons/favicon-16x16.png")}
+    />
     <meta name="generator" content={Astro.generator} />
     <link
       rel="stylesheet"
