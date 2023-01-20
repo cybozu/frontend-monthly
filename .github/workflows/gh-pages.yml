@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,7 +25,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and build
         run: |
-          cd site
           npm install
           npm run build
       - name: Deploy gh-pages
@@ -33,5 +32,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
-          FOLDER: site/public
-          CLEAN: true  
+          FOLDER: public
+          CLEAN: true
