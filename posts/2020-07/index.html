@@ -255,23 +255,23 @@ fetch API のリクエストボディに Stream を渡すことができるよ�
 <p><a href="https://github.com/sveltejs/svelte">Svelte</a>が TypeScript を公式にサポート。
 Svelte での TS サポートについてや、新規プロジェクトや既存のプロジェクトのセットアップ方法など。</p>
 <p><code>svelte-ts-sample.svelte</code></p>
-<pre class="language-svelte"><code is:raw="" class="language-svelte"><script lang="ts">
-	let count: number = 0;
-	const increment = () => {
-		count += 1;
-	}
-</script>
+<pre class="language-html"><code is:raw="" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">let</span> <span class="token literal-property property">count</span><span class="token operator">:</span> number <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    count <span class="token operator">+=</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>script</span><span class="token punctuation">></span></span>
 
-<style>
-	h1 {
-		color: purple;
-		font-family: 'Comic Sans MS', cursive;
-		font-size: 2em;
-	}
-</style>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> purple<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Comic Sans MS"</span><span class="token punctuation">,</span> cursive<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>style</span><span class="token punctuation">></span></span>
 
-<h1>Count: {count}!</h1>
-<button on:click="{increment}"> + </button></code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>h1</span><span class="token punctuation">></span></span>Count: {count}!<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span> <span class="token attr-name"><span class="token namespace">on:</span>click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{increment}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span></code></pre>
 <p>新規でプロジェクトを作る際は、公式のテンプレートに setup スクリプトが用意されている。</p>
 <p>これまでも、有志が開発したツールとして <code>svelte-preprocess</code>や<code>VSCode Extension</code>があったので、TypeScript で開発は可能だった。
 今回、それらのツール郡が公式の Org 配下に入って、公式に TypeScript をサポートした。</p>
