@@ -1,6 +1,8 @@
 ---
+import type { CollectionEntry } from 'astro:content'
+
 export interface Props {
-  frontmatter: any
+  frontmatter: CollectionEntry<'posts'>['data']
 }
 import dayjs from "dayjs"
 import { staticPath } from "../lib/helper"
