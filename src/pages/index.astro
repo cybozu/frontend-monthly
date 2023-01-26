@@ -9,10 +9,8 @@ const contents = await Promise.all(posts.map(async post => {
       const date = dayjs(post.data.date).format("YYYY/MM/DD")
       const title = `#${post.data.no} - ${date}`
 
-      const aa = await post.render();
-
-
-      const headings = aa.headings.
+      const rendered = await post.render();
+      const headings = rendered.headings.
         filter(heading => heading.depth === 3)
 
       return { pagePath, title, headings }
