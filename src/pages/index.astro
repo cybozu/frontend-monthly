@@ -10,7 +10,7 @@ const contents = await Promise.all(
       const pagePath = `./posts/${post.frontmatter.slug}`
       const date = dayjs(post.frontmatter.date).format("YYYY/MM/DD")
       const title = `#${post.frontmatter.no} - ${date}`
-      const headings = await post
+      const headings = post
         .getHeadings()
         .filter(heading => heading.depth === 3)
       return { pagePath, title, headings }
