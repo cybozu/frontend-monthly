@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^1.2.2",
-    "astro": "^1.9.0",
+    "@astrojs/react": "^2.0.0",
+    "astro": "^2.0.1",
     "dayjs": "^1.11.7",
     "github-markdown-css": "^4.0.0",
     "react": "^18.2.0",

@@ -2,12 +2,12 @@
 export interface Props {
   members?: {
     name: string
-    link: string
+    link?: string | null
   }[]
   guest?: {
     name: string
-    link: string
-  }[]
+    link?: string | null
+  }[] | null
 }
 import { staticPath } from "../lib/helper"
 const { members, guest } = Astro.props

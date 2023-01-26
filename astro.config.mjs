@@ -10,6 +10,6 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: "prism",
   },
-  site: "https://cybozu.github.io",
+  site: "https://cybozu.github.io/",
   base: "/frontend-monthly",
 })
