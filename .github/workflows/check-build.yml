@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
+
+      # Runs a set of commands using the runners shell
       - name: Install and build
         run: |
           npm install
