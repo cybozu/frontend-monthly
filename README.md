@@ -14,7 +14,7 @@ open `http://localhost:3000`
 
 ## add post
 
-create md file into the `/posts` dir.
+create md file into the `/src/content/posts` dir.
 
 ## add profile image
 
