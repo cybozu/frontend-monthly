@@ -1,8 +1,8 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content"
 
 export interface Props {
-  frontmatter: CollectionEntry<'posts'>['data']
+  frontmatter: CollectionEntry<"posts">["data"]
 }
 import dayjs from "dayjs"
 import { staticPath } from "../lib/helper"
@@ -63,6 +63,16 @@ const format = "HH:mm"
       #サイボウズフロントエンドウィークリー
     </a>{" "}
     で実況しています。
+  </p>
+  <p>
+    zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+    <a
+      href="https://zenn.dev/p/cybozu_frontend"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      https://zenn.dev/p/cybozu_frontend
+    </a>
   </p>
 </div>
 
