@@ -95,6 +95,52 @@ const format = "HH:mm"
   )
 }
 
+<h3>タイムテーブル</h3>
+<table>
+  <tbody>
+    <tr>
+      <td
+        >{
+          `${startDate.subtract(10, "m").format(format)} - ${startDate.format(
+            format
+          )}`
+        }</td
+      >
+      <td>配信開始</td>
+    </tr>
+    <tr>
+      <td>
+        {
+          `${startDate.format(format)} - ${startDate
+            .add(5, "m")
+            .format(format)}`
+        }
+      </td>
+      <td>オープニング</td>
+    </tr>
+    <tr>
+      <td>
+        {
+          `${startDate.add(5, "m").format(format)} - ${startDate
+            .add(55, "m")
+            .format(format)}`
+        }
+      </td>
+      <td>本編</td>
+    </tr>
+    <tr>
+      <td>
+        {
+          `${startDate.add(55, "m").format(format)} - ${startDate
+            .add(60, "m")
+            .format(format)}`
+        }
+      </td>
+      <td>クロージング</td>
+    </tr>
+  </tbody>
+</table>
+
 <style lang="scss">
   .note {
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
