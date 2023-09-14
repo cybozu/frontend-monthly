@@ -1,21 +1,23 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
 import dayjs from "dayjs"
 
-const posts = await getCollection('posts');
-const contents = await Promise.all(posts.map(async post => {
+const posts = await getCollection("posts")
+const contents = await Promise.all(
+  posts
+    .map(async post => {
       const pagePath = `./posts/${post.slug}`
       const date = dayjs(post.data.date).format("YYYY/MM/DD")
       const title = `#${post.data.no} - ${date}`
 
-      const rendered = await post.render();
-      const headings = rendered.headings.
-        filter(heading => heading.depth === 3)
+      const rendered = await post.render()
+      const headings = rendered.headings.filter(heading => heading.depth === 3)
 
       return { pagePath, title, headings }
     })
-    .reverse())
+    .reverse()
+)
 ---
 
 <Layout title="Cybozu Frontend Monthly">
