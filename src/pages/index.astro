@@ -62,6 +62,14 @@ const contents = await Promise.all(
     img {
       margin-right: 0.25em;
     }
+    @media (max-width: 420px) {
+      font-size: 1.4em;
+      img {
+        margin-right: 0.2em;
+        max-width: 30px;
+        height: auto;
+      }
+    }
   }
   .posts {
     list-style: none;

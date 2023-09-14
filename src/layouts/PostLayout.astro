@@ -14,7 +14,7 @@ const { title } = Astro.props
   </div>
 </Layout>
 
-<style>
+<style lang="scss">
   .post-title {
     padding-bottom: 0.3em;
     border-bottom: 1px solid #eaecef;
@@ -23,5 +23,8 @@ const { title } = Astro.props
     font-weight: 600;
     line-height: 1.25;
     margin-top: 0;
+    @media (max-width: 420px) {
+      font-size: 1.4em;
+    }
   }
 </style>
