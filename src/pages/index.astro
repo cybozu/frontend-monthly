@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
 import dayjs from "dayjs"
+import { Image } from "astro:assets"
+import iconImg from "../assets/icon.jpeg"
 
 const posts = await getCollection("posts")
 const contents = await Promise.all(
@@ -21,7 +23,10 @@ const contents = await Promise.all(
 ---
 
 <Layout title="Cybozu Frontend Monthly">
-  <h1 class="title">Cybozu Frontend Monthly</h1>
+  <h1 class="title">
+    <Image src={iconImg} alt="" width="50" height="50" />Cybozu Frontend Monthly
+  </h1>
+
   <ul class="posts">
     {
       contents.map(content => {
@@ -52,6 +57,11 @@ const contents = await Promise.all(
     line-height: 1.25;
     margin-bottom: 16px;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 0.25em;
+    }
   }
   .posts {
     list-style: none;
