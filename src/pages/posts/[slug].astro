@@ -1,12 +1,14 @@
 ---
-export interface Props {
-  post: CollectionEntry<'posts'>
-}
-import { getCollection, CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
 import PostLayout from "../../layouts/PostLayout.astro"
 import EventSummary from "../../components/EventSummary.astro"
 import MembersList from "../../components/MembersList.astro"
 import EmbedIntroduceSlide from "../../components/EmbedIntroduceSlide.astro"
+
+export interface Props {
+  post: CollectionEntry<'posts'>
+}
 
 export const getStaticPaths = async () => {
   const posts = await getCollection('posts')

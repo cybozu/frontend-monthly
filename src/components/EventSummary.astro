@@ -7,11 +7,11 @@ export interface Props {
   frontmatter: CollectionEntry<"posts">["data"]
 }
 import dayjs from "dayjs"
-import { staticPath } from "../lib/helper"
+// import { staticPath } from "../lib/helper"
 import StreamInfo from "./StreamInfo.astro"
 const { frontmatter } = Astro.props
-const startDate = dayjs(frontmatter.date)
-const format = "HH:mm"
+// const startDate = dayjs(frontmatter.date)
+// const format = "HH:mm"
 ---
 
 <Image

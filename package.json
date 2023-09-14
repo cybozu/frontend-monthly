@@ -11,9 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.2.0",
     "astro": "^3.0.13",
     "dayjs": "^1.11.7",
-    "github-markdown-css": "^4.0.0"
+    "github-markdown-css": "^4.0.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
