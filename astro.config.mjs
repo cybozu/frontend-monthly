@@ -7,5 +7,5 @@ export default defineConfig({
     syntaxHighlight: "prism",
   },
   site: "https://cybozu.github.io/",
-  base: "/frontend-monthly",
+  base: "frontend-monthly/",
 })
