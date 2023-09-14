@@ -1,26 +1,25 @@
 ---
 import type { CollectionEntry } from "astro:content"
+import { Image } from "astro:assets"
+import headerImg from "../assets/header.png"
 
 export interface Props {
   frontmatter: CollectionEntry<"posts">["data"]
 }
 import dayjs from "dayjs"
-import { staticPath } from "../lib/helper"
+// import { staticPath } from "../lib/helper"
 import StreamInfo from "./StreamInfo.astro"
 const { frontmatter } = Astro.props
-const startDate = dayjs(frontmatter.date)
-const format = "HH:mm"
+// const startDate = dayjs(frontmatter.date)
+// const format = "HH:mm"
 ---
 
-<img
-  src={staticPath("/img/header.png")}
-  alt=""
-  width="659"
-  height="229"
-  style={{
-    height: "auto",
-    maxWidth: "100%",
-  }}
+<Image
+  src={headerImg}
+  alt="タイトル画像"
+  width="660"
+  height="270"
+  quality="max"
 />
 <h2>イベント概要</h2>
 <p>

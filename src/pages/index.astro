@@ -1,25 +1,32 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
 import dayjs from "dayjs"
+import { Image } from "astro:assets"
+import iconImg from "../assets/icon.jpeg"
 
-const posts = await getCollection('posts');
-const contents = await Promise.all(posts.map(async post => {
+const posts = await getCollection("posts")
+const contents = await Promise.all(
+  posts
+    .map(async post => {
       const pagePath = `./posts/${post.slug}`
       const date = dayjs(post.data.date).format("YYYY/MM/DD")
       const title = `#${post.data.no} - ${date}`
 
-      const rendered = await post.render();
-      const headings = rendered.headings.
-        filter(heading => heading.depth === 3)
+      const rendered = await post.render()
+      const headings = rendered.headings.filter(heading => heading.depth === 3)
 
       return { pagePath, title, headings }
     })
-    .reverse())
+    .reverse()
+)
 ---
 
 <Layout title="Cybozu Frontend Monthly">
-  <h1 class="title">Cybozu Frontend Monthly</h1>
+  <h1 class="title">
+    <Image src={iconImg} alt="" width="50" height="50" />Cybozu Frontend Monthly
+  </h1>
+
   <ul class="posts">
     {
       contents.map(content => {
@@ -50,6 +57,11 @@ const contents = await Promise.all(posts.map(async post => {
     line-height: 1.25;
     margin-bottom: 16px;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 0.25em;
+    }
   }
   .posts {
     list-style: none;
