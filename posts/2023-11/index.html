@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #41"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #41"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #41</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #41</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.dc458974_ZIMvDY.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="270" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2023年11月28日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/301001/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/301001/</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nakajmg.jpg" class="thumbnail" alt="@nakajmg" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nakajmg" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nakajmg</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="vue-fes-japan-2023-にスポンサーとして参加しました"><a href="https://cybozu.github.io/frontend-expert/posts/sponsored-vuefes2023">Vue Fes Japan 2023 にスポンサーとして参加しました</a></h3>
+<ul>
+<li>共有者: nakajmg</li>
+</ul>
+<p>2023 年 10 月 28 日に<a href="https://vuefes.jp/2023/">Vue Fes Japan 2023</a>が開催されました。サイボウズはシルバースポンサーとして協賛し、スポンサーブースの出展を行いました。</p>
+<ul>
+<li><a href="https://cybozu.github.io/frontend-expert/posts/sponsor-vuefes2023">サイボウズは Vue Fes Japan 2023 のシルバースポンサーとして協賛します | サイボウズ フロントエンドエキスパートチーム</a></li>
+</ul>
+<p>今後もスポンサーや登壇などを通してコミュニティに貢献していければと思います。カンファレンス関係者の方々、参加者のみなさまありがとうございました。</p>
+<hr>
+<h3 id="storybook-test-more-streamlined-and-powerful-testing"><a href="https://storybook.js.org/blog/storybook-test/">@storybook-test: more streamlined and powerful testing</a></h3>
+<ul>
+<li>共有者: nus3_</li>
+</ul>
+<p>Storybook7.6 で追加予定の<code>@storybook/jest</code>と<code>@storybook/testing-library</code>を統合した<code>@storybook/test</code>の紹介です。</p>
+<p>この<code>@storybook/test</code>には Vitest の spy や expect ユーテリティも含まれています。これら Vitest のユーテリティを採用することで、パッケージサイズの削減やパフォーマンスの向上が見込まれるとのことです。</p>
+<p>また、<code>@storybook/test</code>で提供される<code>fn()</code>を使って onClick などのアクションをモックできます。</p>
+<pre class="language-tsx"><code is:raw="" class="language-tsx"><span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./Button"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fn <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@storybook/test"</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  component<span class="token operator">:</span> Button<span class="token punctuation">,</span>
+  args<span class="token operator">:</span> <span class="token punctuation">{</span>
+    onClick<span class="token operator">:</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre>
+<p>この記事内で紹介されている<a href="https://www.defined.net/blog/modern-frontend-testing/">モダンフロントエンドでのテストの記事</a>では、Interaction tests が実装された 200 以上のコンポーネント、1000 以上のストーリーに対して、CI 上で 6 並列でテストを実行すると約 3 分で完了するとのことです。</p>
+<p>個人的に Storybook のテストランナーを用いたテストの実行コストが気になっていたので、この記事通りであるならば、今回の<code>@storybook/test</code>と合わせて Interaction tests の採用をもっと検討してみても良さそうに感じました。</p>
+<hr>
+<h3 id="webassembly-garbage-collection-wasmgc-now-enabled-by-default-in-chrome"><a href="https://developer.chrome.com/en/blog/wasmgc/">WebAssembly Garbage Collection (WasmGC) now enabled by default in Chrome</a></h3>
+<ul>
+<li>共有者: b4h0_c4t</li>
+</ul>
+<p>WasmGC (WebAssembly Gabage Collection)が Chrome にてデフォルトで有効化されました。</p>
+<p>従来、Java のよう高級言語を WebAssembly へ移植する際、GC のような VM が備える機能も含めて WebAssembly へ移植する必要がありました。
+WasmGC は、WebAssembly 側の VM が持つ GC の機能をポートすることで高級言語を移植した際に GC の移植コストを削減するための<a href="https://github.com/WebAssembly/gc/blob/main/proposals/gc/Overview.md">プロポーザル</a>です。</p>
+<p>WasmGC の仕組みとして、まず WebAssembly VM が理解できる構造体や配列型が定義され、それらのインスタンスの生成といった操作が紐づけられます。
+次に、移植元のコードは、定義された型に沿ってコードを置き換えます。
+これによって WebAssembly VM が移植元コードの値を認識して管理できるようになります。</p>
+<p>言語が持つ GC を含めて WebAssembly へ移植する従来の手法と比較して、移植コードの容量が削減されることはもちろん、JavaScript への適切な参照を提供できる他、メモリフラグメンテーションのリスクを抑えることができるといった利点があります。</p>
+<hr>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://vercel.com/blog/how-we-optimized-package-imports-in-next-js">How we optimized package imports in Next.js</a>
+<ul>
+<li>Next.js で行われたパッケージの読み込み最適化と、それにまつわるコールドスタートの改善についての紹介</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/kubotak/storybookwoshu-kudakederiguretusiyontesutoga-shi-xing-sarerushi-jie-heyoukoso">Storybook を書くだけでリグレッションテストが実行される世界へようこそ</a>
+<ul>
+<li>Chromatic のクロスブラウザでの VRT を自前で実装した事例</li>
+</ul>
+</li>
+<li><a href="https://mswjs.io/blog/introducing-msw-2.0">Introducing MSW 2.0</a>
+<ul>
+<li>MSW 2.0 がリリース</li>
+</ul>
+</li>
+<li><a href="https://yarnpkg.com/blog/release/4.0">Release: Yarn 4.0 🪄⚗️</a>
+<ul>
+<li>Yarn 4.0 がリリース</li>
+</ul>
+</li>
+<li><a href="https://github.com/orgs/web-infra-dev/discussions/5">Rspress, the Rspack-based static site generator</a>
+<ul>
+<li>Rspack ベースの Static Site Generator である Rspress の v1 がリリース</li>
+</ul>
+</li>
+<li><a href="https://www.epicweb.dev/why-i-wont-use-nextjs">Why I Won’t Use Next.js</a>
+<ul>
+<li>Kent C. Dodds 氏がなぜ Next.js ではなく Remix を使うのかを綴っている記事</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/learn">Start building with Next.js</a>
+<ul>
+<li>Next.js の学習コースで、App Router を活用した開発を学べる</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-14">Next.js 14</a>
+<ul>
+<li>Next.js 14 がリリース。Server Actions が stable になるなど</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2023/10/deprecating-formatting-rules/">Deprecation of formatting rules</a>
+<ul>
+<li>eslint v8.53.0 からスタイルフォーマット系のルールが deprecated になった</li>
+</ul>
+</li>
+<li><a href="https://github.com/jestjs/jest/releases/tag/v30.0.0-alpha.1">Jest v30.0.0-alpha.1</a>
+<ul>
+<li>Jest の v30.0.0-alpha.1 がリリース。mts ファイルや cts ファイルのデフォルトサポート</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-340/">Astro 3.4: Page Partials</a>
+<ul>
+<li>Astro 3.4 がリリース。部分的な HTML をレスポンスとして返す実装が可能になる Page Partials という機能などが追加</li>
+</ul>
+</li>
+<li><a href="https://wasmer.io/posts/announcing-winterjs-service-workers">Announcing WinterJS</a>
+<ul>
+<li>WinterJS という JavaScript Service Workers サーバの紹介</li>
+</ul>
+</li>
+<li><a href="https://remix.run/blog/remix-heart-vite">Remix ❤️ Vite | Remix</a>
+<ul>
+<li>Remix が Vite をサポート</li>
+</ul>
+</li>
+<li><a href="https://github.com/google/closure-library/issues/1214">Closure Library is in Maintenance Mode #1214</a>
+<ul>
+<li>Closure Library が 11 月 1 日からメンテナンスモードに入り、2024 年 8 月に更新が終了</li>
+</ul>
+</li>
+<li><a href="https://github.com/storybookjs/storybook/issues/21540#issuecomment-1784953028">Support React Server Components</a>
+<ul>
+<li>StoryBook で React Server Components がサポート予定</li>
+</ul>
+</li>
+<li><a href="https://survey.devographics.com/ja-JP/survey/state-of-react/2023">State of React 2023</a>
+<ul>
+<li>2023 年における React の利用に関するサーベイ</li>
+</ul>
+</li>
+<li><a href="https://x.com/boshen_c/status/1719596594985681275">Alipay started its own Rust bundler project called Mako.</a>
+<ul>
+<li>Alipay（支付宝）が、独自の Rust バンドラープロジェクト Mako を開始</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/berlysia/202311-lightning-techtalks-2">ESLint のローカルルールで独自のコーディング規約を実装する</a>
+<ul>
+<li>ESLint の Flat Config 機能を活用することで独自のコーディング規約を簡単に実装できる</li>
+</ul>
+</li>
+<li><a href="https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model">Building towards a new default rendering model for web applications</a>
+<ul>
+<li>Next.js 14 で Experimental 機能として利用可能な PPR (Partial Prerendering) に関する Vercel による解説記事</li>
+</ul>
+</li>
+<li><a href="https://console.algora.io/challenges/prettier">Rust で Prettier の 95% 以上のテストに合格すると $10,000</a>
+<ul>
+<li>Rust を使って Prettier の 95% 以上のテストケースをパスした場合、$10,000 の賞金を個人で提供する旨がポスト</li>
+</ul>
+</li>
+<li><a href="https://prettier.io/blog/2023/11/13/3.1.0.html">Prettier に —experimental-ternaries オプションが追加</a>
+<ul>
+<li>Prettier v3.1 で —experimental-ternaries オプションが追加され、三項演算子のフォーマットが可能に</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-350/">Astro 3.5</a>
+<ul>
+<li>Astro の 3.5 がリリース。i18n に対応したルーティングや、以前から Integration として提供されていた Prefetch のコアへの組込、<code>&#x3C;form></code> での View Transition のサポートなど</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html">The State of WebAssembly 2023</a>
+<ul>
+<li>WebAssembly の利用状況などのサーベイ</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/css-text-wrap-pretty/">CSS <code>text-wrap: pretty</code></a>
+<ul>
+<li>pretty を指定すると、組版などで最終行にぽつんと単語が残るような事象（orphans）を防げます。</li>
+</ul>
+</li>
+<li><a href="https://portal.gitnation.org/contents/faster-typescript-builds-with-isolateddeclarations">Faster TypeScript builds with —isolatedDeclarations</a>
+<ul>
+<li>TypeScript に今後実装予定の<code>--isolatedDeclarations</code>という型定義ファイル出力におけるファイル間の依存を軽減するオプションについて</li>
+</ul>
+</li>
+<li><a href="https://blog.whatwg.org/url-pattern-standard">The URL Pattern Standard</a>
+<ul>
+<li>URL Pattern が Living Standard に追加</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/v1.38">Deno 1.38: HTML doc generator and HMR</a>
+<ul>
+<li>Deno 1.38 がリリース。HTML doc generator の追加など</li>
+</ul>
+</li>
+<li><a href="https://v8.dev/blog/wasm-gc-porting">A new way to bring garbage collected programming languages efficiently to WebAssembly</a>
+<ul>
+<li>ガベージコレクションを備えたプログラミング言語を WebAssembly で効率的にサポートする方法について</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/css-nesting-relaxed-syntax-update/">CSS nesting relaxed syntax update</a>
+<ul>
+<li>Chrome 120 以降、CSS nesting の構文が更新され、ネストした場合でも &#x26; なしで要素名が使えるように</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://chromestatus.com/feature/5665308343795712">scrollbar-color と scrollbar-width が Chrome 121 で実装予定</a>
+<ul>
+<li>CSS でスクロールバーの色とサイズを指定できる<code>scrollbar-color</code>と<code>scrollbar-width</code>が Chrome 121 で実装予定</li>
+</ul>
+</li>
+<li><a href="https://chromestatus.com/feature/5118715069202432">Chrome 119 で CSS で指数関数や平方根の計算を行う関数がフラグ付きで追加予定</a>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pow">pow()</a>や<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sqrt">sqrt()</a>などが追加予定</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/mozilla.org/g/dev-platform/c/oacuvZ2_hLg/m/4o28pFLkAwAJ">Intent to Ship: :has Selector</a>
+<ul>
+<li>CSS のセレクタ:has()が Firefox121 で実装予定</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/blog/introduction-to-web-sustainability/">Introduction to web sustainability | MDN Blog</a>
+<ul>
+<li>web の持続可能性についての概要とガイドラインについて</li>
+</ul>
+</li>
+<li><a href="https://oxc-project.github.io/javascript-parser-in-rust/ja/">Write a JavaScript Parser in Rust</a>
+<ul>
+<li>Rust で JavaScript パーサーを書くためのガイド</li>
+</ul>
+</li>
+<li><a href="https://talks.antfu.me/2023/vuefesjapan/1">The Set Theory</a>
+<ul>
+<li>Vue などの開発を手掛ける Anthony Fu 氏が Vue Fes Japan 2023 で公演したときの資料</li>
+</ul>
+</li>
+<li><a href="https://blog.cybozu.io/entry/2023/11/10/131530">フロントエンドリアーキテクトをテーマに「BAR フロントえんどう #1」を開催しました！</a></li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
