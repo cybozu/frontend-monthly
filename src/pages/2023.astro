@@ -4,12 +4,21 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
 import { topics } from "../content/2023/topics.ts"
 import Timeline from "../components/Timeline.astro"
 import TimelineMobile from "../components/TimelineMoblie.astro"
+
+import BannerImage from "../assets/2023_banner.png"
 ---
 
 <TimelineLayout title="Cybozu Frontend Monthly">
   <main class="main">
     <header class="header">
-      <h1>2023年まとめ(バナー画像入れたいの)</h1>
+      <h1>
+        <img
+          class="header-image"
+          src={BannerImage.src}
+          alt="2023年のフロントエンドトピックまとめ"
+          width={800}
+        />
+      </h1>
     </header>
     <Timeline topics={topics} />
     <TimelineMobile topics={topics} />
@@ -32,8 +41,22 @@ import TimelineMobile from "../components/TimelineMoblie.astro"
     border-bottom: 2px solid var(--color-surface-mixed-200);
     margin-bottom: 20px;
 
-    @media screen and (max-width: 420px) {
-      height: 200px;
+    @media screen and (max-width: 850px) {
+      height: 160px;
+    }
+
+    @media screen and (max-width: 450px) {
+      height: 120px;
+    }
+  }
+
+  .header-image {
+    @media screen and (max-width: 850px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 300px;
     }
   }
 </style>
