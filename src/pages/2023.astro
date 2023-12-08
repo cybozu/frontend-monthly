@@ -1,0 +1,203 @@
+---
+import TimelineLayout from "../layouts/TimelineLayout.astro"
+---
+
+<TimelineLayout title="Cybozu Frontend Monthly">
+  <main class="main">
+    <header class="header">
+      <h1>2023年まとめ(バナー画像入れたいの)</h1>
+    </header>
+    <section class="timeline">
+      <div class="month-row">
+        <div class="month-dot">1月</div>
+      </div>
+      <div class="row">
+        <div class="notable">
+          <div class="notable-row">
+            <div class="notable-header">
+              <a
+                class="notable-title"
+                href="https://astro.build/blog/astro-2/"
+                target="_blank"
+                rel="noopener noreferrer">注目トピックのタイトル</a
+              >
+            </div>
+            <div>
+              注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。
+            </div>
+          </div>
+          <div class="notable-row">
+            <div class="notable-header">
+              <a
+                class="notable-title"
+                href="https://astro.build/blog/astro-2/"
+                target="_blank"
+                rel="noopener noreferrer">注目トピックのタイトル</a
+              >
+            </div>
+            <div>
+              注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。。
+            </div>
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-row">
+            <div class="dot"></div>
+            <a
+              class="topic-link"
+              href="https://astro.build/blog/astro-2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル
+            </a>
+            <span class="topic-date">2023-01-24</span>
+          </div>
+          <div class="topic-row">
+            <div class="dot"></div>
+            <a
+              class="topic-link"
+              href="https://astro.build/blog/astro-2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Astro 2.0
+            </a>
+            <span class="topic-date">2023-01-24</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</TimelineLayout>
+
+<style lang="scss">
+  .main {
+    padding: 0 1rem;
+  }
+  .header {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    height: 400px;
+    border-bottom: 2px solid var(--color-surface-mixed-200);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 420px) {
+      height: 200px;
+    }
+  }
+  .timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background-color: var(--color-surface-mixed-200);
+      transform: translateX(-50%);
+    }
+  }
+
+  .month-row {
+    position: relative;
+    height: 30px;
+  }
+  .month-dot {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: 50%;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--color-primary-0);
+    border: 4px solid var(--color-surface-mixed-100);
+    transform: translate(-50%, -50%);
+  }
+
+  .row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+
+  .notable {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .notable-row {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    margin-right: 14px;
+    padding: 0.8rem;
+    background-color: var(--color-surface-mixed-200);
+    border-radius: 4px;
+  }
+  .notable-title {
+    color: var(--color-primary-300);
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .topic {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .topic-row {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding-left: 14px;
+  }
+  .dot {
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-surface-mixed-200);
+    border: 4px solid var(--color-surface-mixed-100);
+  }
+  .topic-link {
+    text-decoration: none;
+    color: var(--color-primary-300);
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary-600);
+      border-radius: 2px;
+    }
+  }
+  .topic-date {
+    padding-top: 4px;
+    min-width: 94px;
+    color: var(--color-surface-mixed-600);
+  }
+</style>
