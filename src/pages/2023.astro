@@ -1,5 +1,7 @@
 ---
 import TimelineLayout from "../layouts/TimelineLayout.astro"
+
+import { topics } from "../content/2023/topics.ts"
 ---
 
 <TimelineLayout title="Cybozu Frontend Monthly">
@@ -8,65 +10,54 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
       <h1>2023年まとめ(バナー画像入れたいの)</h1>
     </header>
     <section class="timeline">
-      <div class="month-row">
-        <div class="month-dot">1月</div>
-      </div>
-      <div class="row">
-        <div class="notable">
-          <div class="notable-row">
-            <div class="notable-header">
-              <a
-                class="notable-title"
-                href="https://astro.build/blog/astro-2/"
-                target="_blank"
-                rel="noopener noreferrer">注目トピックのタイトル</a
-              >
+      {
+        topics.map(topic => (
+          <>
+            <div class="month-row">
+              <div class="month-dot">{topic.month}月</div>
             </div>
-            <div>
-              注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。
+            <div class="row">
+              <div class="notable">
+                {topic.notableTopics.map(topic => (
+                  <div class="notable-row">
+                    <div class="notable-header">
+                      {topic.url ? (
+                        <a
+                          class="notable-title-link"
+                          href={topic.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {topic.title}
+                        </a>
+                      ) : (
+                        <span class="notable-title">{topic.title}</span>
+                      )}
+                    </div>
+                    <div>{topic.overview}</div>
+                  </div>
+                ))}
+              </div>
+              <div class="topic">
+                {topic.topics.map(topic => (
+                  <div class="topic-row">
+                    <div class="dot" />
+                    <a
+                      class="topic-link"
+                      href={topic.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {topic.title}
+                    </a>
+                    <span class="topic-date">{topic.date}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <div class="notable-row">
-            <div class="notable-header">
-              <a
-                class="notable-title"
-                href="https://astro.build/blog/astro-2/"
-                target="_blank"
-                rel="noopener noreferrer">注目トピックのタイトル</a
-              >
-            </div>
-            <div>
-              注目トピックの内容。注目トピックの内容。注目トピックの内容。注目トピックの内容。。
-            </div>
-          </div>
-        </div>
-        <div class="topic">
-          <div class="topic-row">
-            <div class="dot"></div>
-            <a
-              class="topic-link"
-              href="https://astro.build/blog/astro-2/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル
-            </a>
-            <span class="topic-date">2023-01-24</span>
-          </div>
-          <div class="topic-row">
-            <div class="dot"></div>
-            <a
-              class="topic-link"
-              href="https://astro.build/blog/astro-2/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Astro 2.0
-            </a>
-            <span class="topic-date">2023-01-24</span>
-          </div>
-        </div>
-      </div>
+          </>
+        ))
+      }
     </section>
   </main>
 </TimelineLayout>
@@ -93,6 +84,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     padding: 1rem 0;
+    margin-bottom: 40px;
     box-sizing: border-box;
 
     &::before {
@@ -131,13 +123,14 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem 0;
+    margin-bottom: 1rem;
     box-sizing: border-box;
   }
 
   .notable {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 60px;
   }
 
   .notable-row {
@@ -150,20 +143,26 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
     background-color: var(--color-surface-mixed-200);
     border-radius: 4px;
   }
-  .notable-title {
+  .notable-title-link {
     color: var(--color-primary-300);
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: bold;
 
     &:hover {
       text-decoration: underline;
     }
   }
 
+  .notable-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
   .topic {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
   }
   .topic-row {
     position: relative;
@@ -178,7 +177,7 @@ import TimelineLayout from "../layouts/TimelineLayout.astro"
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: var(--color-surface-mixed-200);
+    background-color: var(--color-surface-mixed-400);
     border: 4px solid var(--color-surface-mixed-100);
   }
   .topic-link {
