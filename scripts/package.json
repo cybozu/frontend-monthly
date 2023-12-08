@@ -1,0 +1,11 @@
+{
+  "name": "scripts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "transform-topics": "tsx transform-topics/index.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.6.2"
+  }
+}
