@@ -6,7 +6,7 @@ type Topic = {
   isNotable?: boolean
 }
 
-type TopicByMonth = {
+export type TopicByMonth = {
   month: string
   topics: Topic[]
   notableTopics: Topic[]

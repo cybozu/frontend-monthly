@@ -2,6 +2,8 @@
 import TimelineLayout from "../layouts/TimelineLayout.astro"
 
 import { topics } from "../content/2023/topics.ts"
+import Timeline from "../components/Timeline.astro"
+import TimelineMobile from "../components/TimelineMoblie.astro"
 ---
 
 <TimelineLayout title="Cybozu Frontend Monthly">
@@ -9,62 +11,18 @@ import { topics } from "../content/2023/topics.ts"
     <header class="header">
       <h1>2023年まとめ(バナー画像入れたいの)</h1>
     </header>
-    <section class="timeline">
-      {
-        topics.map(topic => (
-          <>
-            <div class="month-row">
-              <div class="month-dot">{topic.month}月</div>
-            </div>
-            <div class="row">
-              <div class="notable">
-                {topic.notableTopics.map(topic => (
-                  <div class="notable-row">
-                    <div class="notable-header">
-                      {topic.url ? (
-                        <a
-                          class="notable-title-link"
-                          href={topic.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {topic.title}
-                        </a>
-                      ) : (
-                        <span class="notable-title">{topic.title}</span>
-                      )}
-                    </div>
-                    <div>{topic.overview}</div>
-                  </div>
-                ))}
-              </div>
-              <div class="topic">
-                {topic.topics.map(topic => (
-                  <div class="topic-row">
-                    <div class="dot" />
-                    <a
-                      class="topic-link"
-                      href={topic.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {topic.title}
-                    </a>
-                    <span class="topic-date">{topic.date}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </>
-        ))
-      }
-    </section>
+    <Timeline topics={topics} />
+    <TimelineMobile topics={topics} />
   </main>
 </TimelineLayout>
 
 <style lang="scss">
   .main {
     padding: 0 2rem;
+
+    @media screen and (max-width: 420px) {
+      padding: 0 0.6rem;
+    }
   }
   .header {
     display: grid;
@@ -77,128 +35,5 @@ import { topics } from "../content/2023/topics.ts"
     @media screen and (max-width: 420px) {
       height: 200px;
     }
-  }
-  .timeline {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    padding: 1rem 0;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 4px;
-      height: 100%;
-      background-color: var(--color-surface-mixed-200);
-      transform: translateX(-50%);
-    }
-  }
-
-  .month-row {
-    position: relative;
-    height: 30px;
-  }
-  .month-dot {
-    position: absolute;
-    display: grid;
-    place-items: center;
-    top: 50%;
-    left: 50%;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background-color: var(--color-primary-0);
-    border: 4px solid var(--color-surface-mixed-100);
-    transform: translate(-50%, -50%);
-  }
-
-  .row {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-  }
-
-  .notable {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 60px;
-  }
-
-  .notable-row {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 10px;
-    max-width: 700px;
-    margin-right: 14px;
-    padding: 0.8rem;
-    background-color: var(--color-surface-mixed-200);
-    border-radius: 4px;
-  }
-  .notable-title-link {
-    color: var(--color-primary-300);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .notable-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  .topic {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .topic-row {
-    position: relative;
-    display: flex;
-    gap: 10px;
-    padding-left: 14px;
-  }
-  .dot {
-    position: absolute;
-    top: 2px;
-    left: -20px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--color-surface-mixed-400);
-    border: 4px solid var(--color-surface-mixed-100);
-  }
-  .topic-link {
-    text-decoration: none;
-    color: var(--color-primary-300);
-    font-size: 1.2rem;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:focus-visible {
-      outline: 2px solid var(--color-primary-600);
-      border-radius: 2px;
-    }
-  }
-  .topic-date {
-    padding-top: 4px;
-    min-width: 94px;
-    color: var(--color-surface-mixed-600);
   }
 </style>
