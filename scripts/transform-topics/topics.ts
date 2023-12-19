@@ -46,6 +46,7 @@ export const topics: Topic[] = [
       "主要なブラウザベンダーや関係企業で、ブラウザの相互運用性を向上するために取り組んでいるInterop 2023が公開",
     url: "https://web.dev/interop-2023/",
     date: "2023-02-14",
+    isNotable: true,
   },
   {
     title: "Vercel Meetup #0 with CEO",
@@ -327,9 +328,11 @@ export const topics: Topic[] = [
   },
   {
     title: "Vue Fes Japan 2023 にスポンサーとして参加",
-    overview: "Vue Fes Japan 2023 にスポンサーとして参加",
+    overview:
+      "Vue Fes Japan 2023 にスポンサーとして参加しました。FEEチームとしては初のブース出展でしたが、多くの参加者に来てもらいました。ブースではカンファレンスでよくあるアンケートのアレや、Cybozuフロントエンドのマスコットキャラクター「ハシコウ」のステッカー配布を行いました。",
     url: "https://cybozu.github.io/frontend-expert/posts/sponsored-vuefes2023",
     date: "2023-10-30",
+    isNotable: true,
   },
   {
     title: "Release: Yarn 4.0",
@@ -394,5 +397,13 @@ export const topics: Topic[] = [
     overview: "Deno Cron がリリース",
     url: "https://webkit.org/blog/14787/webkit-features-in-safari-17-2/",
     date: "2023-12-11",
+  },
+  {
+    title: "Astro 4.0",
+    overview:
+      "Vite 5への対応やexperimentalだった機能の安定化などが含まれています。年初の2.0リリースから1年経たずに4.0のリリースと、Astroの勢いが伺える年でした。Astroの進化に今後も期待してます。",
+    url: "https://astro.build/blog/astro-4/",
+    date: "2023-12-05",
+    isNotable: true,
   },
 ]
