@@ -352,18 +352,47 @@ export const topics: Topic[] = [
     date: "2023-11-10",
   },
   {
-    title: "注目トピック",
-    overview:
-      "注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容",
-    url: "https://blog.cybozu.io/entry/2023/11/10/131530",
-    date: "2023-01-12",
-    isNotable: true,
+    title: "StyleX",
+    overview: "Meta 製の CSS in JS フレームワーク StyleX がリリース",
+    url: "https://stylexjs.com/",
+    date: "2023-12-06",
   },
   {
-    title: "リンクなし注目トピック",
+    title: "Vite 5.0 is out!",
+    overview: "Viteの5.0がリリース",
+    url: "https://vitejs.dev/blog/announcing-vite5",
+    date: "2023-11-16",
+  },
+  {
+    title: "JSConf JP 2023",
     overview:
-      "注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容注目トピックの内容",
-    date: "2023-01-10",
-    isNotable: true,
+      "JSConf JP 2023が11月19日にオフラインで開催されました。FEEメンバーから2名が登壇しました。",
+    url: "https://jsconf.jp/2023/",
+    date: "2023-11-19",
+  },
+  {
+    title:
+      "CSSのネスト記法がFirefox 117でも対応⁠⁠、すべてのモダンブラウザでサポートへ",
+    overview: "CSSのネスト記法が使えるようになりました。",
+    url: "https://gihyo.jp/article/2023/08/firefox-117-released",
+    date: "2023-08-29",
+  },
+  {
+    title: "次世代Webカンファレンス 2023",
+    overview: "次世代Webカンファレンス",
+    url: "https://nextwebconf.connpass.com/event/300174/",
+    date: "2023-12-16",
+  },
+  {
+    title: "Announcing Deno Cron",
+    overview: "Deno Cron がリリース",
+    url: "https://deno.com/blog/cron",
+    date: "2023-11-29",
+  },
+  {
+    title: "WebKit Features in Safari 17.2",
+    overview: "Deno Cron がリリース",
+    url: "https://webkit.org/blog/14787/webkit-features-in-safari-17-2/",
+    date: "2023-12-11",
   },
 ]
