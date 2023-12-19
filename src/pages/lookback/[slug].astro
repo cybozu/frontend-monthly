@@ -9,14 +9,14 @@ import type { CollectionEntry } from "astro:content"
 export interface Props {
   lookback: CollectionEntry<"lookback">
 }
-type Topic = {
+export type Topic = {
   title: string
   overview: string
   url?: string
   date: string
   isNotable?: boolean
 }
-type TopicByMonth = {
+export type TopicByMonth = {
   month: string
   topics: Topic[]
   notableTopics: Topic[]
