@@ -97,9 +97,10 @@
   },
   {
     "title": "Next.js 13.4",
-    "overview": "Next.js 13.4がリリースされApp RouterがStableにServer Actionsのalpha版が実装された",
+    "overview": "App Router が Stable となり、併せて Server Actions の alpha 版が実装されました。React Server Components を Stable 利用できる最初のフレームワークが登場したことになります。",
     "url": "https://nextjs.org/blog/next-13-4",
-    "date": "2023-05-04"
+    "date": "2023-05-04",
+    "isNotable": true
   },
   {
     "title": "Announcing connect()",
@@ -127,15 +128,17 @@
   },
   {
     "title": "Panda CSS",
-    "overview": "Chakra UI から、CSS-in-JS ライブラリである Panda CSS がリリース",
+    "overview": "Chakra UI から、CSS-in-JS ライブラリである Panda CSS がリリースされました。Zero runtime CSS-in-JS であり、かつ TypeScript のサポートやモダンな CSS 技術の採用など、昨今の CSS フレームワークの特徴・機能を多く兼ね備えています。",
     "url": "https://panda-css.com/",
-    "date": "2023-07-01"
+    "date": "2023-07-01",
+    "isNotable": true
   },
   {
     "title": "Kuma UI",
-    "overview": "Zero-runtime CSS-in-JS と Runtime CSS-in-JS の Hybrid approach を掲げる UI コンポーネントライブラリ",
+    "overview": "Zero-runtime CSS-in-JS と Runtime CSS-in-JS の Hybrid approach を掲げる UI コンポーネントライブラリである Kuma UI がリリースされました。@poteboy さんを中心に、日本発のライブラリとして注目を集めたことでも話題となりました。",
     "url": "https://www.kuma-ui.com/",
-    "date": "2023-07-01"
+    "date": "2023-07-01",
+    "isNotable": true
   },
   {
     "title": "How React 18 Improves Application Performance",
@@ -265,9 +268,10 @@
   },
   {
     "title": "Cloudflare Fonts",
-    "overview": "Cloudflareがプライバシーやパフォーマンス面が特徴のWebフォント配信サービスを開始",
+    "overview": "Cloudflare が プライバシーやパフォーマンス面が特徴の Web フォント配信サービスを開始しました。HTML を Cloudflare 側で解析した上で CSS とインライン展開するのが特徴で、Edge 側によるチューニングの新たな方向性が垣間見えるサービスの登場でした。",
     "url": "https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/",
-    "date": "2023-09-25"
+    "date": "2023-09-25",
+    "isNotable": true
   },
   {
     "title": "D1: open beta is here",
@@ -325,9 +329,10 @@
   },
   {
     "title": "JSConf JP 2023",
-    "overview": "JSConf JP 2023が11月19日にオフラインで開催されました。FEEメンバーから2名が登壇しました。",
+    "overview": "JSConf JP 2023が11月19日にオフラインで開催されました。オフライン開催は2019年以来の4年ぶりとなります。FEEメンバーからも2名が登壇しました。",
     "url": "https://jsconf.jp/2023/",
-    "date": "2023-11-19"
+    "date": "2023-11-19",
+    "isNotable": true
   },
   {
     "title": "CSSのネスト記法がFirefox 117でも対応⁠⁠、すべてのモダンブラウザでサポートへ",
