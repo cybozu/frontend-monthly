@@ -352,5 +352,25 @@
     "overview": "Deno Cron がリリース",
     "url": "https://webkit.org/blog/14787/webkit-features-in-safari-17-2/",
     "date": "2023-12-11"
+  },
+  {
+    "title": "Denoのバージョンアップや関連製品のリリース",
+    "overview": "去年から引き続き、Node.jsとの互換性を向上させつつ、Deno KV、dnt、Deno Queues、Deno Subhosting、Deno Cronなどさまざまなサービスをリリースしたのが印象的だった。Denoから提供されるシンプルなAPIとDeno Deployを使って簡単にデプロイできる仕組みや、Denoに組み込まれてるエコシステムによって、すぐにプロダクトの開発に着手できるのが良さそう。",
+    "url": "https://deno.com/blog",
+    "date": "2023-12-01",
+    "isNotable": true
+  },
+  {
+    "title": "OpenUIが提案する仕様の実装が進む",
+    "overview": "Popover APIとselectlistの実装が進んでいる。主要なブラウザで安定して使えるようになるのはもう少し先かもしれないが、どちらも今までの実装をより簡潔にしてくれるので今後が楽しみ。",
+    "date": "2023-09-18",
+    "isNotable": true
+  },
+  {
+    "title": "次世代Webカンファレンス 2023",
+    "overview": "スライドも台本もなく、テストについて今どうなっているのか、これからどうなっていくのか議論するという初めての体験をした。90分は意外と短かった。",
+    "url": "https://nextwebconf.connpass.com/event/300174/",
+    "date": "2023-12-16",
+    "isNotable": true
   }
 ]
