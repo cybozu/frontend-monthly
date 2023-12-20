@@ -389,5 +389,35 @@
     "overview": "Cybozu Frontend Monthly#34 (ゲスト: Takepepeさん)",
     "url": "https://cybozu.connpass.com/event/280045/",
     "date": "2023-04-25"
+  },
+  {
+    "title": "Oxlint General Availability",
+    "overview": "Oxlintが利用できるように",
+    "url": "https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html",
+    "date": "2023-12-12"
+  },
+  {
+    "title": "JSエコシステムの変化",
+    "overview": "JSのLint、Format、Bundleといったエコシステムのツールとして、BiomeやOxc、BunやDeno、Rspack、Rolldownなど多くのツールが登場した1年だった",
+    "date": "2023-12-12",
+    "isNotable": true
+  },
+  {
+    "title": "The Future (and the Past) of the Web is Server Side Rendering",
+    "overview": "Denoのブログで公開されたSSRへの揺り戻しの話",
+    "date": "2023-02-01",
+    "url": "https://deno.com/blog/the-future-and-past-is-server-side-rendering"
+  },
+  {
+    "title": "The Web’s Next Transition",
+    "overview": "Kent C. Doddsが書いたSPAから今後、どういったアーキテクチャが採用されるか紹介している記事",
+    "date": "2023-06-07",
+    "url": "https://www.epicweb.dev/the-webs-next-transition"
+  },
+  {
+    "title": "SPA構成からの変化",
+    "overview": "CSRをメインとするSPA構成から、2022年のNext.js v13のApp RouterをはじめとしたSSRをメインとする機能を各種フレームワークが提供するように。このフレームワークの流れもあり、フロントエンドが取りうる構成も徐々に変化していってるように感じる。",
+    "date": "2023-02-01",
+    "isNotable": true
   }
 ]
