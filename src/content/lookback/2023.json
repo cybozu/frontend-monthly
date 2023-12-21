@@ -9,7 +9,8 @@
     "title": "Announcing TypeScript 5.0 Beta",
     "overview": "TypeScript 5.0 の beta がリリース",
     "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/",
-    "date": "2023-01-26"
+    "date": "2023-01-26",
+    "isNotable": true
   },
   {
     "title": "The Turbopack vision",
@@ -175,7 +176,8 @@
     "title": "Ecma International approves new standards - Ecma International",
     "overview": "Ecma International 125 で採択された ES2023 の新要素 について",
     "url": "https://ecma-international.org/news/ecma-international-approves-new-standards-at-the-125th-general-assembly-27-june-2023/",
-    "date": "2023-06-27"
+    "date": "2023-06-27",
+    "isNotable": true
   },
   {
     "title": "Next.js 13 の SSR Streaming を AWS Lambda Response Streaming で実装する方法",
@@ -236,6 +238,13 @@
     "overview": "Radix UI と Tailwind CSS で作られたスニペット集の shadcn/ui の作者が Vercel に join",
     "url": "https://twitter.com/shadcn/status/1688945578439499776?s=20",
     "date": "2023-08-09"
+  },
+  {
+    "title": "Announcing TypeScript 5.1",
+    "overview": "TypeScript5.2 がリリース。Using宣言がサポートされるなど。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/",
+    "date": "2023-08-24",
+    "isNotable": true
   },
   {
     "title": "Astro 3.0",
