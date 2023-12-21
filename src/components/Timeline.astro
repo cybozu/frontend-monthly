@@ -85,8 +85,10 @@ const { topics } = Astro.props
   }
 
   .month-row {
-    position: relative;
+    position: sticky;
     height: 30px;
+    top: 20px;
+    z-index: 1;
   }
   .month-dot {
     position: absolute;
