@@ -31,9 +31,10 @@
   },
   {
     "title": "Interop 2023: continuing to improve the web for developers",
-    "overview": "主要なブラウザベンダーや関係企業で、ブラウザの相互運用性を向上するために取り組んでいるInterop 2023が公開",
+    "overview": "主要なブラウザベンダーや関係企業で、ブラウザの相互運用性を向上するために取り組んでいるInterop 2023が公開されました。10月には2023年1月からのスコアの変化も比較しており、1年で大幅に相互運用性が向上したことが伺えます。https://web.dev/blog/interop2023-update",
     "url": "https://web.dev/interop-2023/",
-    "date": "2023-02-14"
+    "date": "2023-02-14",
+    "isNotable": true
   },
   {
     "title": "Vercel Meetup #0 with CEO",
@@ -293,9 +294,10 @@
   },
   {
     "title": "Vue Fes Japan 2023 にスポンサーとして参加",
-    "overview": "Vue Fes Japan 2023 にスポンサーとして参加",
+    "overview": "Vue Fes Japan 2023 にスポンサーとして参加しました。FEEチームとしては初のブース出展でしたが、多くの参加者に来てもらいました。ブースではカンファレンスでよくあるアンケートのアレや、Cybozuフロントエンドのマスコットキャラクター「ハシコウ」のステッカー配布を行いました。",
     "url": "https://cybozu.github.io/frontend-expert/posts/sponsored-vuefes2023",
-    "date": "2023-10-30"
+    "date": "2023-10-30",
+    "isNotable": true
   },
   {
     "title": "Release: Yarn 4.0",
@@ -419,5 +421,18 @@
     "overview": "CSRをメインとするSPA構成から、2022年のNext.js v13のApp RouterをはじめとしたSSRをメインとする機能を各種フレームワークが提供するように。このフレームワークの流れもあり、フロントエンドが取りうる構成も徐々に変化していってるように感じる。",
     "date": "2023-02-01",
     "isNotable": true
+  },
+  {
+    "title": "Astro 4.0",
+    "overview": "Vite 5への対応やexperimentalだった機能の安定化などが含まれています。年初の2.0リリースから1年経たずに4.0のリリースと、Astroの勢いが伺える年でした。",
+    "url": "https://astro.build/blog/astro-4/",
+    "date": "2023-12-05",
+    "isNotable": true
+  },
+  {
+    "title": "Interop 2023 October update",
+    "overview": "Interop 2023の経過報告です。",
+    "url": "https://web.dev/blog/interop2023-update",
+    "date": "2023-10-30"
   }
 ]
