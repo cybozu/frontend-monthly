@@ -11,11 +11,25 @@ const { topics } = Astro.props
 <section class="timeline">
   {
     topics.map(topic => (
-      <section>
+      <section class="topics">
         <div class="month-row">
           <h2 class="month-dot">{topic.month}月</h2>
         </div>
         <div class="row">
+          <ul class="topic">
+            {topic.topics.map(topic => (
+              <li class="topic-row">
+                <a
+                  class="topic-link"
+                  href={topic.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {topic.title}
+                </a>
+              </li>
+            ))}
+          </ul>
           <div class="notable">
             {topic.notableTopics.map(topic => (
               <section class="notable-row">
@@ -37,21 +51,6 @@ const { topics } = Astro.props
               </section>
             ))}
           </div>
-          <ul class="topic">
-            {topic.topics.map(topic => (
-              <li class="topic-row">
-                <a
-                  class="topic-link"
-                  href={topic.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {topic.title}
-                  <span class="topic-date">{topic.date}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
     ))
@@ -107,9 +106,8 @@ const { topics } = Astro.props
   }
   .row {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    display: flex;
+    gap: 1rem;
     padding: 2rem 0 1rem;
     margin-bottom: 1rem;
     box-sizing: border-box;
@@ -120,15 +118,16 @@ const { topics } = Astro.props
     flex-direction: column;
     align-items: end;
     gap: 60px;
+    flex-basis: 50%;
   }
 
   .notable-row {
     display: flex;
     flex-direction: column;
-    align-items: end;
+
     gap: 10px;
     max-width: 700px;
-    margin-right: 14px;
+    margin-left: 14px;
     padding: 0.8rem;
     background-color: var(--color-surface-mixed-200);
     border-radius: 4px;
@@ -153,24 +152,25 @@ const { topics } = Astro.props
   }
 
   .topic {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: flex-end;
   }
   .topic-row {
     position: relative;
     display: flex;
     gap: 10px;
-    padding-left: 14px;
     &:after {
       content: "";
       display: block;
       position: absolute;
       top: 2px;
-      left: -20px;
+      right: -20px;
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -183,6 +183,8 @@ const { topics } = Astro.props
     color: var(--color-primary-300);
     font-size: 1.2rem;
     line-height: 1.5;
+    margin-right: 20px;
+    text-align: right;
     &:hover {
       text-decoration: underline;
     }
@@ -197,7 +199,33 @@ const { topics } = Astro.props
     min-width: 94px;
     color: var(--color-surface-mixed-600);
     font-size: 1rem;
-    margin-left: 12px;
     white-space: nowrap;
+  }
+
+  .topics:nth-of-type(even) {
+    .row {
+      flex-direction: row-reverse;
+    }
+    .topic {
+      align-items: flex-start;
+    }
+    .topic-row {
+      &:after {
+        left: -20px;
+      }
+    }
+    .topic-link {
+      margin-right: 0;
+      margin-left: 20px;
+      text-align: left;
+    }
+    .notable {
+      align-items: flex-end;
+      .notable-row {
+        align-items: flex-end;
+        margin-right: 14px;
+        margin-left: 0;
+      }
+    }
   }
 </style>
