@@ -319,9 +319,10 @@
   },
   {
     "title": "StyleX",
-    "overview": "Meta 製の CSS in JS フレームワーク StyleX がリリース",
+    "overview": "2021年ごろから発表されていたMeta製のCSS in JSフレームワークStyleXが遂にリリースされました。RSCを用いた環境でも利用できる一部動的なCSSフレームワークとして提供されており、現在はRollupやBabel、Next.js環境での利用がサポートされています。",
     "url": "https://stylexjs.com/",
-    "date": "2023-12-06"
+    "date": "2023-12-06",
+    "isNotable": true
   },
   {
     "title": "Vite 5.0 is out!",
@@ -420,6 +421,20 @@
     "title": "SPA構成からの変化",
     "overview": "CSRをメインとするSPA構成から、2022年のNext.js v13のApp RouterをはじめとしたSSRをメインとする機能を各種フレームワークが提供するように。このフレームワークの流れもあり、フロントエンドが取りうる構成も徐々に変化していってるように感じる。",
     "date": "2023-02-01",
+    "isNotable": true
+  },
+  {
+    "title": "V8 is Faster and Safer than Ever!",
+    "overview": "V8が高速化や安全化のための実装について2023年のまとめを紹介しています。新たな中レベルコンパイラであるMaglevやWebAssemblyの対応、V8のサンドボックス化について等、様々な内容について触れられています。",
+    "date": "2023-12-14",
+    "url": "https://v8.dev/blog/holiday-season-2023",
+    "isNotable": true
+  },
+  {
+    "title": "Introducing Deopt Explorer",
+    "overview": "MicrosoftがTypeScript 5.0を開発する際、コンパイラのパフォーマンスを向上させるために利用した内製のVSCode拡張Deopt ExplorerをGitHubにて公開しました。Deopt ExplorerはJavaScriptのランタイムにとって最適化が難しいプログラムを解析し可視化してくれます。",
+    "date": "2023-05-12",
+    "url": "https://devblogs.microsoft.com/typescript/introducing-deopt-explorer/",
     "isNotable": true
   },
   {
