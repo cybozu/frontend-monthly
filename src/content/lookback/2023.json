@@ -1,0 +1,462 @@
+[
+  {
+    "title": "Astro 2.0",
+    "overview": "Content Collections API 追加や Vite4.0 対応等、メジャーリリースに相応しい大きなアップデートになっています",
+    "url": "https://astro.build/blog/astro-2/",
+    "date": "2023-01-24"
+  },
+  {
+    "title": "Announcing TypeScript 5.0 Beta",
+    "overview": "TypeScript 5.0 の beta がリリース。4.8から計画されていた「ECMAScript Decorator」の対応が入ったのが印象的なリリースでした。もとも TypeScript が独自に持っていた Decorator との兼ね合いも含め改めて復習したい内容です。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/",
+    "date": "2023-01-26",
+    "isNotable": true
+  },
+  {
+    "title": "The Turbopack vision",
+    "overview": "Next.js 13 へアルファ版が同梱された Turbopack についての記事。Webpack が抱えていた課題と、Turbopack が何を解決するのか、今後の展望などについて述べられています",
+    "url": "https://vercel.com/blog/the-turbopack-vision",
+    "date": "2023-01-11"
+  },
+  {
+    "title": "Interop 2022: end of year update",
+    "overview": "ブラウザ相互互換性に関する各ブラウザのアップデートまとめ",
+    "url": "https://web.dev/blog/interop-2022-wrapup",
+    "date": "2023-01-11"
+  },
+  {
+    "title": "Firefox 110.0, See All New Features, Updates and Fixes",
+    "overview": "Firefox が Container Queries を実装したことで、主要ブラウザ全てで Container Queries が利用できるように",
+    "url": "https://www.mozilla.org/en-US/firefox/110.0/releasenotes/",
+    "date": "2023-02-14"
+  },
+  {
+    "title": "Interop 2023: continuing to improve the web for developers",
+    "overview": "主要なブラウザベンダーや関係企業で、ブラウザの相互運用性を向上するために取り組んでいるInterop 2023が公開されました。10月には2023年1月からのスコアの変化も比較しており、1年で大幅に相互運用性が向上したことが伺えます。https://web.dev/blog/interop2023-update",
+    "url": "https://web.dev/interop-2023/",
+    "date": "2023-02-14",
+    "isNotable": true
+  },
+  {
+    "title": "Vercel Meetup #0 with CEO",
+    "overview": "Vercel CEO の Guillermo Rauch 氏が来日・参加する Vercel User Community によるオフライン meetup が開催",
+    "url": "https://vercel.connpass.com/event/274772/",
+    "date": "2023-02-19"
+  },
+  {
+    "title": "Bun has docs now",
+    "overview": "Bun のドキュメントサイトが公開された",
+    "url": "https://twitter.com/colinhacks/status/1629310598004772865",
+    "date": "2023-02-25"
+  },
+  {
+    "title": "Deno 1.31: package.json support",
+    "overview": "Deno 1.31のリリースでpackage.jsonがサポートされた",
+    "url": "https://deno.com/blog/v1.31",
+    "date": "2023-02-24"
+  },
+  {
+    "title": "Getting Started with Style Queries",
+    "overview": "コンテナ要素のスタイルに合わせて、子要素のスタイルを指定できる Style Queries が Chrome 111 から試せるように",
+    "url": "https://developer.chrome.com/blog/style-queries/",
+    "date": "2023-02-24"
+  },
+  {
+    "title": "SPA view transitions land in Chrome 111",
+    "overview": "View Transiton API が Chrome 111 にて実装された",
+    "url": "https://developer.chrome.com/blog/spa-view-transitions-land/",
+    "date": "2023-03-09"
+  },
+  {
+    "title": "storybookjs/storybook v7.0.0 Prerelease",
+    "overview": "Stroybook の v7 がプレリリースされました",
+    "url": "https://github.com/storybookjs/storybook/releases/tag/v7.0.0",
+    "date": "2023-03-31"
+  },
+  {
+    "title": "The future of Chakra UI",
+    "overview": "Chakra UIの今後の開発計画について",
+    "url": "https://www.adebayosegun.com/blog/the-future-of-chakra-ui",
+    "date": "2023-03-27"
+  },
+  {
+    "title": "Announcing Vite 4.3",
+    "overview": "Vite 4.3 がリリースされ、パフォーマンスが大きく改善された。https://sun0day.github.io/blog/vite/why-vite4_3-is-faster.html",
+    "url": "https://vitejs.dev/blog/announcing-vite4-3.html",
+    "date": "2023-04-20"
+  },
+  {
+    "title": "Announcing Deno KV",
+    "overview": "Deno v1.33 のリリースの一つとして Deno KV の beta が発表された",
+    "url": "https://deno.com/blog/kv",
+    "date": "2023-05-01"
+  },
+  {
+    "title": "Qwik Reaches v1.0",
+    "overview": "Qwik の stable 版である v1 がリリース",
+    "url": "https://www.builder.io/blog/qwik-v1",
+    "date": "2023-05-02"
+  },
+  {
+    "title": "Next.js 13.4",
+    "overview": "App Router が Stable となり、併せて Server Actions の alpha 版が実装されました。React Server Components を Stable 利用できる最初のフレームワークが登場したことになります。",
+    "url": "https://nextjs.org/blog/next-13-4",
+    "date": "2023-05-04",
+    "isNotable": true
+  },
+  {
+    "title": "Announcing connect()",
+    "overview": "Cloudflare Workersでconnect()というTCPソケットを作成するためのAPIを発表した",
+    "url": "https://blog.cloudflare.com/workers-tcp-socket-api-connect-databases/",
+    "date": "2023-05-16"
+  },
+  {
+    "title": "Introducing the popover API",
+    "overview": "ポップオーバーを JavaScript を使わずに実装できる Popover API が Chrome114 で実装された",
+    "url": "https://developer.chrome.com/blog/introducing-popover-api/",
+    "date": "2023-05-23"
+  },
+  {
+    "title": "The Bun Bundler",
+    "overview": "Bun Bundler のベータ版がリリース",
+    "url": "https://bun.sh/blog/bun-bundler",
+    "date": "2023-05-16"
+  },
+  {
+    "title": "RedwoodJS’ Next Epoch: All In on React Server Components",
+    "overview": "RedwoodJS が近い将来に React Server Components を利用した SSR 機能を実装すると発表",
+    "url": "https://tom.preston-werner.com/2023/05/30/redwoods-next-epoch-all-in-on-rsc.html",
+    "date": "2023-05-30"
+  },
+  {
+    "title": "Panda CSS",
+    "overview": "Chakra UI から、CSS-in-JS ライブラリである Panda CSS がリリースされました。Zero runtime CSS-in-JS であり、かつ TypeScript のサポートやモダンな CSS 技術の採用など、昨今の CSS フレームワークの特徴・機能を多く兼ね備えています。",
+    "url": "https://panda-css.com/",
+    "date": "2023-07-01",
+    "isNotable": true
+  },
+  {
+    "title": "Kuma UI",
+    "overview": "Zero-runtime CSS-in-JS と Runtime CSS-in-JS の Hybrid approach を掲げる UI コンポーネントライブラリである Kuma UI がリリースされました。@poteboy さんを中心に、日本発のライブラリとして注目を集めたことでも話題となりました。",
+    "url": "https://www.kuma-ui.com/",
+    "date": "2023-07-01",
+    "isNotable": true
+  },
+  {
+    "title": "How React 18 Improves Application Performance",
+    "overview": "React18 でどのようなパフォーマンス改善がなされたのかをVercelが解説",
+    "url": "https://vercel.com/blog/how-react-18-improves-application-performance",
+    "date": "2023-07-19"
+  },
+  {
+    "title": "Nuxt 3.6",
+    "overview": "Nuxt 3.6 がリリース",
+    "url": "https://nuxt.com/blog/v3-6",
+    "date": "2023-06-23"
+  },
+  {
+    "title": "Announcing Svelte 4",
+    "overview": "Svelte 4 がリリース",
+    "url": "https://svelte.dev/blog/svelte-4",
+    "date": "2023-06-22"
+  },
+  {
+    "title": "Prettier 3.0: Hello, ECMAScript Modules!",
+    "overview": "Prettier の 3.0 がリリース",
+    "url": "https://prettier.io/blog/2023/07/05/3.0.0.html",
+    "date": "2023-07-05"
+  },
+  {
+    "title": "Chrome Supports SolidJS in Building a Performant Web",
+    "overview": "Solid.js が Aurora プロジェクト を通じて Chrome チームから 30,000 ドルの資金援助を受けた",
+    "url": "https://www.solidjs.com/blog/chrome-supports-solidjs",
+    "date": "2023-07-13"
+  },
+  {
+    "title": "Ecma International approves new standards - Ecma International",
+    "overview": "Ecma International 125 で ES2023 が採択されました。Arrayに対して toReversed や toSorted といった非破壊処理メソッドや逆順に走査する findLast メソッドなどが追加されました。またファイル先頭の #! に続く文字列をコメントとして解釈するようにもなりました。",
+    "url": "https://ecma-international.org/news/ecma-international-approves-new-standards-at-the-125th-general-assembly-27-june-2023/",
+    "date": "2023-06-27",
+    "isNotable": true
+  },
+  {
+    "title": "Next.js 13 の SSR Streaming を AWS Lambda Response Streaming で実装する方法",
+    "overview": "Next.js 13 の SSR Streaming を AWS Lambda Response Streaming で実装する方法",
+    "url": "https://aws.amazon.com/jp/blogs/news/implementing-ssr-streaming-on-nextjs-with-aws-lambda-response-streaming/",
+    "date": "2023-06-16"
+  },
+  {
+    "title": "A case study on scroll-driven animations performance",
+    "overview": "Chrome115 で新しく登場した、スクロール駆動のアニメーションを実現するための CSS プロパティ animation-timeline と JavaScript クラス ScrollTimeline の紹介",
+    "url": "https://developer.chrome.com/blog/scroll-animation-performance-case-study/",
+    "date": "2023-07-12"
+  },
+  {
+    "title": "dnt — the easiest way to publish a hybrid npm module for ESM and CommonJS",
+    "overview": "CJS と ESM に対応した npm パッケージをDenoで簡単に作成できる dnt の紹介記事",
+    "url": "https://deno.com/blog/publish-esm-cjs-module-dnt",
+    "date": "2023-07-31"
+  },
+  {
+    "title": "Node.js v16 EOL",
+    "overview": "Node.js v16 が 9/11 に EOL します",
+    "url": "https://endoflife.date/nodejs",
+    "date": "2023-09-11"
+  },
+  {
+    "title": "Caching in Next.js",
+    "overview": "Next.js のドキュメントに cache の説明が追加",
+    "url": "https://nextjs.org/docs/app/building-your-application/caching",
+    "date": "2023-08-01"
+  },
+  {
+    "title": "Bun 1.0",
+    "overview": "Bun v1 が 9/8 にリリース",
+    "url": "https://bun.sh/blog/bun-v1.0",
+    "date": "2023-09-08"
+  },
+  {
+    "title": "Astro 2.9: View Transitions (experimental)",
+    "overview": "Astro v2.9 のリリース記事。View Transitions が experimental として追加",
+    "url": "https://astro.build/blog/astro-290/",
+    "date": "2023-07-20"
+  },
+  {
+    "title": "Joy UI is now in Beta!",
+    "overview": "Joy UI が Beta リリース",
+    "url": "https://twitter.com/MUI_hq/status/1686406501525491712?s=20",
+    "date": "2023-08-02"
+  },
+  {
+    "title": "Arc 1.0 is now available",
+    "overview": "Chromium ベース新ブラウザ「Arc」の v1 がリリース",
+    "url": "https://twitter.com/arcinternet/status/1683841503544897538?s=20",
+    "date": "2023-07-25"
+  },
+  {
+    "title": "shadcn join Vercel",
+    "overview": "Radix UI と Tailwind CSS で作られたスニペット集の shadcn/ui の作者が Vercel に join",
+    "url": "https://twitter.com/shadcn/status/1688945578439499776?s=20",
+    "date": "2023-08-09"
+  },
+  {
+    "title": "Announcing TypeScript 5.2",
+    "overview": "TypeScript5.2 がリリースされました。Explicit Resource Management と呼ばれる Proposal に対応しその構文で利用される Using 宣言もサポートされるようになりました。ファイル操作やイベント送受信などで明示的にリソースの解放を定義できます。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/",
+    "date": "2023-08-24",
+    "isNotable": true
+  },
+  {
+    "title": "Astro 3.0",
+    "overview": "Astro v3がリリース。View Trantisonsがstableに",
+    "url": "https://astro.build/blog/astro-3/",
+    "date": "2023-08-30"
+  },
+  {
+    "title": "Announcing Biome",
+    "overview": "Rome のコアチームが Rome をフォークした Biome として開発を続けていくことを発表",
+    "url": "https://biomejs.dev/blog/annoucing-biome",
+    "date": "2023-08-29"
+  },
+  {
+    "title": "CSS View Transitions Module Level 1 publication history",
+    "overview": "View Transitions APIがWorking DraftからCandidate Recommendation Snapshotに移行しました",
+    "url": "https://www.w3.org/standards/history/css-view-transitions-1/",
+    "date": "2023-09-05"
+  },
+  {
+    "title": "WebKit Features in Safari 17.0",
+    "overview": "Safari 17.0でpopover APIが実装された",
+    "url": "https://webkit.org/blog/14445/webkit-features-in-safari-17-0/",
+    "date": "2023-09-18"
+  },
+  {
+    "title": "Remix v2",
+    "overview": "Remix の v2 が公開",
+    "url": "https://remix.run/blog/remix-v2",
+    "date": "2023-09-15"
+  },
+  {
+    "title": "Cloudflare Fonts",
+    "overview": "Cloudflare が プライバシーやパフォーマンス面が特徴の Web フォント配信サービスを開始しました。HTML を Cloudflare 側で解析した上で CSS とインライン展開するのが特徴で、Edge 側によるチューニングの新たな方向性が垣間見えるサービスの登場でした。",
+    "url": "https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/",
+    "date": "2023-09-25",
+    "isNotable": true
+  },
+  {
+    "title": "D1: open beta is here",
+    "overview": "Cloudflare が提供するエッジで動作する DB サービスの D1 がオープンベータとなり、誰でも利用可能に",
+    "url": "https://blog.cloudflare.com/d1-open-beta-is-here/",
+    "date": "2023-09-28"
+  },
+  {
+    "title": "<selectlist> のプロトタイプ実装",
+    "overview": "OpenUI で仕様策定中の <selectlist> 要素がChrome Canaryで試せるように",
+    "url": "https://twitter.com/Una/status/1706777335762997283?s=20",
+    "date": "2023-09-27"
+  },
+  {
+    "title": "Photoshop is now on the web!",
+    "overview": "近年実装された新しい WebAPI を利用することで、ブラウザでも Photoshop の機能が実装できるように",
+    "url": "https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a",
+    "date": "2023-10-01"
+  },
+  {
+    "title": "Vue Fes Japan 2023 にスポンサーとして参加",
+    "overview": "Vue Fes Japan 2023 にスポンサーとして参加しました。FEEチームとしては初のブース出展でしたが、多くの参加者に来てもらいました。ブースではカンファレンスでよくあるアンケートのアレや、Cybozuフロントエンドのマスコットキャラクター「ハシコウ」のステッカー配布を行いました。",
+    "url": "https://cybozu.github.io/frontend-expert/posts/sponsored-vuefes2023",
+    "date": "2023-10-30",
+    "isNotable": true
+  },
+  {
+    "title": "Release: Yarn 4.0",
+    "overview": "Yarn 4.0 がリリース",
+    "url": "https://yarnpkg.com/blog/release/4.0",
+    "date": "2023-10-23"
+  },
+  {
+    "title": "Next.js 14",
+    "overview": "Next.js 14 がリリース。Server Actions が stable になるなど",
+    "url": "https://nextjs.org/blog/next-14",
+    "date": "2023-10-26"
+  },
+  {
+    "title": "フロントエンドリアーキテクトをテーマに「BARフロントえんどう #1」を開催しました！",
+    "overview": "フロントエンドリアーキテクトをテーマに「BARフロントえんどう #1」を開催しました！",
+    "url": "https://blog.cybozu.io/entry/2023/11/10/131530",
+    "date": "2023-11-10"
+  },
+  {
+    "title": "StyleX",
+    "overview": "2021年ごろから発表されていたMeta製のCSS in JSフレームワークStyleXが遂にリリースされました。RSCを用いた環境でも利用できる一部動的なCSSフレームワークとして提供されており、現在はRollupやBabel、Next.js環境での利用がサポートされています。",
+    "url": "https://stylexjs.com/",
+    "date": "2023-12-06",
+    "isNotable": true
+  },
+  {
+    "title": "Vite 5.0 is out!",
+    "overview": "Viteの5.0がリリース",
+    "url": "https://vitejs.dev/blog/announcing-vite5",
+    "date": "2023-11-16"
+  },
+  {
+    "title": "JSConf JP 2023",
+    "overview": "JSConf JP 2023が11月19日にオフラインで開催されました。オフライン開催は2019年以来の4年ぶりとなります。FEEメンバーからも2名が登壇しました。",
+    "url": "https://jsconf.jp/2023/",
+    "date": "2023-11-19",
+    "isNotable": true
+  },
+  {
+    "title": "CSSのネスト記法がFirefox 117でも対応⁠⁠、すべてのモダンブラウザでサポートへ",
+    "overview": "CSSのネスト記法が使えるようになりました。",
+    "url": "https://gihyo.jp/article/2023/08/firefox-117-released",
+    "date": "2023-08-29"
+  },
+  {
+    "title": "次世代Webカンファレンス 2023",
+    "overview": "次世代Webカンファレンス",
+    "url": "https://nextwebconf.connpass.com/event/300174/",
+    "date": "2023-12-16"
+  },
+  {
+    "title": "Announcing Deno Cron",
+    "overview": "Deno Cron がリリース",
+    "url": "https://deno.com/blog/cron",
+    "date": "2023-11-29"
+  },
+  {
+    "title": "WebKit Features in Safari 17.2",
+    "overview": "Deno Cron がリリース",
+    "url": "https://webkit.org/blog/14787/webkit-features-in-safari-17-2/",
+    "date": "2023-12-11"
+  },
+  {
+    "title": "Denoのバージョンアップや関連製品のリリース",
+    "overview": "去年から引き続き、Node.jsとの互換性を向上させつつ、Deno KV、dnt、Deno Queues、Deno Subhosting、Deno Cronなどさまざまなサービスをリリースしたのが印象的だった。Denoから提供されるシンプルなAPIとDeno Deployを使って簡単にデプロイできる仕組みや、Denoに組み込まれてるエコシステムによって、すぐにプロダクトの開発に着手できるのが良さそう。",
+    "url": "https://deno.com/blog",
+    "date": "2023-12-01",
+    "isNotable": true
+  },
+  {
+    "title": "OpenUIが提案する仕様の実装が進む",
+    "overview": "Popover APIとselectlistの実装が進んでいる。主要なブラウザで安定して使えるようになるのはもう少し先かもしれないが、どちらも今までの実装をより簡潔にしてくれるので今後が楽しみ。",
+    "date": "2023-09-18",
+    "isNotable": true
+  },
+  {
+    "title": "次世代Webカンファレンス 2023",
+    "overview": "スライドも台本もなく、テストについて今どうなっているのか、これからどうなっていくのか議論するという初めての体験をした。90分は意外と短かった。",
+    "url": "https://nextwebconf.connpass.com/event/300174/",
+    "date": "2023-12-16",
+    "isNotable": true
+  },
+  {
+    "title": "Cybozu Frontend Monthly#39 (ゲスト: ちょっと株式会社)",
+    "overview": "Cybozu Frontend Monthly#39 (ゲスト: ちょっと株式会社)",
+    "url": "https://cybozu.connpass.com/event/294375/",
+    "date": "2023-09-26"
+  },
+  {
+    "title": "Cybozu Frontend Monthly#34 (ゲスト: Takepepeさん)",
+    "overview": "Cybozu Frontend Monthly#34 (ゲスト: Takepepeさん)",
+    "url": "https://cybozu.connpass.com/event/280045/",
+    "date": "2023-04-25"
+  },
+  {
+    "title": "Oxlint General Availability",
+    "overview": "Oxlintが利用できるように",
+    "url": "https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html",
+    "date": "2023-12-12"
+  },
+  {
+    "title": "JSエコシステムの変化",
+    "overview": "JSのLint、Format、Bundleといったエコシステムのツールとして、BiomeやOxc、BunやDeno、Rspack、Rolldownなど多くのツールが登場した1年だった",
+    "date": "2023-12-12",
+    "isNotable": true
+  },
+  {
+    "title": "The Future (and the Past) of the Web is Server Side Rendering",
+    "overview": "Denoのブログで公開されたSSRへの揺り戻しの話",
+    "date": "2023-02-01",
+    "url": "https://deno.com/blog/the-future-and-past-is-server-side-rendering"
+  },
+  {
+    "title": "The Web’s Next Transition",
+    "overview": "Kent C. Doddsが書いたSPAから今後、どういったアーキテクチャが採用されるか紹介している記事",
+    "date": "2023-06-07",
+    "url": "https://www.epicweb.dev/the-webs-next-transition"
+  },
+  {
+    "title": "SPA構成からの変化",
+    "overview": "CSRをメインとするSPA構成から、2022年のNext.js v13のApp RouterをはじめとしたSSRをメインとする機能を各種フレームワークが提供するように。このフレームワークの流れもあり、フロントエンドが取りうる構成も徐々に変化していってるように感じる。",
+    "date": "2023-02-01",
+    "isNotable": true
+  },
+  {
+    "title": "V8 is Faster and Safer than Ever!",
+    "overview": "V8が高速化や安全化のための実装について2023年のまとめを紹介しています。新たな中レベルコンパイラであるMaglevやWebAssemblyの対応、V8のサンドボックス化について等、様々な内容について触れられています。",
+    "date": "2023-12-14",
+    "url": "https://v8.dev/blog/holiday-season-2023",
+    "isNotable": true
+  },
+  {
+    "title": "Introducing Deopt Explorer",
+    "overview": "MicrosoftがTypeScript 5.0を開発する際、コンパイラのパフォーマンスを向上させるために利用した内製のVSCode拡張Deopt ExplorerをGitHubにて公開しました。Deopt ExplorerはJavaScriptのランタイムにとって最適化が難しいプログラムを解析し可視化してくれます。",
+    "date": "2023-05-12",
+    "url": "https://devblogs.microsoft.com/typescript/introducing-deopt-explorer/",
+    "isNotable": true
+  },
+  {
+    "title": "Astro 4.0",
+    "overview": "Vite 5への対応やexperimentalだった機能の安定化などが含まれています。年初の2.0リリースから1年経たずに4.0のリリースと、Astroの勢いが伺える年でした。",
+    "url": "https://astro.build/blog/astro-4/",
+    "date": "2023-12-05",
+    "isNotable": true
+  },
+  {
+    "title": "Interop 2023 October update",
+    "overview": "Interop 2023の経過報告です。",
+    "url": "https://web.dev/blog/interop2023-update",
+    "date": "2023-10-30"
+  }
+]

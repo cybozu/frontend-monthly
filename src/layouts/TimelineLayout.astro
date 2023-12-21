@@ -1,0 +1,80 @@
+---
+export interface Props {
+  title: string
+}
+import { staticPath } from "../lib/helper"
+const { title } = Astro.props
+
+const description =
+  "2023年にあったフロントエンドのトピックを時系列にまとめています"
+const author = "Cybozu Frontend Expert Team"
+const site = Astro.site?.toString() || ""
+const ogImage = `${site}frontend-monthly/img/header.png`
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={author} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href={staticPath("/icons/favicon-32x32.png")}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href={staticPath("/icons/favicon-16x16.png")}
+    />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"
+    />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+
+  <!-- REF: https://colorffy.com/dark-theme-generator -->
+  <style is:global lang="scss">
+    :root {
+      --color-primary-0: #54a2c2;
+      --color-primary-100: #71b2cc;
+      --color-primary-200: #82bad2;
+      --color-primary-300: #93c3d7;
+      --color-primary-400: #a3cbdd;
+      --color-primary-500: #b2d4e3;
+      --color-primary-600: #c2dce8;
+      --color-surface-mixed-100: #1c2022;
+      --color-surface-mixed-200: #313537;
+      --color-surface-mixed-300: #474b4c;
+      --color-surface-mixed-400: #5f6263;
+      --color-surface-mixed-500: #777a7b;
+      --color-surface-mixed-600: #919394;
+    }
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    }
+    body {
+      background-color: var(--color-surface-mixed-100);
+      margin: 0;
+      color: #fff;
+    }
+  </style>
+</html>
