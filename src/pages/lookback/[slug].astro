@@ -37,7 +37,11 @@ const createTopicsByMonth = (topics: Topic[]): TopicByMonth[] => {
       topicsByMonth[monthIndex].topics.push(topic)
     }
   })
-  return topicsByMonth
+  return topicsByMonth.sort((a, b) => {
+    if (a.month > b.month) return 1
+    if (a.month < b.month) return -1
+    return 0
+  })
 }
 
 const sortByDate = (topics: TopicByMonth[]): TopicByMonth[] => {
