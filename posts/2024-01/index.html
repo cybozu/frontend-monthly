@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #43"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #43"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #43</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #43</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.dc458974_ZIMvDY.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="270" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2024年01月30日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/307555/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/307555/</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nakajmg.jpg" class="thumbnail" alt="@nakajmg" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nakajmg" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nakajmg</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sajikix</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="chromium-では-prefetch-や-prerender-を総称して-speculative-loading-と呼ぶことになった話"><a href="https://nhiroki.jp/2024/01/07/speculative-loading">Chromium では Prefetch や Prerender を総称して Speculative Loading と呼ぶことになった話</a></h3>
+<ul>
+<li>共有者: @nakajmg</li>
+</ul>
+<p>Chromium が「Preloading」という単語の代わりに今後は「Speculative Loading」を使っていくという話題。</p>
+<p>これは Web の文脈で単に「Preloading」といったときに何を指すのかが伝わりづらくなってきたという背景があります。DevTools にもこの変更が入っており、Application パネルで Preloading が Speculative loads という項目名に変わっています。</p>
+<p>現状は Chromium の独自用語という位置づけですが、MDN に<a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Speculative_loading">Speculative loading</a>というページがあったり、<a href="https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API">Speculation Rules API</a>が Chromium で実験的に実装が進んでいたりと、一般化していきそうな雰囲気があるように感じます。</p>
+<hr>
+<h3 id="a-definition-update-for-baseline"><a href="https://web.dev/blog/baseline-definition-update?hl=ja">A definition update for Baseline</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Google I/O 2023 にて、ブラウザにおける機能サポートのステータスの新しい考え方として <a href="https://web.dev/blog/introducing-baseline?hl=ja">Baseline</a> が発表されました。
+当初は、主要ブラウザの直近２バージョンでサポートされているものが Baseline 機能として含まれていましたが、次のように定義が更新されました。</p>
+<ul>
+<li>Newly available : Baseline の対象ブラウザすべてで利用可能になった機能</li>
+<li>Widely available : Newly available に加わってから 30 ヶ月が経過した機能</li>
+<li>Baseline の対象ブラウザ
+<ul>
+<li>Safari (macOS and iOS)</li>
+<li>Firefox (Desktop and Android)</li>
+<li>Chrome (Desktop and Android)</li>
+<li>Edge (Desktop)</li>
+</ul>
+</li>
+</ul>
+<p>日々ブラウザでは新しい機能が利用可能になっていますが、現実的にどこまで使って良いのかの判断は難しく、
+Transpile や Polyfill の設定で悩まされた経験を持つ方も多いのではないかなと思います。
+Baseline が一つの指標として示され、かつ今回の定義の更新で詳細化されたことで、
+「Widely available に入っているのでこの機能を採用しよう」という判断ができるようになるのは嬉しいポイントになりそうです。</p>
+<hr>
+<h3 id="typescript-54-iteration-plan"><a href="https://github.com/microsoft/TypeScript/issues/56948">TypeScript 5.4 Iteration Plan</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>TypeScript の 5.4 beta が発表されます。（収録時にはブログがあがっていませんが動画公開のタイミングでは発表されている予定です。）このバージョンでは型推論の強化や新しい記法などが追加される予定です。その中でも面白い機能を紹介します。</p>
+<ul>
+<li>
+<p><a href="https://github.com/microsoft/TypeScript/pull/56908">Type Narrowing for Variables in Closures Occurring After Last Assignments</a></p>
+<ul>
+<li>mutable な変数や catch 節の引数などにおいて最後の代入された結果を元に、その変数を利用したクロージャの推論を厳しくする機能が追加されます。</li>
+<li>
+<pre class="language-ts"><code is:raw="" class="language-ts"><span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> x<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">number</span>
+  x <span class="token operator">=</span> <span class="token string">"abc"</span>
+  <span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    x
+  <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// x は string | number</span>
+  x <span class="token operator">=</span> <span class="token number">42</span>
+  <span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    x
+  <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// x は number に推論される</span>
+<span class="token punctuation">}</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/TypeScript/pull/56794">The NoInfer Intrinsic</a></p>
+<ul>
+<li>
+<p>型引数の推論をするときに参照をブロックする<code>NoInfer&#x3C;T></code>という記法が新しく追加されます。</p>
+</li>
+<li>
+<pre class="language-ts"><code is:raw="" class="language-ts"><span class="token keyword">declare</span> <span class="token keyword">function</span> <span class="token generic-function"><span class="token function">fooInfer</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token builtin">string</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span>
+<span class="token keyword">declare</span> <span class="token keyword">function</span> <span class="token generic-function"><span class="token function">fooNoInfer</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token builtin">string</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> b<span class="token operator">:</span> NoInfer<span class="token operator">&#x3C;</span><span class="token constant">T</span><span class="token operator">></span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span>
+
+<span class="token function">fooInfer</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span> <span class="token string">"bar"</span><span class="token punctuation">)</span> <span class="token comment">// OK  Tは "foo" | "bar" に推論される</span>
+<span class="token function">fooNoInfer</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span> <span class="token string">"bar"</span><span class="token punctuation">)</span> <span class="token comment">// error  "bar" の方の推論がブロックされて Tは "foo" に推論されるため</span></code></pre>
+</li>
+<li>
+<p>これにより他の型引数を使っているところなどに影響を与えずに部分的に型引数による推論を拒否することができます。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/TypeScript/pull/56448">Make isTypeAssignableTo public on TypeChecker</a></p>
+<ul>
+<li>今まで内部的にあった typeChecker の<code>isTypeAssignableTo</code>メソッドがちゃんと export されて使えるようになります。</li>
+<li>ts-eslint などのツールでは型チェックをするときに代入可能かどうかを調べたいユーケースが非常に多くツール開発者にとって嬉しい変更といえます。(実際この修正自体が ts-eslint からの強い要請を受けたもののようです。)</li>
+</ul>
+</li>
+</ul>
+<p>このほか TS5.4 に入るかどうかは怪しいですが意欲的な改善やオプションの追加が IterationPlan には並んでいます。</p>
+<hr>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://github.com/facebook/stylex">facebook/stylex: StyleX is the styling system for ambitious user interfaces.</a>
+<ul>
+<li>StyleX のリリースに合わせて、GitHub で StyleX のコードが公開</li>
+</ul>
+</li>
+<li><a href="https://github.com/clauderic/dnd-kit/issues/1194">future of library &#x26; maintenance · Issue #1194 · clauderic/dnd-kit</a>
+<ul>
+<li>dnd-kit に対して、メンテナンスは継続してやっていくのか、これからのロードマップがどうなるのか確認する issue</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-react-server-components/">Storybook for React Server Components</a>
+<ul>
+<li>Storybook で React Server Components（RSC）のサポートが experimental な機能として追加された</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/sebastienlorber/status/1734607171030303186">React Forget がもうすぐ来るかも？</a>
+<ul>
+<li>React DevTools v5.0 には新たに Forget というバッジが表示されるようになっており、Web 版 Instagram ではすでにこのバッジが表示されており、近々 React Forget が来るのでは？という話</li>
+</ul>
+</li>
+<li><a href="https://svelte.dev/blog/sveltekit-2">Announcing SvelteKit 2</a>
+<ul>
+<li>SvelteKit 2 がリリースされた。Vite 5 への対応や、Shallow routing の追加など</li>
+</ul>
+</li>
+<li><a href="https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html">Oxlint General Availability | The JavaScript Oxidation Compiler</a>
+<ul>
+<li>Oxc の Linter である oxlint が使えるようになった。記事内では ESLint の実行速度の違いなどに触れられている</li>
+</ul>
+</li>
+<li><a href="https://react-spectrum.adobe.com/releases/2023-12-20.html">React Aria Components v1 リリース</a>
+<ul>
+<li>Adobe の提供するコンポーネントライブラリ React Aria Components の v1.0.0 がリリースされた</li>
+</ul>
+</li>
+<li><a href="https://github.com/jsdom/jsdom/releases/tag/23.2.0">Release Version 23.2.0 · jsdom/jsdom</a>
+<ul>
+<li>jsdom の 23.2.0 がリリースされた。CSS セレクタエンジンが nwsapi から@asamuzakjp/dom-selector に変更されたのが主な変更点</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/morinokami/articles/astro-2023-2024">Astro ゆく年くる年</a>
+<ul>
+<li>Astro の 2023 に実装された機能や 2024 のロードマップのまとめ</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/future-of-storybook-2024/">Future of Storybook in 2024</a>
+<ul>
+<li>Storybook が 2023 年にやったことのまとめや 2024 年のロードマップ</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/youyuxi/status/1741065178597536191">Rolldown の OSS 化の時期について</a>
+<ul>
+<li>Evan You が、自身の開発するモジュールバンドラ Rolldown のステータスに関して昨年末に言及。OSS 化は 2024 年 1Q の OSS 化の見込みとのこと</li>
+</ul>
+</li>
+<li><a href="https://blog.vuejs.org/posts/vue-3-4">Announcing Vue 3.4 | The Vue Point</a>
+<ul>
+<li>Vue 3.4（コードネーム「🏀 Slam Dunk」）がリリース。SFC（単一ファイルコンポーネント）のビルドの改善や、ReactivitySystem の効率化、Reactivity Transform の完全な削除など</li>
+</ul>
+</li>
+<li><a href="https://github.com/solidjs/solid-start/releases/tag/v0.4.0">Release v0.4.0 - Beta 2 · solidjs/solid-start</a>
+<ul>
+<li>SolidJS のフレームワーク SolidStart の v0.4.0-Beta2 がリリースされた</li>
+</ul>
+</li>
+<li><a href="https://www.joshuakgoldberg.com/blog/rust-based-javascript-linters-fast-but-no-typed-linting-right-now/?s=t">Rust-Based JavaScript Linters: Fast, But No Typed Linting Right Now | Goldblog</a>
+<ul>
+<li>Rust ベースの Linter に関する 2023 年現在の状況を整理した記事</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2024/01/eslint-v9.0.0-alpha.1-released/">ESLint v9.0.0-alpha.1 released - ESLint - Pluggable JavaScript Linter</a>
+<ul>
+<li>ESLint v9.0.0 のアルファ版がリリースされました。v9.0.0 からは ESLint の設定ファイルに Flat Config が導入される</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://zenn.dev/cybozu_frontend/articles/ecmascript-archeology">ECMAScript 考古学をするときに</a>
+<ul>
+<li>FEE チームの sajikix が JSConf JP 2023 での発表の過程で得た「ECMAScript の仕様の歴史を追う方法」をまとめた記事</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/cron">Announcing Deno Cron</a>
+<ul>
+<li>スケジュールされたジョブを簡単に作成できる Deno Cron がリリースされた</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/TR/2023/NOTE-css-2023-20231207/">CSS Snapshot 2023</a>
+<ul>
+<li>CSS Snapshot 2023 が Note として公開。CSS の各モジュールの仕様が 2023 現在どういう状態なのかまとめられている</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/css-wrapped-2023?hl=ja">CSS ラップ: 2023 年</a>
+<ul>
+<li>Chrome による、2023 年の CSS に関するまとめ記事</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/v1.39">Deno 1.39: The Return of WebGPU</a>
+<ul>
+<li>Deno 1.39 がリリースされた。過去にパフォーマンスの問題から削除された WebGPU が問題を解消して再度追加、Node.js との互換性の向上など</li>
+</ul>
+</li>
+<li><a href="https://risingstars.js.org/2023/en">2023 JavaScript Rising Stars</a>
+<ul>
+<li>2023 年の間でスター数が増加したリポジトリのランキング</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://webkit.org/blog/14787/webkit-features-in-safari-17-2/">WebKit Features in Safari 17.2 | WebKit</a>
+<ul>
+<li>Safari 17.2 がリリースされた。Custom Highlights API など新機能の追加や、Interop 2023 の活動の一環として大量の CSS の修正がこのリリースに含まれている</li>
+</ul>
+</li>
+<li><a href="https://v8.dev/blog/holiday-season-2023">V8 is Faster and Safer than Ever! · V8</a>
+<ul>
+<li>2023 年に行った V8 の改善内容などの紹介記事。パフォーマンスの最適化、パーサーの改善、JavaScript や WASM への新機能の追加などなど、V8 に多くの改善が入ったことで速度とセキュリティが向上したとのこと</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/cybozu_frontend/articles/20231214_wasmgc">主要ブラウザでサポートされつつある WasmGC とは何なのか</a>
+<ul>
+<li>主要ブラウザでサポートがそろいつつある WasmGC についての紹介記事</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/baseline-definition-update?hl=ja">A definition update for Baseline</a>
+<ul>
+<li>Web プラットフォームの機能が安全に使えるかどうかの情報を提供する Baseline の定義が更新された</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2024jan?hl=ja">Chrome ユーザーの 1% に対して、デフォルトでサードパーティ Cookie の使用が制限されている</a>
+<ul>
+<li>Chrome では 2024 年後半に全てのユーザーのサードパーティ Cookie を段階的に廃止する予定で、2024/1/4 から 1%のユーザーに対して制限が開始された</li>
+</ul>
+</li>
+<li><a href="https://nhiroki.jp/2024/01/07/speculative-loading">Chromium では Prefetch や Prerender を総称して Speculative Loading と呼ぶことになった話</a>
+<ul>
+<li>Chromium において、Prefetch や Prerender を Preloading と総称していたが、これを Speculative Loading に改めた</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://calendar.perfplanet.com/2023/">Web Performance Calendar » 2023</a>
+<ul>
+<li>パフォーマンスに関するアドベントカレンダーが今年も開催された</li>
+</ul>
+</li>
+<li><a href="https://developers.prtimes.jp/2023/12/13/replace-press-release-page-with-nextjs/">【月間 9000 万 PV の PR TIMES】プレスリリース掲載ページの Next.js 移行でやったこと | PR TIMES 開発者ブログ</a>
+<ul>
+<li>PR TIMES が PHP・Smarty・jQuery というスタックから Next.js へ移行した際の詳細などを紹介している記事</li>
+</ul>
+</li>
+<li><a href="https://user-first.ikyu.co.jp/entry/2023/12/15/093427">一休レストランで Next.js App Router から Remix に乗り換えた話 - 一休.com Developers Blog</a>
+<ul>
+<li>一休レストランのサイトのフロントエンドを Next.js から Remix に移行した際の背景や経緯について紹介している記事</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/urotea/articles/3fbaa77d77b788">1 年かけて Next.js の app router へ完全移行した話</a>
+<ul>
+<li>Next.js で Pages Router から App Router に移行した事例の紹介記事</li>
+</ul>
+</li>
+<li><a href="https://developers.prtimes.jp/2023/12/28/prtimes-frontend-stack-2023/">PR TIMES のフロントエンドを支える技術 2023 | PR TIMES 開発者ブログ</a>
+<ul>
+<li>PR TIMES で進められているフロントエンド刷新の技術構成を紹介</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/jambowrd/articles/3ee00f61c0b827">eBPF を使った自動テストツール「Keploy」がすごい</a>
+<ul>
+<li>外部通信を伴うテストの自動化を支援するツール「Keploy」の紹介記事</li>
+</ul>
+</li>
+<li><a href="https://www.m3tech.blog/entry/2024/01/16/094541">型を少し工夫して、より安全なコードへ - エムスリーテックブログ</a>
+<ul>
+<li>TypeScript で活用できる型テクニックが詳細な実例を添えて紹介した記事</li>
+</ul>
+</li>
+<li><a href="https://jser.info/2024/01/16/jser-13th/">JSer.info 13 周年: JavaScript の情報源を整理する - JSer.info</a>
+<ul>
+<li>JavaScript に関する情報を発信している Web サイト「JSer.info」が 13 周年を迎えた</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
