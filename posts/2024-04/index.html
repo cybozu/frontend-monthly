@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #46"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #46"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #46</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #46</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_Z1n9Rey.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="270" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2024年04月30日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/315490/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/315490/</a></p><h3 data-astro-cid-grpv5qb7>配信URL</h3><p data-astro-cid-rqusjlqv><iframe title="https://www.youtube.com/embed/cVLPKaS8fO0" width="560" height="315" src="https://www.youtube.com/embed/cVLPKaS8fO0" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe><a href="https://www.youtube.com/watch?v=cVLPKaS8fO0" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv>https://www.youtube.com/watch?v=cVLPKaS8fO0</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nakajmg.jpg" class="thumbnail" alt="@nakajmg" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nakajmg" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nakajmg</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sajikix</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="fetchlater-api-オリジン-トライアル"><a href="https://developer.chrome.com/blog/fetch-later-api-origin-trial?hl=ja">fetchLater API オリジン トライアル</a></h3>
+<ul>
+<li>共有者: @nakajmg</li>
+</ul>
+<p>ビーコン送信のようなウェブページからサーバへとデータを送信する新しい API である fetchLater API のオリジントライアルが Chrome で開始されています。</p>
+<p>fetchLater API はデータ解析などに必要なデータをサーバに送信する際の信頼性の向上を目的としています。従来<code>pagehide</code>や<code>visibilitychange</code>といったページイベントや、<code>sendBeacon()</code>などを使って送信するといった方法をとっていましたが、これらはブラウザやデバイスによっては著しく信頼性が低い状態にあります。</p>
+<p>この問題は fetchLater API を使うことでブラウザがビーコンを送信することが保証されるようになります。（ただし現状の実装ではブラウザのクラッシュした場合にはビーコンの送信が行われないなどの制限事項もあるようです。</p>
+<hr>
+<h3 id="typescript-55-iteration-plan"><a href="https://github.com/microsoft/TypeScript/issues/57475">TypeScript 5.5 Iteration Plan</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>TypeScript 5.5 では多くの便利で意欲的な機能が追加される予定です。その中でも特に注目しているものを紹介します。</p>
+<p>1 : <a href="https://github.com/microsoft/TypeScript/pull/57465">Infer type predicates from function bodies using control flow analysis</a></p>
+<p>一時期 x などでもかなり話題になった機能です。制御フロー解析を利用して、boolean を返す関数に対する型述語を推論できるようになります。これにより今までユーザー定義型ガードでしか推論できなかった Array.filter() などでも推論が効くようになります。細かい挙動などに関しては以下の記事がわかりやすかったです。</p>
+<ul>
+<li><a href="https://zenn.dev/ubie_dev/articles/ts-infer-type-predicates">https://zenn.dev/ubie_dev/articles/ts-infer-type-predicates</a></li>
+</ul>
+<p>2 : <a href="https://github.com/microsoft/TypeScript/pull/58201">Isolated declarations errors</a></p>
+<p>Isolated declarations は以前から提案されているコンパイラオプションで、今まで型検査およびそのための型依存解決と同時に行なってきた型定義ファイルの出力を独立させるオプションです。これにより型定義の出力と各ファイルでの検査を並列に行うことができ、大幅な検査の高速化とファイル単位でのキャッシュが行えるとしています。</p>
+<p>一方で型検査をせずに型定義ファイルを出力するためには今まで推論に頼ってきた多くの型情報を明示的に書かなくてはならず、大きな制限が生まれるオプションとなりそうです。また型定義の出力を TS 内部でどう行うかなどは議論中でありアップデートを待っている状態です。</p>
+<p>今回はその先駆けとして、<code>--isolatedDeclarations</code> が有効な際に明示的なアノテーションがないと容易に推論できない要素に対してエラーが発生するようになります。</p>
+<p>3 : <a href="https://github.com/microsoft/TypeScript/pull/55600">Regex Syntax Validation</a></p>
+<p>この変更により正規表現に対して構文チェックが行われるようになります。具体的には無効な正規表現フラグや無効なエスケープの記法などをチェックし、report してくれるようになります。またこの構文チェックは以下の二つの新しい EcmaScript Proposal もサポートしています。</p>
+<ul>
+<li><a href="https://github.com/tc39/proposal-duplicate-named-capturing-groups">Duplicate Named Capturing Groups</a> (TC39 の 101st meeting で Stage 4 になった)</li>
+<li><a href="https://github.com/tc39/proposal-regexp-modifiers">Regular Expression Pattern Modifiers</a> (Stage 3)</li>
+</ul>
+<p>構文自体も複雑で、フラグも多く存在する正規表現に対してこのようなチェックを行なってくれるのはユーザーとして非常にありがたいのではないでしょうか。</p>
+<hr>
+<h3 id="learn-javascript"><a href="https://web.dev/learn/javascript">Learn JavaScript</a></h3>
+<ul>
+<li>共有者: @b4h0_c4t</li>
+</ul>
+<p>web.dev の Learn コンテンツに JavaScript が追加されました。
+web.dev Learn はこれまでも HTML や CSS といった Web 開発の根本的な知識からプライバシーやアクセシビリティといった観点まで学習コンテンツを提供してきました。</p>
+<p>今回追加された JavaScript のコンテンツは全 28 章で構成されており、大きく 6 部に分けられています。</p>
+<ul>
+<li>データ型と構造</li>
+<li>比較演算子と制御フロー</li>
+<li>関数</li>
+<li>オブジェクト</li>
+<li>コレクション</li>
+<li>クラス</li>
+</ul>
+<p>それぞれ参考となるプログラムだけでなく可読性を高めるプラクティスについても言及されており、全てを網羅するのは少々重いですが学習者は一件の価値があると思います。</p>
+<p>最近では、<a href="https://developer.mozilla.org/ja/docs/Learn">MDN の Web 開発を学ぶ</a>や <a href="https://react.dev/reference/rules">React の Rules of React</a> など学習者に向けたコンテンツが多くリリースされ始めているのでこの機会に学び始めるのはタイミングが良いかもしれません。</p>
+<hr>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://bun.sh/blog/bun-v1.1">Bun 1.1</a>
+<ul>
+<li>Bun 1.1 リリース。Windows 対応や Node.js 互換性の向上、WebSocket サポートといったアップデートが盛り込まれています。</li>
+</ul>
+</li>
+<li><a href="https://redwoodjs.com/blog/rsc-now-in-redwoodjs">React Server Components now in RedwoodJS</a>
+<ul>
+<li>RedwoodJS が Bighorn エポックのプレビューにて RSC をサポート</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/v1.42">Deno 1.42: Better dependency management with JSR</a>
+<ul>
+<li>Deno 1.42 リリース。JSR での依存管理や npm との互換性についてのアップデートが盛り込まれています。</li>
+</ul>
+</li>
+<li><a href="https://github.com/brandonmcconnell/tailwindcss-signals/">tailwindcss-signals : Signals for Tailwind CSS</a>
+<ul>
+<li>Tailwind で style queries を利用したカスタマイズを可能にするプラグイン</li>
+</ul>
+</li>
+<li><a href="https://atlassian.design/components/pragmatic-drag-and-drop/about">Pragmatic drag and drop</a>
+<ul>
+<li><code>react-beautiful-dnd</code> の開発元である Atlassian が新たにリリースした D&#x26;D ライブラリ</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2024/04/eslint-v9.0.0-released/">ESLint v9.0.0 released</a>
+<ul>
+<li>ESLint の v9 リリース。FlatConfig のデフォルト化など</li>
+</ul>
+</li>
+<li><a href="https://github.com/brandonmcconnell/tailwindcss-mixins">tailwindcss-mixins</a>
+<ul>
+<li>Tailwind CSS で、複数の要素に同時に適用するユーティリティのグループを定義できるプラグイン</li>
+</ul>
+</li>
+<li><a href="https://github.com/pnpm/pnpm/releases/tag/v9.0.0-rc.0">pnpm v9.0.0-rc.0</a>
+<ul>
+<li>pnpm の v9.0.0-rc.0 リリース。Node v16 のサポート終了や <code>pnpm licenses list --json</code> の出力変更など</li>
+</ul>
+</li>
+<li><a href="https://github.com/node-unicode/node-unicode-data">node-unicode-data</a>
+<ul>
+<li>JavaScript 互換の Unicode データジェネレータ</li>
+</ul>
+</li>
+<li><a href="https://github.com/shuding/next-view-transitions">next-view-transitions</a>
+<ul>
+<li>Next.js の App Router で View Transitions API を使うためのライブラリ</li>
+</ul>
+</li>
+<li><a href="https://biomejs.dev/blog/biome-v1-7/">Biome v1.7</a>
+<ul>
+<li>Biome v1.7 リリース。ESLint や Prettier から Biome</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-14-2">Next.js 14.2</a>
+<ul>
+<li>Next.js 14.2 リリース。パフォーマンスの向上や、キャッシュ機能の強化など</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://blog.cloudflare.com/making-full-stack-easier-d1-ga-hyperdrive-queues">Making state easy with D1 GA, Hyperdrive, Queues and Workers Analytics Engine updates</a>
+<ul>
+<li>Cloudflare の D1 と Hyperdrive が GA に。価格も発表されており、無料枠については今後有料化の予定はないと明言しています。</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/how-we-built-jsr">How we built JSR</a>
+<ul>
+<li>The JavaScript Registry で採用されている技術構成を紹介している記事</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/Slidevjs/status/1777886096124248241">In Slidev 0.49 (currently in beta), we will get draggable elements just like what you have in Keynote/PowerPoint!</a>
+<ul>
+<li>Slidev の v0.49 beta にて、ドラッグで回転・移動・サイズ変更ができる要素が利用可能に</li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vitest.explorer">Vitest - Visual Studio Marketplace</a>
+<ul>
+<li>Vitest の VSCode 拡張。Vitest のテストを実行、デバッグ、監視などができます。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://x.com/robpalmer2/status/1778836605341446634">ECMAScript excitement in TC39 101st meeting</a>
+<ul>
+<li>４月に開催された TC39 101st meeting で決定された proposal stage アップデートまとめ</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://webkit.org/blog/15260/release-notes-for-safari-technology-preview-192/">Release Notes for Safari Technology Preview 192</a>
+<ul>
+<li>Safari Technology Preview 192 リリース。View Transitions サポートなど</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/jGTYNuidPRs/m/-jB4agJ7AAAJ?pli=1">Intent to Ship: CSS Anchor Positioning</a>
+<ul>
+<li>Chrome 125 にて実装予定である CSS Anchor Positioning の仕様に関する記録</li>
+</ul>
+</li>
+<li><a href="https://www.mozilla.org/en-US/firefox/125.0.1/releasenotes/">Firefox Release Notes 125.0.1</a>
+<ul>
+<li>Firefox 125 がリリース。popoverAPI や Intl.Segmenter のサポートなど</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://qiita.com/uhyo/items/787a475bb618811d3771">【2024 年 4 月 1 日の TypeScript ニュース】次期バージョンでオブジェクト型に追加される新機能の紹介</a>
+<ul>
+<li>TypeScript の新機能追加を元にしたエイプリルフール記事。バージョン 5.5.555 に実装予定の Arranged Field Definition という存在しない機能の紹介をしています。</li>
+</ul>
+</li>
+<li><a href="https://note.com/fec_hokkaido/n/nbb62b53069a5">【告知】「フロントエンドカンファレンス北海道 2024」を、2024 年 8 月 24 日（土）に開催します！ </a>
+<ul>
+<li>2024 年 8 月 24 日土曜日に北海道札幌市にて「フロントエンドカンファレンス北海道 2024」が開催されます。</li>
+</ul>
+</li>
+<li><a href="https://kittygiraudel.com/2024/03/29/on-disabled-and-aria-disabled-attributes/">On disabled and aria-disabled attributes</a>
+<ul>
+<li>disabled と aria-disabled 属性の使い分け方について解説している記事</li>
+</ul>
+</li>
+<li><a href="https://waku.gg/blog/introducing-pages-router">Introducing “pages router”</a>
+<ul>
+<li>RSC のミニマムフレームワーク Waku がファイルベースルーティングをサポート</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/azukiazusa1/react-huremuwakuno-dong-xiang-toxuan-ding-ji-zhun">React フレームワークの 動向と選定基準</a>
+<ul>
+<li>React フレームワークの動向と選定基準について解説しているスライド</li>
+</ul>
+</li>
+<li><a href="https://web.dev/articles/light-dark">CSS color-scheme-dependent colors with light-dark()</a>
+<ul>
+<li>CSS Module Level 5 で追加された <code>light-dark()</code> でダークモード対応をするための記事</li>
+</ul>
+</li>
+<li><a href="https://aralroca.com/blog/partial-prerendering">Power of Partial Prerendering with Bun</a>
+<ul>
+<li>Bun の Prerendering macro プラグインを使って Next.js の Partial Prerendering のような挙動を実現できるという記事</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/cybozu_frontend/articles/remix-spa-mode-gh-page">SPA モードの Remix を GitHub Pages にデプロイする</a>
+<ul>
+<li>SPA モードの Remix を GitHub Pages にデプロイする GitHub Actions の紹介</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/cybozu_frontend/articles/user-agent-stylesheet">!important で上書きできないブラウザのスタイルとは</a>
+<ul>
+<li>強力なスタイルの適用優先度をもつ <code>!important</code> でも上書きができない場合がある <code>Important user agent declarations</code> やその他の優先度に関するルールの紹介</li>
+</ul>
+</li>
+<li><a href="https://medium.com/flow-type/announcing-component-syntax-b6c5285660d0">New Flow Language Features for React</a>
+<ul>
+<li>Flow が React 向けに追加した独自構文についての紹介</li>
+</ul>
+</li>
+<li><a href="https://www.publickey1.jp/blog/24/openfeature_web_sdk_v1cncf.html">フロントエンドにおけるフィーチャーフラグ標準化のための「OpenFeature Web SDK v1」がリリース。CNCF から</a>
+<ul>
+<li>Cloud Native Computing Foundation が Feature flag の標準化を目指す一環として OpenFeature Web SDK v1 をリリース</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/undefined_void/status/1774075965557133508">SolidStart now works with Deno</a>
+<ul>
+<li>Deno が SolidStart サポートを開始</li>
+</ul>
+</li>
+<li><a href="https://web.dev/learn/javascript">Learn JavaScript | web.dev</a>
+<ul>
+<li>web.dev の公開している講義シリーズに JavaScript のコースが追加</li>
+</ul>
+</li>
+<li><a href="https://medium.com/dartlang/history-of-js-interop-in-dart-98b06991158f">History of JS interop in Dart</a>
+<ul>
+<li>Dart 3.3 で WasmGC に対応したのを機に Dart がこれまで実施してきた JS との相互運用性の取り組みをまとめた記事</li>
+</ul>
+</li>
+<li><a href="https://github.com/svelte-jp/japanese-svelte-companies">Japanese Svelte Companies</a>
+<ul>
+<li>Svelte/SvelteKit を採用している日本企業がまとめられた記事</li>
+</ul>
+</li>
+<li><a href="https://nodejs.org/en/blog/events/collab-summit-2024-london">Trip report: Node.js collaboration summit (2024 London)</a>
+<ul>
+<li>Node.js のコントリビュータやコミュニティメンバーが集まる Node.js <a href="https://nodejs.org/en/about/get-involved/collab-summit">コラボレーションサミット</a>で話された内容のまとめ</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
