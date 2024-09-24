@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #50"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #50"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #50</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #50</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_1LeOhz.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="346" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2024年09月24日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/329732/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/329732/</a></p><h3 data-astro-cid-grpv5qb7>配信URL</h3><p data-astro-cid-rqusjlqv><iframe title="https://www.youtube.com/embed/wAQx_d7Mtr8" width="560" height="315" src="https://www.youtube.com/embed/wAQx_d7Mtr8" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe><a href="https://www.youtube.com/watch?v=wAQx_d7Mtr8" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv>https://www.youtube.com/watch?v=wAQx_d7Mtr8</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sajikix</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="webkit-features-in-safari-180"><a href="https://webkit.org/blog/15865/webkit-features-in-safari-18-0/">WebKit Features in Safari 18.0</a></h3>
+<ul>
+<li>共有者: @b4h0_c4t</li>
+</ul>
+<p>Safari 18.0 がリリースされました。
+CSS 等の追加だけでなく、各 OS ごとに様々なブラウザ固有の機能が実装されています。</p>
+<h4 id="css">CSS</h4>
+<ul>
+<li>View Transition (Limited Available / Chrome, Edge, Safari)</li>
+<li>Style Queries for custom properties (Newly Available)</li>
+<li>currentcolor and system color keywords in Relative Color Syntax (Limited Available / Safari)</li>
+<li>Translucent accent colors</li>
+<li>Backdrop Filter (Newly Available)</li>
+<li>Content visibility (Newly Available)</li>
+</ul>
+<h4 id="html">HTML</h4>
+<ul>
+<li>Writing Suggestions</li>
+<li>Haptic feedback for <code>&#x3C;input type=checkbox switch></code></li>
+<li>Date and time inputs accessibility support</li>
+<li>AriaBrailleLabel and AriaBrailleRoleDescription</li>
+</ul>
+<h4 id="javascript">JavaScript</h4>
+<ul>
+<li>Regex v flag support</li>
+</ul>
+<h4 id="web-api">Web API</h4>
+<ul>
+<li><code>URL.parse()</code></li>
+<li><code>shadowRootDelegatesFocus</code> and <code>shadowRootClonable</code></li>
+<li><code>PopStateEvent</code>’s <code>hasUAVisualTransition</code></li>
+<li><code>byte()</code> for <code>Request</code>, <code>Response</code> and <code>Blob</code>, <code>PushMessageData</code></li>
+<li><code>document.fragmentDirective</code></li>
+</ul>
+<h3 id="component-testing-in-storybook"><a href="https://storybook.js.org/blog/component-testing/">Component testing in Storybook</a></h3>
+<ul>
+<li>共有者: @nus3_</li>
+</ul>
+<p>Storybook でのコンポーネントテストについての記事が公開されました。</p>
+<p>この記事では次のようなことが書かれています。</p>
+<ul>
+<li>Jest + testing-library などの JSDom を使った DOM 操作のエミュレートは、実際ブラウザでの挙動と異なることある</li>
+<li>バックエンドのセットアップやテストの実行時間などが要因で flaky なテストが発生しやすい</li>
+<li>ブラウザで実際にコンポーネントをレンダリングするコンポーネントテストは上記の問題を回避しつつ、コスパ良くテストできる</li>
+</ul>
+<p>実際に Storybook では、ブラウザでコンポーネントをレンダリングし、<code>@storybook/test-runner</code>、Chromatic、最近だと<a href="https://storybook.js.org/docs/api/portable-stories/portable-stories-playwright">Portable stories</a>といった機能が提供されています。</p>
+<p>この他にも SafeTest、WebDriverIO、Playwright、Cypress、Vitest が同様の機能を提供しており（experimental なものが多い）、ブラウザ上でコンポーネントをテストする需要の高まりを感じます。</p>
+<h3 id="announcing-typedsql-make-your-raw-sql-queries-type-safe-with-prisma-orm"><a href="https://www.prisma.io/blog/announcing-typedsql-make-your-raw-sql-queries-type-safe-with-prisma-orm">Announcing TypedSQL: Make your raw SQL queries type-safe with Prisma ORM</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>ORM であり、最近では活用しているケースも非常に多く聞くようになった Prisma が、TypeScript で SQL クエリを型安全に扱うためのライブラリ TypedSQL をリリースしました。</p>
+<p>一般的に ORM では、それ自体の機構では表現できなかったり、あるいはクエリが非効率になってしまうなど、さまざまな理由から生の SQL クエリを必要とするケースがありますが、従来ではこれを型安全に扱うのは難しく、Prisma も例外ではありませんでした。TypedSQL では、元々 Prisma がスキーマ情報から型情報を出力する際に実行していた <code>prisma generate</code> に <code>--sql</code> オプションを追加することで、<code>*.sql</code> ファイルも解析し、TypeScript から利用可能な型付けされたコードを生成することが可能となります。サポートされている RDBMS は MySQL および PostgreSQL の最新バージョンとのことです。</p>
+<p>TypeScript として型安全になるのと同時に、パラメータなども関数を介して渡せることで、Prepared Statement での処理も保証されるのも安心できる要素になりそうです。</p>
+<h3 id="oxc-でサポートされた-isolateddeclaration-環境下でのdts-ファイル出力が速い話"><a href="https://x.com/youyuxi/status/1833382355219976443">oxc でサポートされた isolatedDeclaration 環境下での.d.ts ファイル出力が速い話</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>TypeScript の 5.5 から入った <code>isolatedDeclaration</code> オプションでは export される関数やオブジェクトに対して、その型や返り値の型を明示的に指定するという制限を設けます。代わりに <code>isolatedDeclaration</code> オプション有効時は export される型が推論なしに決定できるので高速に <code>.d.ts</code> ファイルを生成することができるようになるわけです。</p>
+<p>このオプションがリリーされて以降、tsc 以外の bundler などでも <code>.d.ts</code> ファイルを生成する機能が追加されてきました。今回の例でその中の一つである oxc を利用して vue の core の.d.ts ファイル生成速度を大幅に向上させたそうです。</p>
+<p>Evan You 氏の <a href="https://x.com/youyuxi/status/1833382355219976443">x への post</a> によれば tsc で 4.73s かかっていた <code>.d.ts</code> ファイル生成が 0.127s まで短縮されたとしています。速度にしておよそ 30 倍以上の高速化になります。</p>
+<p>現在この実装は試験的な branch で行われており、実際に oxc-transform を利用して<code>.d.ts</code> ファイル出力を行う新しい script などを見ることができます。</p>
+<p><a href="https://github.com/vuejs/core/commit/5f91183c4245db58f9817bbcc4767d545e6caae8">https://github.com/vuejs/core/commit/5f91183c4245db58f9817bbcc4767d545e6caae8</a></p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://github.com/vitest-dev/vitest/releases/tag/v2.0.0">Vitest 2.0 リリース: Browser Mode support など</a>
+<ul>
+<li>Vitest 2.0 がリリースされました。ブラウザモードのサポートなどが含まれます。</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/">What’s coming next for ESLint</a>
+<ul>
+<li>ESLint の進化と、Flat Config などの変更点についてまとめられたブログ記事です。</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2024/09/eslint-v8-eol-version-support/">Version Support - ESLint</a>
+<ul>
+<li>ESLint v8 のサポート終了と v9 への移行に関する情報です。</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-4120/">Astro 4.12</a></li>
+<li><a href="https://astro.build/blog/astro-4150/">Astro 4.15</a>
+<ul>
+<li>Astro 4.12 がリリースされました。Experimental 機能として Server Islands が導入され、バックエンド側での動的描画が可能になりました。</li>
+<li>Astro 4.15 がリリースされました。型安全な Astro Actions が導入されました。</li>
+</ul>
+</li>
+<li><a href="https://github.com/jquense/react-big-calendar/issues/2255">react-big-calendar のコアが TanStack/time になる可能性</a>
+<ul>
+<li>react-big-calendar のコアに TanStack/time を利用する可能性が示されています。</li>
+</ul>
+</li>
+<li><a href="https://vercel.com/blog/turbopack-moving-homes">Turbopack updates: Moving homes – Vercel</a>
+<ul>
+<li>Turbopack の最新情報について紹介されています。Next.js のテストケースを 100%パスしていることや、上位 300 の npm パッケージをビルド可能であることなどに言及しています。</li>
+</ul>
+</li>
+<li><a href="https://rspack.dev/blog/announcing-1-0">Announcing Rspack 1.0</a>
+<ul>
+<li>JavaScript バンドラ Rspack の v1 リリースが発表されました。</li>
+</ul>
+</li>
+<li><a href="https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack">Node.js Takes Steps Towards Removing Corepack</a>
+<ul>
+<li>Corepack を Node.js の配布から削除する計画が発表されました。</li>
+</ul>
+</li>
+<li><a href="https://x.com/nextjs/status/1828125586482430262">Next.js Conf is here. Join us in SF or online Oct 24.</a>
+<ul>
+<li>10 月 24 日に開催される Next.js Conf の告知です。</li>
+</ul>
+</li>
+<li><a href="https://nodejs.org/en/blog/release/v22.5.0">Node v22.5.0</a></li>
+<li><a href="https://nodejs.org/en/blog/release/v22.6.0">Node v22.6.0</a>
+<ul>
+<li>Node.js v22.5.0 がリリースされました。sqlite module の追加などを含みます。</li>
+<li>Node.js v22.6.0 がリリースされました。Experimental TypeScript Support などを含みます。</li>
+</ul>
+</li>
+<li><a href="https://mui.com/blog/material-ui-v6-is-out/">Material UI v6 is out now</a>
+<ul>
+<li>React UI ライブラリ Material UI が v6 をリリースしました。テーマ変数やカラーサポートが追加されました。</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/v1.45">Deno 1.45: Workspace と Monorepo のサポート</a>
+<ul>
+<li>Deno 1.45 がリリースされました。Workspace や Monorepo がサポートされました。</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/">Announcing TypeScript 5.6 RC</a>
+<ul>
+<li>TypeScript 5.6 RC のアナウンスです。条件文の厳密なチェック機能などが紹介されています。</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/component-testing/">Component testing in Storybook</a>
+<ul>
+<li>Storybook を使ったコンポーネントテストの方法が紹介されています。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vercel/next.js/pull/63051">feat(next): <code>next.config.ts</code> by devjiwonchoi · Pull Request #63051 · vercel/next.js</a>
+<ul>
+<li>Next.js の設定ファイルを TypeScript で書けるようになりました。</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-8-2/">Storybook 8.2</a>
+<ul>
+<li>Storybook 8.2 がリリースされました。テスト用の新 hooks の追加などが含まれます。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/docs/app/building-your-application/configuring/progressive-web-apps">Configuring: Progressive Web Applications (PWA) | Next.js</a>
+<ul>
+<li>Next.js で PWA を構成するための設定方法を詳述しています。</li>
+</ul>
+</li>
+<li><a href="https://hack.solidjs.com/">SolidHack 2024</a>
+<ul>
+<li>SolidJS のオンラインハッカソン、SolidHack 2024 が開催されます。</li>
+</ul>
+</li>
+<li><a href="https://vercel.com/blog/whats-new-in-react-19">What’s new in React 19 – Vercel</a>
+<ul>
+<li>React 19 の新機能と API 変更について詳細に解説しています。</li>
+</ul>
+</li>
+<li><a href="https://www.publickey1.jp/blog/24/mysqljavascriptjavascript.html">MySQL データベースエンジンで JS をサポート</a>
+<ul>
+<li>MySQL のストアドプロシージャを JavaScript で記述できるようになる GraalJS の導入が紹介されています。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://www.publickey1.jp/blog/24/fastlycdnddoswasmkv.html">Fastly が開発者向けの無料プランを提供開始</a>
+<ul>
+<li>Fastly がエッジランタイムや KV ストアを含む無料プランを開始しました。</li>
+</ul>
+</li>
+<li><a href="https://blog.heroku.com/using-pnpm-on-heroku">Using pnpm on Heroku</a>
+<ul>
+<li>Heroku が pnpm をサポートし、デプロイ時のパッケージインストールが高速化されました。</li>
+</ul>
+</li>
+<li><a href="https://app.speedcurve.com/benchmarks/japan/media/fast/start-render/">Page Speed Benchmarks | SpeedCurve</a>
+<ul>
+<li>SpeedCurve による Web サイトパフォーマンスのベンチマークダッシュボードです。</li>
+</ul>
+</li>
+<li><a href="https://privacysandbox.com/news/privacy-sandbox-update/">A new path for Privacy Sandbox on the web</a>
+<ul>
+<li>Google は 3rd Party Cookie 廃止の方針を転換し、ユーザーがプライバシー設定を管理できる機能を導入することを発表しました。</li>
+</ul>
+</li>
+<li><a href="https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls.html">Let’s Encrypt が OCSP サポート終了</a>
+<ul>
+<li>Let’s Encrypt が OCSP のサポートを終了し、CRLs に移行します。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://github.com/WebKit/WebKit/pull/30559">JSC: RegExp quantifier should allow 2^53 - 1</a>
+<ul>
+<li>WebKit の JavaScriptCore で正規表現の量指定子が大きな数値をサポートするように変更されました。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/sajikix/temporalwoqu-rijuan-kushi-yang-wozheng-li-suru">Temporal を取り巻く仕様を整理する</a>
+<ul>
+<li>ECMAScript Stage 3 の Temporal についての発表資料です。仕様の整理や、タイムゾーン・カレンダーのサポートについて解説しています。</li>
+</ul>
+</li>
+<li><a href="https://dl.acm.org/doi/10.1145/3656431">Linear Matching of JavaScript Regular Expressions | Proceedings of the ACM on Programming Languages</a>
+<ul>
+<li>計算量爆発を防ぐ新しい正規表現アルゴリズムを紹介する論文です。</li>
+</ul>
+</li>
+<li><a href="https://codepen.io/plfstr/full/zYqQeRw">HTML Tags Memory Test</a>
+<ul>
+<li>HTML タグをどれだけ覚えているかをテストするサイトです。</li>
+</ul>
+</li>
+<li><a href="https://www.scottohara.me/blog/2024/08/29/paragraphs.html">Paragraphs | scottohara.me</a>
+<ul>
+<li>HTML における「段落」の概念と、その適切な使用方法について解説しています。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/cybozu_frontend/articles/20240906_chrome129beta">Chrome 129 Beta で追加された CSS プロパティ interpolate-size と calc-size()とは？</a>
+<ul>
+<li>CSS の新しいアニメーションプロパティについて解説しています。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://web.dev/blog/interop-2024-midyear?hl=en">Interop2024 中間アップデート</a>
+<ul>
+<li>Interop2024 の進捗が報告され、スコアが 10 ポイント向上しました。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/15697/private-browsing-2-0/">Private Browsing 2.0 | WebKit</a>
+<ul>
+<li>WebKit のプライベートブラウジング機能の進化について、Link Tracking Protection や Fingerprinting Protection に焦点を当てています。</li>
+</ul>
+</li>
+<li><a href="https://security.googleblog.com/2024/07/improving-security-of-chrome-cookies-on.html">Google Online Security Blog: Improving the security of Chrome cookies on Windows</a>
+<ul>
+<li>Windows での Chrome Cookie セキュリティを向上する新しい保護レイヤーの紹介です。</li>
+</ul>
+</li>
+<li><a href="https://www.publickey1.jp/blog/24/rustservowebverso.html">Rust 製ブラウザエンジン「Servo」搭載、新たな Web ブラウザ「Verso」の開発プロジェクトが立ち上がる</a>
+<ul>
+<li>Rust 製ブラウザ「Servo」の開発プロジェクトが立ち上がりました。</li>
+</ul>
+</li>
+<li><a href="https://github.com/MicrosoftEdge/WebView2Feedback/issues/1314#issuecomment-2211683486">MS が WebView2 の Mac・Linux 版の公開中止を発表</a>
+<ul>
+<li>Microsoft が WebView2 の Mac 版と Linux 版の開発を中止しました。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/line-breakable-ruby?hl=en">Line-breakable <code>&#x3C;ruby></code> and CSS ruby-align property</a>
+<ul>
+<li>Chrome が改行可能な <code>&#x3C;ruby></code> サポートを導入しました。</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/web-platform-07-2024?hl=en">New to the web platform in July</a>
+<ul>
+<li>2024 年 7 月の Web プラットフォームの新機能がまとめられています。</li>
+</ul>
+</li>
+<li><a href="https://x.com/googlejapan/status/1830380112505655663">Google Chrome 16 周年</a>
+<ul>
+<li>Google Chrome が 16 周年を迎えました。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/shared-dictionary-compression?hl=ja">共有辞書で圧縮効率を向上 | Blog | Chrome for Developers</a>
+<ul>
+<li>Chrome でリソースの圧縮効率を高めるための技術的な取り組みを紹介しています。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/mozilla.org/g/dev-platform/c/9ILA7dMn_XA/m/14IfWWvADwAJ">Prototype: Blocking third-party cookies</a>
+<ul>
+<li>Firefox が third-party cookies のブロックに関する新しい挙動を紹介しています。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/new-in-devtool-129?hl=ja">DevTools の新機能（Chrome 129） | Blog | Chrome for Developers</a>
+<ul>
+<li>Chrome 129 の DevTools における新機能について説明しています。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://thecyberexpress.com/jquery-attack-hits-npm-github/">トロイの木馬化した改ざん版 jQuery の脅威</a>
+<ul>
+<li>npm と GitHub でトロイの木馬化された jQuery の攻撃が発生していると報告されています。</li>
+</ul>
+</li>
+<li><a href="https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working/">ライブリージョンの正しい設定方法について</a>
+<ul>
+<li>ライブリージョンの正しい設定方法と、スクリーンリーダーへの影響が説明されています。</li>
+</ul>
+</li>
+<li><a href="https://bootcamp.fjord.jp/articles/125">フィヨルドブートキャンプがフロントエンジニアコースをオープン</a>
+<ul>
+<li>プログラミングスクールであるフィヨルドブートキャンプが新しくフロントエンドエンジニア向けのコースを開設しました。</li>
+</ul>
+</li>
+<li><a href="https://techblog.lycorp.co.jp/ja/20240709b">Google I/O 2024 注目のフロントエンド技術</a>
+<ul>
+<li>Google I/O 2024 での最新のフロントエンド技術に関する発表をまとめています。</li>
+</ul>
+</li>
+<li><a href="https://piccalil.li/blog/its-about-time-i-tried-to-explain-what-progressive-enhancement-actually-is/">プログレッシブ・エンハンスメントとは何なのか</a>
+<ul>
+<li>プログレッシブ・エンハンスメントの概念とその重要性について説明されています。</li>
+</ul>
+</li>
+<li><a href="https://react-spectrum.adobe.com/releases/2024-07-22.html">React Spectrum のリリース</a>
+<ul>
+<li>Adobe が提供するデザインシステム React Spectrum の 2024/7 のリリース内容です。</li>
+</ul>
+</li>
+<li><a href="https://blog.sentry.io/how-to-make-your-web-page-faster-before-it-even-loads/">How to make your web page faster before it even loads</a>
+<ul>
+<li>ページが読み込まれる前にパフォーマンスを改善する方法を紹介しています。</li>
+</ul>
+</li>
+<li><a href="https://github.com/denoland/vscode_deno/issues/1131">Failed to import package that contained deno workspace · Issue #1131 · denoland/vscode_deno</a>
+<ul>
+<li>Deno ワークスペースを含むパッケージのインポートに失敗する問題が報告されています。</li>
+</ul>
+</li>
+<li><a href="https://adrianroselli.com/2022/06/keyboard-only-scrolling-areas.html">Keyboard-Only Scrolling Areas</a>
+<ul>
+<li>キーボード専用スクロールエリアのアクセシビリティについて解説されています。</li>
+</ul>
+</li>
+<li><a href="https://bootcamp.uxdesign.cc/understanding-the-why-behind-some-basic-ui-design-practices-b5d162d6bbd4">Understanding the ‘Why’ behind some basic UI design practices</a>
+<ul>
+<li>基本的な UI デザインの背後にある理由を探る記事です。</li>
+</ul>
+</li>
+<li><a href="https://tympanus.net/codrops/2024/08/20/server-first-web-components-with-dsd-htmx-and-islands/">Server-first Web Components with DSD, HTMX, and Islands | Codrops</a>
+<ul>
+<li>DSD と HTMX を活用した SSR による Web Components の実装方法を紹介しています。</li>
+</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1eTSxCWd3yRMxTCAs3a74NzQ6C9gikYQLZeVdCMODwOg/edit?pli=1">Open UI Component Certified Checklist</a>
+<ul>
+<li>OpenUI が Component やデザインシステムを作る上でのチェックリストを作成しています。</li>
+</ul>
+</li>
+<li><a href="https://user-first.ikyu.co.jp/entry/2024/08/05/142626">React / Remix への依存を最小にするフロントエンド設計 - 一休.com Developers Blog</a>
+<ul>
+<li>一休レストランにおけるライブラリ依存を最小限にしたフロントエンド設計事例について紹介した記事です。</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
