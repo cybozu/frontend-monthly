@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #52"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #52"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #52</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #52</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_1LeOhz.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="346" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエキスパートチームのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。2016年3月15日から行われています。
+<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2024年11月26日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/336958/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/336958/</a></p><h3 data-astro-cid-grpv5qb7>配信URL</h3><p data-astro-cid-rqusjlqv><iframe title="https://www.youtube.com/embed/JXpZP8_0_V8" width="560" height="315" src="https://www.youtube.com/embed/JXpZP8_0_V8" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe><a href="https://www.youtube.com/watch?v=JXpZP8_0_V8" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv>https://www.youtube.com/watch?v=JXpZP8_0_V8</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sajikix</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="state-of-css-2024"><a href="https://2024.stateofcss.com">State of CSS 2024</a></h3>
+<ul>
+<li>共有者: @b4h0_c4t</li>
+</ul>
+<p>State of CSS 2024 の回答結果が公開されました。
+近年、CSS エコシステムが急成長しており、多くの新機能や周辺ツールについてのアンケートが含まれています。</p>
+<p>Feature では、Baseline 2024 の中で最も利用されているものは <a href="https://developer.mozilla.org/ja/docs/Web/CSS/backdrop-filter">backdrop-filter</a> となっており、逆に最も利用されていないものは <a href="https://developer.mozilla.org/ja/docs/Web/CSS/offset-path">offset-path</a> でした。
+また、リーディングリストの結果を見ると、offset-path の他に離散的なアニメーションを扱うための <a href="https://developer.mozilla.org/ja/docs/Web/CSS/transition-behavior">transition-behavior</a> も回答者の興味を引いているようです。</p>
+<p>CSS Framework では、 <a href="https://tailwindcss.com/">Tailwind</a> と <a href="https://getbootstrap.com/">Bootstrap</a> が圧倒的な利用率を誇っています。</p>
+<p>CSS-in-JS では、<a href="https://github.com/css-modules/css-modules">CSS Modules</a> や <a href="https://styled-components.com/">styled components</a> が圧倒的な利用率を誇る中、ゼロランタイム CSS-in-JS である <a href="https://vanilla-extract.style/">vanilla-extract</a> が 7% とそこそこの利用者がついていることがわかります。</p>
+<p>ブラウザ(非)互換性の項目では、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning">Anchor Positiong</a> が最も熱望されている機能である一方で、<a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_containment/Container_queries">Container Queries</a> や <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:has"><code>:has()</code></a> といった既に実現されている機能に対しての投票も多かったようです。</p>
+<h3 id="cypress-で-firefox-のテストに-webdriverio-を使い始めた"><a href="https://x.com/webdriverio/status/1857121862360424812">Cypress で Firefox のテストに WebDriverIO を使い始めた</a></h3>
+<ul>
+<li>共有者: @nus3_</li>
+</ul>
+<p>WebdriverIO の X のアカウントでポストされており、Cypress に WebdriverIO が使われるとはどういうことなのか気になって調べてみました。</p>
+<p><a href="https://fxdx.dev/deprecating-cdp-support-in-firefox-embracing-the-future-with-webdriver-bidi/">Firefox が 2024 年末には Chrome DevTools Protocol(CDP)のサポートを廃止し、WebDriver BiDi への移行を推奨</a>したことを受け、Cypress では、Firefox で使うプロトコルを CDP から WebDriver BiDi へ移行しようとしています。
+<a href="https://github.com/cypress-io/cypress/blob/develop/packages/server/lib/browsers/firefox_automation.md#purpose">https://github.com/cypress-io/cypress/blob/develop/packages/server/lib/browsers/firefox_automation.md#purpose</a><br>
+<a href="https://github.com/cypress-io/cypress/issues/30219">https://github.com/cypress-io/cypress/issues/30219</a></p>
+<p>Cypress では WebDriver BiDi に対応するため、marionette-client を geckodriver に置き換えました。
+<a href="https://github.com/cypress-io/cypress/pull/30250">https://github.com/cypress-io/cypress/pull/30250</a></p>
+<p>この geckodriver への置き換えに際し、webdriverio-community が提供するラッパーライブラリを採用することで、WebDriver BiDi プロトコルが利用できるようになったようです。（おそらく。翻訳ミスってたら教えてください。）
+<a href="https://github.com/webdriverio-community/node-geckodriver">https://github.com/webdriverio-community/node-geckodriver</a><br>
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1604723">https://bugzilla.mozilla.org/show_bug.cgi?id=1604723</a></p>
+<p><a href="https://webdriver.io/blog/2024/08/15/webdriverio-v9-release">WebdriverIO は v9 リリース</a>で、WebDriver BiDi プロトコルがサポートされ、デフォルトで使われるようになりましたし、仕様の策定が進むにつれて、関連ライブラリの対応もさらに進みそうに感じました。</p>
+<h3 id="our-journey-with-caching"><a href="https://nextjs.org/blog/our-journey-with-caching">Our Journey with Caching</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Next.js 15 以降で Experimental で利用可能となった <code>dynamicIO</code> によって、今後キャッシュの取り扱いがどのように変化するかについて説明されている記事です。</p>
+<p>Next.js 14 以前での Next.js App Router では、キャッシュ周りに関しては基本的にすべて有効であることが前提という設計であり、Client 側での Router Cache などについては Opt-out する方法もありませんでした。しかし、全体的に Opt-in の形に見直され、キャッシュが必要な部分で明示的な宣言する形に設計が変わりつつあります。</p>
+<p>その中の一つとしての機能が <code>dynamicIO</code> であり、これを有効にすると、<code>fetch()</code> などの処理が含まれていた場合に、該当箇所について “use cache” を宣言して静的レンダリング（キャシュ対象）であることを宣言するか、あるいは <code>&#x3C;Suspence></code> での Wrap が必須となり、どちらも省略するとビルド時にエラーとなります。同じ Experimental な機能である PPR（Partial Prerendering）において、静的・動的の境界を <code>&#x3C;Suspense></code> で判断するため、<code>dynamicIO</code> を利用することで、必然的に動的な部分のみが <code>&#x3C;Suspense></code> で Wrap されていくことになり、その外側で有効に PPR が適用されるようになります。</p>
+<p>Next.js 14 までに App Router に関してのキャッシュの知識を得たり記事を書いたりした人（私もですが…）からすると、ある意味リセットが必要となってしまいますが、個人的には従来の暗黙的な挙動が多い状態と比較すると、かなりわかりやすい形に向かっている印象があります。</p>
+<h3 id="announcing-typescript-57-rc"><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-rc/">Announcing TypeScript 5.7 RC</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>TypeScript 5.7 RC がリリースされました。予定通りに行けば 11 月の末ごろには正式版がリリースされる予定です。</p>
+<p>今回はその中から個人的に注目しているものを紹介します。</p>
+<h4 id="checks-for-never-initialized-variables">Checks for Never-Initialized Variables</h4>
+<p>初期化していない変数に対するチェックが厳しくなりました。今まで変数の初期化チェックが甘くなる例として変数が別の関数でアクセスされる場合などがありましたが、今回の変更で部分的にこの問題が解決されています。</p>
+<pre class="language-ts"><code is:raw="" class="language-ts"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> result<span class="token operator">:</span> <span class="token builtin">number</span>
+  <span class="token keyword">function</span> <span class="token function">printResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token comment">// 初期化してないよってエラーになる(今までエラーにならなかった)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="path-rewriting-for-relative-paths">Path Rewriting for Relative Paths</h4>
+<p>相対パスで import する際の拡張子の扱い(<code>.js</code>/<code>.ts</code>)について新しく <code>--rewriteRelativeImportExtensions</code> というオプションが追加されました。</p>
+<p>そもそも ESM 環境下ではファイルの拡張子は省略できず、TS 環境下でも一般的には<code>.js</code>を使う必要があります。一方、近年 ts ファイルをそのまま実行できるランタイムが増えており、このようなランタイムで実行する場合は<code>.ts</code>でパスを指定します。必ずそのようなランタイムで実行されることが保証できれば良いのですが、Node.js が試験的に<code>--experimental-strip-types</code>オプションで TS ファイルのサポートを始めたことで、「<code>.ts</code>で読む場合」と「トランスパイルして<code>.js</code>としなければならない場合」の２パターンが同時に発生しうるようになりました。</p>
+<p>このような問題を解決すべく　<code>--rewriteRelativeImportExtensions</code> オプションの有効化時は tsc 実行時に初めて相対パスの<code>.ts</code>拡張子を<code>.js</code>に書き換える機能を提供します。一方で対応できない文法や機能などもあり利用するには大きな注意が必要です。基本的には<code>--experimental-strip-types</code>を有効にしている環境のための対応策と考えた方が良いでしょう。</p>
+<p>詳しくは Uhyo さんの書かれた <a href="https://zenn.dev/uhyo/articles/rewrite-relative-import-extensions-read-before-use#--rewriterelativeimportextensions-%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%A8%E3%81%9D%E3%81%AE%E5%9B%B0%E9%9B%A3">TS 5.7 の —rewriteRelativeImportExtensions オプションを使う前に読む記事</a>を読むと良さそうです。</p>
+<h4 id="validated-json-imports-in-module-nodenext">Validated JSON Imports in —module nodenext</h4>
+<p><code>module</code>オプションで <code>nodenext</code>を指定した場合、JSON の import では <a href="https://github.com/tc39/proposal-import-attributes"><code>Import Attributes</code></a> を利用した記法に変更しなくてはならなくなりました。</p>
+<pre class="language-ts"><code is:raw="" class="language-ts"><span class="token keyword">import</span> myConfig <span class="token keyword">from</span> <span class="token string">"./myConfig.json"</span> <span class="token keyword">with</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token string">"json"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p><code>Import Attributes</code> は今年(2024 年)10 月の TC39 meeting で Stage4 になり来年の ES2025 として入るようになる機能です。import 文の後ろに <code>with {key:value}</code>でメタ情報などを追加できるようになります。</p>
+<p>現状は <code>--module nodenext</code> 時のみですが、今後 JSON や JS 以外のファイルを import する際は <code>Import Attributes</code> を利用することがデファクトになるかも知れないので覚えておくと良さそうです。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://deno.com/blog/v2.0">Announcing Deno 2</a>
+<ul>
+<li>Deno v2.0 がリリースされました。Node.js および npm との後方互換性の向上や、<code>deno fmt</code>のサポートの拡張、ワークスペースやモノレポのサポートなどが追加されています。ロゴも変わったようです。</li>
+</ul>
+</li>
+<li><a href="https://react.dev/learn/react-compiler#using-react-compiler-with-react-17-or-18">React Compiler – React</a>
+<ul>
+<li>React Compiler が React v17 と v18 でも利用できるようになりました。利用するには追加で react-compiler-runtime@beta をインストールし、compiler の設定を変える必要があります。</li>
+</ul>
+</li>
+<li><a href="https://github.com/pmndrs/zustand/releases/tag/v5.0.0">Release v5.0.0 · pmndrs/zustand</a>
+<ul>
+<li>Zustand v5 がリリースされました。バンドルサイズが削減されています。</li>
+<li><a href="https://zustand.docs.pmnd.rs/migrations/migrating-to-v5#changes-in-v5">How to Migrate to v5 from v4 - Zustand</a></li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-15">Next.js 15 | Next.js</a>
+<ul>
+<li>Next.js 15 がリリースされました。キャッシュ周りのデフォルト挙動の変更や React19 のサポートなど、以前からアナウンスされていた内容が多く含まれます。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vercel/next.js/pull/69949">Add `connection()` as a new dynamic API by gnoff · Pull Request #69949 · vercel/next.js</a>
+<ul>
+<li>Next.js において、動的レンダリングを強制する API が <code>connection()</code> という名称で導入されました。過去に <code>unstable_noStore()</code> という名前で検証されていたものに相当します。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/our-journey-with-caching">Our Journey with Caching | Next.js</a>
+<ul>
+<li>Next.js で実験段階の新しいキャッシュモードである、dynamicIO について紹介する記事です。</li>
+</ul>
+</li>
+<li><a href="https://www.chakra-ui.com/blog/00-announcing-v3">Announcing v3 | Chakra UI</a>
+<ul>
+<li>Chakra UI の v3 がリリースされました。v3 は、パフォーマンス、コンポーネント間の一貫性を向上させるため、完全に書き直されました。また、デザインシステムとして Park UI の採用なども含まれています。</li>
+</ul>
+</li>
+<li><a href="https://turbo.build/blog/turbo-2-2-0">Turborepo 2.2</a>
+<ul>
+<li>Turborepo の 2.2 がリリースされました。GraphQL で Turborepo のリポジトリ情報を取得できる turbo query の導入などが含まれます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://www.debugbear.com/blog/google-crux-vis">Google’s New CrUX Vis Tool: Explore Core Web Vitals Data | DebugBear</a>
+<ul>
+<li>Google から新しく、 CrUX Vis という Core Web Vitals ツールがリリースされました。関連して、Chrome 129 から DevTools の Performance パネルで同様に CrUX が閲覧できるようになっています。</li>
+<li><a href="https://developer.chrome.com/blog/devtools-realtime-cwv?hl=ja#field-data">ローカルと実際のユーザーの Core Web Vitals のパフォーマンスを DevTools でモニタリングする  |  Blog  |  Chrome for Developers</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/">Announcing TypeScript 5.7 Beta - TypeScript</a>
+<ul>
+<li>TypeScript v5.7 Beta が利用可能になりました。未初期化の変数利用時の型エラー周りの改善や、相対パスでの <code>.ts</code> インポートを可能にする <code>--rewriteRelativeImportExtension</code> オプションの追加などが含まれます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://developer.chrome.com/blog/chrome-131-beta?hl=ja">Chrome 131 beta</a>
+<ul>
+<li>Chrome 131 beta がリリースされました。CSS での <code>anchor-scope</code>、<code>font-variant-emoji</code> のサポートや、入力テキストを要約してくれる Summarizer API の追加など、多くの変更が含まれます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://lists.w3.org/Archives/Public/ietf-http-wg/2024JulSep/0316.html">RFC 9651 on Structured Field Values for HTTP from rfc-editor@rfc-editor.org on 2024-09-30 (ietf-http-wg@w3.org from July to September 2024)</a>
+<ul>
+<li>HTTP ヘッダの値の構造化に関する RFC である RFC 9651 が更新されました。新たに Date や UTF8 の型が追加されたようです。</li>
+</ul>
+</li>
+<li><a href="https://sosukesuzuki.dev/posts/intl-durationformat-limits/">Intl.DurationFormat の最大値を規定する仕様について</a>
+<ul>
+<li><code>Intl.DurationFormat</code> における最大値の仕様と JavaScriptCore での実装について解説している記事です。</li>
+</ul>
+</li>
+<li><a href="https://jakearchibald.com/2024/how-should-selectedoption-work/">How should <selectedoption> work? - JakeArchibald.com</selectedoption></a>
+<ul>
+<li><code>&#x3C;selectedoption></code> 要素において、選択後の <code>&#x3C;option></code> の内容が変更された場合の挙動について、リセットメソッドを用いるという仕様になったようです。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://gihyo.jp/article/2024/10/ride-modern-frontend-02">Container Queries/祖先要素に応じた CSS の切り替え ［CSS Modern Features no.2］ | gihyo.jp</a>
+<ul>
+<li>CSS の Container Queries に関しての概要と活用方法についての解説記事です</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=33ex2A04b7g">All about VoidZero - The Interview with Evan You</a>
+<ul>
+<li>JS ツールチェーンの統一を目指す VoidZero の設立について、Evan You 氏にインタビューする YouTube 動画です。</li>
+</ul>
+</li>
+<li><a href="https://thenewstack.io/how-microsoft-edge-is-replacing-react-with-web-components/">How Microsoft Edge Is Replacing React With Web Components - The New Stack</a>
+<ul>
+<li>Microsoft の Edge チームが進めている、React ベースの UI コンポーネントを WebComponents に置き換えるプロジェクト「WebUI 2.0」の、プロジェクト発足の経緯や現在の状況についての記事です。</li>
+</ul>
+</li>
+<li><a href="https://vuefes.jp/2024/">Vue Fes Japan 2024 が開催されました</a>
+<ul>
+<li>2024 年 10 月 19 日(土)に、Vue Fes Japan 2024 が開催されました。</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
