@@ -1,13 +1,13 @@
 [
   {
     "title": "WebKit Features in Safari 18.0",
-    "overview": "",
+    "overview": "View Transition APIや、Style Queriesのサポートなどが含まれたSafari 18.0がリリースされました。",
     "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
     "date": "2024-09-16"
   },
   {
     "title": "Oxc Transformer Alpha",
-    "overview": "",
+    "overview": "OXC Transformerのアルファ版がリリースされました。",
     "url": "https://oxc.rs/blog/2024-09-29-transformer-alpha.html",
     "date": "2024-09-29"
   },
@@ -20,7 +20,7 @@
   },
   {
     "title": "TC39 Advances 10+ ECMAScript Proposals: Key Features to Watch",
-    "overview": "",
+    "overview": "TC39 の 104th meeting で update があった ECMAScript の proposal についてまとめた記事。Iterator HelperやImport Attributesがstage 4になりました。",
     "url": "https://socket.dev/blog/tc39-advances-10-ecmascript-proposals-key-features-to-watch",
     "date": "2024-10-10"
   },
@@ -33,49 +33,44 @@
   },
   {
     "title": "The Disappearance of an Internet Domain",
-    "overview": "",
+    "overview": "イギリス領インド洋地域がイギリスからモーリシャス返還されるというニュースに端を発して、この地域に割り当てられ、エンジニア向けのサービスなどで広く使われる .io ドメインが今後どうなるのか、これまでの国別トップレベルドメインの歴史について振り返りながら整理した記事です。",
     "url": "https://every.to/p/the-disappearance-of-an-internet-domain",
     "date": "2024-10-08"
   },
   {
     "title": "Announcing Deno 2",
-    "overview": "",
+    "overview": "Deno v2.0がリリースされました。v1系ではNode.jsとnpmへの互換性向上がリリースに毎回含まれていましたが、v2で後方互換性があることがはっきりと記載されました。AstroやNext.js、Solid.jsといったフレームワークがDenoで動くことが紹介されています。",
     "url": "https://deno.com/blog/v2.0",
-    "date": "2024-10-09"
+    "date": "2024-10-09",
+    "isNotable": true
   },
   {
     "title": "React Compiler Beta Release",
-    "overview": "",
+    "overview": "React Compiler が React v17 と v18 でも利用できるようになりました。利用するには追加でreact-compiler-runtime@betaをインストールし、compiler の設定を変える必要があります。",
     "url": "https://react.dev/blog/2024/10/21/react-compiler-beta-release",
     "date": "2024-10-21"
   },
   {
     "title": "Zustand v5 release",
-    "overview": "",
+    "overview": "Zustand v5 がリリースされました。新機能の追加は特にないようですが、古い機能が削除されてバンドルサイズが削減されました。具体的には、minified のサイズが v4.5.5 では 3.1kB だったのが、v5.0.0 では 1.2kB まで減りました。",
     "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0",
     "date": "2024-10-14"
   },
   {
     "title": "Next.js 15 release",
-    "overview": "",
+    "overview": "React19のサポートを含む、Next.js 15 がリリースされました。",
     "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0",
     "date": "2024-10-21"
   },
   {
     "title": "Our Journey with Caching",
-    "overview": "",
+    "overview": "Next.jsで実験段階の新しいキャッシュモードである、dynamicIOについて紹介する記事です。<Suspense>でラップすることで動的なデータフェッチとストリーミングを行い、use cacheディレクティブを使用することで静的なコンテンツのキャッシュをします。両方を組み合わせることも可能で、cacheTagやcacheLifeなど、細かいキャッシュの制御も可能です。",
     "url": "https://nextjs.org/blog/our-journey-with-caching",
     "date": "2024-10-24"
   },
   {
     "title": "Announcing v3 | Chakra UI",
-    "overview": "",
-    "url": "https://www.chakra-ui.com/blog/00-announcing-v3",
-    "date": "2024-10-22"
-  },
-  {
-    "title": "Announcing v3 | Chakra UI",
-    "overview": "",
+    "overview": "Chakra UIのv3がリリースされました。v3は、パフォーマンス、コンポーネント間の一貫性を向上させるため、完全に書き直されました",
     "url": "https://www.chakra-ui.com/blog/00-announcing-v3",
     "date": "2024-10-22"
   },
@@ -132,5 +127,25 @@
     "overview": "Denoが、Oracleの所有する「JavaScript」の商標取り下げを米国特許商標庁に申請しました。",
     "url": "https://deno.com/blog/deno-v-oracle",
     "date": "2024-11-25"
+  },
+  {
+    "title": "Storybookの2024年のふりかえり",
+    "overview": "Storybookは2024年にv8.0~8.4をリリースしました。Vitestの統合やモジュールモックといったStorybook上でコンポーネントテストを行うための機能が拡充されたのが印象的でした。",
+    "url": "https://storybook.js.org/blog/",
+    "date": "2024-11-12",
+    "isNotable": true
+  },
+  {
+    "title": "Turborepo 2.2",
+    "overview": "Repository queriesのexperimentalでの提供など、Turborepoの2.2がリリースされました",
+    "url": "https://turbo.build/blog/turbo-2-2-0",
+    "date": "2024-10-18"
+  },
+  {
+    "title": "コンポーネントテストの手法とその効果を考える",
+    "overview": "コンポーネントを対象にしたテストってどういった手法が使えるか整理してみたら、現状だと、いろんな選択肢が取れることを改めて認識しました。このスライドでも紹介していますが、現在仕様を策定中のWebDriver BiDiが来年どうなっていくのか気になってます。",
+    "url": "https://speakerdeck.com/yotahada3/frontend-component-test",
+    "date": "2024-09-20",
+    "isNotable": true
   }
 ]
