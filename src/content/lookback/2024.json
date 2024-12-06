@@ -1,15 +1,136 @@
 [
   {
-    "title": "nus3の注目記事",
-    "overview": "nus3が注目しているキーボードnus3が注目しているキーボードnus3が注目しているキーボードnus3が注目しているキーボードnus3が注目しているキーボードnus3が注目しているキーボード",
-    "url": "https://en.akkogear.com/product/mu02-mountain-seclusion-mechanical-keyboard/?srsltid=AfmBOooBa-69cWhZ9GrIgqgIFDkRVVJ099s9pHHdSrrUOzO6qdwm6D8D&wmc-currency=JPY",
-    "date": "2024-01-01",
+    "title": "WebKit Features in Safari 18.0",
+    "overview": "",
+    "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
+    "date": "2024-09-16"
+  },
+  {
+    "title": "Oxc Transformer Alpha",
+    "overview": "",
+    "url": "https://oxc.rs/blog/2024-09-29-transformer-alpha.html",
+    "date": "2024-09-29"
+  },
+  {
+    "title": "Announcing VoidZero - Next Generation Toolchain for JavaScript",
+    "overview": "Evan You氏 が資金調達をして、VoidZero Inc.（void(0)）を立ち上げ、次世代 JS ツールチェーンを開発することが公表されました。void(0)はオープンソースかつハイパフォーマンスな、JavaScriptエコシステムの統一的な開発者ツールを提供することを目指しています。",
+    "url": "https://voidzero.dev/posts/announcing-voidzero-inc",
+    "date": "2024-10-01",
     "isNotable": true
   },
   {
-    "title": "nus3の記事",
-    "overview": "nus3が注目しているキーボード",
-    "url": "https://en.akkogear.com/product/mu02-mountain-seclusion-mechanical-keyboard/?srsltid=AfmBOooBa-69cWhZ9GrIgqgIFDkRVVJ099s9pHHdSrrUOzO6qdwm6D8D&wmc-currency=JPY",
-    "date": "2024-01-01"
+    "title": "TC39 Advances 10+ ECMAScript Proposals: Key Features to Watch",
+    "overview": "",
+    "url": "https://socket.dev/blog/tc39-advances-10-ecmascript-proposals-key-features-to-watch",
+    "date": "2024-10-10"
+  },
+  {
+    "title": "FEEチームから「乗りこなせ！モダンフロントエンド」のWeb連載が始まる",
+    "overview": "弊社のフロントエンドエキスパートチームが技術評論社さんの web メディア(gihyo.jp)で「乗りこなせ！ モダンフロントエンド」というシリーズのWeb連載を開始しました。今年はmugishimaさんがCSS Modern FeaturesをテーマにモダンなCSSの機能について紹介しています。",
+    "url": "https://gihyo.jp/list/group/%E4%B9%97%E3%82%8A%E3%81%93%E3%81%AA%E3%81%9B-%E3%83%A2%E3%83%80%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89#rt:/article/2024/10/ride-modern-frontend-01",
+    "date": "2024-10-09",
+    "isNotable": true
+  },
+  {
+    "title": "The Disappearance of an Internet Domain",
+    "overview": "",
+    "url": "https://every.to/p/the-disappearance-of-an-internet-domain",
+    "date": "2024-10-08"
+  },
+  {
+    "title": "Announcing Deno 2",
+    "overview": "",
+    "url": "https://deno.com/blog/v2.0",
+    "date": "2024-10-09"
+  },
+  {
+    "title": "React Compiler Beta Release",
+    "overview": "",
+    "url": "https://react.dev/blog/2024/10/21/react-compiler-beta-release",
+    "date": "2024-10-21"
+  },
+  {
+    "title": "Zustand v5 release",
+    "overview": "",
+    "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0",
+    "date": "2024-10-14"
+  },
+  {
+    "title": "Next.js 15 release",
+    "overview": "",
+    "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0",
+    "date": "2024-10-21"
+  },
+  {
+    "title": "Our Journey with Caching",
+    "overview": "",
+    "url": "https://nextjs.org/blog/our-journey-with-caching",
+    "date": "2024-10-24"
+  },
+  {
+    "title": "Announcing v3 | Chakra UI",
+    "overview": "",
+    "url": "https://www.chakra-ui.com/blog/00-announcing-v3",
+    "date": "2024-10-22"
+  },
+  {
+    "title": "Announcing v3 | Chakra UI",
+    "overview": "",
+    "url": "https://www.chakra-ui.com/blog/00-announcing-v3",
+    "date": "2024-10-22"
+  },
+  {
+    "title": "We're forking Flutter. This is why.",
+    "overview": "Flock と呼ばれる Flutter の Fork プロジェクトの立ち上げについてのブログです。Google 側の Flutter への開発がやや停滞気味になっており、レビューなども遅れていることなどが理由として挙げられています。Flock では Flutter チームが実装しないバグ修正や機能追加を行い、コントリビュートしやすい環境整備も行っていくとのことです。",
+    "url": "https://getflocked.dev/blog/posts/we-are-forking-flutter-this-is-why/",
+    "date": "2024-10-27"
+  },
+  {
+    "title": "State of CSS 2024",
+    "overview": "CSS の利用状況などに関してのサーベイである State of CSS の 2024 年度版が公開されました。サーベイ対象の機能の中では CSS Filter Effects や :has() などが特に多く利用されるようになったようです。機能単位での Baseline 状況も確認でき、知らない機能を知るきっかけにもなりそうです。",
+    "url": "https://2024.stateofcss.com/en-US",
+    "date": "2024-10-18"
+  },
+  {
+    "title": "新しい JavaScript 向けのパッケージマネージャである vlt が公開",
+    "overview": "新しい JavaScript 向けのパッケージマネージャである vlt が公開されました。",
+    "url": "https://www.vlt.sh/",
+    "date": "2024-11-05"
+  },
+  {
+    "title": "Framer Motion is now independent, introducing Motion",
+    "overview": "React のアニメーションライブラリである Framer Motion が Framer から独立し、Motion と呼ばれるプロジェクトで開発されることになりました。React 以外での利用に向けた API セットの提供や、サポート・ドキュメントの改善などに取り組んでいくとのことです。",
+    "url": "https://motion.dev/blog/framer-motion-is-now-independent-introducing-motion",
+    "date": "2024-11-12"
+  },
+  {
+    "title": "Beta: Universal React Server Components in Expo Router",
+    "overview": "Expo Router で React Server Components がexperimentalで使えるようになりました。",
+    "url": "https://expo.dev/blog/universal-react-server-components-developer-preview",
+    "date": "2024-11-15"
+  },
+  {
+    "title": "The State of ES5 on the Web",
+    "overview": "現在の ES5 を target としたトランスパイルについて調査・解説した記事です。Babel はまだデフォルトで ES5 を target にしていますが、ES5 を target にしたトランスパイルはサイズが大きくなりがちで、CrUX を用いた調査結果を踏まえても ES5 を target にする必要性は現在ではほとんどないと説明されています。そこで、BrowsersList や Baseline を利用して target を設定することが推奨されています。",
+    "url": "https://philipwalton.com/articles/the-state-of-es5-on-the-web/",
+    "date": "2024-09-08"
+  },
+  {
+    "title": "Tailwind CSS v4.0 Beta",
+    "overview": "Tailwind CSS v4.0 Beta がリリースされました。このリリースにはビルドパフォーマンスの改善、CSSファーストな設定、Lightning CSSの採用、モダンなCSSのサポートが含まれています。",
+    "url": "https://tailwindcss.com/docs/v4-beta",
+    "date": "2024-11-22"
+  },
+  {
+    "title": "Vite 6.0 is out!",
+    "overview": "Viteのv6.0がリリースされました。新たにEnvironment APIが実験的機能として追加されるなどの変更が加えられています。",
+    "url": "https://vite.dev/blog/announcing-vite6",
+    "date": "2024-11-26"
+  },
+  {
+    "title": "Deno v. Oracle: Canceling the JavaScript Trademark",
+    "overview": "Denoが、Oracleの所有する「JavaScript」の商標取り下げを米国特許商標庁に申請しました。",
+    "url": "https://deno.com/blog/deno-v-oracle",
+    "date": "2024-11-25"
   }
 ]
