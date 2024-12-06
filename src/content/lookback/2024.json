@@ -1,5 +1,148 @@
 [
   {
+    "title": "Bun 1.1",
+    "overview": "Windows対応やNode.js互換性の向上、WebSocketサポートといったアップデートを含む、Bun 1.1がリリースされました。",
+    "url": "https://bun.sh/blog/bun-v1.1",
+    "date": "2024-04-01"
+  },
+  {
+    "title": "Deno 1.42: Better dependency management with JSR",
+    "overview": "Deno 1.42がリリースされました。このバージョンから、JavaScriptおよびTypeScriptパッケージレジストリであるJSRの第1級サポートが入りました。",
+    "url": "https://deno.com/blog/v1.42",
+    "date": "2024-03-28",
+    "isNotable": true
+  },
+  {
+    "title": "フロントエンドにおけるフィーチャーフラグ標準化のための「OpenFeature Web SDK v1」がリリース",
+    "overview": "Cloud Native Computing Foundation がフィーチャーフラグ機能の標準化を目的に進めている OpenFeature プロジェクトから、フロントエンドで利用可能なSDKがリリースされました。",
+    "url": "https://www.publickey1.jp/blog/24/openfeature_web_sdk_v1cncf.html",
+    "date": "2024-03-27"
+  },
+  {
+    "title": "Learn JavaScript | web.dev",
+    "overview": "web.dev で公開されている学習用コンテンツにJavaScriptのコースが新たに追加されました。",
+    "url": "https://web.dev/learn/javascript",
+    "date": "2024-04-09"
+  },
+  {
+    "title": "React Server Components now in RedwoodJS",
+    "overview": "フルスタックフレームワークであるRedwoodJSのBighornと呼ばれるバージョンからReact Server Componentsがサポートされました。",
+    "url": "https://redwoodjs.com/blog/rsc-now-in-redwoodjs",
+    "date": "2024-03-24"
+  },
+  {
+    "title": "ESLint v9.0.0 released",
+    "overview": "ESLint の v9 がリリースされました。FlatConfigのデフォルト化、Nodeのサポートバージョン引き上げ、Plugin 向けの API 変更など多くの BrakingChange があります。みなさんは追従できましたか？",
+    "url": "https://eslint.org/blog/2024/04/eslint-v9.0.0-released/",
+    "date": "2024-04-05",
+    "isNotable": true
+  },
+  {
+    "title": "How we built JSR",
+    "overview": "JSRで採用されている技術構成が紹介されています。DBではPostgresのクラスタ、APIにはRust製のサーバであるHyper、WebサイトはDenoのフレームワークであるFreshが利用されているとのことです。",
+    "url": "https://deno.com/blog/how-we-built-jsr",
+    "date": "2024-04-12"
+  },
+  {
+    "title": "Biome v1.7",
+    "overview": "ESLintやPrettierからのマイグレーションコマンドの追加などが含まれます。",
+    "url": "https://biomejs.dev/blog/biome-v1-7/",
+    "date": "2024-04-15"
+  },
+  {
+    "title": "Next.js 14.2",
+    "overview": "このバージョンから、webpackからの置き換えのために開発が進められていたTurbopackのRelease Candidateでの提供が開始されました。",
+    "url": "https://nextjs.org/blog/next-14-2",
+    "date": "2024-04-11"
+  },
+  {
+    "title": "Remove automatic fetch cache instrumentation",
+    "overview": "React に標準で含まれていた fetch() に対するパッチが削除されました。",
+    "url": "https://github.com/facebook/react/pull/28896",
+    "date": "2024-04-24"
+  },
+  {
+    "title": "Google、サードパーティ cookie 廃止を 3 度目の延期",
+    "overview": "年内で完了が予定されていた Chrome での 3rd Party Cookie 廃止についての延期が発表されました。",
+    "url": "https://www.itmedia.co.jp/news/articles/2404/24/news102.html",
+    "date": "2024-04-23"
+  },
+  {
+    "title": "React 19 Beta の公開",
+    "overview": "use() や useActionState() といった新しいフックや forwardRef を用いない ref の受け渡しといった変更を含む React 19 の Beta が公開されました。",
+    "url": "https://react.dev/blog/2024/12/05/react-19",
+    "date": "2024-04-26"
+  },
+  {
+    "title": "日本CTO協会からWebフロントエンド版DX Criteriaが公開",
+    "overview": "Web フロントエンドの技術領域観点について、全 100 項目（大テーマ 5 つ x 小テーマ 5 つ x 観点 4 つ）からなるガイドラインが公開されました。",
+    "url": "https://dxcriteria.cto-a.org/frontend",
+    "date": "2024-04-24",
+    "isNotable": true
+  },
+  {
+    "title": "Node.js 22 is now available!",
+    "overview": "Node.js 22 のリリース告知と含まれる機能の紹介記事です。require()によるESMのロードや、globの標準サポートなどが含まれます。",
+    "url": "https://nodejs.org/en/blog/announcements/v22-release-announce",
+    "date": "2024-04-24"
+  },
+  {
+    "title": "JSR Is Not Another Package Manager",
+    "overview": "なぜJSRを公開したのかを、npmパッケージレジストリが抱える現状の課題などを踏まえて解説されています。セキュリティやTypeScriptサポートなどに言及されています。",
+    "url": "https://deno.com/blog/jsr-is-not-another-package-manager",
+    "date": "2024-04-24"
+  },
+  {
+    "title": "Deep Dive into React Stream/Serialize",
+    "overview": "React の Stream/Serialize に関連する RSC Payload の読み方についての資料です。「Node学園 42時限目 Next.js AppRouterについて」でmugiが発表しました。",
+    "url": "https://speakerdeck.com/mugi_uno/serialize",
+    "date": "2024-04-30"
+  },
+  {
+    "title": "WebKit Features in Safari 17.5 | WebKit",
+    "overview": "Safari 17.5 での WebKit の新機能についての記事です。CSS における text-wrap: balance や light-dark()、@import におけるルールクエリや、WebGL、WebView などの変更を含みます。",
+    "url": "https://webkit.org/blog/15383/webkit-features-in-safari-17-5/",
+    "date": "2024-05-13"
+  },
+  {
+    "title": "React Compiler – React",
+    "overview": "Reactのドキュメントに React Compiler の解説用ページが追加されました。各種フレームワークでの使い方なども紹介されています",
+    "url": "https://react.dev/learn/react-compiler",
+    "date": "2024-05-16"
+  },
+  {
+    "title": "Merging Remix and React Router",
+    "overview": "Remix v3 としてリリース予定だった機能が React Router v7 としてリリースされることになりました。React Router 側に Remix 側の Loader などを取り込み続けた結果、位置付けが近いものになったことが理由として挙げられています。",
+    "url": "https://remix.run/blog/merging-remix-and-react-router",
+    "date": "2024-05-15",
+    "isNotable": true
+  },
+  {
+    "title": "WCAG 3 Introduction",
+    "overview": "Web アクセシビリティに関するガイドラインである WCAG 3.0 の Working Draft が公開されました。",
+    "url": "https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/",
+    "date": "2024-05-17"
+  },
+  {
+    "title": "ウェブ プラットフォーム ダッシュボードのお知らせ",
+    "overview": "Google I/O で発表されたウェブプラットフォームダッシュボードに関する記事です。Baselineをもとに近年登場した機能のブラウザのサポート状況が把握できます。",
+    "url": "https://web.dev/blog/web-platform-dashboard?hl=ja",
+    "date": "2024-05-14",
+    "isNotable": true
+  },
+  {
+    "title": "Next.js 15 RC",
+    "overview": "Next.js 15 RC が公開されました。React 19とReact Compilerが利用可能となり、キャッシュ機構も大きく変更されています。",
+    "url": "https://nextjs.org/blog/next-15-rc",
+    "date": "2024-05-23"
+  },
+  {
+    "title": "A preview of Pigment CSS: the next generation of CSS-in-JS",
+    "overview": "UIフレームワークであるMUIから、Zero-Runtime CSS-in-JS である Pigment CSS のアルファ版が公開されました。React Server Components との互換性を保ちつつ、実行時パフォーマンスを改善しています。",
+    "url": "https://mui.com/blog/introducing-pigment-css/",
+    "date": "2024-05-16"
+  },
+  {
     "title": "WebKit Features in Safari 18.0",
     "overview": "View Transition APIや、Style Queriesのサポートなどが含まれたSafari 18.0がリリースされました。",
     "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
