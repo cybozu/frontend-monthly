@@ -290,5 +290,19 @@
     "url": "https://speakerdeck.com/yotahada3/frontend-component-test",
     "date": "2024-09-20",
     "isNotable": true
+  },
+  {
+    "title": "New to the web platform in June",
+    "overview": "Chrome 126でView Transitions APIが強化され、同一オリジン内の別ページへのナビゲーションに対応しました。そのほか、Firefox 127でAsync Clipboard APIがサポートされました。",
+    "url": "https://web.dev/blog/web-platform-06-2024",
+    "date": "2024-06-26",
+    "isNotable": true
+  },
+  {
+    "title": "Announcing TypeScript 5.5",
+    "overview": "TypeScript 5.5がリリースされました。ユーザー定義型ガード（User-defined type guard）の型述語（type predicate）推論や、正規表現の構文チェックなどが利用可能になりました。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
+    "date": "2024-06-21",
+    "isNotable": true
   }
 ]
