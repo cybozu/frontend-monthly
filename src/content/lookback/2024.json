@@ -505,5 +505,282 @@
     "url": "https://www.apple.com/jp/newsroom/2024/03/the-app-store-spotify-and-europes-thriving-digital-music-market/",
     "date": "2024-03-04",
     "isNotable": true
+  },
+
+  {
+    "title": "Nuxt 2 End-of-Life",
+    "overview": "Nuxt2がEOLになることが発表されました。",
+    "url": "https://nuxt.com/blog/nuxt2-eol",
+    "date": "2024-06-14"
+  },
+  {
+    "title": "Announcing TypeScript 5.5",
+    "overview": "TypeScript 5.5がリリースされました。array.filterでの型推論が改善されたり、Isolated Declarations optionが実装されています。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
+    "date": "2024-06-20",
+    "isNotable": true
+  },
+  {
+    "title": "Chrome 127 beta",
+    "overview": "Chrome 127のbeta版が公開されました。CSSのフォントサイズ調整（font-size-adjust）など、盛りだくさんな内容になっています。",
+    "url": "https://developer.chrome.com/blog/chrome-127-beta?hl=ja",
+    "date": "2024-06-12"
+  },
+  {
+    "title": "An origin trial for a new HTML <permission> element",
+    "overview": "Permission Prompt（Chromeだと左上から出てくる、xxを許可しますか？のやつ）を、permission要素を使って制御できるようにする機能が試験運用されています。",
+    "url": "https://developer.chrome.com/blog/permission-element-origin-trial?hl=ja",
+    "date": "2024-06-12"
+  },
+  {
+    "title": "State of JavaScript 2023",
+    "overview": "Permission Prompt（Chromeだと左上から出てくる、xxを許可しますか？のやつ）を、permission要素を使って制御できるようにする機能が試験運用されています。",
+    "url": "https://2023.stateofjs.com/en-US",
+    "date": "2024-06-21"
+  },
+  {
+    "title": "React 19 で変わるアクセシビリティ周りの技術",
+    "overview": "React19で新しく加わる機能がa11yにどういう影響を与えるかを考察した記事です。",
+    "url": "https://tech.smarthr.jp/entry/2024/06/20/161810",
+    "date": "2024-06-20"
+  },
+  {
+    "title": "Polyfill supply chain attack hits 100K+ sites",
+    "overview": "Polyfill.ioにマルウェアが混入され、10万以上のサイトに影響を与えました。",
+    "url": "https://sansec.io/research/polyfill-supply-chain-attack",
+    "date": "2024-06-25"
+  },
+  {
+    "title": "新しいバンドラーMako",
+    "overview": "Rustベースで非常に高速なバンドラー、Makoが発表されました。",
+    "url": "https://github.com/umijs/mako",
+    "date": "2024-07-04"
+  },
+  {
+    "title": "新しいブラウザエンジンLadybird",
+    "overview": "元々はSerenityOS専用ブラウザだったものが、Ladybirdという名前で切り離されました。",
+    "url": "https://ladybird.org/#about",
+    "date": "2024-07-01",
+    "isNotable": true
+  },
+  {
+    "title": "Vitest2.0",
+    "overview": "Vitest2.0がリリースされました。",
+    "url": "https://github.com/vitest-dev/vitest/releases/tag/v2.0.0",
+    "date": "2024-07-08"
+  },
+  {
+    "title": "Interop2024中間アップデート",
+    "overview": "Interop2024の中間アップデートが公開されました。",
+    "url": "https://web.dev/blog/interop-2024-midyear?hl=en",
+    "date": "2024-07-08"
+  },
+  {
+    "title": "What's coming next for ESLint",
+    "overview": "ESLintの今後について方針を解説した記事です。",
+    "url": "https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/",
+    "date": "2024-07-05"
+  },
+  {
+    "title": "Deno 1.45: Workspace and Monorepo Support",
+    "overview": "Deno 1.45 がリリースされ、Workspace と Monorepo がサポートされました。",
+    "url": "https://deno.com/blog/v1.45",
+    "date": "2024-07-11"
+  },
+  {
+    "title": "Node v22.5.0",
+    "overview": "Node.js v22.5.0 がリリースされました。node:sqlite が追加されており、SQLite の操作が標準で行えるようになりました。",
+    "url": "https://nodejs.org/en/blog/release/v22.5.0",
+    "date": "2024-07-17"
+  },
+  {
+    "title": "A new path for Privacy Sandbox on the web",
+    "overview": "Google が、廃止に向けて進めてきた 3rd Party Cookie ですが、方針が切り替わり、ユーザーの選択によってプライバシー設定を管理する仕組みを Chrome に導入することになったようです。",
+    "url": "https://privacysandbox.com/news/privacy-sandbox-update/",
+    "date": "2024-07-22"
+  },
+  {
+    "title": "Astro 4.12 ",
+    "overview": "Astro 4.12 がリリースされました。Experimental な機能として、動的にバックエンド側で描画する部分を設ける Server Islands が導入されています。",
+    "url": "https://astro.build/blog/astro-4120/",
+    "date": "2024-07-18"
+  },
+  {
+    "title": "Intent to End OCSP Service",
+    "overview": "Let's Encryptが、Online Certificate Status Protocol (OCSP)のサポートを終了し、Certificate Revocation Lists (CRLs) に移行することを発表しました。",
+    "url": "https://letsencrypt.org/2024/07/23/replacing-ocsp-with-crls.html",
+    "date": "2024-07-23"
+  },
+  {
+    "title": "Line-breakable <ruby> and CSS ruby-align property",
+    "overview": "Chrome 128以降で<ruby>が改行できるようになります。ruby-alignでルビの位置を調整できます。",
+    "url": "https://developer.chrome.com/blog/line-breakable-ruby?hl=en",
+    "date": "2024-07-26"
+  },
+  {
+    "title": "Storybook 8.2",
+    "overview": "Storybook 8.2がリリースされました。",
+    "url": "https://storybook.js.org/blog/storybook-8-2/",
+    "date": "2024-07-16"
+  },
+  {
+    "title": "Rust製ブラウザエンジン「Servo」搭載、新たなWebブラウザ「Verso」の開発プロジェクトが立ち上がる",
+    "overview": "NLnet Foundationは、Rust製ブラウザエンジン「Servo」を用いたWebブラウザ「Verso」の開発プロジェクトの立ち上げを発表しました。",
+    "url": "https://www.publickey1.jp/blog/24/rustservowebverso.html",
+    "date": "2024-08-06"
+  },
+  {
+    "title": "Node v22.6.0",
+    "overview": "Node.jsのv22.6.0がリリースされました。",
+    "url": "https://nodejs.org/en/blog/release/v22.6.0",
+    "date": "2024-08-06"
+  },
+  {
+    "title": "Intent to Ship: FedCM (was WebID)",
+    "overview": "先日 3rd Party Cookie の方針転換がアナウンスされましたが、それを受けて、Google Chrome の FedCM のメンバーが FedCM 自体の継続についてアナウンスを追加しました。",
+    "url": "https://groups.google.com/a/chromium.org/g/blink-dev/c/URpYPPH-YQ4",
+    "date": "2024-08-15"
+  },
+  {
+    "title": "State of React 2023",
+    "overview": "State of React 2023 サーベイの結果が公開されました。",
+    "url": "https://stateofreact.com/en-US",
+    "date": "2024-07-28",
+    "isNotable": true
+  },
+  {
+    "title": "Now in Baseline: animating entry effects",
+    "overview": "トランジション開始時のプロパティを指定するための CSS での @ rule である @starting-style が Baseline Newly Available となり、全ブラウザで利用可能となりました。",
+    "url": "https://web.dev/blog/baseline-entry-animations?hl=ja",
+    "date": "2024-08-08"
+  },
+  {
+    "title": "Import Assertions が Chrome 126 から取り除かれた",
+    "overview": "Chrome 126 からは import assertion の構文(assert キーワード)でエラーが発生するようになり、すでにサポートしている import attributes (with キーワード)への書き換えが必要となります。",
+    "url": "https://developer.chrome.com/release-notes/126?hl=ja#dreprecate_and_remove_import_assertion_assert_syntax",
+    "date": "2024-06-11"
+  },
+  {
+    "title": "Announcing Official Puppeteer Support for Firefox – Mozilla Hacks - the Web developer blog",
+    "overview": "puppeteer が v23 で Firefox をサポートしました。",
+    "url": "https://hacks.mozilla.org/2024/08/puppeteer-support-for-firefox/",
+    "date": "2024-08-07"
+  },
+  {
+    "title": "Deno 1.46: The Last 1.x Release",
+    "overview": "Deno 1.46 がリリースされました。",
+    "url": "https://deno.com/blog/v1.46",
+    "date": "2024-08-22"
+  },
+  {
+    "title": "Announcing TypeScript 5.6 RC",
+    "overview": "TypeScript 5.6でリリース予定の新機能が紹介されています。",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/",
+    "date": "2024-08-23",
+    "isNotable": true
+  },
+  {
+    "title": "Material UI v6 is out now ",
+    "overview": "初コミットから10周年を迎えたReact UIコンポーネントライブラリ・Material UIがv6をリリースしたことを告知する記事です。",
+    "url": "https://mui.com/blog/material-ui-v6-is-out/",
+    "date": "2024-08-26"
+  },
+  {
+    "title": "Announcing Rspack 1.0",
+    "overview": "Rust製のJavaScriptバンドラ・Rspackのv1リリースを告知する記事です。",
+    "url": "https://rspack.dev/blog/announcing-1-0",
+    "date": "2024-08-28"
+  },
+  {
+    "title": "Node.js Takes Steps Towards Removing Corepack",
+    "overview": "Node.jsのPackage Maintenance Working Group（PMWG）がCorepackをNode.jsの配布から削除する計画と、その経緯をまとめた記事です。",
+    "url": "https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack",
+    "date": "2024-08-08"
+  },
+  {
+    "title": "What’s new in React 19 – Vercel",
+    "overview": "Vercel が React19 で増えた新しい機能や仕様について解説した記事です。",
+    "url": "https://vercel.com/blog/whats-new-in-react-19",
+    "date": "2024-09-04"
+  },
+  {
+    "title": "Version Support - ESLint",
+    "overview": "ESLint が v8 系のサポートポリシーを発表しました。ESLint v8 EOL は 2024-10-05（来月）に予定されています。",
+    "url": "https://eslint.org/blog/2024/09/eslint-v8-eol-version-support/",
+    "date": "2024-09-10"
+  },
+  {
+    "title": "Configuring: Progressive Web Applications (PWA) | Next.js",
+    "overview": "Next.js App Router に PWA に関するページが増えました。",
+    "url": "https://nextjs.org/docs/app/building-your-application/configuring/progressive-web-apps",
+    "date": "2024-09-05"
+  },
+  {
+    "title": "Prototype: Blocking third-party cookies",
+    "overview": "third-party cookies を Block してきた Firefox が他のブラウザと挙動を合わせて、「third-party cookies を原則ブロックしつつ、CHIPS で Partition 付きで有効化できる」形に変更していくというアナウンスです。",
+    "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/9ILA7dMn_XA/m/14IfWWvADwAJ",
+    "date": "2024-09-06"
+  },
+  {
+    "title": "Rolldown + oxcによるビルド＆型生成の高速化",
+    "overview": "次世代のRust製JSバンドラであるRolldownとJSツールであるoxcを用いたVueのビルド＆型生成タイムの計測結果がEvan Youによって公開されていました。",
+    "url": "https://x.com/youyuxi/status/1833492071862440070",
+    "date": "2024-09-10",
+    "isNotable": true
+  },
+  {
+    "title": "Biome v1.9 Anniversary Release",
+    "overview": "Biome 1.9がリリースされました。大きな変更としてはCSSのFormatter・Linterの安定版がリリースされ、GraphQLのFormatter・Linterのサポートも追加されました。",
+    "url": "https://biomejs.dev/blog/biome-v1-9/",
+    "date": "2024-09-12"
+  },
+  {
+    "title": "What's missing from HTML and CSS? | Blog | Chrome for Developers",
+    "overview": "HTML / CSS に足らないもののアンケートがChromeチームでとられ、Top 10 が公開されていました。",
+    "url": "https://developer.chrome.com/blog/missing-from-css?hl=en",
+    "date": "2024-08-28"
+  },
+  {
+    "title": "Chrome ends support for First Input Delay",
+    "overview": "https://web.dev/blog/fid?hl=en",
+    "url": "https://web.dev/blog/fid?hl=en",
+    "date": "2024-09-10"
+  },
+  {
+    "title": "Request for developer feedback: customizable select",
+    "overview": "スタイラブルな<select>要素を提供する、Customisable Select ElementがWHATWGのStage2になりました。",
+    "url": "https://developer.chrome.com/blog/rfc-customizable-select",
+    "date": "2024-09-12"
+  },
+  {
+    "title": "date-fns： v4.0 is out with first-class time zones support!",
+    "overview": "date-fns の v4 がリリースされました。v4では、従来のdate-fns-tzの置換となる、新しいIntl APIベースのタイムゾーン拡張した軽量なTime zones support が実装されました。",
+    "url": "https://blog.date-fns.org/v40-with-time-zone-support/",
+    "date": "2024-09-16",
+    "isNotable": true
+  },
+  {
+    "title": "Oracle, it’s time to free JavaScript.",
+    "overview": "Oracleに対するJavaScriptの商標放棄を求める署名です。",
+    "url": "https://javascript.tm/",
+    "date": "2024-09-17"
+  },
+  {
+    "title": "WebKit Features in Safari 18.0",
+    "overview": "Safari 18.0がリリースされました。一部機能を抜粋します。",
+    "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
+    "date": "2024-09-16"
+  },
+  {
+    "title": "Builder Day 2024: 18 big updates to the Workers platform",
+    "overview": "Cloudflareの「Builder Day 2024」で発表された18の主要なアップデートについて紹介したブログ記事です。",
+    "url": "https://blog.cloudflare.com/builder-day-2024-announcements/",
+    "date": "2024-09-26"
+  },
+  {
+    "title": "",
+    "overview": "",
+    "url": "",
+    "date": "2024-09-08"
   }
 ]
