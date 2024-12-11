@@ -2,7 +2,8 @@
 import TimelineLayout from "../../layouts/TimelineLayout.astro"
 import Timeline from "../../components/Timeline.astro"
 import TimelineMobile from "../../components/TimelineMoblie.astro"
-import BannerImage from "../../assets/2023_banner.png"
+import HashiKoLeft from "../../assets/hashiko-left.png"
+import HashiKoRight from "../../assets/hashiko-right.png"
 import { getCollection } from "astro:content"
 import type { CollectionEntry } from "astro:content"
 
@@ -81,14 +82,23 @@ const topics = sortByDate(topicsByMonth)
 <TimelineLayout title="Cybozu Frontend Monthly">
   <main class="main">
     <header class="header">
-      <h1>
+      <div class="header-content">
         <img
-          class="header-image"
-          src={BannerImage.src}
-          alt={`${lookback.id}年のフロントエンドトピックまとめ`}
-          width={800}
+          class="header-image header-image-left"
+          src={HashiKoLeft.src}
+          alt="ハシコウ"
+          width={130}
         />
-      </h1>
+        <h1 class="header-title">
+          {lookback.id}
+        </h1>
+        <img
+          class="header-image header-image-right"
+          src={HashiKoRight.src}
+          alt="ハシコウ"
+          width={200}
+        />
+      </div>
     </header>
     <Timeline topics={topics} />
     <TimelineMobile topics={topics} />
@@ -114,19 +124,57 @@ const topics = sortByDate(topicsByMonth)
     @media screen and (max-width: 850px) {
       height: 160px;
     }
-
     @media screen and (max-width: 450px) {
       height: 120px;
     }
   }
 
-  .header-image {
-    @media screen and (max-width: 850px) {
-      width: 400px;
-    }
+  .header-content {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 100%;
 
+    @media screen and (max-width: 850px) {
+      width: 380px;
+    }
     @media screen and (max-width: 450px) {
       width: 300px;
+    }
+  }
+
+  .header-title {
+    font-size: 4rem;
+    @media screen and (max-width: 450px) {
+      margin: 0;
+    }
+  }
+
+  .header-image {
+    position: absolute;
+  }
+
+  .header-image-left {
+    left: 0;
+
+    @media screen and (max-width: 850px) {
+      width: 80px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 60px;
+    }
+  }
+
+  .header-image-right {
+    right: -20px;
+
+    @media screen and (max-width: 850px) {
+      width: 130px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 100px;
+      right: -26px;
     }
   }
 </style>
