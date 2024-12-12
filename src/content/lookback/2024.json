@@ -254,7 +254,7 @@
   },
   {
     "title": "Should JavaScript be split into two languages? New Google-driven proposal divides opinion",
-    "overview": "JavaScript を JS0・JSSugar と呼ばれる Engine と Tooling の 2 つに分割するという TC39 への提案、それに関する解説記事",
+    "overview": "JavaScript を JS0・JSSugar と呼ばれる Engine と Tooling の 2 つに分割するという TC39 への提案、それに関する解説記事です",
     "url": "https://devclass.com/2024/10/22/should-javascript-be-split-into-two-languages-new-google-driven-proposal-divides-opinion/",
     "date": "2024-10-22",
     "isNotable": true
