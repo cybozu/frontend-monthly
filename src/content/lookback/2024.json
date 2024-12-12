@@ -143,6 +143,27 @@
     "date": "2024-05-16"
   },
   {
+    "title": "デジタル庁デザインシステムβ版",
+    "overview": "デジタル庁のデザインシステムの専用サイトとデザインデータv2.0.0が公開されました。7月にはReactで使えるサンプルコンポーネントも公開されており、最新版の実装はStorybook上で見ることができます。",
+    "url": "https://design.digital.go.jp/",
+    "date": "2024-05-30",
+    "isNotable": true
+  },
+  {
+    "title": "CYBOZU SUMMER BLOG FES '24 (Frontend Stage)",
+    "overview": "弊社の開発者によるブログ記事企画の一環として、フロントエンドに関する記事を20日連続で投稿しました。フロントエンド技術の深掘りから弊社におけるフロントエンド開発の裏側まで幅広い観点の記事が揃ってます。",
+    "url": "https://cybozu.github.io/summer-blog-fes-2024/",
+    "date": "2024-08-01",
+    "isNotable": true
+  },
+  {
+    "title": "v0's new conversational UI",
+    "overview": "UI自動生成ツールv0が新しいUIを導入して、パブリックベータ版として公開されました。2023年9月に公開されたプライベートアルファ版からの主な変更点は、チャットによる対話形式でUIの微調整が可能になったことです。",
+    "url": "https://x.com/v0/status/1826020673908535325",
+    "date": "2024-08-21",
+    "isNotable": true
+  },
+  {
     "title": "WebKit Features in Safari 18.0",
     "overview": "View Transition APIや、Style Queriesのサポートなどが含まれたSafari 18.0がリリースされました。",
     "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
