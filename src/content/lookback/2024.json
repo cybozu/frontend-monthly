@@ -303,7 +303,7 @@
     "overview": "TypeScript 5.5がリリースされました。ユーザー定義型ガード（User-defined type guard）の型述語（type predicate）推論や、正規表現の構文チェックなどが利用可能になりました。",
     "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
     "date": "2024-06-21",
-    "isNotable": true,
+    "isNotable": true
   },
   {
     "title": "Intent to ship: Declarative ShadowDOM",
