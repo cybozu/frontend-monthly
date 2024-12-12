@@ -303,6 +303,220 @@
     "overview": "TypeScript 5.5がリリースされました。ユーザー定義型ガード（User-defined type guard）の型述語（type predicate）推論や、正規表現の構文チェックなどが利用可能になりました。",
     "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
     "date": "2024-06-21",
+    "isNotable": true,
+  },
+  {
+    "title": "Intent to ship: Declarative ShadowDOM",
+    "overview": "Declarative ShadowDOMがデフォルトで有効化されるようになりました。",
+    "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/P-ZBI_7fEaE/m/yClwXORMAwAJ",
+    "date": "2024-01-17"
+  },
+  {
+    "title": "Next 14.1",
+    "overview": "2024最初のNext.jsリリースは1月18日にリリースされた14.1でした。セルフホスティングの新しいドキュメントやカスタムキャッシュハンドラーの追加、Turbopackでのローカル開発環境の提供に向けてイアk膳が行われています。",
+    "url": "https://nextjs.org/blog/next-14-1",
+    "date": "2024-01-18"
+  },
+  {
+    "title": "Build a Next.js app in Storybook with React Server Components and Mock Service Worker",
+    "overview": "MSWを使ってRSCをStorybook上で動かす解説記事です。",
+    "url": "https://storybook.js.org/blog/build-a-nextjs-app-with-rsc-msw-storybook/",
+    "date": "2024-01-18"
+  },
+  {
+    "title": "Enable content-visibility by default",
+    "overview": "GeckoエンジンでCSSプロパティである content-visibility がサポートされました。",
+    "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1874874",
+    "date": "2024-01-22"
+  },
+  {
+    "title": "useSortedClasses (not released) | Biome",
+    "overview": "BiomeでTailWind CSSなどのユーティリティクラスをソートできるフォーマッティングの実装が進んでいます。",
+    "url": "https://sort-preview.tiiny.site/",
+    "date": "2024-01-30"
+  },
+  {
+    "title": "Module Federation added to Rspack",
+    "overview": "RspackでModule Federationがサポートされました。",
+    "url": "https://rspack.dev/blog/module-federation-added-to-rspack.html",
+    "date": "2024-01-09"
+  },
+  {
+    "title": "Panda v1 Roadmap",
+    "overview": "Panda v1リリースに向けたロードマップが公開されました。",
+    "url": "https://www.adebayosegun.com/blog/panda-v1-roadmap",
+    "date": "2024-01-15"
+  },
+  {
+    "title": "Platform Tilt",
+    "overview": "EdgeやSafari等OSのファーストパーティーブラウザとFirefoxを比較した際に格差となるような技術的問題をトラッキングしているサイトです。",
+    "url": "https://mozilla.github.io/platform-tilt/",
+    "date": "2024-01-30",
+    "isNotable": true
+  },
+
+  {
+    "title": "テストの学習へようこそ！",
+    "overview": "web.dev が公開している学習コンテンツのシリーズにテストのコンテンツが追加されました。",
+    "url": "https://web.dev/learn/testing/welcome",
+    "date": "2024-02-05"
+  },
+  {
+    "title": "The web just gets better with Interop 2024",
+    "overview": "ウェブブラウザの相互運用性を改善するプロジェクトである Interop の 2024 版における対象機能が発表されました。",
+    "url": "https://webkit.org/blog/14955/the-web-just-gets-better-with-interop/",
+    "date": "2024-02-01",
+    "isNotable": true
+  },
+  {
+    "title": "Interaction to Next Paint becomes a Core Web Vital on March 12",
+    "overview": "3/12 から CoreWebVitals の指標の 1 つである First Input Delay(FID) が Interaction to Next Paint(INP) に変更されました。",
+    "url": "https://web.dev/blog/inp-cwv-march-12",
+    "date": "2024-03-12",
+    "isNotable": true
+  },
+  {
+    "title": "Open Sourcing the Remix Website",
+    "overview": "remix.run のサイトのコードが公開されました。",
+    "url": "https://remix.run/blog/oss-remix-dot-run",
+    "date": "2024-01-31"
+  },
+  {
+    "title": "Vite 5.1.0-beta.6",
+    "overview": "Vite 5.1.0 beta6 がリリースされました。",
+    "url": "https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#510-beta6-2024-02-01",
+    "date": "2024-02-01"
+  },
+  {
+    "title": "Import attributes",
+    "overview": "ヒスイ消化されるImport assertionsを補う新しい提案であるImport attributesに関する記事です。",
+    "url": "https://v8.dev/features/import-attributes",
+    "date": "2024-01-31"
+  },
+  {
+    "title": "Deno 1.40: Temporal API",
+    "overview": "Deno 1.40がリリースされ、Temporal API がフラグ付きでサポートされました。",
+    "url": "https://deno.com/blog/v1.40",
+    "date": "2024-01-25"
+  },
+  {
+    "title": "Call for Participation in JSX as markup language Community Group",
+    "overview": "W3CにてJSXを仕様として策定するためのコミュニティグループが発足しました",
+    "url": "https://www.w3.org/community/jsxml/2024/01/16/call-for-participation-in-jsx-as-markup-language-community-group/",
+    "date": "2024-01-16"
+  },
+  {
+    "title": "Apple が iOS 17.4 のベータ版で PWA のサポートを削除していることが明らかに",
+    "overview": "EU リージョンの iOS17.4 Beta で WebKit の PWA が削除されていることが話題になりました。",
+    "url": "https://gigazine.net/news/20240209-apple-pwa-support-remove/",
+    "date": "2024-02-09",
+    "isNotable": true
+  },
+  {
+    "title": "atlassian/pragmatic-drag-and-drop",
+    "url": "https://github.com/atlassian/pragmatic-drag-and-drop",
+    "overview": "今はメンテナンスモードになっている react-beautiful-dnd を開発していた Atlassian が新しい drag-and-drop ライブラリを公開する予定です。",
+    "date": "2024-02-01"
+  },
+  {
+    "title": "Storybook 8 Beta",
+    "overview": "Storybook 8 beta がリリースされました。",
+    "url": "https://storybook.js.org/blog/storybook-8-beta/",
+    "date": "2024-02-06"
+  },
+  {
+    "title": "JavaScript Registry",
+    "overview": "Deno が JSRの早期アクセスを開始しました。",
+    "url": "https://jsr.io/",
+    "date": "2024-02-01",
+    "isNotable": true
+  },
+  {
+    "title": "Intent to Prototype: :open and :closed pseudo-classes",
+    "overview": "Blinkに:openと:close擬似クラスのプロトタイプが実装されました。",
+    "url": "https://groups.google.com/a/chromium.org/g/blink-dev/c/jESpcXVA8ns/m/46K9anVZAAAJ",
+    "date": "2024-02-09"
+  },
+  {
+    "title": "Node.js Community Debate Intensifies Over Enabling Corepack by Default and Potentially Unbundling npm",
+    "overview": "Node.jsのcorepackをデフォルト有効化した場合に、npmをNode.jsにバンドルするかどうかが議論になっています。",
+    "url": "https://socket.dev/blog/node-community-debates-enabling-corepack-unbundling-npm",
+    "date": "2024-02-08",
+    "isNotable": true
+  },
+  {
+    "title": "Remix Vite is Now Stable",
+    "overview": "Remix v2.7.0 がリリースされ、Vite サポートや SPA モードが Stable になりました。",
+    "url": "https://remix.run/blog/remix-vite-stable",
+    "date": "2024-02-20"
+  },
+  {
+    "title": "Support for align-content in block and table layouts | Blog | Chrome for Developers",
+    "overview": "Chrome 123 以降でブロックコンテナーとテーブルセルに対して align-content が使用できるようになりました。",
+    "url": "https://developer.chrome.com/blog/align-content",
+    "date": "2024-03-13"
+  },
+  {
+    "title": "Tempo - Dates by FormKit",
+    "overview": "新しく登場した Date 操作用のライブラリである Tempo が公開されました。",
+    "url": "https://tempo.formkit.com/",
+    "date": "2024-03-01"
+  },
+  {
+    "title": "Pass ref as normal prop",
+    "overview": "ReactのFeature FlagsにenableRefAsPropが追加され、有効化することでJSX runtimeがrefをpropsとして受け取れるようになる変更のPRがマージされました。",
+    "url": "https://github.com/facebook/react/pull/28348",
+    "date": "2024-02-21"
+  },
+  {
+    "title": "Lift-off: The MDN Curriculum launch",
+    "overview": "MDN からフロントエンド開発を学習するためのカリキュラムが公開されました。",
+    "url": "https://developer.mozilla.org/en-US/blog/mdn-curriculum-launch/",
+    "date": "2024-02-27"
+  },
+  {
+    "title": "Million Lint is in public beta",
+    "overview": "React のパフォーマンス計測を行うためのツールである Million Lint が Public Beta として公開されました。",
+    "url": "https://old.million.dev/blog/lint",
+    "date": "2024-02-29"
+  },
+  {
+    "title": "Apple が iOS の PWA サポート削除を撤回",
+    "overview": "先日アナウンスされたiOSでのPWAのサポート削除が撤回され、引き続きPWAサポートが継続される方針になりました。",
+    "url": "https://developer.apple.com/support/dma-and-apps-in-the-eu/",
+    "date": "2024-03-01",
+    "isNotable": true
+  },
+  {
+    "title": "polyfill.io now available on cdnjs: reduce your supply chain risk",
+    "overview": "Cloudflare が polyfill.io 互換のエンドポイントを CDN で公開しました。",
+    "url": "https://blog.cloudflare.com/polyfill-io-now-available-on-cdnjs-reduce-your-supply-chain-risk",
+    "date": "2024-02-29",
+    "isNotable": true
+  },
+  {
+    "title": "WebKit Features in Safari 17.4",
+    "overview": "afari 17.4で使用されるWebKitの新機能紹介です。",
+    "url": "https://webkit.org/blog/15063/webkit-features-in-safari-17-4/",
+    "date": "2024-03-05"
+  },
+  {
+    "title": "Rolldown is now open source on GitHub",
+    "overview": "RolldownがOSS化されました。",
+    "url": "https://x.com/rolldown_rs/status/1766013359932297275",
+    "date": "2024-03-08"
+  },
+  {
+    "title": "WinterJS 1.0",
+    "overview": "Wasmer Edge向けにコンパイル可能なJSランタイムのWinterJSのバージョン1.0がリリースされました。",
+    "url": "https://wasmer.io/posts/winterjs-v1",
+    "date": "2024-01-01"
+  },
+  {
+    "title": "App Store、Spotify、そして欧州の活気あるデジタル音楽市場",
+    "overview": "App Storeがデジタル音楽市場における競争の障壁となっているとの主張を欧州委員会が決定したことを受けて、Appleが発表した声明です。",
+    "url": "https://www.apple.com/jp/newsroom/2024/03/the-app-store-spotify-and-europes-thriving-digital-music-market/",
+    "date": "2024-03-04",
     "isNotable": true
   }
 ]
