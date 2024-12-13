@@ -164,6 +164,20 @@
     "isNotable": true
   },
   {
+    "title": "What's missing from HTML and CSS?",
+    "overview": "CSS Day 2024で HTML / CSS に不足しているもののアンケートがとられ、その結果から Top 10 にランクインしたものに関する議論をまとめた記事が公開されました。",
+    "url": "https://developer.chrome.com/blog/missing-from-css",
+    "date": "2024-08-28",
+    "isNotable": true
+  },
+  {
+    "title": "Request for developer feedback: customizable select",
+    "overview": "スタイラブルな`<select>`である、Customisable Select ElementがWHATWGのStage2になり、Chrome Canary 130のExperimental Web Platform Featuresフラグをonにすることで試すことができるようになりました。",
+    "url": "https://developer.chrome.com/blog/rfc-customizable-select",
+    "date": "2024-09-12",
+    "isNotable": true
+  },
+  {
     "title": "WebKit Features in Safari 18.0",
     "overview": "View Transition APIや、Style Queriesのサポートなどが含まれたSafari 18.0がリリースされました。",
     "url": "https://webkit.org/blog/15865/webkit-features-in-safari-18-0/",
@@ -237,6 +251,13 @@
     "overview": "Chakra UIのv3がリリースされました。v3は、パフォーマンス、コンポーネント間の一貫性を向上させるため、完全に書き直されました",
     "url": "https://www.chakra-ui.com/blog/00-announcing-v3",
     "date": "2024-10-22"
+  },
+  {
+    "title": "Should JavaScript be split into two languages? New Google-driven proposal divides opinion",
+    "overview": "JavaScript を JS0・JSSugar と呼ばれる Engine と Tooling の 2 つに分割するという TC39 への提案、それに関する解説記事です",
+    "url": "https://devclass.com/2024/10/22/should-javascript-be-split-into-two-languages-new-google-driven-proposal-divides-opinion/",
+    "date": "2024-10-22",
+    "isNotable": true
   },
   {
     "title": "We're forking Flutter. This is why.",
