@@ -164,6 +164,13 @@
     "isNotable": true
   },
   {
+    "title": "フロントエンドカンファレンス北海道2024が開催",
+    "overview": "札幌にて、フロントエンドカンファレンス北海道2024が開催されました。160名超が参加し、サイボウズからも3名が登壇しました。",
+    "url": "https://www.frontend-conf.jp/",
+    "date": "2024-08-24",
+    "isNotable": true
+  },
+  {
     "title": "What's missing from HTML and CSS?",
     "overview": "CSS Day 2024で HTML / CSS に不足しているもののアンケートがとられ、その結果から Top 10 にランクインしたものに関する議論をまとめた記事が公開されました。",
     "url": "https://developer.chrome.com/blog/missing-from-css",
@@ -204,7 +211,7 @@
   },
   {
     "title": "FEEチームから「乗りこなせ！モダンフロントエンド」のWeb連載が始まる",
-    "overview": "弊社のフロントエンドエキスパートチームが技術評論社さんの web メディア(gihyo.jp)で「乗りこなせ！ モダンフロントエンド」というシリーズのWeb連載を開始しました。今年はmugishimaさんがCSS Modern FeaturesをテーマにモダンなCSSの機能について紹介しています。",
+    "overview": "弊社のフロントエンドエキスパートチームが技術評論社さんの web メディア(gihyo.jp)で「乗りこなせ！ モダンフロントエンド」というシリーズのWeb連載を開始しました。今年は@mugi_unoがCSS Modern FeaturesをテーマにモダンなCSSの機能について紹介しました。",
     "url": "https://gihyo.jp/list/group/%E4%B9%97%E3%82%8A%E3%81%93%E3%81%AA%E3%81%9B-%E3%83%A2%E3%83%80%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89#rt:/article/2024/10/ride-modern-frontend-01",
     "date": "2024-10-09",
     "isNotable": true
@@ -391,7 +398,7 @@
   },
   {
     "title": "Platform Tilt",
-    "overview": "EdgeやSafari等OSのファーストパーティーブラウザとFirefoxを比較した際に格差となるような技術的問題をトラッキングしているサイトです。",
+    "overview": "EdgeやSafari等OSのファーストパーティーブラウザとFirefoxを比較した際に格差となるような技術的問題をトラッキングしているサイトである「Platform Tilt」をMozillaが公開しました。",
     "url": "https://mozilla.github.io/platform-tilt/",
     "date": "2024-01-30",
     "isNotable": true
@@ -468,7 +475,7 @@
   },
   {
     "title": "JavaScript Registry",
-    "overview": "Deno が JSRの早期アクセスを開始しました。",
+    "overview": "Deno が JavaScript のパッケージレジストリである JSR を公開し、早期アクセスを開始しました。",
     "url": "https://jsr.io/",
     "date": "2024-02-01",
     "isNotable": true
@@ -613,7 +620,7 @@
   },
   {
     "title": "新しいブラウザエンジンLadybird",
-    "overview": "元々はSerenityOS専用ブラウザだったものが、Ladybirdという名前で切り離されました。",
+    "overview": "OSS のみで作られ企業に依存しないブラウザである Ladybird について、開発のための非営利団体である Ladybird Browser Initiative が立ち上げられました。Ladybird は、元々は SerenityOS 専用ブラウザだったものが切り離されたものです。",
     "url": "https://ladybird.org/#about",
     "date": "2024-07-01",
     "isNotable": true
