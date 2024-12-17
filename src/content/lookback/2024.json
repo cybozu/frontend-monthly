@@ -833,9 +833,40 @@
     "date": "2024-09-26"
   },
   {
-    "title": "",
-    "overview": "",
-    "url": "",
-    "date": "2024-09-08"
+    "title": "Enter WebSockets - Mock Service Worker",
+    "overview": "MSW（Mock Service Worker）が、WebSocketのモック機能を追加しました。記事では、WebSocketのサポートまでに何年もかかった理由について言及しており、WHATWGのWebSocket標準に基づくシンプルな実装にすることで実現できたと書かれています。",
+    "url": "https://mswjs.io/blog/enter-websockets",
+    "date": "2024-11-21"
+  },
+  {
+    "title": "React v19",
+    "overview": "React v19がStableになりました。新しく導入されたアクションという概念や、Custom Elementsの完全サポートなどが含まれます。",
+    "url": "https://react.dev/blog/2024/12/05/react-19",
+    "date": "2024-12-05",
+    "isNotable": true
+  },
+  {
+    "title": "WebDriver BiDi in WebKit",
+    "overview": "2024年のWebKit Contributors MeetingでIgaliaのLauro Moura氏が発表した資料",
+    "url": "https://people.igalia.com/lmoura/wkcm-2024/webdriver-bidi-webkit.html",
+    "date": "2024-10-22"
+  },
+  {
+    "title": "React Router v7",
+    "overview": "React Router v7がstableになりました。v7より、Remixの機能がReact Routerに統合されるため、Remix v2のユーザに対しても、React Router v7への移行が推奨されています。",
+    "url": "https://remix.run/blog/react-router-v7",
+    "date": "2024-11-22"
+  },
+  {
+    "title": "CSS Wrapped 2024",
+    "overview": "2024年に導入された主要なCSS機能をまとめたChrome DevRelチームによる特集です",
+    "url": "https://chrome.dev/css-wrapped-2024/",
+    "date": "2024-12-06"
+  },
+  {
+    "title": "Component testing RSCs",
+    "overview": "ReactのサーバーコンポーネントをStorybookでテストする方法について解説する記事です",
+    "url": "https://storybook.js.org/blog/component-testing-rscs/",
+    "date": "2024-12-06"
   }
 ]
