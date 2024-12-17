@@ -349,7 +349,7 @@
   },
   {
     "title": "Announcing TypeScript 5.5",
-    "overview": "TypeScript 5.5がリリースされました。ユーザー定義型ガード（User-defined type guard）の型述語（type predicate）推論や、正規表現の構文チェックなどが利用可能になりました。",
+    "overview": "TypeScript 5.5がリリースされました。ユーザー定義型ガード（User-defined type guard）の型述語（type predicate）推論や、正規表現の構文チェック、Isolated Declarations optionが実装されています。",
     "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
     "date": "2024-06-21",
     "isNotable": true
@@ -574,13 +574,6 @@
     "overview": "Nuxt2がEOLになることが発表されました。",
     "url": "https://nuxt.com/blog/nuxt2-eol",
     "date": "2024-06-14"
-  },
-  {
-    "title": "Announcing TypeScript 5.5",
-    "overview": "TypeScript 5.5がリリースされました。array.filterでの型推論が改善されたり、Isolated Declarations optionが実装されています。",
-    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/",
-    "date": "2024-06-20",
-    "isNotable": true
   },
   {
     "title": "Chrome 127 beta",
