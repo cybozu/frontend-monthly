@@ -446,7 +446,8 @@
     "title": "Deno 1.40: Temporal API",
     "overview": "Deno 1.40がリリースされ、Temporal API がフラグ付きでサポートされました。",
     "url": "https://deno.com/blog/v1.40",
-    "date": "2024-01-25"
+    "date": "2024-01-25",
+    "isNotable": true
   },
   {
     "title": "Call for Participation in JSX as markup language Community Group",
