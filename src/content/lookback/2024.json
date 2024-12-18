@@ -488,7 +488,7 @@
   },
   {
     "title": "Node.js Community Debate Intensifies Over Enabling Corepack by Default and Potentially Unbundling npm",
-    "overview": "Node.jsのcorepackをデフォルト有効化した場合に、npmをNode.jsにバンドルするかどうかが議論になっています。",
+    "overview": "Node.jsのcorepackをデフォルト有効化した場合に、npmをNode.jsにバンドルするかどうかが議論になりました。",
     "url": "https://socket.dev/blog/node-community-debates-enabling-corepack-unbundling-npm",
     "date": "2024-02-08",
     "isNotable": true
