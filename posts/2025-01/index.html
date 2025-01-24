@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #54"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #54"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #54</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #54</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_1LeOhz.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="346" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2025年01月28日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/341910/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/341910/</a></p><h3 data-astro-cid-grpv5qb7>配信URL</h3><p data-astro-cid-rqusjlqv><iframe title="https://www.youtube.com/embed/K_BjZ89mJu0" width="560" height="315" src="https://www.youtube.com/embed/K_BjZ89mJu0" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe><a href="https://www.youtube.com/watch?v=K_BjZ89mJu0" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv>https://www.youtube.com/watch?v=K_BjZ89mJu0</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sakupi01.jpg" class="thumbnail" alt="@sakupi01" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sakupi01" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sakupi01</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@sajikix</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="storybook-v9-で-test-メソッドの導入を検討"><a href="https://github.com/storybookjs/storybook/discussions/30119">Storybook v9 で test メソッドの導入を検討</a></h3>
+<ul>
+<li>共有者: @nus3_</li>
+</ul>
+<p>Storybook のインタラクションテストを定義する際に使っていた play 関数について、Jest や Vitest のようにかけるような test メソッドを v9 で導入することを検討しているそうです。</p>
+<p>RFC の概要を見ると、test メソッドは次のように形式が提案されています</p>
+<pre class="language-js"><code is:raw="" class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> config <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'#.storybook/preview'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> AddLabelForm <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./AddLabelForm'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> meta <span class="token operator">=</span> config<span class="token punctuation">.</span><span class="token function">meta</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">component</span><span class="token operator">:</span> AddLabelForm <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// the story can be seen as the arrange step in testing</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> ManyLabels <span class="token operator">=</span> meta<span class="token punctuation">.</span><span class="token function">story</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">args</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">labels</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 👇 easy to write (and read!) full sentence specs!</span>
+ManyLabels<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'submitting invalid label shows inline error'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> canvas <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// act/assert</span>
+  <span class="token keyword">await</span> userEvent<span class="token punctuation">.</span><span class="token function">type</span><span class="token punctuation">(</span>canvas<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'Label:'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'invalid label'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">await</span> userEvent<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span>canvas<span class="token punctuation">.</span><span class="token function">getByRole</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">await</span> <span class="token function">expect</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHave</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a href="https://x.com/storybookjs/status/1878939061077111198">この API の設計は難しく、どのようなインターフェースにするかはフィードバックを求めている</a>とのことです。</p>
+<p>Jest や Vitest のようにインタラクションテストも書きたいという要望はとてもわかるので Storybook9 のリリースが楽しみですね。</p>
+<h3 id="facebookexperimentalrecoil-のリポジトリがアーカイブに"><a href="https://github.com/facebookexperimental/Recoil">facebookexperimental/Recoil のリポジトリがアーカイブに</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Meta 社が OSS として公開していたフロントエンドの状態管理用ライブラリである facebookexperimental/Recoil のリポジトリが 2025/1/2 にアーカイブされました。
+2023/4/12 にリリースされた 0.7.7 を最後に更新が無い状態が続いており、状況を尋ねる <a href="https://github.com/facebookexperimental/Recoil/issues/2288">Issue</a> なども作成されていましたが、残念ながら今後はメンテナンスされないことになったようです。</p>
+<p>内部事情として Meta 社のレイオフの関係でメインのコントリビュータが不在となり、その後も引き継がれることがなかった、という背景が語られています。
+<a href="https://x.com/mengdi_en/status/1875916781950468341">https://x.com/mengdi_en/status/1875916781950468341</a></p>
+<h3 id="new-front-end-features-for-designers-in-2025"><a href="https://www.smashingmagazine.com/2024/12/new-front-end-features-for-designers-in-2025/">New Front-End Features For Designers In 2025</a></h3>
+<ul>
+<li>共有者: @sakupi01</li>
+</ul>
+<p>2025 年、積極的に使っていきたい CSS の新機能を振り返る記事です。今回は、この中から、個人的に注目している機能を紹介します。</p>
+<h4 id="css-anchor-positioning-for-tooltips-and-popovers">CSS Anchor Positioning For Tooltips And Popovers</h4>
+<p>2024 年は、<a href="https://web.dev/blog/popover-api?hl=ja">Popover API が Baseline Newly Available</a>となりました。これにより、<code>popover</code>属性を任意の HTML 要素につけ、Invoker となる要素（Popover をトリガーする要素）に<code>popovertarget</code>属性を指定することで、Popover を実装することができるようになりました。これにより、任意の要素を Top Layer に表示し、その開閉を JS を使わずに実現でき、そして Light Dismiss で閉じることもできるようになりました。</p>
+<p>そんな Popover に強力な機能を付加するのが、CSS Anchor Positioning です。以下のように<code>anchor-name</code>・<code>position-anchor</code>プロパティ（または<code>anchor()</code>関数）を利用することで、Anchor と Positioned Element を紐付けて、配置を指定できます。</p>
+<pre class="language-html"><code is:raw="" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span> <span class="token attr-name">popovertarget</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ex-tooltip<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Open<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">popover</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ex-tooltip<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Yey<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">button</span> <span class="token punctuation">{</span>
+    <span class="token property">anchor-name</span><span class="token punctuation">:</span> --anchor-btn<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">[popover]</span> <span class="token punctuation">{</span>
+    <span class="token property">position-anchor</span><span class="token punctuation">:</span> --anchor-btn<span class="token punctuation">;</span>
+    <span class="token property">position-area</span><span class="token punctuation">:</span> top center<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<p>この 「Anchoring」の概念により、Top Layer に配置される Popover や Dialog といった要素を、Anchor となる要素を基準に配置することが可能になりました。</p>
+<h4 id="high-definition-colors-with-oklch-and-oklab--relative-colors-in-css">High-Definition Colors With OKLCH And OKLAB &#x26; Relative Colors In CSS</h4>
+<p><a href="https://www.w3.org/TR/css-color-4/#ok-lab">CSS Color Module Level 4</a> では、<code>oklch()</code>や <code>oklab()</code>関数が追加されました。</p>
+<p>これまで、<code>hsl()</code> による指定では明度（Lightness）・彩度（Saturation）を一定にしても視覚的な均一性は保証されていませんでした（特に、黄色系の色味が明るすぎるなど）。
+OKLCH 色域とは、明度（Lightness）、彩度（Chroma）、色相（Hue）で構成される色域で、sRGB 色域に比べて、 明度・彩度の均一性が改善された色空間です。</p>
+<p><code>oklch()</code>や <code>oklab()</code>が追加された背景に関しては、以下の記事でわかりやすく解説されています。</p>
+<ul>
+<li><a href="https://griponminds.jp/blog/relearn-css-color/#%E3%82%AB%E3%83%A9%E3%83%BC%E6%8C%87%E5%AE%9A%E3%81%8C%E5%A2%97%E3%81%88%E3%81%9F%E7%90%86%E7%94%B1">CSS Color 再入門 | grip on minds</a></li>
+</ul>
+<p>また、CSS Color Module Level 5 で追加された <a href="https://www.w3.org/TR/css-color-5/#relative-Oklch">CSS Relative Color Syntax</a> を併用することで、<code>from</code>キーワードで指定された色を基準に、それぞれのカラーパラメータを指定することができます。</p>
+<pre class="language-css"><code is:raw="" class="language-css"><span class="token selector">.lighten-by-25</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">oklch</span><span class="token punctuation">(</span>from blue <span class="token function">calc</span><span class="token punctuation">(</span>l * 1.25<span class="token punctuation">)</span> c h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">oklch</span><span class="token punctuation">(</span>from blue <span class="token function">calc</span><span class="token punctuation">(</span>l + 0.25<span class="token punctuation">)</span> c h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="collaborating-across-w3c-and-ecma-for-web-interoperable-server-runtimes-through-wintertc"><a href="https://ecma-international.org/news/collaborating-across-w3c-and-ecma-for-web-interoperable-server-runtimes-through-wintertc/">Collaborating across W3C and Ecma for web-interoperable server runtimes through WinterTC</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>WinterCG が、JavScript の標準化も行なっている Ecma International に移行し、新たに WinterTC(TC55) という名称に変更されました。</p>
+<p>元々、WinterCG は 2022 年に設立された W3C の ランタイムの相互運用性を推進するコミュニティグループで、Deno や Node.js Cloudflare Workers などのステークホルダーが参加していました。その成果として<a href="https://github.com/wintercg/proposal-minimum-common-api">Minimum Common API</a>などが公開されています。</p>
+<p>今回、この WinterCG の機能や作業を Ecma International に移行し、新たに WinterTC(Web-interoperable server runtimes Technical Committee) という名称の Ecma Technical Committee として立ち上げることが決定されました。EcmaInternational では Technical Committee ごとに番号が振られており、WinterTC は TC55 としても呼ばれるようになります。</p>
+<p>この移行により JavaScript の標準化(=ECMAScript)も行なっている Ecma の TC39 との連携がより強まることはもちろん、W3C のコミュニティグループとして公開まで至らなかった独自標準の公開・策定も視野に入れた移行のようです。</p>
+<p>WinterTC は W3C の中からは抜ける形となりますが、引き続き W3C のワーキンググループとも連携をとっていくとしています。</p>
+<p>参考</p>
+<ul>
+<li><a href="https://deno.com/blog/wintertc">https://deno.com/blog/wintertc</a></li>
+<li><a href="https://wintercg.org/">https://wintercg.org/</a></li>
+</ul>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://nextjs.org/blog/next-15-1">Next.js 15.1</a>
+<ul>
+<li>React19 の Stable に対応した Next.js 15.1 がリリース</li>
+</ul>
+</li>
+<li><a href="https://nodejs.org/en/blog/release/v23.4.0">Node v23.4.0</a>
+<ul>
+<li><code>assert.partialDeepStrictEqual</code>が試験的に追加</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/morinokami/articles/astro-server-islands-vs-nextjs-ppr">Next.js PPR と比較して理解する Astro Server Islands</a>
+<ul>
+<li>Astro と Next.js のレンダリングモデルを解説</li>
+</ul>
+</li>
+<li><a href="https://x.com/deno_land/status/1868691986175431120">Build Qwik with Deno</a>
+<ul>
+<li>Deno で Qwik を使ってアプリを作成するガイドがドキュメントに追加</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-5/">Astro 5.0</a>
+<ul>
+<li>Server Islands などが追加された Astro 5.0 がリリース</li>
+</ul>
+</li>
+<li><a href="https://2024.stateofjs.com/en-US/">State of JavaScript 2024</a>
+<ul>
+<li>State of JavaScript 2024 が公開</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/studio/articles/c5207260e90e8c">bun test が速いので vitest から置き換えたらめちゃ高速化された</a>
+<ul>
+<li>vitest から bun test に置き換えた結果実行速度が大幅に向上した事例</li>
+</ul>
+</li>
+<li><a href="https://github.com/web-infra-dev/rspack/releases/tag/v1.1.8">Security Vulnerability Report | rspack</a>
+<ul>
+<li>postinstall script を悪用した rspack へのサプライチェーンアタックがあったという報告</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebookexperimental/Recoil">recoil が 1 月 2 日、アーカイブに</a></li>
+<li><a href="https://calendar.perfplanet.com/2024/5-tips-to-effectively-optimize-inp-in-react/">5 tips to effectively optimize INP in React</a>
+<ul>
+<li>React で INP を改善するための tips</li>
+</ul>
+</li>
+<li><a href="https://github.com/standard-schema/standard-schema">standard-schema/standard-schema</a>
+<ul>
+<li>zod や valibot などに代表されるスキーマライブラリなどの標準インタフェースを定義した仕様</li>
+</ul>
+</li>
+<li><a href="https://risingstars.js.org/2024/en">2024 JavaScript Rising Stars</a>
+<ul>
+<li>2024 年に GitHub での Star 数の増加が大きかった JavaScript 関連リポジトリのランキング</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/blog/mdn-2024-content-projects/">MDN 2024 content projects | MDN Blog</a>
+<ul>
+<li>MDN が、HTTP, MathML, Web Manifest のドキュメントに絞り、2024 年 7 月から 12 月にかけてコンテンツを刷新</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://meyerweb.com/eric/thoughts/2025/01/08/css-wish-list-2025/">CSS Wish List 2025</a>
+<ul>
+<li>Eric Mayer が 2025 年の CSS に期待する機能をまとめた記事</li>
+</ul>
+</li>
+<li><a href="https://www.smashingmagazine.com/2024/12/new-front-end-features-for-designers-in-2025">New Front-End Features For Designers In 2025 — Smashing Magazine</a>
+<ul>
+<li>ここ数年で新たに利用可能となった HTML および CSS 機能のまとめ</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://web.dev/blog/baseline-project-2024">Baseline 2024: more tools to help web developers</a>
+<ul>
+<li>Baseline 2024 のふりかえり</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/16406/release-notes-for-safari-technology-preview-210/">Release Notes for Safari Technology Preview 210 | WebKit</a>
+<ul>
+<li>CSS の text-autospace property や ::details-content pseudo-element サポートが追加された Safari Technology Preview 210 のリリースノートが公開</li>
+</ul>
+</li>
+<li><a href="https://blog.mozilla.org/en/mozilla/internet-policy/google-remedies-browsers/">Proposed contractual remedies in United States v. Google threaten vital role of independent browsers</a>
+<ul>
+<li>米司法省が Google に提示した独占禁止是正措置に対して、「Web 自体に害を与えるのではないか」と Mozilla が警鐘を鳴らしている記事</li>
+</ul>
+</li>
+<li><a href="https://blogs.windows.com/msedgedev/2024/12/19/2024-year-in-review-a-look-back-at-your-year-with-microsoft-edge/">2024 Year-in-Review: A look back at your year with Microsoft Edge - Microsoft Edge Blog</a>
+<ul>
+<li>Microsoft Edge の 2024 年のふりかえり</li>
+</ul>
+</li>
+<li><a href="https://www.mozilla.org/en-US/firefox/134.0/releasenotes/">Firefox 134.0</a>
+<ul>
+<li>RegExp.escape() や Promise.try() のサポートなどが含まれる Firefox 134.0 がリリース</li>
+</ul>
+</li>
+<li><a href="https://www.mozilla.org/en-US/firefox/135.0a1/releasenotes/">Firefox 135.0a1 Nightly</a>
+<ul>
+<li>Temporal のサポートなどが含まれる Firefox 135.0a1 Nightly がリリース</li>
+</ul>
+</li>
+<li>Announcing Supporters of Chromium-based Browsers
+<ul>
+<li><a href="https://blog.chromium.org/2025/01/announcing-supporters-of-chromium-based.html">https://blog.chromium.org/2025/01/announcing-supporters-of-chromium-based.html</a></li>
+<li><a href="https://www.linuxfoundation.org/supporters-of-chromium-based-browsers">https://www.linuxfoundation.org/supporters-of-chromium-based-browsers</a></li>
+<li>Google と The Linux Foundation がパートナーシップを締結</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.trevorlasn.com/blog/css-user-valid-and-user-invalid-pseudo-classes">Form Validation That Doesn’t Annoy Users: CSS :user-valid and :user-invalid</a>
+<ul>
+<li>ユーザのインタラクション後に発火する:user-valid, :user-invalid について、従来の:invalid, :valid との挙動を比較しながら解説</li>
+</ul>
+</li>
+<li><a href="https://ecma-international.org/publications-and-standards/standards/ecma-426/">ECMA-426 1st edition – Source map format specification</a>
+<ul>
+<li>新しく JavaScript、WebAssembly、および CSS のソースマップ形式の仕様が策定された</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/wintertc">Goodbye WinterCG, welcome WinterTC</a>
+<ul>
+<li>JS ランタイムの相互運用性を推進するコミュニティグループであった WinterCG が Ecma International に移行し、新たに WinterTC という名称に変更</li>
+</ul>
+</li>
+<li><a href="https://una.im/select-updates/">Updates to the customizable select API</a>
+<ul>
+<li>2024/9 に出された RFC からの差分をまとめた、「Customizable Select Element」のアップデート記事</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://zenn.dev/irico/articles/d2782f5ad615f0">コピペってなんだろう？Clipboard 編</a>
+<ul>
+<li>OS ごとのクリップボードの大まかな仕組みを解説</li>
+</ul>
+</li>
+<li><a href="https://almanac.httparchive.org/en/2024/">The 2024 Web Almanac</a>
+<ul>
+<li>Web Almanac 2024 のレポートが公開</li>
+</ul>
+</li>
+<li><a href="https://letsencrypt.org/2024/12/11/eoy-letter-2024/">A Note from our Executive Director - Let’s Encrypt</a>
+<ul>
+<li>Let’s Encrypt の 2024 年のふりかえりと 2025 年の展望</li>
+</ul>
+</li>
+<li><a href="https://www.debugbear.com/blog/2024-in-web-performance">2024 In Review: What’s New In Web Performance? | DebugBear</a>
+<ul>
+<li>2024 年にあった Web パフォーマンス周りの変化についてまとめた記事</li>
+</ul>
+</li>
+<li><a href="https://martinfowler.com/articles/design-token-based-ui-architecture.html">Design Token-Based UI Architecture</a>
+<ul>
+<li>セマンティックトークンやコンポーネントトークンなどデザイントークンの解説記事</li>
+</ul>
+</li>
+<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1934361">google.com の証明書の誤発行が CT で見つかる</a></li>
+<li><a href="https://www.paulosyibelo.com/2024/12/doubleclickjacking-what.html">Blog: DoubleClickjacking: A New Era of UI Redressing</a>
+<ul>
+<li>悪意のあるページによるダブルクリックを利用した攻撃手法に関しての解説</li>
+</ul>
+</li>
+<li><a href="https://garai.ca/what_is_ime/">What is an Input Method Editor?</a>
+<ul>
+<li>文字入力に使われる IME の基本的な概念や API に関しての解説</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
