@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #55"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #55"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #55</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #55</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_1LeOhz.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="346" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2025年02月25日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/345366/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/345366/</a></p><h3 data-astro-cid-grpv5qb7>配信URL</h3><p data-astro-cid-rqusjlqv><iframe title="https://www.youtube.com/embed/VLgKNkUXJyk" width="560" height="315" src="https://www.youtube.com/embed/VLgKNkUXJyk" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe><a href="https://www.youtube.com/watch?v=VLgKNkUXJyk" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv>https://www.youtube.com/watch?v=VLgKNkUXJyk</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@k1tikurisu.jpg" class="thumbnail" alt="@k1tikurisu" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/k1tikurisu" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@k1tikurisu</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="sunsetting-create-react-app"><a href="https://react.dev/blog/2025/02/14/sunsetting-create-react-app">Sunsetting Create React App</a></h3>
+<ul>
+<li>共有者: @b4h0_c4t</li>
+</ul>
+<p>React Blog から新規アプリ向けの Create React App(CRA) の廃止及び既存アプリの別フレームワーク移行が促されました。</p>
+<p>2016 年に CRA がリリースされた経緯や現代の開発にフィットしない理由、移行先について等の情報がまとめられています。</p>
+<p>CRA を利用することによる制限事項の説明では主に</p>
+<ul>
+<li>ルーティング</li>
+<li>データフェッチ</li>
+<li>コードスプリット(バンドル)</li>
+</ul>
+<p>について具体的な焦点を当て、現代の Web 開発に必要な機能を CRA では提供していないとしました。</p>
+<p>また、今後の Web 開発では React 単体での利用よりもさまざまなツールを統合した(メタ)フレームワークの利用を推奨すると呼びかけています。</p>
+<h3 id="interop-2025-another-year-of-web-platform-improvements"><a href="https://web.dev/blog/interop-2025?hl=en">Interop 2025: another year of web platform improvements</a></h3>
+<ul>
+<li>共有者: @nus3_</li>
+</ul>
+<p>ブラウザ間の相互運用性を高めるための取り組みである Interop プロジェクトの 2025 年に注力する分野が公開されました。</p>
+<p>具体的には次の項目が挙げられています。</p>
+<ul>
+<li>Anchor positioning</li>
+<li><code>backdrop-filter</code></li>
+<li>Core Web Vitals</li>
+<li><code>&#x3C;details></code> element</li>
+<li>Layout</li>
+<li>Modules</li>
+<li>Navigation API</li>
+<li>Pointer and mouse events</li>
+<li>Remove mutation events</li>
+<li><code>@scope</code></li>
+<li><code>scrollend</code> event</li>
+<li>Storage Access API</li>
+<li><code>text-decoration</code></li>
+<li><code>URLPattern</code></li>
+<li>View Transition API</li>
+<li>WebAssembly</li>
+<li>Web compat</li>
+<li>WebRTC</li>
+<li>Writing modes</li>
+</ul>
+<p>個人的に気になったのは Core Web Vitals が重点分野に挙げられていたことです。Interop 2025 では、LargestContentfulPaint API と Event Timing API をブラウザ間で実装することで、主要ブラウザ全てで計測できなかった Core Web Vitals の指標である LCP と INP を計測可能にすることが目標として掲げられています。</p>
+<h3 id="令和-7-年版-あなたが使ってよいフロントエンド機能とは"><a href="https://speakerdeck.com/mugi_uno/baseline-ha-iizo">令和 7 年版 あなたが使ってよいフロントエンド機能とは</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>手前味噌で大変恐縮ですが、自分が <a href="https://toyamarb.connpass.com/event/339781/">北陸三県.rb Lightning Talks in Kanazawa</a>というイベントで発表した際の資料です。</p>
+<p>なお、Baseline 自体については弊社の sakito が最近次のような記事を書きました。併せて見ておくと基本的な部分を確認できてよいかと思います。</p>
+<p>🔗 <a href="https://zenn.dev/sakito/articles/26cba8397c4dbe">Web 技術の互換性を把握するための Baseline と Web Platform Status Dashboard</a></p>
+<p>次のような点がポイントになります。</p>
+<ul>
+<li>Widely Available は 全ブラウザに揃ってから 30 ヶ月経過している機能である</li>
+<li>Baseline の対象機能は <a href="https://github.com/web-platform-dx/web-features">web-platform-dx/web-features</a> がマスターである</li>
+<li><a href="https://webstatus.dev/">Web Platform Status</a> で機能の状況を一覧で確認できる</li>
+<li>Baseline のステータスは将来増える可能性がある</li>
+</ul>
+<p>特に最後の点、ステータスが増える可能性については興味深く、仮に「高品質の Polyfill がある」といったステータスが増えたとすれば、機能の利用可否の新しい観点としても利用できるかもしれません。</p>
+<h3 id="state-of-react-2024"><a href="https://2024.stateofreact.com/ja-JP/">State of React 2024</a></h3>
+<ul>
+<li>共有者: @k1tikurisu</li>
+</ul>
+<p>毎年 React とその周辺ライブラリについて行われている統計「State of React」の 2024 年版の結果が公開されました。この調査では設問を大きく次の４セクションに分けて用意しています。</p>
+<ul>
+<li>Features : React 自体の機能について、認知度や使用感を調査している</li>
+<li>Libraries : React と深く関連する UI ライブラリや状態管理ライブラリなどについて、利用状況や所感を調査している</li>
+<li>OtherTools : Test ツールや認証、バリデーションライブラリなど関連するライブラリについて、利用状況や所感を調査している</li>
+<li>Usage : 使用環境や事業別など様々な角度から React の利用状況について調査している。</li>
+</ul>
+<p>Features では、<code>useState</code>のような一般的な API から、<code>useDeferredValue</code>のようなニッチな API まで 28 の異なる機能について調査を行なっています。調査結果によると、<code>useState</code>が最も使用率が高く、<code>Taint API</code> が最も使用率が低かったことが分かりました。</p>
+<p>Libraries では、TanStack Query と Zustand が、好感度において Next.js を追い抜いたことが報告されています。</p>
+<p>OtherTools では、Jest と Testing Library が引き続きリードを保っていることが示されています。</p>
+<p>Usage では、静的サイトでの利用が依然として 2 位を維持していることが興味深い結果として挙げられています。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications">Upgrading: Single-Page Apps | Next.js</a>
+<ul>
+<li>Next.js の公式ドキュメントに、SPA の構築の項目が追加されました。</li>
+</ul>
+</li>
+<li><a href="https://x.com/brandontroberts/status/1878879880781480442">Vite が Rolldown ベースになることで更なる高速化が見込まれる</a>
+<ul>
+<li>v1.0 beta になっている Rolldown が Vite に入ることでビルド速度が改善しそうという解説動画です。</li>
+</ul>
+</li>
+<li><a href="https://x.com/webdriverio/status/1873806664228626857">WebDriverIO v9.5.0 のリリース</a>
+<ul>
+<li>WebDriverIO v9.5.0 がリリースされました。Web と Android、iOS に対応した swipe、tap コマンドが追加されました。</li>
+</ul>
+</li>
+<li><a href="https://react-spectrum.adobe.com/react-aria/testing.html">Testing | react-spectrum.adobe.com</a>
+<ul>
+<li>React Aria に @react-aria/test-utils というパッケージが追加されました。</li>
+</ul>
+</li>
+<li><a href="https://vitest.dev/blog/vitest-3">Vitest 3.0 is out! | Vitest</a>
+<ul>
+<li>Vitest の v3.0 がリリースされました。コンソール出力の改善や複数ブラウザでテストするための仕組みの導入などが含まれます。</li>
+</ul>
+</li>
+<li><a href="https://typescript-eslint.io/rules/no-misused-spread/">no-misused-spread | typescript-eslint</a>
+<ul>
+<li>typescript-eslint v8.20 で追加された no-misused-spread ルールについての解説ページです。</li>
+</ul>
+</li>
+<li><a href="https://motion.dev/blog/reacts-experimental-view-transition-api">Revealed: React’s experimental animations API</a>
+<ul>
+<li><a href="https://azukiazusa.dev/blog/declarative-page-transition-animation-with-react-viewtransition-component/">React の <code>&#x3C;ViewTransition></code> コンポーネントで宣言的にページ遷移アニメーションを追加する</a></li>
+<li>View Transition API を React で使用する手段として、unstable_ViewTransition が実験的に利用できるようになりました。</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/year-in-review-2024/">2024 year in review | Astro</a>
+<ul>
+<li>Astro の 2024 年のまとめと 2025 年の展望が書かれた記事です。</li>
+</ul>
+</li>
+<li><a href="https://open-props-ui.netlify.app/">Open Props UI</a>
+<ul>
+<li>Open Props をベースとした、shadcn/ui のようなコピペで使えるコンポーネント集である Open Props UI が公開されました。</li>
+</ul>
+</li>
+<li><a href="https://github.com/honojs/middleware/pull/887">Hono | feat(standard-validator): Add standard schema validation</a>
+<ul>
+<li>Standard Schema に沿ったスキーマ検証を行う Hono 向けのミドルウェア <code>@hono/standard-validator</code> の実装が進んでいるとのこと。</li>
+</ul>
+</li>
+<li><a href="https://react-server.dev/">@lazarv/react-server</a>
+<ul>
+<li>React Server Components を Vite ベースで統合したフレームワークである <code>react-server</code> が公開されました。</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-8-5/">Storybook 8.5</a>
+<ul>
+<li>Storybook 8.5 がリリースされました。テストのコードカバレッジ計測や、テスト実行の GUI の改善などが含まれます。</li>
+</ul>
+</li>
+<li><a href="https://x.com/storybookjs/status/1878939055582519432">Storybook v9 に向けた RFC</a>
+<ul>
+<li>Storybook v9 に向けて、<a href="https://github.com/storybookjs/storybook/discussions/30112">Typesafe CSF factories</a> および <a href="https://github.com/storybookjs/storybook/discussions/30119">Add the .test method to CSF factories</a> の RFC が提案されました。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/ykicchan/articles/5415871c017b22">React で Modal や Confirm の実装を簡単にする react-call というライブラリがアツい！！！</a>
+<ul>
+<li>window.confirm のように手続き的にコンポーネントを扱える react-call</li>
+</ul>
+</li>
+<li><a href="https://biomejs.dev/blog/roadmap-2025/">Roadmap 2025 and Biome 2.0</a>
+<ul>
+<li>Biome の 2024 年の振り返りと、2025 年のロードマップが公開されました。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://webkit.org/blog/16413/the-success-of-interop-2024/">The success of Interop 2024!</a>
+<ul>
+<li>Interop 2024 の成果レポートです。2024 年は 95%と、過去最高の達成率を記録したと述べられています。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2024/12/02/the-browser-company-teases-dia-its-new-ai-browser/">The Browser Company teases Dia, its new AI browser | TechCrunch</a>
+<ul>
+<li>Arc ブラウザを開発している The Browser Company が、 Dia という新しいブラウザを 2025 年初頭に公開予定です。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-133-beta">Chrome 133 beta</a>
+<ul>
+<li>CSS の変更が多く、<code>attr()</code>・<code>:open</code>・Scroll State Container Queries などが含まれます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal">Temporal - JavaScript | MDN</a>
+<ul>
+<li>MDN にて、新たに Temporal のドキュメントが追加されました。凄まじい量です。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://x.com/deno_land/status/1876728474666217739">Oracle has informed us they won’t voluntarily withdraw their trademark on “JavaScript”</a>
+<ul>
+<li>Oracle は Deno が署名活動を行い “JavaScript” の商標を取り下げを申請していた件に関して、JavaScript の商標を手放すつもりはないと通告しました。</li>
+</ul>
+</li>
+<li><a href="https://cursor.directory/">Cursor Directory</a>
+<ul>
+<li>Cursor エディタで使える、.cursorrules のまとめサイトです。</li>
+</ul>
+</li>
+<li><a href="https://techblog.enechain.com/entry/frontend-interaction-testing">Storybook と Playwright ではじめるインタラクションテスト</a>
+<ul>
+<li>テストの分類整理の過程と、Playwright と Storybook を用いたテストの内容について解説されています。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/mugi_uno/baseline-ha-iizo">令和 7 年版 あなたが使ってよいフロントエンド機能とは</a>
+<ul>
+<li>ブラウザごとの機能サポートの従来の考え方と、それに対しての一つの解決策である Baseline について解説している発表資料です。</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
