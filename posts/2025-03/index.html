@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #56"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #56"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v3.0.12"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #56</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.884b4dcf.css" />
+<style type="text/css">:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/frontend-monthly/_astro/hoisted.14b5b446.js"></script><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head><body><main class="main" data-astro-transition-scope="astro-6ynojplz-1"><h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #56</h1><div class="markdown-body" data-astro-cid-gjtny2mx><img src="/frontend-monthly/_astro/header.fbc93836_1LeOhz.webp" alt="タイトル画像" data-astro-cid-grpv5qb7 width="660" height="346" loading="lazy" decoding="async"><h2 data-astro-cid-grpv5qb7>イベント概要</h2><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p><p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p><p data-astro-cid-grpv5qb7><strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong></p><div class="note" data-astro-cid-grpv5qb7><h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3><p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7>
+ハッシュタグ <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドウィークリー
+</a> 
+で実況しています。
+</p><p data-astro-cid-grpv5qb7>
+zennのpublicationにてウィークリーのまとめも投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a></p></div><h3 data-astro-cid-grpv5qb7>開催日</h3><p data-astro-cid-grpv5qb7>2025年03月25日</p><h3 data-astro-cid-grpv5qb7>イベントページ</h3><p data-astro-cid-grpv5qb7><a href="https://cybozu.connpass.com/event/347604/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>https://cybozu.connpass.com/event/347604/</a></p><h2 data-astro-cid-5i3bjwe7>メンバー</h2><div class="members" data-astro-cid-5i3bjwe7><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@oguemon_com.jpg" class="thumbnail" alt="@oguemon_com" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://x.com/oguemon_com" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@oguemon_com</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@b4h0_c4t.jpg" class="thumbnail" alt="@b4h0_c4t" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/b4h0_c4t" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@b4h0_c4t</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@mugi_uno</a></div><div class="member" data-astro-cid-5i3bjwe7><img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7><a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7>@nus3_</a></div></div><hr><h2>コンテンツ</h2><h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="eslint-now-officially-supports-linting-of-css"><a href="https://eslint.org/blog/2025/02/eslint-css-support/">ESLint now officially supports linting of CSS</a></h3>
+<ul>
+<li>共有者: @b4h0_c4t</li>
+</ul>
+<p>eslint 公式から CSS サポートとして <code>@eslint/css</code> がリリースされました。
+このプラグインにはビルトインで以下のルールが含まれています。</p>
+<ul>
+<li><code>no-duplicate-imports</code>
+<ul>
+<li><code>@import</code> ルールの重複を許可しない</li>
+</ul>
+</li>
+<li><code>no-empty-blocks</code>
+<ul>
+<li>空ブロックを許可しない</li>
+</ul>
+</li>
+<li><code>no-invalid-at-rules</code>
+<ul>
+<li>無効な@ルールを許可しない</li>
+</ul>
+</li>
+<li><code>no-invalid-properties</code>
+<ul>
+<li>無効なプロパティを許可しない</li>
+</ul>
+</li>
+<li><code>require-baseline</code>
+<ul>
+<li>ベースライン機能の利用を強制する</li>
+</ul>
+</li>
+<li><code>use-layers</code>
+<ul>
+<li><code>@layer</code> の利用を強制する</li>
+</ul>
+</li>
+</ul>
+<p>また、構文中にエラーがあってもブラウザと同様にエラー箇所を切り出して同ファイルの他コードを解析したり、Tailwind 等のカスタムシンタックスにも対応しています。</p>
+<p>個人的には今まで逐一調べたりプロジェクトごとの利用可否の判断を確認しながら利用していたベースライン周りを lint 側で担保できる <code>require-baseline</code> が強力な機能に感じています。
+詳しくは Web.dev の記事「<a href="https://web.dev/blog/eslint-baseline-integration">https://web.dev/blog/eslint-baseline-integration</a>」でも紹介されています。</p>
+<h3 id="deno-v22-で-opentelemetry-がビルトインされた話"><a href="https://deno.com/blog/v2.2">Deno v2.2 で OpenTelemetry がビルトインされた話</a></h3>
+<ul>
+<li>共有者: @nus3_</li>
+</ul>
+<p>Deno v2.2 のリリースで、unstable ですが OpenTelemetry がビルトインされました。</p>
+<p>v2.2 時点では、OpenTelemetry の integration を有効にすることで、コードを変更せずとも<code>Deno.serve</code>や<code>fetch</code>を使った際のトレース、メトリクス、また<code>console.log</code>などのログの収集が可能になりました。</p>
+<p><a href="https://docs.deno.com/runtime/fundamentals/open_telemetry/">OpenTelemetry 用のドキュメント</a>が追加されており、Quick start ですぐに試せるようになっています。</p>
+<p>個人的に OpenTelemetry が気になっていたのですが、今回のリリースで Deno でサッと試せて、理解を深められて良かったです。</p>
+<h3 id="cline-に全部賭けろ"><a href="https://zenn.dev/mizchi/articles/all-in-on-cline">CLINE に全部賭けろ</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>今月はこちらの記事に触れないわけにはいかないかなと思い、持ってきました。</p>
+<p>mizchi さんによる、自律型の AI コーディングエージェントである Cline 自体についての解説や考察を交えつつ、
+AI を活用したこれからの開発において、プログラマに求められる知識やスキルについての意見が綴られているエントリです。</p>
+<p>GitHub Copilot に代表されるような AI によるコーディング支援ツールとは異なり、エントリ内では “暴走列車” と表現もされていますが、
+人間と同等レベルのコンテキストを持った状態で自律的に開発を行うことで、従来と大きく異なる開発フローになり得ることについて言及されています。</p>
+<p>以前から AI とプログラマの将来性については議論される機会も多かったですが、
+この記事をきっかけに、より身近かつ遠くない未来の話として認識されるケースが出てきたのではないかと思います。
+（2025/03/14 現在では、Zenn の Ideas / AllTime の全記事の中でも最上位となっており、注目度が伺えます）</p>
+<p>私自身も、Cline は名前を知っていただけだったのですが、実際に触れるきっかけになりましたし、
+触ってみたうえで、もう少し解像度高く理解できる部分がありました。</p>
+<p>特に “Cline AI 時代のプログラマに必要なこと” として挙げられている</p>
+<ul>
+<li>コンテキストを記述する能力</li>
+<li>ドメインを記述する能力</li>
+<li>AI の性能に対する直感</li>
+</ul>
+<p>については体験として感じる部分がありました。</p>
+<h3 id="a-10x-faster-typescript"><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript</a></h3>
+<ul>
+<li>共有者: @oguemon</li>
+</ul>
+<p>Microsoft が TypeScript のコンパイラとツールのネイティブ実装に取り組んでいることが 3/11 に発表されました。</p>
+<p>従来は JavaScript ベースで実装されていましたが、ネイティブ実装は Go 言語が使用されており、GitHub レポジトリも公開されています（<a href="https://github.com/microsoft/typescript-go">microsoft/typescript-go</a>）。</p>
+<p>ネイティブ実装により、ビルド時間が最大 10 倍短縮され、エディターの起動も高速化、メモリ使用量も削減される見込みです。</p>
+<p>2025 年半ばにコマンドライン版「tsc」のプレビュー版が公開され、年末までに完全なソリューションが提供される予定です。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://zenn.dev/akfm/books/nextjs-basic-principle">「Next.js の考え方」の v15 対応改訂</a>
+<ul>
+<li>「Next.js の考え方」が Next.js v15 に対応</li>
+</ul>
+</li>
+<li><a href="https://tailwindcss.com/blog/tailwindcss-v4">Tailwind CSS v4.0</a>
+<ul>
+<li>Tailwind CSS v4.0 がリリース</li>
+<li>このリリースには新しい高性能なビルドエンジンの導入や、Cascade Layers や Custom properties など CSS のモダンな機能の採用、シンプルなインストールや CSS で完結する設定などが含まれる</li>
+</ul>
+</li>
+<li><a href="https://turbo.build/blog/free-vercel-remote-cache">Vercel Remote Cache is now free</a>
+<ul>
+<li>Turborepo の機能の一つである Remote Caching が、Vercel と連携している全ての Turborepo プロジェクトで無料で利用可能に</li>
+</ul>
+</li>
+<li><a href="https://antfu.me/posts/move-on-to-esm-only">Move on to ESM-only</a>
+<ul>
+<li>ESM のみのパッケージ配布へ移行するタイミングについて考察した記事</li>
+</ul>
+</li>
+<li><a href="https://react.dev/blog/2025/02/14/sunsetting-create-react-app">Sunsetting Create React App</a>
+<ul>
+<li>Create React App が非推奨となり、新規アプリケーションの作成には Next.js、React Router、Expo などのフレームワークや、Vite ベースのツールを使用することが推奨</li>
+</ul>
+</li>
+<li><a href="https://2024.stateofreact.com/ja-JP/">State of React 2024</a></li>
+<li><a href="https://nextjs.org/blog/next-15-2">Next.js 15.2</a></li>
+<li><a href="https://developers.prtimes.jp/2025/02/21/vitest-browser-mode/">Vitest Browser Mode を活用してブラウザをモックするコードを削除した話</a>
+<ul>
+<li>フロントエンドのユニットテストにおいて、Vitest と jsdom を組み合わせていた部分を Vitest Browser Mode に置き換えた事例の紹介</li>
+</ul>
+</li>
+<li><a href="https://mastra.ai/">The TypeScript AI framework - Mastra</a>
+<ul>
+<li>TypeScript ベースの AI エージェント開発フレームワーク「Mastra」が公開</li>
+</ul>
+</li>
+<li><a href="https://github.com/prisma/prisma/releases/tag/6.4.0">Prisma 6.4 がリリース</a></li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/kN5LTzuTLVs/m/6HqTsmk3EQAJ">Intent to ship: Customizable select</a>
+<ul>
+<li>カスタマイズ可能な <code>&#x3C;select></code> 要素の実装を Chrome 134 でリリースする計画を発表</li>
+</ul>
+</li>
+<li><a href="https://blogs.opera.com/news/2025/02/opera-air-browser/">Opera introduces Opera Air</a>
+<ul>
+<li>Opera 社が新しいブラウザ Opera Air を発表</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/UKLLVghiHYQ/m/tv0ANlToEQAJ">Intent to Prototype: Smooth corners</a>
+<ul>
+<li>スムースな角丸を実現する corner-shape プロパティのプロトタイプ実装が提案</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/web-platform-01-2025">New to the web platform in January</a>
+<ul>
+<li>2025 年 1 月に、安定版およびベータ版のブラウザに搭載された機能の紹介</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/LLgsMjTzmAY/m/my-groups">Intent to Experiment: Interest Invokers</a>
+<ul>
+<li>interesttarget 属性を利用することで、要素に「興味を示した」際（hover や割り当てた hotkey 押下などの際）に特定のアクションをトリガーできるようになる機能が experimental に追加された</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/interop-2025">Interop 2025: another year of web platform improvements</a>
+<ul>
+<li>Interop2025 がローンチされた</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/EOz7NK6Y0cE/m/VsZveC-fAwAJ">Intent to Ship: CSS if() function</a></li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/bvi4D7eD7wI/m/djYVLu6OAwAJ">Intent to Ship: CSS Custom Functions (@function)</a></li>
+<li><a href="https://blog.kizu.dev/intent-to-experiment-for-longer/">Intent to Experiment for Longer — Roma’s Unpolished PostsIntent to Experiment for Longer</a>
+<ul>
+<li>CSS の if() 関数と Custom Functions の Ship が早すぎることに関するブログ記事</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/reiwatravel/articles/031f88f4639b99">DevTools に搭載されたパフォーマンス AI アシスタントを NEWT に使ってみる</a>
+<ul>
+<li>Chrome DevTools に搭載されたパフォーマンス計測の AI アシスタントを使って、パフォーマンス改善を行った事例の紹介</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/ctNbl4gWLuk/m/my-groups">Intent to Ship: Invoker Commands; the command and commandfor attributes</a></li>
+<li><a href="https://fxdx.dev/webdriver-bidi-becomes-the-default-for-cypress-in-firefox/">WebDriver BiDi Becomes the Default for Cypress with Firefox</a>
+<ul>
+<li>Cypress が Firefox での WebDriver BiDi プロトコルをサポート</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/qOdmXuip85o/m/my-groups">Intent to Prototype: CSS sibling-index() and sibling-count()</a>
+<ul>
+<li>CSS の新しい関数として sibling-index()と sibling-count()の実装が提案</li>
+</ul>
+</li>
+<li><a href="https://blog.yoav.ws/posts/so_you_want_to_push_a_web_platform_feature/">So, you want to push a web platform feature?</a>
+<ul>
+<li>ブラウザへの機能実装に関心のある開発者向けに包括的なガイド</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://satanacchio.hashnode.dev/everything-you-need-to-know-about-nodejs-type-stripping">Everything You Need to Know About Node.js Type Stripping</a>
+<ul>
+<li>Node.js v23.6.0 から実験的機能として導入された Type Stripping について、その背景や技術的詳細の解説</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/ubie_dev/articles/ts-58-erasable-syntax-only">TypeScript 5.8 の erasableSyntaxOnly フラグ。enum や namespace が消える日が来た</a>
+<ul>
+<li>TypeScript 5.8 で導入される erasableSyntaxOnly フラグについて解説している記事</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-8-rc/">Announcing TypeScript 5.8 RC - TypeScript</a>
+<ul>
+<li>TypeScript 5.8 の RC 版が公開</li>
+</ul>
+</li>
+<li><a href="https://kt3k.github.io/talk_deno_frontend/#1">Deno Update: 最近のフロントエンド向け機能</a>
+<ul>
+<li>Deno のフロントエンド開発に関する機能の紹介</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/v2.2">Deno 2.2: OpenTelemetry, Lint Plugins, node:sqlite</a>
+<ul>
+<li>Deno2.2 がリリース</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript</a>
+<ul>
+<li>TypeScript のコンパイラとツールのネイティブ実装に向けた取り組みが Microsoft から発表</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://deno.com/blog/deno-v-oracle2">Oracle justified its JavaScript trademark with Node.js—now it wants that ignored</a>
+<ul>
+<li>Deno が提出していた JS 商標取消申立てに対して、Oracle が正式に却下申立てを提出</li>
+</ul>
+</li>
+<li><a href="https://github.com/openui/design-system/issues/8">Documentation tool of choice for Open UI Design System</a>
+<ul>
+<li>Open UI のデザインシステムのドキュメント化ツールについての Issue</li>
+</ul>
+</li>
+<li><a href="https://github.com/KermanX/simple_ts">The simple way to resolve/infer TypeScript types. Useful to type-aware linting in Rust.</a>
+<ul>
+<li>TypeScript の型推論を Rust で実装する新しいプロジェクト</li>
+</ul>
+</li>
+<li><a href="https://docs.anthropic.com/ja/docs/agents-and-tools/claude-code/overview">Claude Code 概要</a>
+<ul>
+<li>Anthropic から、ターミナルに常駐してコードベースを理解し、自然言語コマンドでコーディングを支援するエージェント型ツール「Claude Code」が発表</li>
+</ul>
+</li>
+<li><a href="https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/">Speeding up the JavaScript ecosystem - Rust and JavaScript Plugins</a>
+<ul>
+<li>Deno Linter などにすでに導入されている、デシリアライズのコストを削減する新しいアプローチを紹介</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/mizchi/articles/all-in-on-cline">CLINE に全部賭けろ</a>
+<ul>
+<li>Cline などのコーディングエージェントが、プログラミングの未来を大きく変えるという予測と、その理由を解説した記事</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/autifyhq/things-happened-in-5-years-in-the-testing-automation-world">自動テストの世界に、この 5 年間で起きたこと</a></li>
+<li><a href="https://x.com/bulkneets/status/1888768328010956882">Next.js の脆弱性 CVE-2024-46982 の改修が不十分との指摘</a></li>
+<li><a href="https://techblog.lycorp.co.jp/ja/20250210a">LINE ヤフーのフロントエンド技術を明らかにする State of LY Frontend 2024 実施レポート</a>
+<ul>
+<li>LINE ヤフー社のフロントエンド技術の現状についての調査結果レポートが公開</li>
+</ul>
+</li>
+</ul><h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2><div class="wrapper" data-astro-cid-zlq3lpzk><script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script></div><p data-astro-cid-zlq3lpzk><a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk>https://speakerdeck.com/cybozuinsideout/frontendexpert-team</a></p></div></main><footer class="footer"><a href="/frontend-monthly/">Cybozu Frontend Monthly</a></footer></body></html>
