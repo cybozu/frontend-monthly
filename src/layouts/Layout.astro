@@ -2,7 +2,7 @@
 export interface Props {
   title: string
 }
-import { ViewTransitions } from "astro:transitions"
+import { ClientRouter } from 'astro:transitions'
 import { staticPath } from "../lib/helper"
 const { title } = Astro.props
 
@@ -45,7 +45,7 @@ const ogImage = `${site}frontend-monthly/img/header.png`
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"
     />
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
 
   <body>
