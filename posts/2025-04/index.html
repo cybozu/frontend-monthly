@@ -1,0 +1,315 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #57"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #57"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #57</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.B3dxhWv0.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #57</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2025年04月28日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/350880/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/350880/ </a> </p>  <h3 data-astro-cid-grpv5qb7>配信URL</h3> <p data-astro-cid-rqusjlqv> <iframe title="https://www.youtube.com/embed/hidpjSg7woc" width="560" height="315" src="https://www.youtube.com/embed/hidpjSg7woc" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe> <a href="https://www.youtube.com/watch?v=hidpjSg7woc" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv> https://www.youtube.com/watch?v=hidpjSg7woc </a> </p>    <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="node-の--experimental-strip-types-オプションとその影響">Node の<code>--experimental-strip-types</code> オプションとその影響</h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>Node.js の v23.6.0 でデフォルトで有効化された <code>--experimental-strip-types</code> オプションによって、(一部制限があるものの) Node.js で直接 TypeScript を実行できるようになりました。</p>
+<p>🔗 <a href="https://nodejs.org/en/blog/release/v23.6.0">Node v23.6.0 (Current)</a></p>
+<p>この変更により、周辺のエコシステムでもこの<code>--experimental-strip-types</code>オプションへの対応が見られました。</p>
+<h4 id="typescript-の---erasablesyntaxonly-オプション">TypeScript の <code>--erasableSyntaxOnly</code> オプション</h4>
+<p>TypeScript 5.8 では新しく <code>--erasableSyntaxOnly</code> というオプションが追加されました。</p>
+<p>🔗 <a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-8.html">The <code>--erasableSyntaxOnly</code> Option</a></p>
+<p>これは <code>enum</code> や <code>namespace</code> などの「型情報を削除するだけでは JS として実行できない TS 独自の構文」でエラーを出すようにするオプションです。デフォルトで有効になった Node.js の <code>--experimental-strip-types</code> オプションの範囲では、このような「TS 独自の構文」を含む TypeScript の実行をサポートしていません。このオプションを有効にすることで、Node.js で実行可能な TypeScript であることをチェックすることができます。</p>
+<h4 id="eslint-の設定ファイルもライブラリ依存なしに-ts-で書けるように">eslint の設定ファイルもライブラリ依存なしに TS で書けるように</h4>
+<p>以前から ESLint の設定ファイルは TS で書くことができましたが、内部的には設定ファイルを JS に変換するために <a href="https://unjs.io/packages/jiti">jiti</a> というライブラリを使用していました。</p>
+<p>一方で <code>--experimental-strip-types</code> オプションが利用できる Node 環境(v 22.10.0 以上)では、ESLint の <code>unstable_native_nodejs_ts_config</code> フラグを有効にすると、jiti を使用せずに TypeScript の設定ファイルを直接読み込むことができるようになりました。</p>
+<p>🔗 <a href="https://eslint.org/blog/2025/04/eslint-v9.24.0-released/#node.js-native-loading-of-typescript-configuration-files-(experimental)">Node.js Native Loading of TypeScript Configuration Files (Experimental)</a></p>
+<p>現在は Experimental フラグですが、Node.js の TypeScript 実行機能に合わせてデフォルトの挙動となっていきそうです。</p>
+<h4 id="より-typescript-first-な開発へ">より TypeScript First な開発へ</h4>
+<p><code>--experimental-strip-types</code> オプションの導入自体が TypeScript の流行と浸透によるものであると同時に、このオプションによりさらに TypeScript First な開発は進むことが期待されます。
+またその影響として周辺ツールやライブラリも一層 TypeScript の First Support を意識するようになるでしょう。</p>
+<p>一例として、最近では ESLint が一部のコアルールを TypeScript にも対応するようにアップデートしています。</p>
+<p>🔗 <a href="https://zenn.dev/teppeis/articles/2025-04-eslint-core-rules-typescript">ESLint コアルールの TypeScript 対応について</a></p>
+<p>このようにブラウザ以外の JS ランタイムや周辺ツールでは TypeScript の First Support 化がより進んでいます。一方で TS 独自の構文を含むコードはサポートされなかったりサポートが遅れたりすることもあるため、今後も各ランタイムやツールのサポートを確認しつつ、JS への変換容易性などを意識した TypeScript コーディングが必要となりそうです。</p>
+<h3 id="nextjs-153-で追加された-rspack-のサポートexperimentalの話"><a href="https://nextjs.org/blog/next-15-3">Next.js 15.3 で追加された Rspack のサポート（experimental）の話</a></h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>Next.js 15.3 がリリースされ、Rspack や Turbopack を使ったビルドが可能になりました。
+この追加により、15.3 ではビルドする際に以下の 3 つの選択が可能になりました。（アルファ版、experimental を含む）</p>
+<ul>
+<li>webpack （従来通り）</li>
+<li>Rspack （experimental）</li>
+<li>Turbopack （alpha）</li>
+</ul>
+<p>リリースノートには、Rspack は公式プラグインではないものの、Rspack チームと連携して進めていくことが記載されています。
+Next.js のビルドツールの選択肢が増えることは、利用ケースが広がりそうで良いですね。</p>
+<p>また、Rspack に関連して、（まだ WIP の状態ですが）Rstest というリポジトリが公開されました。
+<a href="https://github.com/web-infra-dev/rstest">https://github.com/web-infra-dev/rstest</a>
+Vite と Vitest のように、ビルドツールに紐づいたテストツールがあることは、テストが導入しやすくなるので、今後が楽しみです。</p>
+<h3 id="社内デザインシステムを-mcp-サーバー化したら-ui-実装が爆速になった"><a href="https://zenn.dev/ubie_dev/articles/f927aaff02d618">社内デザインシステムを MCP サーバー化したら UI 実装が爆速になった</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Ubie さんによる、社内でのデザインシステムを MCP サーバー化し、UI 実装を効率化した事例です。
+Cursor Rules などを使ってコンテキスト情報としてデザインシステムを理解させようと試みても上手くいかなかったものの、これを MCP サーバーとすることで期待した通りの動作が実現できたとのことです。実際には Figma MCP も連携させることで、Figma デザインを元に自動的にデザインシステムのトークンやコンポーネントを活用した UI モックアップが構築されるようです。</p>
+<p>ここ一ヶ月ほどですが、この Ubie さんの事例をはじめ、MCP に関する記事やニュースが非常に多く出てきました。</p>
+<p>たとえば、Microsoft から公式で Playwright を操作するための MCP が公開され、LLM 経由で気軽にブラウザを操作可能となりました。E2E テストなど、具体的なユースケースがイメージしやすい MCP かと思います。</p>
+<p>🔗 <a href="https://github.com/microsoft/playwright-mcp">microsoft/playwright-mcp</a></p>
+<p>Cloudflare からは、MCP サーバーをリモート利用するためのツールやガイドが公開されています。
+これによって、認証がカバーできたり、プレイグラウンドで動作確認が可能となります。</p>
+<p>🔗 <a href="https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/">Build and deploy Remote Model Context Protocol (MCP) servers to Cloudflare</a></p>
+<p>日常の開発ワークフローが大きく変化する礎となる気配もあり、実際に触ってみた人も多いのではないでしょうか。
+（例に漏れず、私も触って遊んでいました）</p>
+<p>一方で、MCP は新たなセキュリティ面での懸念点でもあり、無闇に使うとリスクも大きくなりそうですね。
+そのあたりに関しても非常にわかりやすくまとめて解説されている記事もあり、大変参考になりました。</p>
+<p>🔗 <a href="https://zenn.dev/arrowkato/articles/mcp_security">MCP サーバーを利用することはセキュリティ的に安全か?</a></p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<p>※AI によって整理・要約されています。</p>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://lynxjs.org/blog/lynx-unlock-native-for-more">Lynx: Unlock Native for More - Lynx</a>
+<ul>
+<li>ByteDance が開発したクロスプラットフォームフレームワーク「Lynx」がオープンソース化され、HTML/CSS でネイティブ UI を構築可能に</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/playwright/releases/tag/v1.51.0">Playwright 1.51 is here!</a>
+<ul>
+<li>エラー発生時にコンテキストを含むプロンプトをコピーできる機能などが追加されました</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/32549">Enable moveBefore in experimental releases</a>
+<ul>
+<li>React の Experimental リリースで、DOM API の<code>moveBefore()</code>サポートが有効化されました</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2025/03/eslint-v9.22.0-released/">ESLint v9.22.0 released</a>
+<ul>
+<li><code>defineConfig()</code>と<code>globalIgnores()</code>が追加され、Flat Config で<code>extends</code>が指定可能に</li>
+</ul>
+</li>
+<li><a href="https://oxc.rs/blog/2025-03-15-oxlint-beta.html">Oxlint Beta</a>
+<ul>
+<li>500 以上のビルトインルールを追加し、パフォーマンスを大幅に向上させた Oxlint Beta 版がリリース</li>
+</ul>
+</li>
+<li><a href="https://rsdoctor.dev/blog/release/release-note-1_0">Announcing Rsdoctor 1.0</a>
+<ul>
+<li>Rspack や Webpack と互換性のあるビルドアナライザツール「Rsdoctor」の 1.0 版がリリース</li>
+</ul>
+</li>
+<li><a href="https://biomejs.dev/blog/biome-v2-0-beta/">Biome v2.0 beta</a>
+<ul>
+<li>Plugin や Domain 機能の追加、import のソートロジック改善などを含む Biome v2.0 ベータ版がリリース</li>
+</ul>
+</li>
+<li><a href="https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/">Valibot v1 - The 1 kB schema library</a>
+<ul>
+<li>軽量なスキーマバリデーションライブラリ Valibot v1 がリリース、その歴史と開発背景を紹介</li>
+</ul>
+</li>
+<li><a href="https://opencollective.com/styled-components/updates/thank-you">styled-components Thank you</a>
+<ul>
+<li>React の CSS-in-JS ライブラリ styled-components がメンテナンスモードに入り、新規採用は非推奨に</li>
+</ul>
+</li>
+<li><a href="https://github.com/vercel/next.js/pull/76186">Next.js plugin for alternate bundler</a>
+<ul>
+<li>Next.js に Rspack をバンドラーとして使用できるプラグイン「@next/plugin-rspack」が追加</li>
+</ul>
+</li>
+<li><a href="https://expressjs.com/2025/03/31/v5-1-latest-release.html">Express.js v5.1 Latest Release</a>
+<ul>
+<li>パフォーマンス改善や res オブジェクトの機能追加などを含む Express.js v5.1 がリリース</li>
+</ul>
+</li>
+<li><a href="https://www.robinwieruch.de/react-trends/">React Trends in 2025</a>
+<ul>
+<li>RSC と RSF の普及、React フォームの改善、React コンパイラの登場など 2025 年の React トレンドを予測</li>
+</ul>
+</li>
+<li><a href="https://www.monterail.com/stateofvue">State of Vue.js Report 2025</a>
+<ul>
+<li>Vue.js の現状とエコシステム、開発者サーベイ、今後の展望をまとめた包括的なレポート</li>
+</ul>
+</li>
+<li><a href="https://x.com/rspack_dev/status/1899007455381897697">Let’s call these little crabs “Rstack”, which is short for Rspack stack.</a>
+<ul>
+<li>Rspack、Rsbuild、Rspress、Rslib などのツール群を「Rstack」と呼ぶことが発表</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/playwright-mcp">microsoft/playwright-mcp: Playwright Tools for MCP</a>
+<ul>
+<li>Playwright の MCP サーバーが公開</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/support-policy">Support Policy | Next.js</a>
+<ul>
+<li>Next.js のサポートポリシーが公開、メジャーバージョンには「Active LTS」と「Maintenance LTS」の 2 フェーズがあり</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/cve-2025-29927">CVE-2025-29927 | Next.js</a>
+<ul>
+<li>Next.js のキャッシュポイズニング脆弱性に関する修正リリース、ミドルウェアのスキップが可能だった問題を解決</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://github.com/tj-actions/changed-files/issues/2463">Multiple tags in this action are compromised · Issue #2463 · tj-actions/changed-files</a>
+<ul>
+<li>GitHub Actions の Changed Files アクションの全バージョンにマルウェアが混入した問題を報告</li>
+</ul>
+</li>
+<li><a href="https://github.com/jondot/hygen/issues/455">hygen.io domain is expired / documentation not available</a>
+<ul>
+<li>scaffold ツール hygen のドキュメントサイトのドメインが期限切れとなり、約 2 年間メンテナンスされていない状況</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/ai-labyrinth/">Trapping misbehaving bots in an AI Labyrinth</a>
+<ul>
+<li>Cloudflare が不適切な AI クローラーやボットを混乱させる「AI Labyrinth」機能を発表、無料プランでも利用可能</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/">Build and deploy Remote Model Context Protocol (MCP) servers to Cloudflare</a>
+<ul>
+<li>Cloudflare で MCP を動作させるためのツール群と手順を紹介、認証や連携機能を提供</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/J8pXGgUIuBQ/m/my-groups">Intent to Experiment: Speculation rules <code>target_hint</code> field</a>
+<ul>
+<li>Speculation Rules API に<code>target_hint</code>フィールドを追加し、_blank 指定リンクのプリレンダリングをサポート</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/command-and-commandfor?hl=en">Introducing <code>command</code> and <code>commandfor</code></a>
+<ul>
+<li>Chrome 135 でサポートされた<code>command</code>と<code>commandfor</code>属性により、要素間で CommandEvent を発火可能に</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/OWd80XhwHrI">Intent to Deprecate and Remove: Deprecate special font size rules for H1 within some elements</a>
+<ul>
+<li>HTML5 の Outline Algorithm による見出しサイズの自動調整機能の廃止予定をアナウンス</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/16523/release-notes-for-safari-technology-preview-215/">Release Notes for Safari Technology Preview 215</a>
+<ul>
+<li>CSS Anchor Positioning、Trusted Types、Scroll Driven Animations などをサポートした Safari 18.5 の技術プレビュー</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/16587/item-flow-part-1-a-new-unified-concept-for-layout/">Item Flow, Part 1: A new unified concept for layout</a>
+<ul>
+<li>WebKit チームによる CSS Grid と Flexbox を統合した新レイアウト概念「Item Flow」の提案</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-8.html">TypeScript 5.8</a>
+<ul>
+<li>戻り値式の分岐ごとのチェック、ECMAScript モジュールの require()サポート、—erasableSyntaxOnly オプションなどを追加</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript</a>
+<ul>
+<li>TypeScript Compiler を TypeScript から Go に書き換えてネイティブポート化し 10 倍の速度向上を目指す取り組み</li>
+</ul>
+</li>
+<li><a href="https://www.docswell.com/s/magurotuna/5YDLWV-2025-03-14-toranoana-deno-20#p1">Deep Dive into deno lint plugin</a>
+<ul>
+<li>Deno 2.2 で追加された<code>deno lint</code>プラグイン対応の背景と詳細について解説</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/typescript-in-node-vs-deno">Node just added TypeScript support. What does that mean for Deno?</a>
+<ul>
+<li>Node.js の TypeScript ネイティブサポート追加を踏まえ、Deno との実装アプローチの違いを解説</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/css-forms-1/">CSS Form Control Styling Level 1 First Public Working Draft</a>
+<ul>
+<li>OS やブラウザ間で一貫したフォームコントロールのスタイリングを可能にするモジュールの初期ドラフトが公開</li>
+</ul>
+</li>
+<li><a href="https://www.joshwcomeau.com/css/custom-css-reset/">A Modern CSS Reset</a>
+<ul>
+<li><code>interpolate-size: allow-keywords;</code>を利用したアニメーション改善など、現代的な CSS リセットの新機能を解説</li>
+</ul>
+</li>
+<li><a href="https://blogs.windows.com/msedgedev/2025/03/19/minding-the-gaps-a-new-way-to-draw-separators-in-css/">Minding the Gaps: A new way to draw separators in CSS</a>
+<ul>
+<li>Microsoft の Edge チームが提案する<code>gap-separator</code>プロパティで、Flexbox や Grid のギャップに区切り線を描画</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://zenn.dev/layerx/articles/9bdefe4d435882">Model Context Protocol の現在地</a>
+<ul>
+<li>Anthropic の Model Context Protocol の概要と現状を解説、LLM アプリケーションのインテグレーション標準化を目指す</li>
+</ul>
+</li>
+<li><a href="https://github.com/typedgrammar/typed-japanese">Typed Japanese</a>
+<ul>
+<li>日本語の文法を型システムとして形式化するプロジェクト、TypeScript の型システムで文法的な正しさを検証</li>
+</ul>
+</li>
+<li><a href="https://www.mizdra.net/entry/2025/03/07/130150">CSS Modules Kit</a>
+<ul>
+<li>CSS Modules のコードジャンプを可能にするなどの補助ツール「happy-css-modules」の上位互換</li>
+</ul>
+</li>
+<li><a href="https://www.publickey1.jp/blog/25/vscodecopilot_visionhtmlcss.html">VSCode に新機能「Copilot Vision」プレビュー版が登場</a>
+<ul>
+<li>GitHub Copilot に画像認識機能が追加され、モックアップから HTML や CSS 生成、エラー画面の分析が可能に</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/twada/why-the-clean-architecture-does-not-fit-with-web-frontend">The Clean Architecture が Web フロントエンドでしっくりこないのは何故か</a>
+<ul>
+<li>クリーンアーキテクチャが Web フロントエンド開発に適合しない理由を考察した発表</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/quramy/hurontoendotesutonoyu-tefang">フロントエンドテストの与え方</a>
+<ul>
+<li>フロントエンドのテスト運用における実践的なアプローチを実例を交えて紹介</li>
+</ul>
+</li>
+</ul> <h2 data-astro-cid-zlq3lpzk>フロントエンドエキスパートチームについて</h2> <div class="wrapper" data-astro-cid-zlq3lpzk> <script data-id="0efec8a9dd224baebfb2aaf30fbe9a28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js" class="speakerdeck-embed"></script> </div> <p data-astro-cid-zlq3lpzk> <a href="https://speakerdeck.com/cybozuinsideout/frontendexpert-team" target="_blank" rel="nofollow noopener noreferrer" data-astro-cid-zlq3lpzk> https://speakerdeck.com/cybozuinsideout/frontendexpert-team </a> </p>   </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
