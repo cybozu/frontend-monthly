@@ -1,0 +1,3 @@
+[settings]
+# .node-version も有効にする
+idiomatic_version_file_enable_tools = ["node"]

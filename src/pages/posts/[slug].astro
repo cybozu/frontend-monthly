@@ -4,7 +4,6 @@ import type { CollectionEntry } from 'astro:content'
 import PostLayout from "../../layouts/PostLayout.astro"
 import EventSummary from "../../components/EventSummary.astro"
 import MembersList from "../../components/MembersList.astro"
-import EmbedIntroduceSlide from "../../components/EmbedIntroduceSlide.astro"
 
 export interface Props {
   post: CollectionEntry<'posts'>
@@ -32,5 +31,4 @@ const { Content } = await post.render()
   <hr />
   <h2>コンテンツ</h2>
   <Content />
-  <EmbedIntroduceSlide />
 </PostLayout>
