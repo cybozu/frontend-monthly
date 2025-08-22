@@ -1,0 +1,443 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #61"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #61"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #61</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #61</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2025年08月26日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/365035/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/365035/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sakupi01.jpg" class="thumbnail" alt="@sakupi01" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://x.com/sakupi01" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sakupi01 </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@k1tikurisu.jpg" class="thumbnail" alt="@k1tikurisu" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/k1tikurisu" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @k1tikurisu </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="state-of-css-2025"><a href="https://2025.stateofcss.com/en-US/">State of CSS 2025</a></h3>
+<ul>
+<li>共有者: @sakupi01</li>
+</ul>
+<p>CSS の利用状況などに関してのサーベイである State of CSS の 2025 年度版が公開されました。</p>
+<p>個人的な注目ポイントは以下の通りです。<a href="https://2024.stateofcss.com/en-US/">State of CSS 2024</a> との比較を交えた感想も含めています。</p>
+<ul>
+<li><code>:has()</code>、Intrinsic Sizing Keywords などの「Intrinsic」な機能群の充実と認知
+<ul>
+<li>Container Queries ファミリーと合わせて、Responsive Design の重心が View Port（extrinsic）からコンテンツ（intrinsic）に移る導線か</li>
+</ul>
+</li>
+<li>Cascade Layer まだまだ使われてないが、利用率は増加
+<ul>
+<li>設計/デザイントークンの構成をドラスティックに変えないといけないものは、やはり導入難易度が高いと思われがちな印象</li>
+</ul>
+</li>
+<li>去年に続き、Tailwind が CSS in JS を差し置いてユーザ確保してる感
+<ul>
+<li>AI の影響か、デザインシステムの思想がユーティリティによっているのか</li>
+</ul>
+</li>
+<li>Libraries &#x26; Tools の利用率が全体的に減っていそう</li>
+<li>Missing Features の 2nd place に Masonry Layout がランクイン
+<ul>
+<li>Chrome での <code>display: masonry</code> の実装の進捗、CSS WG での Item Flow の議論の進捗などもあり、Masonry Layout が注目されている印象</li>
+</ul>
+</li>
+<li>Resources から Blogs &#x26; Magazines、Peoples の項目がなくなった</li>
+<li>今年の回答者数は 5,506 名、2024 年は 9,704 名と、昨年に比べて激減</li>
+</ul>
+<h3 id="vitest-v4-から-vrt-ができるように"><a href="https://github.com/vitest-dev/vitest/pull/8041">Vitest v4 から VRT ができるように</a></h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>Vitest の Browser Mode を使って VRT ができる <code>toMatchScreenshot</code> のプルリクがマージされました。この<code>toMatchScreenshot</code>は v4.0.0-beta.4 から利用可能です。</p>
+<p>このプルリクの差分には以下のような<code>toMatchScreenshot</code>の使い方の例が書かれています。</p>
+<pre class="language-ts" data-language="ts"><code is:raw="" class="language-ts"><span class="token comment">// basic usage, auto-generates screenshot name</span>
+<span class="token keyword">await</span> expect<span class="token punctuation">.</span><span class="token function">element</span><span class="token punctuation">(</span><span class="token function">getByTestId</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMatchScreenshot</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// with custom name</span>
+<span class="token keyword">await</span> expect<span class="token punctuation">.</span><span class="token function">element</span><span class="token punctuation">(</span><span class="token function">getByTestId</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMatchScreenshot</span><span class="token punctuation">(</span><span class="token string">"fancy-button"</span><span class="token punctuation">)</span>
+<span class="token comment">// with options</span>
+<span class="token keyword">await</span> expect<span class="token punctuation">.</span><span class="token function">element</span><span class="token punctuation">(</span><span class="token function">getByTestId</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMatchScreenshot</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  comparatorName<span class="token operator">:</span> <span class="token string">"pixelmatch"</span><span class="token punctuation">,</span>
+  comparatorOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    allowedMismatchedPixelRatio<span class="token operator">:</span> <span class="token number">0.01</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// with both name and options</span>
+<span class="token keyword">await</span> expect<span class="token punctuation">.</span><span class="token function">element</span><span class="token punctuation">(</span><span class="token function">getByTestId</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toMatchScreenshot</span><span class="token punctuation">(</span><span class="token string">"fancy-button"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  comparatorName<span class="token operator">:</span> <span class="token string">"pixelmatch"</span><span class="token punctuation">,</span>
+  comparatorOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    allowedMismatchedPixelRatio<span class="token operator">:</span> <span class="token number">0.01</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Vitest では、他にも Browser Mode を使って、React Server Components（RSC）の Unit テストを、実際の RSC のようにサーバーサイドとクライアントサイドでそれぞれコンポーネントをレンダリングできる<a href="https://github.com/kasperpeulen/vitest-plugin-rsc">プラグイン</a>が公開されました（公式ではありませんが）など、Vitest の Browser Mode の活用が進んでいます。</p>
+<h3 id="announcing-typescript-59"><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/">Announcing TypeScript 5.9</a></h3>
+<ul>
+<li>共有者: @k1tikurisu</li>
+</ul>
+<p>TypeScript 5.9 がリリースされました。主な変更点は以下の通りです：</p>
+<ul>
+<li><code>tsc --init</code> コマンドの出力が最小化され、必要最低限の設定のみが含まれるようになりました</li>
+<li><code>import defer</code> 構文がサポートされました。この機能により、モジュールとその依存関係をすぐに実行することなくモジュールをインポートできます</li>
+<li>Node.js v20 の動作をモデル化した <code>--module node20</code> オプションが追加されました</li>
+<li>エディタ上で、TypeScript の型を展開してホバー表示してくれる機能や、ホバーで表示されるツールチップの最大長を設定する機能が追加されました</li>
+</ul>
+<p>そのほか、パフォーマンスの最適化や、TypeScript 6.0 のビジョンについても触れられています。</p>
+<h3 id="oxlint-type-aware-preview"><a href="https://oxc.rs/blog/2025-08-17-oxlint-type-aware.html">Oxlint Type-Aware Preview</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>Oxc Lint が type-aware な linting(= TS の型情報を利用する Lint)機能のプレビューを公開しました。利用する場合は<code>oxlint-tsgolint</code>をインストールし、最新版の oxclint に<code>--type-aware</code>オプションをつけるだけで利用可能です。</p>
+<p>これにより各プロジェクトで試験的に導入した際に大幅に高速化したとしています。</p>
+<p>この<code>oxlint-tsgolint</code>の元になっているのは、typescript-eslint チームが作成していた 「<code>ts-go</code>を利用した TypeScript のリントツール PoC」として作成された<a href="https://github.com/typescript-eslint/tsgolint"><code>tsgolint</code></a>です。その後 typescript-eslint チームはこの PoC の開発にリソースを割くことを中断しましたが、Oxc のチームがこのリポジトリをフォークし、利用しています。</p>
+<p>そのため<code>tsgolint</code>同様 「typescript-go を fork して patch を当てている」などの問題も引き継いでしまっています。これに対して <code>ts-go</code> で go の API を公開してほしいという要望も出ており、今後も ts-go と周辺エコシステムの関係は注目していきたいです。</p>
+<ul>
+<li><a href="https://github.com/microsoft/typescript-go/discussions/481">https://github.com/microsoft/typescript-go/discussions/481</a></li>
+</ul>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<p>※AI によって整理・要約されています。</p>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://nextjs.org/blog/next-15-4">Next.js 15.4: Performance and Stability Updates</a>
+<ul>
+<li>Turbopack Builds の改善と Next.js 16 へ向けた準備が主な内容。パフォーマンスと安定性の向上に焦点。</li>
+</ul>
+</li>
+<li><a href="https://playfulprogramming.com/posts/react-history-through-code">The History of React Through Code</a>
+<ul>
+<li>React の歴史をコードの変遷から追跡し、設計思想の一貫性を技術的観点から解説。</li>
+</ul>
+</li>
+<li><a href="https://tailwindcss.com/blog/vanilla-js-support-for-tailwind-plus">Vanilla JavaScript support for Tailwind Plus</a>
+<ul>
+<li>Tailwind Plus がカスタム要素ベースのフレームワーク非依存 UI コンポーネントライブラリを提供開始。最新の Web API（popover API、Invoker Commands API）を活用し、polyfill も搭載。</li>
+</ul>
+</li>
+<li><a href="https://www.epicreact.dev/react-server-components-how-we-got-here-zcuxn">React Server Components: How We Got Here</a>
+<ul>
+<li>素朴な MPA から RSC までのウェブアプリアーキテクチャの進化を辿り、React Server Components が解決する問題と価値を詳細解説。</li>
+</ul>
+</li>
+<li><a href="https://x.com/sebastienlorber/status/1950202512306270226">Next.js MCP Server</a>
+<ul>
+<li>Next.js 公式の MCP サーバーが v15.4.2-canary.16 から利用可能に。エントリーポイント取得、モジュールグラフクエリ、ビルドエラー・警告の取得などが可能。</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/34032">[Fiber] Deprecate ‘Throw a Promise’ technique</a>
+<ul>
+<li>React.use(promise)を推奨し、従来の Promise 投げによるサスペンド手法を非推奨化する PR。</li>
+</ul>
+</li>
+<li><a href="https://tanstack.com/blog/tanstack-db-0.1-the-embedded-client-database-for-tanstack-query">Stop Re-Rendering — TanStack DB, the Embedded Client Database for TanStack Query</a>
+<ul>
+<li>TanStack Query 用の組み込みクライアントデータベース。差分データフローによる高速化とライブクエリを実現し、複雑な UI の状態管理を効率化。</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/whats-new-jul-2025">What’s New in ViteLand: July 2025 Recap</a>
+<ul>
+<li>Vite 7 リリース、Rolldown による大幅な高速化、初の ViteConf 開催予定など、Vite エコシステムの 7 月の主要更新。</li>
+</ul>
+</li>
+<li><a href="https://x.com/TheAlexLichter/status/1952457050883236296">Vitest Browser Mode での VRT 実装</a>
+<ul>
+<li>Vitest v4.0.0-beta.4 から利用可能な toMatchScreenshot メソッドがマージされ、Browser Mode での VRT が可能に。</li>
+</ul>
+</li>
+<li><a href="https://github.com/chakra-ui/panda/discussions/3321">🐼 Panda v1 🎊</a>
+<ul>
+<li>Panda CSS v1.0.0 リリース。RTL/LTR バリアント修正、グラデーション背景プロパティ、createStyleContext 追加。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vitejs/rolldown-vite-perf-wins">Rolldown-Vite Performance Wins</a>
+<ul>
+<li>Rollup から Rolldown 移行による Vite ビルド高速化の統計集。最大 22.3 倍の高速化実績を紹介。</li>
+</ul>
+</li>
+<li><a href="https://github.com/storybookjs/storybook/discussions/30119#discussioncomment-13933024">Storybook Vitest 風テスト API</a>
+<ul>
+<li>Storybook に Vitest 風.test メソッドを追加する RFC。ストーリーに直接テストロジックを記述可能に。</li>
+</ul>
+</li>
+<li><a href="https://blog.jquery.com/2025/08/11/jquery-4-0-0-release-candidate-1/">jQuery 4.0.0 Release Candidate 1</a>
+<ul>
+<li>jQuery 4.0.0 RC1 リリース。IE11 未満サポート終了、非推奨 API 削除などの重大な変更を含む。</li>
+</ul>
+</li>
+<li><a href="https://github.com/egoist/tsup/pull/1332">chore: add maintenance info in README（tsup）</a>
+<ul>
+<li>tsup プロジェクトがメンテナンスモードに移行。tsdown への移行が推奨され、<code>npx tsdown migrate</code>で移行可能。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-15-5">Next.js 15.5: Performance and TypeScript Improvements</a>
+<ul>
+<li>Turbopack Builds beta、TypeScript 改善、next lint コマンド非推奨化など。最大 4 倍の高速化を実現。</li>
+</ul>
+</li>
+<li><a href="https://oxc.rs/blog/2025-08-17-oxlint-type-aware.html">Oxlint Type-Aware Preview</a>
+<ul>
+<li>Oxlint の型認識リンティングプレビュー版。typescript-eslint より大幅高速化した型チェック機能を提供。</li>
+</ul>
+</li>
+<li><a href="https://rslint.rs/">Rslint - The Linter for TypeScript</a>
+<ul>
+<li>ByteDance 開発の高速型安全 TypeScript リンター。Go と typescript-go を使って構築され、MIT ライセンスでオープンソース公開。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/">Perplexity is using stealth, undeclared crawlers to evade website no-crawl directives</a>
+<ul>
+<li>Cloudflare が Perplexity の非倫理的クローリング行為を報告。robots.txt を回避するステルスクローラーの使用を指摘。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://blog.chromium.org/2024/06/building-faster-smarter-chromebook.html">Building a faster, smarter, Chromebook experience with the best of Google technologies</a>
+<ul>
+<li>ChromeOS が Android スタックを採用して Google AI 機能をより迅速に展開する計画を発表。</li>
+</ul>
+</li>
+<li><a href="https://news.microsoft.com/ja-jp/2025/07/31/introducing-copilot-mode-in-edge-a-new-way-to-browse-the-web/">Edge の Copilot Mode のご紹介：新しいウェブ閲覧体験</a>
+<ul>
+<li>Edge Copilot Mode が複数タブの文脈理解と音声ナビゲーション対応でブラウジング体験を革新。自然言語での Web サイト操作が可能に。</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/baseline-devtools-css">Baseline for CSS properties now in Chrome DevTools</a>
+<ul>
+<li>Chrome DevTools 要素パネルで CSS プロパティの Baseline 対応状況をホバーカードで表示する機能を Chrome 140 から追加。</li>
+</ul>
+</li>
+<li><a href="https://chrome.dev/cinemai/devtools/pitstop">Pitstop | DevTools Cinemai</a>
+<ul>
+<li>Chrome DevTools の scheduler.yield()デモ。レーシングトラックでメインスレッドでの重タスク中のアニメーション維持を実演。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-rc/">Announcing TypeScript 5.9 RC</a>
+<ul>
+<li>最小限の tsc —init、import defer 構文、—module node20 オプションなどの新機能を搭載。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/ysknsid25/typescript-shang-da-nodao">TypeScript 上達の道</a>
+<ul>
+<li>TypeScript スキルを 5 段階で定義し、段階的な学習アプローチとトレーニング方法を提案。Type Challenges への取り組みを推奨。</li>
+</ul>
+</li>
+<li><a href="https://www.m3tech.blog/entry/2025/07/23/120000">JavaScript の Object 比較を変えるか？ 新しいプロポーザル proposal-composite とは</a>
+<ul>
+<li>JavaScript の Object 比較課題を解決する proposal-composite 提案。Stage 1 段階で同一 Object 判定を容易化し、完全に immutable な特性を持つ。</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/">Announcing TypeScript 5.9</a>
+<ul>
+<li>TypeScript 5.9 正式リリース。最小限の tsc —init、import defer、型キャッシュ最適化などを搭載。</li>
+</ul>
+</li>
+<li><a href="https://kakehashi-dev.hatenablog.com/entry/2025/08/19/110000">他言語経験者が知っておきたい TypeScript のクラスの注意点</a>
+<ul>
+<li>構造的部分型、this 動的振る舞い、アクセス修飾子制限、実行時型情報消失など TypeScript クラスの 4 大注意点。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://github.com/npm/cli/releases/tag/v11.5.0">npm CLI v11.5.0</a>
+<ul>
+<li>OIDC（OpenID Connect）を使用したパッケージ公開サポートとエラーメッセージ改善を追加。npm トークンなしでの CI/CD からの安全な公開が可能に。</li>
+</ul>
+</li>
+<li><a href="https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/">The many, many, many JavaScript runtimes of the last decade</a>
+<ul>
+<li>過去 10 年の JavaScript Runtime 進化を振り返り。エッジコンピューティングからマイクロコントローラまで多様化を解説。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/">npm trusted publishing with OIDC is generally available</a>
+<ul>
+<li>OIDC を使用した npm trusted publishing が正式利用可能。GitHub Actions や GitLab CI/CD から安全なパッケージ公開を実現。</li>
+</ul>
+</li>
+<li><a href="https://github.com/oraios/serena">Serena</a>
+<ul>
+<li>LLM を本格的なコーディングエージェントに変える MCP サーバーツールキット。セマンティックコード検索・編集機能を提供。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/uki00a/articles/frontend-development-in-deno-2025-summer">Deno のフロントエンド開発の動向【2025 年夏】</a>
+<ul>
+<li>deno bundle コマンド再導入、Deno Deploy EA、Fresh v2 リリース予定、Aleph.js メンテナンス停止など、Deno フロントエンド開発の最新動向。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://github.com/whatwg/html/pull/10548">Define customizable <code>&#x3C;select></code></a>
+<ul>
+<li>HTML 仕様で select 要素のカスタマイズ性拡張がマージ。新要素 selectedcontent の追加と基本スタイル定義で、CSS でのカスタマイズが可能に。</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/news/2025/first-public-working-draft-css-borders-and-box-decorations-module-level-4/">First Public Working Draft: CSS Borders and Box Decorations Module Level 4</a>
+<ul>
+<li>CSS Working Group による CSS 枠線とボックス装飾モジュール Level 4 の初回公開草案。corner-shape や border-shape などの新機能を含む。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/masonry-update">Brick by brick: Help us build CSS Masonry</a>
+<ul>
+<li>Chrome 140 で CSS Masonry を実験実装。display: masonry;での初期提供予定で、2 つの構文アプローチを検討中、開発者フィードバックを募集。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/KFIjx7Xwxik/m/QdmEbGbpBgAJ">CSS Style Container Queries Range Syntax</a>
+<ul>
+<li>Style Query への Range Syntax 適用により、numeric value を持つあらゆる値で Range Syntax を使える道が開ける。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/U-K17B966Ys">Customizable select multiple and listbox</a>
+<ul>
+<li>カスタマイズ可能な select 要素の複数選択版と listbox の Intent to Prototype が提出。</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/TR/2025/STMT-w3c-vision-20250729/">Vision for W3C</a>
+<ul>
+<li>W3C のビジョンステートメントが正式決定。「Web は全人類のもの」を掲げ、組織の価値観と運営原則を明確化。</li>
+</ul>
+</li>
+<li><a href="https://gihyo.jp/article/2025/08/ride-modern-frontend-10">モダンなスクロール関連機能を使いこなそう ［CSS Modern Features no.7］</a>
+<ul>
+<li>スクロールバースタイリング、Scroll Snap Events、Container Scroll-State Queries など最新 CSS スクロール機能を解説。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17219/item-flow-part-2-next-steps-for-masonry/">Item Flow – Part 2: next steps for Masonry</a>
+<ul>
+<li>WebKit が CSS Masonry の実装アプローチとして display: grid と item-flow を組み合わせた提案を説明。</li>
+</ul>
+</li>
+<li><a href="https://frontendmasters.com/blog/architecture-through-component-colocation/">A Nice Vanilla App Architecture Using Web Components and CSS Module Scripts</a>
+<ul>
+<li>Web Components と CSS Module Scripts を使ったフレームワークフリーのコンポーネントアーキテクチャ。Chrome 限定機能。</li>
+</ul>
+</li>
+<li><a href="https://domenic.me/builtin-ai-api-design/">Designing the Built-in AI Web APIs</a>
+<ul>
+<li>Chrome 主導のウェブ AI API 設計課題。プロンプト API、相互運用性、将来性を考慮した標準化アプローチの詳細な考察。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/new-in-web-ui-io-2025-recap">What’s New in Web UI: I/O 2025 Recap</a>
+<ul>
+<li>Google I/O 2025 の Web UI 新機能。Popover API、Dialog 改善、CSS Anchor Positioning、カスタマイズ可能 Select など。</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/news/2025/w3c-updates-its-process-document/">W3C updates its Process Document</a>
+<ul>
+<li>W3C プロセス文書更新。Proposed Recommendation 段階削除、Charter Refinement 段階追加で標準化効率化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://github.com/prettier/eslint-config-prettier/issues/339#issuecomment-3090304490">大規模なサプライチェーンアタック</a>
+<ul>
+<li>npnjs[.]com というフィッシングサイトによって有名なメンテナがアカウントを乗っ取られた事例。巧妙な手口での攻撃に注意喚起。</li>
+</ul>
+</li>
+<li><a href="https://survey.devographics.com/en-US/survey/state-of-html/2025">State of HTML 2025 Survey</a>
+<ul>
+<li>Lea Verou 主導の年次 HTML 調査で、新機能の認知度測定とブラウザロードマップへの影響を目指す。</li>
+</ul>
+</li>
+<li><a href="https://findy-code.io/media/articles/codesidechat-sapphi_red_ja">OSS 貢献を「依頼」から「協力」に変える、Issue とプルリクエストの書き方</a>
+<ul>
+<li>効果的な OSS 貢献のため、協力的姿勢での Issue と PR 作成方法を解説。minimal reproduction や XY 問題についても説明。</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/blog/mdn-turns-20/">Celebrating 20 years of MDN</a>
+<ul>
+<li>MDN20 周年記念。14,000 ページの文書と 100,000 人以上の貢献者を誇るウェブ開発リソースの歴史を振り返り。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/catnose99/scraps/b2b3420a06eb53">ユーザー投稿のコードをブラウザ上で他人が動かせるサービスを作るときのセキュリティについて</a>
+<ul>
+<li>ユーザー投稿コード実行サービスのセキュリティ対策。サンドボックス化とプライバシー保護が重要。</li>
+</ul>
+</li>
+<li><a href="https://lydesign.jp/n/ndc6de5db7178">WCAG コントラスト基準について</a>
+<ul>
+<li>WCAG 1.0、2.0、3.0（APCA）でのそれぞれのコントラスト基準について説明し、LINE ヤフーのブランドカラーにおける課題を説明。</li>
+</ul>
+</li>
+<li><a href="https://github.com/w3c/tpac2025-breakouts/issues">TPAC 2025 Breakout Sessions 募集開始</a>
+<ul>
+<li>W3C TPAC 2025 の Breakout Sessions 募集が開始。</li>
+</ul>
+</li>
+<li><a href="https://tech.timee.co.jp/entry/2025/07/16/100000">さよなら Flaky Test！Devin と共に実現する、CI 安定化への道</a>
+<ul>
+<li>AI（Devin）を活用して Flaky Test の自動検出・修正を実現。CI 成功率向上と開発工数削減を達成。</li>
+</ul>
+</li>
+<li><a href="https://techblog.demae-can.co.jp/entry/20250731/1753950899#%E6%96%B0%E3%81%97%E3%81%84%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0toly%E3%81%8C%E9%81%94%E6%88%90%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8">zag.js を使った a11y 確保</a>
+<ul>
+<li>新しいデザインシステムで a11y 確保のために zag.js が使われている事例紹介。</li>
+</ul>
+</li>
+<li><a href="https://camillovisini.com/coding/simulating-hand-drawn-motion-with-svg-filters">Simulating Hand-Drawn Motion with SVG Filters</a>
+<ul>
+<li>SVG フィルターで feTurbulence と feDisplacementMap を組み合わせ、手描き風アニメーション効果を作成する技術解説。</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/poml">POML: Prompt Orchestration Markup Language</a>
+<ul>
+<li>LLM 向けプロンプトエンジニアリングを構造化する HTML 風マークアップ言語。モジュラーで保守しやすいプロンプト作成を支援。</li>
+</ul>
+</li>
+<li><a href="https://techblog.hacomono.jp/entry/2025/08/15/110000">モジュラーモノリス導入がもたらした功罪</a>
+<ul>
+<li>hacomono 社の 2 年間のモジュラーモノリス導入経験。20 モジュールまで拡大し、認知負荷の低減などの成果と課題を総括。</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/typescript-go/discussions/481">typescript-go API 公開に関する議論</a>
+<ul>
+<li>typescript-go で Go の API が公開されるかどうかについての議論。</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/blog/launching-new-front-end/">Launching MDN’s New Front End</a>
+<ul>
+<li>MDN フロントエンド完全再構築。UI 改善、新検索モーダル、Lucide アイコン採用でユーザー体験向上。</li>
+</ul>
+</li>
+<li><a href="https://2025.stateofcss.com/en-US">State of CSS 2025 Results</a>
+<ul>
+<li>2025 年度 State of CSS 結果。:has()の認知向上、Cascade Layer の低利用率、Tailwind の継続的な人気などが判明。回答者数は 5,506 名で前年から激減。</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
