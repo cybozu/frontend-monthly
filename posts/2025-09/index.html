@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #62"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #62"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #62</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #62</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2025年09月30日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/368435/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/368435/ </a> </p>  <h3 data-astro-cid-grpv5qb7>配信URL</h3> <p data-astro-cid-rqusjlqv> <iframe title="https://www.youtube.com/embed/jrb2xA5fLek" width="560" height="315" src="https://www.youtube.com/embed/jrb2xA5fLek" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe> <a href="https://www.youtube.com/watch?v=jrb2xA5fLek" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv> https://www.youtube.com/watch?v=jrb2xA5fLek </a> </p>    <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="npm-パッケージを利用したサプライチェーンアタックについて">npm パッケージを利用したサプライチェーンアタックについて</h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>ここ最近、npm パッケージを対象に、脆弱性を突かれ、悪意のあるコードが混入された状態で配布されるケースが多く発生しています。</p>
+<p>8/24 には、Monorepo の管理ツールである Nx が攻撃対象となり、各種サービスへの認証用トークンなどを窃取しつつ、さらに感染を広げるような不正なスクリプトを仕込んだ形でパッケージが配布されました。<br>
+<a href="https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c">https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c</a></p>
+<p>9/8 には、debug や chalk といった広く利用されているパッケージを含む 18 のパッケージが対象となり、ブラウザ上での操作をインターセプトし、仮想通貨のやり取りを不正に書き換えるコードが仕込まれました。<br>
+<a href="https://www.aikido.dev/blog/npm-debug-and-chalk-packages-compromised">https://www.aikido.dev/blog/npm-debug-and-chalk-packages-compromised</a></p>
+<p>そして 9/15 には、tinycolor を含む 40 以上のパッケージがターゲットとなり、Nx への攻撃のように機密情報を窃取し、かつ他のパッケージにも感染を広げるマルウェアも組み込まれています。<br>
+<a href="https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised">https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised</a></p>
+<p>いずれも npm install 時の postinstall などを利用して利用者に感染させる仕組みとなっており、
+性質上、自身が管理しているリポジトリで該当パッケージを利用していなければそれで安全というわけではありません。</p>
+<p>これを受けて、各種パッケージマネージャにおいて、リリース後一定期間を過ぎていないと install 自体を許可しないオプションが導入されたりもしています。</p>
+<ul>
+<li>pmpm - minimumReleaseAge<br>
+<a href="https://pnpm.io/blog/releases/10.16">https://pnpm.io/blog/releases/10.16</a></li>
+<li>yarn - npmMinimumReleaseAge<br>
+<a href="https://github.com/yarnpkg/berry/pull/6901">https://github.com/yarnpkg/berry/pull/6901</a></li>
+</ul>
+<p>これらによってリスクの低減はできますが、昨今では AI ツールも普及しており、
+AI 経由で npm パッケージの追加やインストールが実行されるケースも考えられるため、
+根本的な対処のためには、Dev Container の利用などが必要になるかもしれません。</p>
+<p>フロントエンドで開発をしている以上は npm パッケージの利用は日常的であり避けられないため、
+このあたりの動向には注意を払う必要があるな…、と感じた一ヶ月でした。</p>
+<h3 id="フロントエンドのモジュールを共有する手法を考えた"><a href="https://zenn.dev/cybozu_frontend/articles/module-share-pattern">フロントエンドのモジュールを共有する手法を考えた</a></h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>現状の弊社のプロダクトにおけるフロントエンドでのモジュールを共有する方法を考えて、まとめた記事です。</p>
+<p>技術的な手法はいくつかあれど、この記事の反応や、<a href="https://open.spotify.com/episode/1zuFHttjTqLHDVidkvTynh">サイフロ通信</a>の組織を横断したフロントエンドの取組での LINE ヤフーの方々と話をしてみて、技術的にどう実現するかも大事だけども、本当にモジュールを横断で共有すべきなのかという観点も大事だなと改めて思いました。</p>
+<h3 id="wasm-30-completed"><a href="https://webassembly.org/news/2025-09-17-wasm-3.0/">Wasm 3.0 Completed</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>Wasm の新しい仕様である v3.0 がリリースされました。前回の 2.0 から約 3 年ぶりのメジャーアップデートとなります。</p>
+<p>具体的には以下の機能などが策定されました。</p>
+<ul>
+<li>64-bit address space.
+<ul>
+<li>アドレス空間が 64 ビットになり扱える容量が 4 ギガバイトから理論上 16 エクサバイトにまで拡張。</li>
+</ul>
+</li>
+<li>Multiple memories
+<ul>
+<li>一つの WebAssembly モジュールが異なる複数のメモリ空間を定義し操作ができるように</li>
+</ul>
+</li>
+<li>Garbage collection
+<ul>
+<li>Wasm ランタイムによって自動的に管理される新しい、ガベージコレクションされるストレージ</li>
+<li>ガベージコレクションを備えたプログラミング言語の実行系を WebAssembly に移植しやすく</li>
+</ul>
+</li>
+<li>Tail calls
+<ul>
+<li>末尾再帰呼び出しのサポート</li>
+</ul>
+</li>
+<li>Exception handling
+<ul>
+<li>今までになかったネイティブな例外処理のサポート</li>
+<li>例外処理のある言語のコードのを移植しやすくなる</li>
+</ul>
+</li>
+<li>JS string builtins.
+<ul>
+<li>Wasm 内で外部の JS 文字列値に直接アクセスし、操作することができるプリミティブライブラリの関数</li>
+</ul>
+</li>
+</ul>
+<p>またこのサイトではそれぞれの機能についてブラウザや runtime でのサポート状況も確認できます。</p>
+<p>特に GC 機能のサポートなどにより、高水準言語のコードも wasm にコンパイルしやすくなるのは大きなメリットと言えそうです。実際に Java や Kotlin、Scala、Dart などの言語で wasm 向けのコンパイルのサポートが進んでいます。</p>
+<ul>
+<li><a href="https://github.com/google/j2cl/blob/master/docs/getting-started-j2wasm.md">Java</a></li>
+<li><a href="https://kotlinlang.org/docs/wasm-overview.html">Kotlin</a></li>
+<li><a href="https://www.scala-js.org/doc/project/webassembly.html">Scala</a></li>
+<li><a href="https://dart.dev/web/wasm">Dart</a></li>
+</ul>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<p>※AI によって整理・要約されています。</p>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://roboin.io/article/2025/08/12/testing-npm-trusted-publishing-publish-packages-without-tokens/">トークン不要で npm パッケージを公開できる trusted publishing を試す</a>
+<ul>
+<li>npm のトークンレス publish（Trusted publishing）について実際の使用例とメリットを解説した記事</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/shuta13/li-dai-noweb-speed-hackathonnochu-ti-karakao-erudeguresinaipahuomansugai-shan">歴代の Web Speed Hackathon の出題から考えるデグレしないパフォーマンス改善</a>
+<ul>
+<li>Web Speed Hackathon の過去の出題を分析し、継続的なパフォーマンス改善の手法について解説</li>
+</ul>
+</li>
+<li><a href="https://github.com/impressivewebs/frontend-feeds">GitHub - impressivewebs/frontend-feeds: An up to date list of RSS feeds for front-end developers.</a>
+<ul>
+<li>フロントエンド関連の RSS をまとめたリポジトリ</li>
+</ul>
+</li>
+<li><a href="https://github.com/dahlia/optique">dahlia/optique: Type-safe combinatorial CLI parser for TypeScript</a>
+<ul>
+<li>zod + commander のような型安全を謳った CLI ツール</li>
+</ul>
+</li>
+<li><a href="https://github.com/catnose99/use-chat-submit">GitHub - catnose99/use-chat-submit: React hook to handle chat textarea submit behaviors (Enter vs Mod+Enter) with IME-safe handling.</a>
+<ul>
+<li>Enter 送信 vs Cmd/Ctrl + Enter 送信を設定できる React hooks</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/fresh-and-vite">Fresh 2.0 Graduates to Beta, Adds Vite Support</a>
+<ul>
+<li>Deno 製フレームワーク Fresh が v2 beta に。Vite サポート追加で起動時間が 10 倍向上</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/docs/10/releases/migration-guide">Migration guide for Storybook 10 | Storybook docs</a>
+<ul>
+<li>ESM only になるなど、Storybook v10 への移行方法を解説</li>
+</ul>
+</li>
+<li><a href="https://ics.media/entry/250821/">共同編集アプリが作れる新しい JS ライブラリ「Loro」を紹介</a>
+<ul>
+<li>リアルタイム共同編集機能を Web アプリケーションに実装するためのライブラリの紹介</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://efcl.info/2025/09/07/npm-oidc/">npm Trusted Publishing で OIDC を使ってトークンレスで CI から npm パッケージを公開する</a>
+<ul>
+<li>GitHub Actions から OIDC を使ってセキュアに npm パッケージを公開する方法</li>
+</ul>
+</li>
+<li><a href="https://www.darkreading.com/cyberattacks-data-breaches/1000-devs-lose-secrets-ai-powered-stealer">1,000+ Devs Lose Their Secrets to an AI-Powered Stealer</a>
+<ul>
+<li>Nx パッケージが攻撃者により改ざんされ、1,000 人以上の開発者の機密情報が流出したセキュリティインシデント</li>
+</ul>
+</li>
+<li><a href="https://socket.dev/blog/npm-author-qix-compromised-in-major-supply-chain-attack">npm author qix compromised in major supply chain attack</a>
+<ul>
+<li>npm パッケージの作者アカウントが乗っ取られたサプライチェーン攻撃の詳細</li>
+</ul>
+</li>
+<li><a href="https://www.builder.io/blog/agents-md">Improve your AI code output with AGENTS.md (+ my best tips)</a>
+<ul>
+<li>AI エージェントがプロジェクトのコンテキストを理解するための AGENTS.md ファイルの作成方法</li>
+</ul>
+</li>
+<li><a href="https://replit.com/agent3">replit Agent3</a>
+<ul>
+<li>Replit が発表した新しい AI エージェント機能</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://developer.chrome.com/blog/new-in-chrome-140?hl=ja">Chrome 140 の新機能</a>
+<ul>
+<li>Popover API で ToggleEvent の拡張、CSS content プロパティの代替テキスト対応など</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-141-beta?hl=en">Chrome141 Beta</a>
+<ul>
+<li>Aria Notify の追加、speculation rules の eager 設定変更など</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17333/webkit-features-in-safari-26-0/">WebKit Features in Safari 26.0</a>
+<ul>
+<li>Safari 26.0 で追加される新機能の詳細</li>
+</ul>
+</li>
+<li><a href="https://blog.mozilla.org/en/mozilla/internet-policy/defending-an-open-web/">Defending an open web: What the Google search ruling means for the future</a>
+<ul>
+<li>Google 検索独占判決に対する Mozilla の見解とオープン Web の未来について</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://speakerdeck.com/uhyo/zhi-rarezarupropsming-ming-noguan-xi-akusiyonbian">知られざる props 命名の関係 アクション編</a>
+<ul>
+<li>react における action prop には onClick より clickAction という命名が良いという提案</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/mod_poppo/articles/isekai-javascript">異世界 JavaScript</a>
+<ul>
+<li>昔の仕様にあった挙動や、策定途中で夢破れた JavaScript の仕様をまとめた記事</li>
+</ul>
+</li>
+<li><a href="https://susisu.hatenablog.com/entry/2025/08/31/190757">fetch() では Host ヘッダーを設定できないし話はそこまで単純じゃない</a>
+<ul>
+<li>Fetch の仕様とブラウザ・サーバーサイドでの実装の違いについて</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/meijin/articles/typescript-usememo-performance-pitfall"><code>useMemo</code> 1 つ消しただけで tsc が 146 秒から 11 秒になった話</a>
+<ul>
+<li>TypeScript のコンパイル時間の問題を<code>useMemo</code>の除去で解決した事例</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2025/eslint-v9.35.0-released/">ESLint v9.35.0</a>
+<ul>
+<li>preserve-caught-error 追加、no-empty ルールの変更など</li>
+</ul>
+</li>
+<li><a href="https://www.sarasoueidan.com/blog/alt-text-for-css-generated-content/">CSS to speech: alternative text for CSS-generated content</a>
+<ul>
+<li>CSS content プロパティのアクセシビリティと代替テキストの設定方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://bun.com/blog/behind-the-scenes-of-bun-install">Behind the scenes of Bun install</a>
+<ul>
+<li>Bun install の高速化の裏側を詳細に解説した技術記事</li>
+</ul>
+</li>
+<li><a href="https://www.npmjs.com/package/@deno/sandbox">@deno/sandbox</a>
+<ul>
+<li>Deno で信頼できないコードを安全に実行するサービスが開発中</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/news/2025/group-note-css-snapshot-2025/">CSS Snapshot 2025</a>
+<ul>
+<li>2025 年の CSS 仕様の状況をまとめた W3C のドキュメント</li>
+</ul>
+</li>
+<li><a href="https://github.com/whatwg/html/commit/e774e8e318e8b40f60b3ee02256fe41e42e84820">Add headingoffset &#x26; headingreset attributes</a>
+<ul>
+<li>HTML 標準に headingoffset、headingreset プロパティが追加され、見出しレベルの自動調整が可能に</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/bX1G_yDt6W4/m/EHtiOi_IAAAJ">Intent to Ship: Interest Invokers (the <code>interestfor</code> attribute)</a>
+<ul>
+<li>Chrome 142 から interestfor アトリビュートによる Interest Invokers が実装予定</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://forest.watch.impress.co.jp/docs/news/2040917.html">DOM-based Extension Clickjacking</a>
+<ul>
+<li>パスワードマネージャーを狙った透明フォームを使ったクリックジャッキング攻撃</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/plaidtech/perf-build-server">サーバーサイドのビルド時間 87 倍高速化</a>
+<ul>
+<li>ビルド時間を劇的に改善した事例とその手法</li>
+</ul>
+</li>
+<li><a href="https://webdesignerdepot.com/ux-fatigue-when-your-website-asks-for-too-much-and-how-to-fix-it/">UX Fatigue: When Your Website Asks for Too Much (and how to fix it)!</a>
+<ul>
+<li>Web サイトがユーザーに与える疲労感とその対策について</li>
+</ul>
+</li>
+<li><a href="https://afixt.com/accessible-authentication/">Accessible Authentication</a>
+<ul>
+<li>WCAG 2.2 の「アクセシブルな認証」要件と実装方法について</li>
+</ul>
+</li>
+<li><a href="https://dopingconsomme.blogspot.com/2025/09/html-template-element-deep-dive-expert-guide.html">HTML template element deep dive expert guide</a>
+<ul>
+<li>Web Components の template 要素の詳細解説とパフォーマンス最適化</li>
+</ul>
+</li>
+<li><a href="https://yuheiy.com/2025-09-12-click-friendly-target-areas">クリックしやすいターゲットエリアを実装する</a>
+<ul>
+<li>UI の視覚的サイズを変えずにクリック領域を拡大する技術とその是非</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/learn-css-refresh">A refresh of Learn CSS with nine new modules</a>
+<ul>
+<li>web.dev の Learn CSS に新しいモジュールが追加、Baseline に到達した機能を中心に拡充</li>
+</ul>
+</li>
+<li><a href="https://azukiazusa.dev/blog/shorts/4vvHYJCCU0KH7hIajLRkVL">pnpm 10.16.0 から minimumReleaseAge オプションが導入された</a>
+<ul>
+<li>公開から指定期間が経過したパッケージのみをインストールできるセキュリティ機能</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/">A deep dive into Cloudflare’s September 12, 2025 dashboard and API outage</a>
+<ul>
+<li>Cloudflare の useEffect の依存配列ミスによる障害事例</li>
+</ul>
+</li>
+<li><a href="https://gist.github.com/qnighy/1bc74830de8f0224e354b75c98477e45">RSC の理解のメモ Gist</a>
+<ul>
+<li>React Server Components の理解を深めるための図解付きメモ</li>
+</ul>
+</li>
+<li><a href="https://remix.run/blog/middleware">Middleware in React Router</a>
+<ul>
+<li>React Router v7.9 で追加された middleware 機能の背景と実装</li>
+</ul>
+</li>
+<li><a href="https://github.com/angular/web-codegen-scorer">LLM が生成したフロントエンドコードの品質評価をするためのツール</a>
+<ul>
+<li>Angular 提供の AI 生成コード品質評価ツール、MCP サーバーとして動作</li>
+</ul>
+</li>
+<li><a href="https://addyosmani.com/blog/chrome-17th/">Google Chrome at 17 - A history of our browser</a>
+<ul>
+<li>Chrome の 17 周年を記念して Addy Osmani が書いた Chrome の歴史</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
