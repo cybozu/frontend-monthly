@@ -1,0 +1,379 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #63"><meta name="twitter:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #63"><meta property="og:description" content="サイボウズのフロントエンドエキスパートチームが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #63</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #63</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2025年10月28日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/373211/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/373211/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="browserslist-での-baseline-サポートなど">Browserslist での Baseline サポートなど</h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>機能に対するブラウザサポート状況の指標である Baseline ですが、
+Browserslist のクエリ構文でのサポートが追加されました。
+例として、 “baseline widely available” とすれば Widely Avaiable が対象となります。<br>
+<a href="https://web.dev/blog/browserslist-supports-baseline?hl=en">https://web.dev/blog/browserslist-supports-baseline?hl=en</a></p>
+<p>これを利用する形で、最近では Next.js でのサポートブラウザの指定も
+Baseline Widely Available が対象となりました。<br>
+<a href="https://github.com/vercel/next.js/pull/84401">https://github.com/vercel/next.js/pull/84401</a></p>
+<p>世の中的に Baseline を採用したという事例を聞くようになってきました。</p>
+<p>サイボウズでも、kintone のフロントエンドの機能選定基準として
+最近 Baseline Widely Avaiable を採用し、以下のブログで紹介しています。<br>
+<a href="https://blog.cybozu.io/entry/practical-baseline">https://blog.cybozu.io/entry/practical-baseline</a></p>
+<h3 id="framer-が-rolldown-を採用">Framer が Rolldown を採用</h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>How Framer reduced LCP using Rolldown<br>
+<a href="https://voidzero.dev/posts/case-study-framer-rolldown">https://voidzero.dev/posts/case-study-framer-rolldown</a></p>
+<ul>
+<li>Framer というノーコードで Web サイトを作るプロダクト</li>
+<li>バンドルには esbuild を使っていたが、プロダクトに合わせたチャンク分割の最適化ができていなかった</li>
+<li>結果として LCP に悪影響が出ていた</li>
+<li>チャンク分割を調整できる Rollup や Parcel を検討したが、ビルド速度が esbuild に匹敵するものがなかった</li>
+<li>VoidZero と連携し Rolldown を採用、VoidZero と連携
+<ul>
+<li>Framer で必要な機能をリクエスト、VoidZero 側は優先的にそのリクエストに対応</li>
+</ul>
+</li>
+<li>Rolldown に minShareCount オプションを追加</li>
+<li>Rolldown を採用することで大規模なウェブサイトでは LCP が 41%も削減</li>
+<li>Framer のビルドサイト全てに Rolldown が採用</li>
+</ul>
+<h3 id="whats-coming-in-eslint-v1000">What’s coming in ESLint v10.0.0</h3>
+<ul>
+<li>共有者: sajikix</li>
+</ul>
+<p><a href="https://eslint.org/blog/2025/10/whats-coming-in-eslint-10.0.0/">https://eslint.org/blog/2025/10/whats-coming-in-eslint-10.0.0/</a></p>
+<p>eslint の v10 に盛り込まれる機能とそのリリースプランが発表されました。</p>
+<p>exlint v10 における破壊的な変更として大きいのは以下の 2 つでしょう。</p>
+<ul>
+<li>Node のサポートバージョンが v20 からになる</li>
+<li>eslintrc(旧式の設定ファイル)が完全に使えなくなる</li>
+</ul>
+<p>特に eslintrc(旧式の設定ファイル)が完全に使えなくるのは注意が必要そうです。現在の v9 間は<code>ESLINT_USE_FLAT_CONFIG</code>オプションを<code>false</code>にすることで旧式の設定ファイルを利用できていましが、v10 からは完全に利用できなくなります。</p>
+<p>最近はメジャーな eslint の Plugin なども FlatConfig に対応しているので、対応ができていない方はこれを機に移行を検討できると良さそうです。</p>
+<p>それ以外にも以下のようなアップデートが見込まれています。</p>
+<ul>
+<li><code>recommended</code>のセットが更新される</li>
+<li>eslint rule を作成するときに利用する context オブジェクトの機能で非推奨なものがなくなる</li>
+<li>SourceCode メソッドの削除</li>
+<li>etc…</li>
+</ul>
+<p>リリースとしては 2025 年 11 月にアルファ版が公開される予定で、最終リリースは 2026 年 1 月を予定しています。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<p>※AI によって整理・要約されています。</p>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://bun.com/blog/behind-the-scenes-of-bun-install/">Behind The Scenes of Bun Install</a>
+<ul>
+<li>Bun のパッケージインストールが高速な理由を解説。システムコールの最小化やキャッシュフレンドリーなデータレイアウトなど、システムプログラミング的なアプローチで最大 25 倍の高速化を実現。</li>
+</ul>
+</li>
+<li><a href="https://react.dev/blog/2025/10/01/react-19-2">React 19.2</a>
+<ul>
+<li>React 19.2 がリリース。<code>&#x3C;Activity /></code> コンポーネント、<code>useEffectEvent</code> の stable 化、Partial Pre-rendering などの新機能を搭載。</li>
+</ul>
+</li>
+<li><a href="https://remix.run/blog/middleware">Middleware in React Router</a>
+<ul>
+<li>React Router v7.9.0 で追加された middleware 機能を紹介。ネストされたルート間でのコンテキスト共有や認証チェックの実装が可能に。</li>
+</ul>
+</li>
+<li><a href="https://github.com/pnpm/pnpm/releases/tag/v10.17.0">pnpm v10.17.0</a>
+<ul>
+<li><code>minimumReleaseAgeExclude</code> で <code>@eslint/*</code> のようなワイルドカード指定がサポート。</li>
+</ul>
+</li>
+<li><a href="https://github.com/yarnpkg/berry/pull/6901">Yarn: add minimumReleaseAge</a>
+<ul>
+<li>Yarn に <code>minimumReleaseAge</code> 機能が追加予定。新しく公開されたパッケージのインストールを遅延させることでセキュリティを向上。</li>
+</ul>
+</li>
+<li><a href="https://ics.media/entry/250821/">共同編集アプリが作れる新しい JS ライブラリ「Loro」を紹介</a>
+<ul>
+<li>Google Docs のような共同編集機能を実装するための JavaScript ライブラリ Loro を紹介。リストの並び替えやツリー構造の編集もサポート。</li>
+</ul>
+</li>
+<li><a href="https://github.com/angular/web-codegen-scorer">Web Codegen Scorer</a>
+<ul>
+<li>LLM が生成したフロントエンドコードの品質を評価するツール。ビルド成功有無、a11y、セキュリティ、ベストプラクティスをチェックし、自動修復も試みる。</li>
+</ul>
+</li>
+<li><a href="https://remix.run/blog/rsc-framework-mode-preview">React Router RSC Framework Mode Preview</a>
+<ul>
+<li>React Router v7.9.2 で React Server Components (RSC) のプレビューサポートが追加。Vite プラグインを通じて RSC 機能を利用可能に。</li>
+</ul>
+</li>
+<li><a href="https://www.abeautifulsite.net/posts/quietui-my-creative-outlet/">Quiet UI: My Creative Outlet</a>
+<ul>
+<li>Web Components ベースの UI ライブラリ Quiet UI について作者が解説。ElementInternals や Popover API など最新機能を実験的に採用。</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-is-going-esm-only/">Storybook is going ESM-only</a>
+<ul>
+<li>Storybook v10 で ESM-only に移行。パッケージサイズが 15%削減され、モジュール関連のバグも減少。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/karintou/articles/zenn-cli-wysiwyg">Zenn 記事をより直感的に書ける！〜 WYSIWYG エディタのすゝめ 〜</a>
+<ul>
+<li>Zenn CLI で使えるリッチエディタ（WYSIWYG）を作成した話。リアルタイムの Markdown 変換やドラッグ&#x26;ドロップでの画像アップロードなどに対応。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/uhyo/articles/react-key-techniques">小手先に見えるテクニックでも、実は React 的に考えられる</a>
+<ul>
+<li>React の <code>key</code> prop を使ったテクニックを解説。コンポーネントの状態リセットなどを宣言的 UI の観点から考察。</li>
+</ul>
+</li>
+<li><a href="https://playwright.dev/docs/test-agents">Playwright Test Agents</a>
+<ul>
+<li>AI を活用した Playwright のテストツール群が登場。Planner、Generator、Healer の 3 つのエージェントが自動的にテストプランの作成、テストコード生成、テスト修復を実行。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-16-beta">Next.js 16 (beta)</a>
+<ul>
+<li>Next.js 16 Beta がリリース。Turbopack の安定化、ファイルシステムキャッシング、React Compiler サポート、React 19.2 機能などを搭載。</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/announcing-vite-plus">Announcing Vite+</a>
+<ul>
+<li>Vite を拡張した統合開発ツールチェーン Vite+ を発表。<code>vite test</code>、<code>vite lint</code>、<code>vite format</code> などのコマンドで統一的な開発体験を提供。2026 年初頭に public preview 予定。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/coji/articles/remix3-introduction">Remix 3 発表まとめ - React を捨て、Web 標準で新しい世界へ</a>
+<ul>
+<li>Remix Jam 2025 で発表された Remix 3 の概要。Web 標準にフォーカスした新しいアプローチを採用。</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/case-study-framer-rolldown">How Framer reduced LCP using Rolldown</a>
+<ul>
+<li>Framer が esbuild から Rolldown に移行することで LCP を最大 41%改善した事例。高度なチャンク分割機能により大幅なパフォーマンス向上を実現。</li>
+</ul>
+</li>
+<li><a href="https://react.dev/blog/2025/10/07/introducing-the-react-foundation">Introducing the React Foundation</a>
+<ul>
+<li>React と React Native を Meta から独立させ、React Foundation を設立する計画を発表。Amazon、Meta、Microsoft、Vercel などが理事会メンバーとして参加。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/">Our plan for a more secure npm supply chain</a>
+<ul>
+<li>GitHub が npm のセキュリティ強化計画を発表。granular access tokens の有効期限を 90 日に変更、classic token の廃止、TOTP を廃止してフィッシング耐性のある MFA のみをサポート。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/">Strengthening npm security: Important changes to authentication and token management</a>
+<ul>
+<li>npm のセキュリティ改善として、書き込み可能なアクセストークンの有効期限短縮、classic token の失効、TOTP 二要素認証の段階的廃止を実施。</li>
+</ul>
+</li>
+<li><a href="https://github.com/bodadotsh/npm-security-best-practices">npm-security-best-practices</a>
+<ul>
+<li>npm 運用のセキュリティベストプラクティスをまとめたリポジトリ。依存関係の固定、権限モデル、trusted publishing などを解説。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-devtools-mcp">Chrome DevTools (MCP) for your AI agent</a>
+<ul>
+<li>AI コーディングアシスタント向けに Chrome DevTools の MCP サーバーがプレビュー公開。AI エージェントがブラウザを直接デバッグ可能に。</li>
+</ul>
+</li>
+<li><a href="https://azukiazusa.dev/blog/chrome-devtools-mcp">Chrome DevTools MCP で AI エージェントのフロントエンド開発をサポートする</a>
+<ul>
+<li>Chrome DevTools MCP を使用して AI エージェントがブラウザを自動操作し、コンソールログやネットワークログを取得する方法を解説。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2025-09-25-github-copilot-cli-is-now-in-public-preview/">GitHub Copilot CLI is now in public preview</a>
+<ul>
+<li>GitHub Copilot CLI が公開プレビューとしてリリース。ターミナルから AI を活用したコーディング支援が可能に。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2025-09-25-pull-request-files-changed-public-preview-now-supports-commenting-on-unchanged-lines/">Pull request “Files changed” public preview now supports commenting on unchanged lines</a>
+<ul>
+<li>GitHub の PR レビューで変更されていない行にもコメントできる機能が追加。レビュー時の柔軟性が向上。</li>
+</ul>
+</li>
+<li><a href="https://www.builder.io/blog/codex-vs-claude-code">Codex vs Claude Code: which is the better AI coding agent?</a>
+<ul>
+<li>Codex と Claude Code の比較記事。エージェント、モデル、価格、ユーザー体験、機能などを詳細に比較。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/">A deep dive into Cloudflare’s September 12, 2025 dashboard and API outage</a>
+<ul>
+<li>Cloudflare のダッシュボードと API の障害についてのポストモーテム。useEffect の第二引数に object を渡してしまい、過剰な API 呼び出しが発生したことが原因。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17333/webkit-features-in-safari-26-0/">WebKit Features in Safari 26.0</a>
+<ul>
+<li>Safari 26.0 の新機能を紹介。Anchor Positioning、Scroll-driven animations、HDR images、<code>&#x3C;model></code> 要素、Digital Credentials API など 75 の新機能を追加。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-142-beta?hl=en">Chrome 142 beta</a>
+<ul>
+<li>Chrome 142 Beta がリリース。新しい CSS 擬似クラス、View Transitions の改善、Interest Invokers などを搭載。</li>
+</ul>
+</li>
+<li><a href="https://web.dev/blog/browserslist-supports-baseline?hl=en">Browserslist now supports Baseline</a>
+<ul>
+<li>Browserslist で Baseline がサポート。<code>baseline widely available</code> のような書き方で特定のブラウザ機能セットをターゲットにできるように。</li>
+</ul>
+</li>
+<li><a href="https://interop-rank.jakearchibald.com/">Interop Feature Ranking</a>
+<ul>
+<li>Firefox チームが公開した Interop の proposal をランキング付けできるページ。結果は Interop チームに共有される。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://www.sarasoueidan.com/blog/alt-text-for-css-generated-content/">CSS to speech: alternative text for CSS-generated content</a>
+<ul>
+<li>CSS の <code>content</code> プロパティに代替テキストを付与する新しいスラッシュ記法について解説。HTML でのテキスト記述を優先すべき理由も説明。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/fabon/articles/4dbe40896fac73">Temporal API の現在地（2025 年 9 月時点）</a>
+<ul>
+<li>Temporal API の実装状況や polyfill、課題などを総合的にまとめた記事。2025 年 9 月時点での最新情報を提供。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://deno.com/blog/javascript-tm-gofundme">Help Us Raise $200k to Free JavaScript from Oracle</a>
+<ul>
+<li>Deno が Oracle に JavaScript の商標取消請求を提出。$200,000 のクラウドファンディングを募集中。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://pnpm.io/supply-chain-security">Mitigating supply chain attacks</a>
+<ul>
+<li>pnpm のサプライチェーンセキュリティ機能について解説。postinstall スクリプトの自動実行を無効化する方法など。</li>
+</ul>
+</li>
+<li><a href="https://github.com/web-platform-tests/interop/issues/1094">WebDriver BiDi for Interop 2026</a>
+<ul>
+<li>Interop 2026 の提案として WebDriver BiDi が提出。クロスブラウザテストの課題を解決する新しい双方向ブラウザ自動化プロトコル。</li>
+</ul>
+</li>
+<li><a href="https://blog.sakupi01.com/dev/articles/standardizing-user-intent-with-interest-invokers">Standardizing User Intent with Interest Invokers</a>
+<ul>
+<li>Interest Invokers API について解説。ユーザーの「関心」を異なる入力デバイス間で標準化する提案。Chrome 142 から利用可能。</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/blog/CSS/2025/09/18/masonry-update-issues/">Masonry Spec Update and Open Issues</a>
+<ul>
+<li>CSS Grid Layout Level 3 の masonry layout に関する仕様アップデート。<code>grid-*</code> の命名や row/column の解釈について議論中。</li>
+</ul>
+</li>
+<li><a href="https://www.iso.org/standard/91029.html">ISO/IEC 40500:2025 - Web Content Accessibility Guidelines (WCAG) 2.2</a>
+<ul>
+<li>ISO/IEC 40500 が WCAG 2.2 を採用。WCAG 2.0 を採用していたものから 13 年ぶりの改訂。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/s58GKzoQZFg">Intent to Ship: Temporal in ECMA262</a>
+<ul>
+<li>Chrome で Temporal の実装が Ship される予定。日時処理の新しい API が利用可能に。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/mozilla.org/g/dev-platform/c/zQaRDA68e5A/m/XX_CRC4mAQAJ">Gecko: Intent to prototype: Trusted Types</a>
+<ul>
+<li>Firefox が Trusted Types のプロトタイプ実装を開始。これで全主要ブラウザが対応することに。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vercel/next.js/pull/84401">Next.js 16 以降、デフォルトサポートが Baseline Widely Available に</a>
+<ul>
+<li>Next.js 16 のデフォルトの browserslist 設定が Baseline Widely Available に変更される予定。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17431/online-identity-verification-with-the-digital-credentials-api/">Online Identity Verification with the Digital Credentials API</a>
+<ul>
+<li>Digital Credentials API による新しいオンライン本人確認方法を解説。モバイル ID を使って Web ブラウザから安全に本人情報を共有。</li>
+</ul>
+</li>
+<li><a href="https://eslint.org/blog/2025/10/whats-coming-in-eslint-10.0.0/">What’s coming in ESLint v10.0.0</a>
+<ul>
+<li>ESLint v10 の破壊的変更を解説。eslintrc のサポート終了、flat config への完全移行など。2026 年 1 月リリース予定。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/n1NsO0N_tO4">Intent to Prototype: Base Appearance Form Controls</a>
+<ul>
+<li>Chrome で Base Appearance Form Controls のプロトタイプ実装が開始。フォームコントロールのスタイリングの新時代へ。</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/capnweb-javascript-rpc-library/">Cap’n Web: a new RPC system for browsers and web servers</a>
+<ul>
+<li>Cloudflare が開発した新しい RPC プロトコル Cap’n Web を紹介。TypeScript 製でブラウザと Web サーバー間の通信に特化し、双方向呼び出しや関数の参照渡しなどをサポート。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://gist.github.com/qnighy/1bc74830de8f0224e354b75c98477e45">React Server Components 備忘録</a>
+<ul>
+<li>React Server Components (RSC) の詳細な技術解説。図解を含むわかりやすいメモ。</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/34374">Release Activity in Canary</a>
+<ul>
+<li>React の <code>&#x3C;Activity /></code> コンポーネントが Canary リリースに追加。状態を保持しつつ表示・非表示を切り替え可能。</li>
+</ul>
+</li>
+<li><a href="https://poke-holo.simey.me/">ポケモンカードのキラキラを CSS で再現</a>
+<ul>
+<li>ポケモンカードのホログラフィック効果を CSS で再現したデモサイト。</li>
+</ul>
+</li>
+<li><a href="https://blog.modelcontextprotocol.io/posts/2025-09-26-mcp-next-version-update/">Update on the Next MCP Protocol Release</a>
+<ul>
+<li>Model Context Protocol (MCP) の次期バージョンについてのアップデート。11 月 25 日リリース予定で、非同期操作やサーバー ID などの新機能を搭載。</li>
+</ul>
+</li>
+<li><a href="https://survey.devographics.com/en-US/survey/state-of-js/2025">State of JavaScript 2025</a>
+<ul>
+<li>State of JavaScript 2025 のサーベイが開始。10 月 1 日から回答可能。</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
