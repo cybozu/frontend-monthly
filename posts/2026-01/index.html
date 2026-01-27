@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #65"><meta name="twitter:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #65"><meta property="og:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #65</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #65</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2026年01月27日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/341910/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/341910/ </a> </p>  <h3 data-astro-cid-grpv5qb7>配信URL</h3> <p data-astro-cid-rqusjlqv> <iframe title="https://www.youtube.com/embed/K_BjZ89mJu0" width="560" height="315" src="https://www.youtube.com/embed/K_BjZ89mJu0" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed" data-astro-cid-rqusjlqv></iframe> <a href="https://www.youtube.com/watch?v=K_BjZ89mJu0" target="_blank" rel="noreferrer noopner" data-astro-cid-rqusjlqv> https://www.youtube.com/watch?v=K_BjZ89mJu0 </a> </p>    <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="tailwind-labs-の解雇について"><a href="https://github.com/tailwindlabs/tailwindcss.com/pull/2388">Tailwind Labs の解雇について</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>CSS フレームワークである Tailwind CSS のドキュメントページに対して、LLM 向けの llms.txt ファイルを追加する PR が作成されましたが、収益性の観点からクローズされました。</p>
+<p>Tailwind CSS 作者である Adam Wathan 氏がこの背景事情についてコメントしており、AI の普及によって Tailwind CSS へのドキュメントへのアクセスが大きく減少しており、
+ドキュメントは事業としての有料サービスへの導線であったことから、収益にも影響が出ており、エンジニアの 75% が解雇されていたことが明かされました。</p>
+<p><a href="https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957">https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957</a></p>
+<p>Tailwind 自体はその性質上 LLM を利用したコーディングとの相性が良いと言われることも多いのですが、
+その一方でビジネスモデルとの矛盾を抱えてしまう、という AI 普及によって生まれた歪みを感じました。</p>
+<p>※
+なおその後、現在では Google AI Studio を含む多くの企業が新たにスポンサーとなっており、
+状況としては過去と比較すると下降傾向であるものの、ひとまず安定する形になったようです。</p>
+<ul>
+<li><a href="https://tailwindcss.com/sponsor">https://tailwindcss.com/sponsor</a></li>
+<li><a href="https://x.com/adamwathan/status/2009340684210159812?s=20">https://x.com/adamwathan/status/2009340684210159812?s=20</a></li>
+</ul>
+<h3 id="autify-上の-e2e-テストを-playwright-に移行しました"><a href="https://developers.prtimes.jp/2025/12/26/autify-to-playwright/">Autify 上の E2E テストを Playwright に移行しました</a></h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>自動テストをノーコードで作成できる<a href="https://autify.jp/products/nocode">Autify</a>から Playwright への移行事例です。</p>
+<p>Playwright への移行には Claude Code などを使い、Playwright のコードを自動生成することで工数を大幅に削減できたとのことです。実際に使用したプロンプトも記事内で紹介されています。</p>
+<p>Playwright への移行と、E2E テストシナリオの精査によって、Flaky なテストの減少や、実行時間が 3 時間以上から 25 分に短縮されたとのことです。</p>
+<p>E2E テストのシナリオや Flaky なテストの増加は、弊社でも同様の課題があって、とても親近感を覚えましたし、この記事のまとめにも記載されていますが、すでに E2E テストを導入している運用中のプロダクトでのテストの役割分担を改めて考えるのは大事だなと感じました。</p>
+<h3 id="date-is-out-temporal-is-in"><a href="https://piccalil.li/blog/date-is-out-and-temporal-is-in/">Date is out, Temporal is in</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>Chrome の 144 がリリースされたことで、FireFox と Chrome の両方で Temporal API が利用可能になりました。</p>
+<p>参考 : <a href="https://developer.chrome.com/blog/new-in-chrome-144?hl=ja">Chrome 144 の新機能</a></p>
+<p>Temporal API は今まで問題が多いとされてきた Date による日付操作の問題を解決するために設計された新しい API です。Date ではシステムのタイムゾーンしか使えない問題や Wall-Clock Time と Exact Time をうまく分けて扱えない、パースの挙動がわかりづらい、時差計算の挙動が暗黙的などの問題がありましたが、Temporal ではこれらの問題が解決されています。</p>
+<p>特に Date に慣れ親しんだ方は以下の点に注意しながら見ると使い方がわかりやすいかもしれません。</p>
+<ul>
+<li>Exact Time(Temporal.Instant)と Wall-Clock Time(Temporal.PlainDateTime など)、それらを橋渡しする Temporal.ZonedDateTime でそれぞれインターフェース・型のレベルで別れていること</li>
+<li>Temporal.ZonedDateTime や withTimeZone メソッドで UTC ↔︎ ローカルタイムの変換ができる。</li>
+</ul>
+<p>またすでに<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal">MDN にも記事がある</a>ので、そちらも参考になるかと思います。</p>
+<p>2026/1 現在、Safari ではまだサポートされていませんが、JSC での実装は進んでいるようで、もしかすると年内には主要 3 ブラウザの最新版でのサポートが完了するかもしれません。それでも Baseline に入るところまではまだまだ先ですが、今後の普及や関連するライブラリの動向なども含めて楽しみです。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://turborepo.dev/blog/turbo-2-7">Turborepo 2.7</a>
+<ul>
+<li>devtools コマンドが追加され、パッケージやタスクの依存関係が視覚的に確認できるようになった。Composable Configuration や Biome 統合、Yarn 4 Catalogs サポートも追加。</li>
+</ul>
+</li>
+<li><a href="https://azukiazusa.dev/blog/claude-code-lsp-support/">Claude Code の LSP サポート</a>
+<ul>
+<li>Claude Code v2.0.74 で LSP サポートが追加され、コードベース全体を文字列として検索する代わりに、シンボル情報やコード構造にアクセスできるようになった。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/ryo_manba/articles/md-review-for-markdown-review">Markdown を見た目のままレビューできるツールを作った</a>
+<ul>
+<li>Markdown をレンダリング結果のまま確認しながらコメントを追加できる CLI ツール「md-review」の紹介。ファイルパスと行番号を含む形式でコピーでき、Claude Code や Cursor に直接貼り付け可能。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/mizchi/articles/markdown-incremental-preview">最速最強の Markdown コンパイラ作るぞ</a>
+<ul>
+<li>MoonBit 言語を使用した高性能なインクリメンタル Markdown パーサーの紹介。CST データ構造を採用し、変更された箇所だけを再パースする差分コンパイル方式で数十〜数百倍高速化。</li>
+</ul>
+</li>
+<li><a href="https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957">Tailwind Labs の解雇について</a>
+<ul>
+<li>Tailwind の資金繰りがうまくいかず、Tailwind Labs で複数のメンバーを解雇することになった。Podcast で作者が詳細を語っている。</li>
+</ul>
+</li>
+<li><a href="https://github.com/calloc134/thinking-in-react">React とは何であるのか（執筆中）</a>
+<ul>
+<li>React の根本的な設計思想を体系的に解説するドキュメント。宣言的 UI、純粋関数性、副作用の分離、Fiber アーキテクチャなどを網羅。</li>
+</ul>
+</li>
+<li><a href="https://vercel.com/blog/introducing-react-best-practices">Introducing: React Best Practices</a>
+<ul>
+<li>Vercel が AI エージェント向けに React/Next.js の最適化知識をまとめたリポジトリを公開。async waterfall の排除、バンドルサイズ削減、再レンダリング最適化など 40 以上のルールを収録。</li>
+</ul>
+</li>
+<li><a href="https://masup.net/2026/01/apg-patterns-examples">APG Patterns Examples を作った</a>
+<ul>
+<li>WAI-ARIA APG パターンを React、Vue、Svelte、Astro で実装したサンプル集。テストの話もあり、APG の日本語参照としても有用。</li>
+</ul>
+</li>
+<li><a href="https://x.com/voidzerodev/status/2001342848898068784">Vitest が experimental な機能として OpenTelemetry をサポート</a>
+<ul>
+<li>テスト実行をトレースして、どの部分に時間がかかっているかを可視化できる。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/socialplus/articles/bfb19c5f98ae32">フロントエンドテストパフォーマンス改善：Vitest のボトルネックを探っていく</a>
+<ul>
+<li>MUI アイコンライブラリのバレルインポートが原因でテストの collect フェーズに時間がかかっていた問題を特定し、個別 import に変更することで CI 時間を 10 分以上から 4 分 45 秒に短縮。</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/whats-new-dec-2025">What’s New in ViteLand: December 2025 Recap</a>
+<ul>
+<li>Oxlint は ESLint の 50-100 倍高速、Oxfmt は Prettier の 30 倍高速など、VoidZero エコシステムの 12 月の進捗まとめ。</li>
+</ul>
+</li>
+<li><a href="https://x.com/TheAlexLichter/status/2011033221136265445">VoidZero がロゴとサイトを刷新</a>
+<ul>
+<li>VoidZero がリブランディングを実施。</li>
+</ul>
+</li>
+<li><a href="https://x.com/rspack_dev/status/2014173846555804092">rstest に browser mode が追加</a>
+<ul>
+<li>rstest（Rspack のテストツール）に browser mode が追加された。</li>
+</ul>
+</li>
+<li><a href="https://pnpm.io/blog/2025/12/29/pnpm-in-2025">pnpm in 2025</a>
+<ul>
+<li>2025 年の pnpm の振り返り。ライフサイクルスクリプトのデフォルト無効化、Global Virtual Store、JSR ネイティブサポート、Config Dependencies など多くの機能追加。ダウンロード数は 2024 年比で 2 倍に増加。</li>
+</ul>
+</li>
+<li><a href="https://github.com/affaan-m/everything-claude-code">Everything Claude Code</a>
+<ul>
+<li>Anthropic ハッカソン優勝者が公開した Claude Code 向けの設定コレクション。Agents、Skills、Commands、Rules、Hooks、MCP 設定などが含まれる。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://astro.build/blog/joining-cloudflare/">The Astro Technology Company joins Cloudflare</a>
+<ul>
+<li>Astro が Cloudflare に買収された。フレームワークはオープンソースのまま MIT ライセンスを維持し、全てのデプロイメント対象を引き続きサポートする。</li>
+</ul>
+</li>
+<li><a href="https://5-million-devs.netlify.com/">Netlify 500 万ユーザー突破記念サイト</a>
+<ul>
+<li>Netlify のユーザー数が 500 万人を突破し、これまでの歩みをブラウザ上のゲームで振り返れるサイトが公開された。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://developer.chrome.com/blog/new-in-chrome-144?hl=ja">Chrome 144 の新機能</a>
+<ul>
+<li><code>::search-text</code> 疑似要素、<code>&#x3C;geolocation></code> 要素、Temporal API などが追加。Privacy Sandbox 系の API の deprecate も含まれる。</li>
+</ul>
+</li>
+<li><a href="https://x.com/FirefoxWebDevs/status/2011076750076187081">Firefox が CSS Anchor Positioning などをサポート</a>
+<ul>
+<li>Firefox で CSS Anchor Positioning、Navigation API、View Transition Types、CSS Module Imports がサポートされた。</li>
+</ul>
+</li>
+<li><a href="https://groups.google.com/a/mozilla.org/g/dev-platform/c/B-oaFdvbrCI">Customizable Select の Gecko 実装開始</a>
+<ul>
+<li>Firefox で Customizable Select の実装が始まった。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17746/new-safari-developer-tools-provide-insight-into-css-grid-lanes/">New Safari developer tools provide insight into CSS Grid Lanes</a>
+<ul>
+<li>Safari の Grid Inspector に Order Numbers が追加され、Grid Lanes のコンテンツフロー順序が視覚的に確認できるようになった。</li>
+</ul>
+</li>
+<li><a href="https://x.com/addyosmani/status/2010440624567460290">Chrome DevTools で個別のネットワークリクエストのスロットリングが可能に</a>
+<ul>
+<li>Chrome DevTools 上で個別のネットワークリクエストに対してスロットリングを設定できるようになった。</li>
+</ul>
+</li>
+<li><a href="https://slack.com/archives/C039NF3111V/p1767626003196669">iOS 26.2 でデフォルトブラウザ選択画面が表示されるように</a>
+<ul>
+<li>iOS 26.2 にアップデートすると、デフォルトブラウザ選択画面が表示されるようになった。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://piccalil.li/blog/date-is-out-and-temporal-is-in/">Date is out, Temporal is in</a>
+<ul>
+<li>JavaScript の Date オブジェクトの問題点と、新しい Temporal API の利点を解説。Temporal は不変性を持ち、複数のカレンダーシステムと適切なタイムゾーン処理をサポート。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/35pwApmgHQs/m/YI81H3V6AgAJ">streamHTMLUnsafe() の Intent to Ship</a>
+<ul>
+<li>HTML をストリーミングで挿入できる API の実装が進んでいる。HTML を挿入できる API は複数存在し、整合性を取るための議論も行われている。</li>
+</ul>
+</li>
+<li><a href="https://x.com/intenttoship/status/2011671282845139334">ariaNotify の WebKit・Blink 実装完了、Gecko は 2026 年上半期予定</a>
+<ul>
+<li>ariaNotify は WebKit と Blink では実装済みだが、Gecko は 2026 年上半期に実装予定。</li>
+</ul>
+</li>
+<li><a href="https://x.com/intenttoship/status/2013385115628405054">Device Memory API の取得値が変更</a>
+<ul>
+<li>Device Memory API で取得する値が変更される。Android は 2, 4, 8、その他は 2, 4, 8, 16, 32 になる。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://almanac.httparchive.org/en/2025/">The 2025 Web Almanac</a>
+<ul>
+<li>HTTP Archive による Web の年間状態報告書。1620 万件のウェブサイトを分析し、16 章で構成される包括的なレポート。</li>
+</ul>
+</li>
+<li><a href="https://kaminashi-developer.hatenablog.jp/entry/2026/01/06/just-use-next">Next.js を「ブラウザの延長」として捉える</a>
+<ul>
+<li>Next.js をフルスタックではなく BFF として使い、バックエンド API とは論理的・物理的に分離するアプローチの紹介。機密情報を保持しない設計を推奨。</li>
+</ul>
+</li>
+<li><a href="https://developers.prtimes.jp/2025/12/26/autify-to-playwright/">Autify から Playwright への E2E テスト移行</a>
+<ul>
+<li>PR TIMES が Autify（約 150 シナリオ、失敗率 16%、実行時間 3 時間超）から Playwright に移行し、53 シナリオに削減、失敗率 2%、実行時間 25 分に改善した事例。</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/heimusu/hurontoendokai-fa-nokan-suo-fu-shu-shi-ye-wojing-yan-sitejian-etapan-duan-zhou-nowei-i">フロントエンド開発の勘所 -複数事業を経験して見えた判断軸の違い-</a>
+<ul>
+<li>サイバーエージェントの久保氏による、ゲーム事業・メディア事業・インターネット広告事業それぞれのフロントエンド開発の違いを比較分析した発表。</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
