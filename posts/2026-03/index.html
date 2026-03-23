@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #67"><meta name="twitter:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #67"><meta property="og:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #67</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #67</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2026年03月31日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/383540/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/383540/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sakupi01.jpg" class="thumbnail" alt="@sakupi01" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sakupi01" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sakupi01 </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="how-we-rebuilt-nextjs-with-ai-in-one-week"><a href="https://blog.cloudflare.com/ja-jp/vinext/">How we rebuilt Next.js with AI in one week</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Cloudflare が AI を活用して、おおよそ一週間の期間で Next.js をベースに、
+Cloudflare Workers にデプロイ可能かつ Vite ベースで構築された vinext を開発・公開しました。
+Next.js および Turbopack が提供する Routing, SSR, API, Cache などの機構をすべて Vite 上のプラグインとして実現しているとのことです。</p>
+<p>実現できた大きな理由のひとつとして、Next.js のリポジトリ内には広範囲をカバーする数千を超える E2E テストが用意されており、
+これをそのまま移植したことで、再現した実装を機械的に検証可能であったことが挙げられていました。</p>
+<p>一方で、OSS においては AI Slop が話題に出ることも多くありました。</p>
+<p>たとえば、OSS のドローイングツールである tldraw では「テストコードを非公開にする」という Issue が立てられました。</p>
+<p><a href="https://github.com/tldraw/tldraw/issues/8082">https://github.com/tldraw/tldraw/issues/8082</a></p>
+<p>これは後々ジョークであったことが明かされましたが、内容的には生々しいものであり、かなり真実味があるものでした。</p>
+<p>また、Hono 作者の yusukebe さんは、AI Slop に関しての記事を Zenn に公開しており、
+OSS メンテナ視点から AI Slop の問題点や辛みについて詳細に言及しています。</p>
+<p><a href="https://zenn.dev/yusukebe/articles/3fd5bc6ea341c9">https://zenn.dev/yusukebe/articles/3fd5bc6ea341c9</a></p>
+<p>LLM の進化によって、OSS 自体の今後について少し考えさせられる期間でした。</p>
+<h3 id="viteの発表と-vite8-のリリース">Vite+の発表と Vite8 のリリース</h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>3 月は Vite 関連のリリースがいくつかありました。</p>
+<h4 id="vite-80-のリリース">Vite 8.0 のリリース</h4>
+<p><a href="https://vite.dev/blog/announcing-vite8">https://vite.dev/blog/announcing-vite8</a></p>
+<ul>
+<li>従来の esbuild、Rollup から Rolldown へ</li>
+<li>Vite、Rolldown、Oxc によるツールチェインの統一
+<ul>
+<li>構文解析や transform、minify まで一貫した動作の保証</li>
+</ul>
+</li>
+<li>デバッグ、分析用の <a href="https://devtools.vite.dev/">Vite Devtools</a> を有効にするオプションが追加</li>
+<li>tsconfig paths のビルトインサポート</li>
+<li>@vitejs/plugin-react v6 も同時にリリース
+<ul>
+<li>Babel が依存関係から削除</li>
+</ul>
+</li>
+</ul>
+<p>今後は、開発中のモジュールをバンドルする Full Bundle Mode や、JS プラグインが Rust によって生成された AST にアクセス可能にする予定などがあるようです。</p>
+<p>また、移行に関しては Vite 8 では Rolldown および Oxc で、従来の esbuild や Rollup と同等の動作を保つための変換層を作ったので、設定を変更せずにスムーズにアップデートできるとのことです。</p>
+<p><a href="https://vitest.dev/blog/vitest-4-1.html">Vitest 4.1.0</a>で、Vite8 への対応も行われています。</p>
+<h4 id="viteの発表">Vite+の発表</h4>
+<p><a href="https://voidzero.dev/posts/announcing-vite-plus-alpha">https://voidzero.dev/posts/announcing-vite-plus-alpha</a></p>
+<ul>
+<li>Vite、Vitest、Oxlint、Oxfmt、Rolldown、tsdown が内包されるツールチェーン</li>
+<li>プロジェクトの構築は Vite Task と呼ばれる新しいタスクランナーによって実現</li>
+<li>エンタープライズ向けの有料ライセンスを検討していたが、MIT ライセンスで提供</li>
+<li><a href="https://void.cloud/">Void</a>と呼ばれる Vite で構築されたアプリケーション向けのデプロイメントプラットフォームも発表</li>
+</ul>
+<h3 id="request-for-developer-feedback-focusgroup"><a href="https://developer.chrome.com/blog/focusgroup-rfc">Request for developer feedback: focusgroup</a></h3>
+<ul>
+<li>共有者: @sakupi01</li>
+</ul>
+<p>フォーカス箇所を多く含むコンポーネントのキーボード操作は実装が複雑になりがちです。
+例えば、Toolbar 内のフォーカス移動を Tab でしか行えないと、そのコンポーネントを抜け出すのに Tab を連打する必要があり、これはキーボードユーザにとってユーザビリティを低下させる要因となり得ます。
+そのため、APG(ARIA Authoring Practices Guide) などを筆頭に、こうたフォーカス機能を多く含む UI パターンでは「コンポーネント内を矢印キーで移動・コンポーネント間を Tab で移動」が推奨されてきました。JS で <code>tabindex</code> を付け替えることでフォーカス管理する実装になるため、これはしばしば「Roving Tabindex」と呼ばれます。</p>
+<p>こうした、一般的でありながらも JS で独自実装が必要だった UX パターンに対する標準側での解決策として誕生したのが、<code>focusgroup</code> です。
+<code>focusgroup</code> により、Roving Tabindex の実装を宣言的かつロールセーフに行うことができます。</p>
+<pre class="language-html" data-language="html"><code is:raw="" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">focusgroup</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>&#x3C;behavior> [inline|block] [wrap] [no-memory]<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span><span class="token punctuation">></span></span>One<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span><span class="token punctuation">></span></span>Two<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span><span class="token punctuation">></span></span>Three<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Behavior に<a href="https://open-ui.org/components/scoped-focusgroup.explainer/#focusgroup-tokens">トークン</a>を指定することで、 ARIA ロールに紐づいた Toolbar, Tablist, Menu &#x26; Menubar, Listbox, Radio Group, Accordion などのフォーカスパターンを自動的に実装できるようになります。</p>
+<p><a href="https://microsoftedge.github.io/Demos/focusgroup/">Focusgroup: Interactive Demos</a></p>
+<ul>
+<li>Resources:
+<ul>
+<li><a href="https://open-ui.org/components/scoped-focusgroup.explainer/">Focusgroup (Explainer) | Open UI</a></li>
+<li><a href="https://github.com/whatwg/html/issues/11641/">[focusgroup] Declarative keyboard focus navigation for a scoped set of composite widgets · Issue #11641 · whatwg/html</a></li>
+<li><a href="https://chromestatus.com/feature/5637601087193088">Focusgroup - Chrome Platform Status</a></li>
+</ul>
+</li>
+</ul>
+<p>Chrome では先行実装が進んでおり、フィードバックが募られています。Dev 146+, Origin Trial で利用可能です。
+こうした汎用パーツと <a href="https://open-ui.org/components/customizableselect/">Customizable Select Element</a> や <a href="https://open-ui.org/components/menu.explainer/">Menu Element</a> などのコンポーネントパーツが、相互に影響して進化が加速する Web UI の標準化に、今後も期待が高まります。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://github.com/millionco/react-doctor">react-doctor</a>
+<ul>
+<li>React コードをセキュリティ・パフォーマンス・アーキテクチャなど 60 以上のルールで診断し、スコアと実践的な改善案を出力するツール。NPX・GitHub Actions・Node.js API から利用可能</li>
+</ul>
+</li>
+<li><a href="https://github.com/npm/cli/releases/tag/v11.10.0">npm v11.10.0</a>
+<ul>
+<li><code>npm config set min-release-age</code> で一定期間経過したリリースのみをインストール対象にできる <code>min-release-age</code> 設定が追加</li>
+</ul>
+</li>
+<li><a href="https://oxc.rs/blog/2026-02-24-oxfmt-beta">Announcing Oxfmt Beta</a>
+<ul>
+<li>Prettier 比 30 倍以上、Biome 比 3 倍高速な JavaScript/TypeScript フォーマッター Oxfmt がベータ版に到達。Prettier との 100% 互換性を達成し、Tailwind CSS クラスの自動整列やインポート整理も対応</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/vinext/">How we rebuilt Next.js with AI in one week</a>
+<ul>
+<li>Cloudflare が AI を活用して 1 週間で Next.js の Turbopack 依存を Vite に書き換えた代替フレームワーク「vinext」を開発。プロダクションビルドで最大 4 倍高速化、バンドルサイズ 57% 削減</li>
+</ul>
+</li>
+<li><a href="https://github.com/styled-components/styled-components/releases/tag/styled-components%406.3.0">styled-components v6.3.0</a>
+<ul>
+<li>React Server Components (RSC) サポートが追加。設定不要で RSC 環境を自動検出し、<code>'use client'</code> ディレクティブなしで利用可能に</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/whats-new-feb-2026">What’s New in ViteLand: February 2026 Recap</a>
+<ul>
+<li>VoidZero プロジェクト群の 2 月の振り返り。Oxfmt Beta リリースや Vite Devtools の進展、各プロジェクトのパフォーマンス最適化の状況を紹介</li>
+</ul>
+</li>
+<li><a href="https://next-intl.dev/blog/use-extracted">useExtracted: The Tailwind of i18n?</a>
+<ul>
+<li>next-intl の新機能 <code>useExtracted</code> を紹介。開発者がメッセージキーを手動命名する必要のないキーレス API で、JSON/PO ファイルの多言語カタログを自動生成・更新</li>
+</ul>
+</li>
+<li><a href="https://www.prisma.io/blog/the-next-evolution-of-prisma-orm">The Next Evolution of Prisma ORM</a>
+<ul>
+<li>Prisma ORM を TypeScript でフルリライトした「Prisma Next」を発表。拡張可能なアーキテクチャ・SQL クエリビルダー・グラフベースのマイグレーションなどを備え、最終的に Prisma 8 としてリリース予定</li>
+</ul>
+</li>
+<li><a href="https://tanstack.com/blog/from-docs-to-agents">Introducing TanStack Intent: Ship Agent Skills with your npm Packages</a>
+<ul>
+<li>ライブラリ開発者が AI エージェント向けのスキルを npm パッケージに同梱して配布できる CLI ツール「@tanstack/intent」のアルファ版がリリース</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-6/">Astro 6.0</a>
+<ul>
+<li>Vite の Environment API を活用した再設計された開発サーバー、組み込みフォント API、ライブコンテンツコレクション、CSP サポートの安定化、実験的 Rust コンパイラなどを含む Astro 6.0 がリリース</li>
+</ul>
+</li>
+<li><a href="https://x.com/en_JS/status/2031606726689173846?s=20">React Compiler の Rust 移植</a>
+<ul>
+<li>React Compiler の Rust による移植が進められることが発表。高速化が期待される</li>
+</ul>
+</li>
+<li><a href="https://oxc.rs/blog/2026-03-11-oxlint-js-plugins-alpha">Oxlint JS Plugins Alpha</a>
+<ul>
+<li>Oxlint の JavaScript プラグインがアルファに。既存の ESLint プラグインをほぼそのまま動かせ、React Hooks ルールのテスト通過率 100% を達成。ESLint 比 4.8 倍高速</li>
+</ul>
+</li>
+<li><a href="https://vite.dev/blog/announcing-vite8">Vite 8.0 is out!</a>
+<ul>
+<li>開発用 esbuild・本番用 Rollup の 2 バンドラ構成から Rust 製の Rolldown に統一。Devtools 組み込み、tsconfig paths のネイティブサポート、<code>@vitejs/plugin-react</code> v6 では Oxc 採用で Babel 依存を排除</li>
+</ul>
+</li>
+<li><a href="https://pnpm.io/11.x/git-worktrees">pnpm + Git Worktrees for Multi-Agent Development</a>
+<ul>
+<li>pnpm v11 の Global Virtual Store を有効化（<code>enableGlobalVirtualStore: true</code>）すると、Git worktree ごとの <code>node_modules/.pnpm</code> をシンボリックリンクに変換し、<code>pnpm install</code> を大幅に高速化できる</li>
+</ul>
+</li>
+<li><a href="https://github.com/voidzero-dev/vite-plus">voidzero-dev/vite-plus</a>
+<ul>
+<li>Vite・Vitest・Oxlint・Oxfmt・Rolldown などを統合した Web 向け統合ツールチェーン「Vite+」が公開。ランタイム管理からビルド・テスト・タスクキャッシュまでを <code>vp</code> コマンド一つで管理</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/herp_inc/articles/strange-task-runner">Vite+ の異常なタスクランナー: vite-task は如何にしてキャッシュの手動依存管理をなくしたか</a>
+<ul>
+<li>Vite+ のタスクランナー「vite-task」が LD_PRELOAD で libc の syscall をインターセプトしファイルアクセスを自動検出することで、タスクキャッシュの手動依存管理を不要にする仕組みを解説</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/tsuboi/articles/tanstack-query-options-unique-symbol">queryOptions の型推論を支える DataTag、その裏側の unique symbol — TanStack Query</a>
+<ul>
+<li>TanStack Query v5 の <code>queryOptions</code> がランタイムコストゼロで高度な型安全性を実現する仕組みを解説。TypeScript の <code>unique symbol</code> と交差型を組み合わせた Branded Types パターンによる DataTag の仕組みを深掘り</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-02-26-github-actions-now-supports-uploading-and-downloading-non-zipped-artifacts/">GitHub Actions now supports uploading and downloading non-zipped artifacts</a>
+<ul>
+<li><code>actions/upload-artifact</code> v7 以降で <code>archive: false</code> を指定すると ZIP 圧縮なしでアーティファクトをアップロード可能に。HTML や画像をブラウザから直接閲覧できるようになる</li>
+</ul>
+</li>
+<li><a href="https://docs.slack.dev/changelog/2026/02/17/slack-mcp/">Announcing the Slack MCP server and Real-time Search API</a>
+<ul>
+<li>Slack の公式 MCP サーバーと Real-time Search API が発表。LLM 向けに最適化された自然言語レスポンスで Slack のコンテンツへアクセス可能に</li>
+</ul>
+</li>
+<li><a href="https://npmx.dev/blog/alpha-release">Announcing npmx: a fast, modern browser for the npm registry</a>
+<ul>
+<li>Nuxt コアチームメンバーによる npm パッケージブラウザ「npmx」がアルファリリース。アクセシビリティと国際化（19 言語対応）を重視し、インストールサイズや依存関係の警告なども表示</li>
+</ul>
+</li>
+<li><a href="https://claude.com/blog/code-review">Bringing Code Review to Claude Code</a>
+<ul>
+<li>Claude Code に複数の AI エージェントが並列で PR レビューを行う新機能が追加（リサーチプレビュー）。1 PR あたり約 $15〜$25 で、内部データでは PR の 54% に実質的なフィードバックが付くように改善</li>
+</ul>
+</li>
+<li><a href="https://void.cloud/">Void</a>
+<ul>
+<li>VoidZero による Vite アプリ向けデプロイメントプラットフォーム。DB・KV・AI 推論・認証など多数の機能を内蔵し、Cloudflare のグローバルネットワーク上で動作</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://www.firefox.com/en-US/firefox/148.0/releasenotes/">Firefox 148.0 Release Notes</a>
+<ul>
+<li>Trusted Types API・Sanitizer API・Iterator.zip()・WebGPU・CSS Anchor Positioning などのサポートが追加。AI 機能の管理セクションも設定に追加</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17848/release-notes-for-safari-technology-preview-238/">Release Notes for Safari Technology Preview 238</a>
+<ul>
+<li>カスタマイズ可能な <code>&#x3C;select></code> 要素（<code>appearance: base-select</code>）と Scroll Anchoring が有効化。CSS <code>:open</code> 疑似クラスのサポートなども追加</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-two-week-release">Get features faster with Chrome’s two-week release cycle</a>
+<ul>
+<li>Chrome 153 以降の Beta と Stable チャネルで、リリースサイクルが現在の 4 週間から 2 週間に短縮される。拡張安定版（Extended Stable）は 8 週間サイクルを維持</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/focusgroup-rfc?hl=ja">デベロッパー フィードバックのリクエスト: フォーカス グループ</a>
+<ul>
+<li>ラジオボタンの矢印キーナビゲーション挙動を任意の要素に JS なしで適用できる HTML 属性 <code>focusgroup</code> が Chromium 系ブラウザでフラグ付きで利用可能になりフィードバックを募集</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://kosui.me/posts/2026/03/16/typescript-pii-logging-defense">ログの PII 漏洩を防止する: TypeScript の型推論とランタイムの境界</a>
+<ul>
+<li>TypeScript の構造的部分型ではログの PII 漏洩を防ぎきれない問題を指摘し、クロージャで値を隠蔽する Sensitive 型と Zod・Pino redact を組み合わせた多層防御を解説</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://deno.com/blog/v2.7">Deno 2.7: Temporal API, Windows ARM, and npm overrides</a>
+<ul>
+<li>Temporal API がフラグなしで stable になった Deno 2.7 がリリース。V8 14.5 へのアップグレードを経て、Chrome と同等の Temporal サポートが利用可能に</li>
+</ul>
+</li>
+<li><a href="https://nodejs-org-git-fork-ulisesgascon-release-announcement-openjs.vercel.app/en/blog/announcements/evolving-the-nodejs-release-schedule">Evolving the Node.js Release Schedule</a>
+<ul>
+<li>v27 から Node.js のリリーススケジュールが年 2 回（偶数が LTS）から年 1 回の LTS リリースのみに変更。メンテナンス負荷の軽減が目的で、2027 年に v27、2028 年に v28 とバージョン番号が西暦下 2 桁に揃う</li>
+</ul>
+</li>
+<li><a href="https://blog.platformatic.dev/why-nodejs-needs-a-virtual-file-system">Why Node.js Needs a Virtual File System</a>
+<ul>
+<li>Node.js に Virtual FS を組み込もうとしている提案の解説。memfs のような仮想ファイルシステムをコア機能として提供することでテストや sandbox 実行が容易になる</li>
+</ul>
+</li>
+<li><a href="https://edgejs.org/">Edge.js</a>
+<ul>
+<li>winterjs のアーカイブを受けてその後継となる edge.js が公開。Node.js 互換を目指し、JSC や QuickJS などの JS エンジンを切り替え可能。WASM sandbox による安全なコード実行もサポート</li>
+</ul>
+</li>
+<li><a href="https://x.com/jarredsumner/status/2034165778103312487?s=20">Bun.WebView</a>
+<ul>
+<li>Bun に WebView サポート（Bun.WebView）が追加予定であることが Jarred Sumner によって発表</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/2026/NOTE-css-2026-20260226/">CSS Snapshot 2026</a>
+<ul>
+<li>W3C が CSS の現状をまとめた CSS Snapshot 2026 を公開。段階的に内容を追加していく方針に変更され、安定度別に CSS モジュールが分類されている</li>
+</ul>
+</li>
+<li><a href="https://x.com/robpalmer2/status/2031752429419552806?s=20">Temporal reaches Stage 4</a>
+<ul>
+<li>TC39 で Temporal API が Stage 4 に到達。JavaScript に待望のモダンな日時 API が正式に標準化される</li>
+</ul>
+</li>
+<li><a href="https://bloomberg.github.io/js-blog/post/temporal/">Temporal: The 9-Year Journey to Fix Time in JavaScript</a>
+<ul>
+<li>Bloomberg の JS チームによる Temporal の 9 年間の標準化の歩みを振り返る記事。JavaScript の Date の問題点と、複数企業の協力によって Stage 4 に至るまでの経緯を解説</li>
+</ul>
+</li>
+<li><a href="https://bloomberg.github.io/js-blog/post/standardizing-source-maps/">Source Maps: Shipping Features Through Standards</a>
+<ul>
+<li>Bloomberg が主導してソースマップを ECMA-426 として公式標準化した経緯を解説。10 年間非公式な共有理解に頼っていた仕様が、TC39-TG4 タスクグループの設立を経て正式化された</li>
+</ul>
+</li>
+<li><a href="https://blogs.windows.com/msedgedev/2026/03/05/making-keyboard-navigation-effortless/">Making keyboard navigation effortless with Focusgroup</a>
+<ul>
+<li>Microsoft Edge チームによる Focusgroup 属性の解説。ツールバー・タブリスト・メニューなどでの矢印キーナビゲーションを JS なしで実現できる宣言型 HTML 属性の仕様と実装を詳解</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://thehackernews.com/2026/02/claude-code-flaws-allow-remote-code.html">Claude Code Flaws Allow Remote Code Execution and API Key Exfiltration</a>
+<ul>
+<li>Claude Code に悪意あるリポジトリを開くだけで API キーが漏洩する脆弱性など複数の脆弱性が発見・修正済み。Check Point が報告した 3 件の脆弱性（うち 2 件は CVSS 8.7）の詳細を解説</li>
+</ul>
+</li>
+<li><a href="https://react.dev/blog/2026/02/24/the-react-foundation">The React Foundation: A New Home for React Hosted by the Linux Foundation</a>
+<ul>
+<li>React・React Native・JSX などが Meta から React Foundation へ移管。Linux Foundation がホストし、Amazon・Expo・Microsoft・Vercel など 8 社がプラチナ創設メンバーとして参加</li>
+</ul>
+</li>
+<li><a href="https://github.com/antfu/ghfs">antfu/ghfs</a>
+<ul>
+<li>GitHub の issue と PR をローカルファイルシステムとして取得・閲覧でき、<code>execute.yml</code> を書いて <code>ghfs execute</code> すると一括でラベル付けやタイトル変更などの操作を行える CLI ツール</li>
+</ul>
+</li>
+<li><a href="https://report.zeroheight.com/">Design Systems Report 2026</a>
+<ul>
+<li>zeroheight による年次デザインシステムレポート。61% のチームが人員不足と回答し、アドプション促進が 5 年連続で最大の課題に。AI はドキュメント生成・プロセス自動化に期待が高い</li>
+</ul>
+</li>
+<li><a href="https://basewatch.dev/">BaseWatch — Track CSS &#x26; Browser Feature Support, Get Baseline Alerts</a>
+<ul>
+<li>CSS やブラウザ機能のサポート状況を追跡し、Baseline のサポート率が 90% に達した際にメール通知を受け取れるサービス</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
