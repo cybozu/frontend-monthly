@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #68"><meta name="twitter:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #68"><meta property="og:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #68</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #68</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2026年04月28日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/390340/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/390340/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="post-mortem-axios-npm-supply-chain-compromise">Post Mortem: axios npm supply chain compromise</h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>2026 年 3 月 31 日に、週 1 億回以上ダウンロードされるメジャーなデータフェッチ用ライブラリである axios において、
+メンテナーアカウントが乗っ取られ、悪意あるコードが混入されたバージョンが公開される、という事案が発生しました。</p>
+<p>この件について、公式から Post Mortem が公開されました。<br>
+<a href="https://github.com/axios/axios/issues/10636">https://github.com/axios/axios/issues/10636</a></p>
+<p>この中で、メンテナーアカウントが乗っ取られた流れについても説明されていました。
+<a href="https://securitylabs.datadoghq.com/articles/axios-npm-supply-chain-compromise/#how-the-maintainer-got-compromised">https://securitylabs.datadoghq.com/articles/axios-npm-supply-chain-compromise/#how-the-maintainer-got-compromised</a></p>
+<p>以下、引用です。</p>
+<blockquote>
+<ol>
+<li>The attacker reached out impersonating the founder of a company, using the real founder’s likeness and branding.<br>
+訳: 攻撃者は、本物の創業者の顔写真とブランディングを使用して、会社の創業者を装って連絡を取りました。</li>
+<li>They invited the maintainer to a Slack workspace designed to pass as the company’s internal communications. The workspace had channels sharing LinkedIn posts that linked to the real company’s account, fake profiles for the company’s team, and profiles of other open source maintainers.<br>
+訳: 攻撃者は、会社の内部通信を模倣する Slack ワークスペースを招待しました。ワークスペースには、本物の会社のアカウントにリンクする LinkedIn 投稿、会社のチームの偽のプロフィール、その他のオープンソースメンテナーのプロフィールが含まれるチャンネルがありました。</li>
+<li>They scheduled a Microsoft Teams meeting with what appeared to be a group of people.<br>
+訳: 攻撃者は、見た目がグループの人たちとの Microsoft Teams ミーティングを予約しました。</li>
+<li>During the call, the maintainer was told a component on their system was out of date and was prompted to install an update. The update was the RAT.<br>
+訳: 電話で、メンテナーにシステムのコンポーネントが古くなっていると伝え、更新をインストールするように促しました。更新は RAT (トロイの木馬) でした。</li>
+</ol>
+</blockquote>
+<p>（アカウント自体は 2FA が有効であったものの、復旧コードが利用されたことが予想されるそうです。）</p>
+<p>ソーシャルエンジニアリングによる非常に手が込んだ攻撃であり、人間自体を狙われた、という点が注目されました。</p>
+<p>昨年末から npm パッケージによるサプライチェーン攻撃が頻発していることもあり、
+利用側としては引き続き対策に取り組んでいく必要がありそうです。</p>
+<ul>
+<li>min-release-age の設定 (一定期間経過したバージョンのみ取り込む)</li>
+<li>ignore-scripts (Pre/Post Install Hooks を無視する)</li>
+<li>認証情報を 1Password などに逃がす</li>
+<li>Dev Container などによる環境の分離</li>
+</ul>
+<p>min-release-age は、従来は pnpm や yarn にしか無かった概念ですが、現在では npm 標準で利用可能となっていたり、
+pnpm では次期バージョン(v11)では minimumReleaseAge の設定自体がデフォルトになる見込みであったり、
+パッケージマネージャ側を更新することでもセキュリティ向上に繋がる可能性もあるため、注意を払っておいたほうが良さそうです。</p>
+<h3 id="vitest-のドキュメントに-learn-セクションが追加">Vitest のドキュメントに Learn セクションが追加</h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>Vitest のドキュメントに Learn セクションが追加されました。
+Learn セクションには次の内容が含まれています。</p>
+<ul>
+<li>テストの書き方</li>
+<li>Matchers の使い方</li>
+<li>非同期コードのテスト方法</li>
+<li>setup と teardown</li>
+<li>Mock</li>
+<li>スナップショットテスト</li>
+<li>テストのプラクティス</li>
+<li>テストのデバッグ方法</li>
+<li>AI を使ったテストの書き方</li>
+</ul>
+<p>Learn の各セクションを読んで見ての感想</p>
+<ul>
+<li><a href="https://vitest.dev/guide/learn/writing-tests.html#running-tests">同一ファイル内だとテストケースは順次実行されるけど、<code>test.concurrent</code>で同一ファイル内でも並列で実行できる</a></li>
+<li><a href="https://vitest.dev/guide/learn/matchers.html#common-matchers">primitive な値は<code>toBe</code>、object や array は<code>toEqual</code>で比較してね</a></li>
+<li><a href="https://vitest.dev/api/expect#tobedefined"><code>toBeDefined</code></a>使ったことなかった</li>
+<li>オブジェクトのプロパティの assert
+<ul>
+<li><a href="https://vitest.dev/api/expect#tomatchobject"><code>toMatchObject</code></a>で指定したプロパティのみ assert</li>
+<li><a href="https://vitest.dev/api/expect#tohaveproperty"><code>toHaveProperty</code></a>でドット記法が使える</li>
+</ul>
+</li>
+<li><a href="https://vitest.dev/api/expect#soft"><code>expect.soft</code></a>を使うと失敗してもテストが続行される</li>
+<li><a href="https://vitest.dev/api/hooks.html#ontestfinished"><code>onTestFinished</code></a>でテストケース内で、テスト終了後の処理を定義できる</li>
+<li><a href="https://vitest.dev/guide/learn/mock-functions.html#spying-on-methods"><code>vi.spyOn</code>と<code>vi.fn</code>の違い</a></li>
+<li><a href="https://vitest.dev/guide/learn/testing-in-practice.html#structuring-a-test">setup、act、check というテストの構成</a></li>
+<li><a href="https://vitest.dev/guide/learn/testing-in-practice.html#fixing-bugs-with-tests">AI エージェントを使用して不具合を修正する際は、まず失敗するテストを作成することから始めよう</a></li>
+<li>describe のテストは 1~2 層以上深めないでね</li>
+<li>テストファイルが数百行を超える場合はテーマや領域ごとに分割を検討すること</li>
+<li><a href="https://vitest.dev/guide/learn/debugging-tests.html#isolating-the-problem"><code>vitest -t "sets the default role"</code>のように<code>-t</code>でテストケースを指定できる</a></li>
+<li><a href="https://vitest.dev/guide/learn/debugging-tests.html#shared-state-between-tests">テストケース間で共有の状態を持たないように<code>text.extend</code>を使うパターン</a></li>
+<li><code>vi.spyOn</code>で戻り値を上書きすると、復元しない限り次のテストにも引き継がれるから、<code>restoreMock</code>しようね</li>
+<li><code>vi.mock('./module.js')</code>ではなく<code>vi.mock(import('./module.js'))</code>が良い
+<ul>
+<li>TS がモジュールの型チェックできるようになるから</li>
+<li>AI エージェントがよく<code>vi.mock('./module.js')</code>で書くから気をつけてね</li>
+</ul>
+</li>
+</ul>
+<h3 id="under-the-hood-of-mdns-new-frontend"><a href="https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/">Under the hood of MDN’s new frontend</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>MDN が React ベースのアーキテクチャから Lit/Web Components・Declarative Shadow DOM・Rspack を活用した新構成に移行した技術的な詳細を解説した記事が公開されました。</p>
+<p>以前の実装は Create React App 起点の React SPA だったが、以下のような課題があったそうです。</p>
+<ul>
+<li>巨大な Webpack 設定</li>
+<li>Sass と CSS 変数が混在した CSS</li>
+<li>レンダーブロッキングな巨大 CSS の配信</li>
+<li>スコープの聞かせることのできていない CSS</li>
+</ul>
+<p>またそもそも React SPA 実装でも多くの静的コンテンツは<code>dangerouslySetInnerHTML</code>で埋め込まれており、単なるラッパーのようになってしまっていました。にも変わらず React SPA のバンドルサイズやレンダリング負荷などは無視できるものではなくユースケースに対してあっていない実装になってしまっていたようです。</p>
+<p>むしろ MDN のようなコンテンツは静的なページの中にインタラクティブな要素が点在する構成のため、Web Components を活用した新しいアーキテクチャに移行することになったそうです。</p>
+<p>ライブラリとしては Lit を導入し、Lit の html テンプレートリテラルをベースに独自の Server Component のような仕組みを構築しているようです。動的な要素に関しては「ページ読み込み時に DOM を走査して <code>mdn-*</code> 要素を見つけたら対応する element.js を動的 import する」という仕組みで実現しています。</p>
+<p>CSS に関しても OuterLayout で実際にレンダリングされたコンポーネント分の CSS だけを <code>&#x3C;link></code> で差し込む仕組みを Rspack の compilationStats を利用する形で実装しているようです。</p>
+<p>近年では静的なコンテンツなどでは Astro などを採用する例が多い中で、MDN のような大規模サイトで Web Components を活用した例は珍しく、参考になる点が多い記事でした。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://vitest.dev/blog/vitest-4-1.html">Vitest 4.1 is out!</a>
+<ul>
+<li>Vite 8 対応に加え、テストケースへのタグ付け機能、<code>aroundAll</code> フック、非同期リーク検出、GitHub Actions Job Summary 生成など多数の機能が追加された</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-mcp-for-react/">Storybook MCP for React</a>
+<ul>
+<li>AI エージェントにコンポーネント情報を提供し既存コンポーネントの再利用を促進するツール。テスト実行やプレビュー表示でトークン使用量を削減できる</li>
+</ul>
+</li>
+<li><a href="https://storybook.js.org/blog/storybook-10-3/">Storybook 10.3 — Component-driven development for humans and agents</a>
+<ul>
+<li>MCP for React、アクセシビリティ改善、CSF Factories 対応、Vite 8 や Next.js 16.2 への対応などが含まれるリリース</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/nextjs-across-platforms">Next.js Across Platforms: Adapters, OpenNext, and Our Commitments</a>
+<ul>
+<li>Next.js 16.2 で OpenNext と共同開発された Adapter API が安定版として正式化され、Vercel 以外のプラットフォームへのデプロイを標準化する仕組みが整った</li>
+</ul>
+</li>
+<li><a href="https://kakehashi-dev.hatenablog.com/entry/2026/03/24/090000">React Compiler 導入で得られた効果と気をつけたいポイント</a>
+<ul>
+<li>自動メモ化により再レンダリング時間が 93% 削減された一方、オブジェクト参照を保持したまま内部状態を変更する react-hook-form や TanStack 系ライブラリとの非互換が発生し <code>use no memo</code> で対処した事例</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/35816">[flags] land enableTrustedTypesIntegration</a>
+<ul>
+<li>React に Trusted Types API との統合が追加され、DOM API に値を渡す際に TrustedHTML 等の型付きオブジェクトを直接渡せるようになり XSS 対策が強化された</li>
+</ul>
+</li>
+<li><a href="https://tanstack.com/blog/react-server-components">React Server Components Your Way</a>
+<ul>
+<li>TanStack Start が RSC をフェッチ可能なデータプリミティブとして扱うアプローチを解説。クライアント・ハイブリッド・静的など柔軟な構成を TanStack Query/Router と組み合わせて実現できる</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/whats-new-mar-2026">Tales from the Void: March 2026 Recap</a>
+<ul>
+<li>Vite 8 が Rolldown をバンドラーとして採用し、Oxc の ESLint プラグイン互換性が実装されるなど VoidZero 製 JS ツールチェーンの統合が進む</li>
+</ul>
+</li>
+<li><a href="https://vitest.dev/guide/learn/async.html">Vitest Learn</a>
+<ul>
+<li>非同期コードのテスト、モック関数、デバッグ、AI を活用したテストの書き方など実践的なコンテンツを扱う Learn セクションが Vitest ドキュメントに追加された</li>
+</ul>
+</li>
+<li><a href="https://github.com/pnpm/pnpm/releases/tag/v11.0.0-rc.0">pnpm v11.0.0-rc.0</a>
+<ul>
+<li><code>minimumReleaseAge</code> のデフォルトが 1 日に変更され、<code>pnpm ci</code> コマンドの追加や <code>pnpm publish</code>/<code>login</code> などがネイティブ実装に移行するなど大型アップデート</li>
+</ul>
+</li>
+<li><a href="https://csskit.rs/">csskit</a>
+<ul>
+<li>Rust で書かれたゼロコンフィグの CSS オールインワンツールチェーン。フォーマット・リント・ミニファイ・トランスパイル・バンドル・分析機能を備えたアルファ版</li>
+</ul>
+</li>
+<li><a href="https://www.yuku.fyi/">yuku</a>
+<ul>
+<li>Zig で書かれた高性能な JavaScript/TypeScript コンパイラ。外部依存なしで仕様への完全準拠を目指し、npm 環境では Oxc より 3〜5 倍高速とされている</li>
+</ul>
+</li>
+<li><a href="https://github.com/auvred/hybrid-type-aware-linting-performance">Hybrid Type-Aware Linting: Performance Evaluation</a>
+<ul>
+<li>tsgo を使った linter の実装方法別パフォーマンス検証。同期 FFI で tsgo を呼び出す方式が最もパフォーマンスが良かったという結果をまとめた検証リポジトリ</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://blog.cloudflare.com/dynamic-workers/">Dynamic Workers</a>
+<ul>
+<li>Cloudflare がリクエストごとに Worker を動的生成できる機能をオープンベータで提供開始。V8 アイソレートにより従来のコンテナより 100 倍高速な起動を実現</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/emdash-wordpress">Introducing EmDash: A WordPress Alternative Built on Cloudflare</a>
+<ul>
+<li>Cloudflare が Astro 6.0 上に構築したフルスタックサーバーレス CMS「EmDash」を発表。プラグインをサンドボックス化した Worker isolates で実行しセキュリティ問題を解決する MIT ライセンスの OSS</li>
+</ul>
+</li>
+<li><a href="https://blog.cloudflare.com/sandbox-ga/">Cloudflare Sandboxes is now generally available</a>
+<ul>
+<li>AI エージェントが安全な分離環境でコード実行・開発できる Cloudflare Sandboxes が GA に。ファイルシステム・シェル・PTY をサポートし、認証情報を安全に注入できる</li>
+</ul>
+</li>
+<li><a href="https://vercel.com/kb/bulletin/vercel-april-2026-security-incident">Vercel April 2026 security incident</a>
+<ul>
+<li>第三者 AI ツールの侵害を経由して Vercel の内部システムへの不正アクセスが発生。一部顧客の機密マークなし環境変数が漏洩したインシデントの詳細</li>
+</ul>
+</li>
+<li><a href="https://github.github.com/gh-stack/">GitHub Stacked PRs</a>
+<ul>
+<li>大規模な変更を小さく相互依存したプルリクエストに分割して管理できる GitHub の機能。積み重ねた PR を同時マージできる仕組みをネイティブ GitHub 対応と CLI で提供するプライベートベータ版</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://blog.mozilla.org/en/firefox/firefox-148-149-new-features/">More reasons to love Firefox: What’s new now, and what’s coming soon</a>
+<ul>
+<li>Firefox 148/149 の新機能紹介。無料 VPN、分割ビュー、タブノート、AI 搭載スマートウィンドウなどが追加されプライバシー保護と利便性が向上</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/">Announcing TypeScript 6.0</a>
+<ul>
+<li>TypeScript 6.0 がリリース。<code>strict: true</code>・<code>module: esnext</code>・<code>target: es2025</code> がデフォルト化され、ES5 ターゲットや CommonJS/AMD/SystemJS などレガシー設定が非推奨に。Temporal API 型や Map の upsert メソッドも追加</li>
+</ul>
+</li>
+<li><a href="https://jcbhmr.com/2026/04/07/any-string-autocomplete-ts/">Any String Autocomplete in TypeScript</a>
+<ul>
+<li><code>"one" | "two" | string</code> と書くと <code>string</code> に吸収されオートコンプリートが失われる問題に対し、<code>string &#x26; {}</code> トリックや <code>type-fest</code> の <code>LiteralUnion</code> で解決する方法を紹介</li>
+</ul>
+</li>
+<li><a href="https://www.keithcirkel.co.uk/too-much-color/">Too Much Color</a>
+<ul>
+<li>CSS の oklch/oklab 色空間では小数点 3 桁の精度で視覚的に区別不可能な誤差に収まるという考察。ミニファイアが色値の精度を最適化すべきと提案している</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://nodejs.org/en/blog/vulnerability/march-2026-security-releases">Node.js — 2026 年 3 月 セキュリティリリース</a>
+<ul>
+<li>Node.js 20.x〜25.x 向けセキュリティアップデート。TLS SNICallback 例外処理不備や <code>__proto__</code> ヘッダによる DoS など High 2 件・Medium 5 件・Low 2 件の脆弱性に対応</li>
+</ul>
+</li>
+<li><a href="https://toranoana-lab.hatenablog.com/entry/2026/03/19/120000">Java に V8 や CPython を組み込む「Project Detroit」</a>
+<ul>
+<li>Oracle の Project Detroit を解説した記事。JNI・リフレクション・動的プロキシによる 3 層ブリッジ構造で Java から JavaScript エンジン V8 や Python ランタイム CPython を呼び出せる仕組みを紹介</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/2026/NOTE-llms-standards-20260324/">Use of Large Language Models in Standards Work</a>
+<ul>
+<li>W3C アドバイザリーボードが発表した文書。標準化作業における LLM の有用なユースケースと著作権侵害・データ漏洩・不正確さなどのリスクを整理し、利用時の原則を示している</li>
+</ul>
+</li>
+<li><a href="https://www.w3.org/community/web-content-browser-ai/">Web Content Browser for AI Agents Community Group</a>
+<ul>
+<li>AI エージェントが解釈しやすい JSON 形式でウェブページコンテンツを提供する仕様を開発する W3C コミュニティグループが発足。llms.txt とは別に SOM Spec v1.0 を出発点とした仕様・スキーマ・テストスイートの策定を目指す</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://gbhackers.com/canisterworm-hijacks-npm/">CanisterWorm Hijacks npm Publisher Accounts, Steals Tokens</a>
+<ul>
+<li>脅威グループ「TeamPCP」が npm 公開トークンを盗んで正規パッケージを悪質なバージョンに置き換える「CanisterWorm」キャンペーンを展開。ICP キャニスターを C2 として使用する新しい手法</li>
+</ul>
+</li>
+<li><a href="https://www.aikido.dev/blog/axios-npm-compromised-maintainer-hijacked-rat">axios compromised on npm: maintainer account hijacked, RAT deployed</a>
+<ul>
+<li>axios の npm メンテナーアカウントが侵害され、マルウェア入りバージョン（1.14.1 / 0.30.4）が公開された。クロスプラットフォーム RAT を仕込んだサプライチェーン攻撃の詳細と <a href="https://github.com/axios/axios/issues/10636">ポストモーテム</a> も公開されている</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/flatt_security/github-actionsqin-hai-xiang-ci-gushi-li-wozhen-rifan-ri-ci-naruxie-wei-nibei-eru">GitHub Actions に関する相次ぐ侵害事例を振り返り、次なる脅威に備える</a>
+<ul>
+<li>reviewdog・tj-actions・Trivy 等が連鎖的に侵害された事案を分析。メモリダンプ経由のシークレット窃取などの攻撃手法の進化と、依存性の検疫期間設定・バージョン固定化などの対策をまとめたスライド</li>
+</ul>
+</li>
+<li><a href="https://tech.smarthr.jp/entry/2026/03/26/145711">SmartHR におけるパスキー実装</a>
+<ul>
+<li>マルチテナント SaaS での RP ID 設計（<code>smarthr.jp</code> に統一）、Conditional UI とパスキーログインボタンの併用、AAGUID によるパスキー名の自動補完など実装のポイントを解説</li>
+</ul>
+</li>
+<li><a href="https://speakerdeck.com/nazonohito51/architecture-and-organizational-interaction">アーキテクチャと組織のインタラクション</a>
+<ul>
+<li>BASE でのモジュラモノリス導入から 4 年間の振り返り。顧客価値検証と分散自律改善は同時最大化できないというトレードオフを組織とアーキテクチャの観点から論じた</li>
+</ul>
+</li>
+<li><a href="https://developers.google.com/search/blog/2026/04/back-button-hijacking">Introducing a new spam policy for “back button hijacking”</a>
+<ul>
+<li>戻るボタンで広告ページを挟む「バックボタンハイジャック」手法を Google 検索がスパムポリシーとして明示的に禁止すると発表</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/">Under the hood of MDN’s new frontend</a>
+<ul>
+<li>MDN が React ベースのアーキテクチャから Lit/Web Components・Declarative Shadow DOM・Rspack を活用した新構成に移行した技術的な詳細。ページロード時間を大幅短縮している</li>
+</ul>
+</li>
+<li><a href="https://www.keithcirkel.co.uk/css-or-bs/">CSS or BS?</a>
+<ul>
+<li>実在する CSS プロパティと架空のプロパティを見分ける 20 ラウンドのクイズゲーム。600 以上のプロパティを持つ CSS 仕様の広さを体感できる</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
