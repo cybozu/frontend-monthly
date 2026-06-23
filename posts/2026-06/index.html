@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #69"><meta name="twitter:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #69"><meta property="og:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #69</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #69</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2026年06月30日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/397609/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/397609/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="modern-web-guidance"><a href="https://developer.chrome.com/docs/modern-web-guidance?hl=ja">Modern Web Guidance</a></h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>先日開催された Google I/O 2026 で発表された AI Agent 向けの Skills です。</p>
+<p>AI Agent を用いた Web 開発においては、次のような課題が存在しています。</p>
+<ul>
+<li>学習データに含まれるレガシーな手段を用いてしまう</li>
+<li>AI モデルはカットオフ日より新しい機能を知らない</li>
+<li>クロスブラウザサポート時に Baseline を考慮できず保守的なアプローチを取りやすい</li>
+</ul>
+<p>参考:<br>
+Modern Web Guidance を使用する理由<br>
+<a href="https://developer.chrome.com/docs/modern-web-guidance/get-started?hl=ja">https://developer.chrome.com/docs/modern-web-guidance/get-started?hl=ja</a></p>
+<p>これらをクリアするために、Web 開発における最新の機能やユースケース、ベストプラクティス、<br>
+ブラウザごとの利用可否などを AI が効率よく取得・参照できる形とし、<br>
+それを Agent Skills として公開されたものが Modern Web Guidance です。<br>
+パフォーマンス・アクセシビリティ・セキュリティ・UX といったものも含まれ、<br>
+幅広い内容をカバーしたガイドになっています。<br>
+単純な実装はもちろん、レビューなど多岐に渡って活用できるシチュエーションがありそうです。</p>
+<p>なお、リソースとなるドキュメントは 100 以上のものが含まれ、今後も数百のガイドを追加していく予定とのことです。<br>
+こういった大量のドキュメントを扱う Skills では、<br>
+コンテキストの圧迫など、いかに効率よく情報を参照できるかが難しいポイントですが、<br>
+Modern Web Guidance では、Tensorflow.js を用いてローカルで検索が完結する仕組みを取っています。<br>
+Skills の作成・提供という観点からも非常に参考になるものでした。</p>
+<p><a href="https://github.com/GoogleChrome/modern-web-guidance">https://github.com/GoogleChrome/modern-web-guidance</a>
+<a href="https://github.com/GoogleChrome/modern-web-guidance-src">https://github.com/GoogleChrome/modern-web-guidance-src</a></p>
+<h3 id="goal-コマンドの活用例-vitest-の実行時間を-6-倍高速化した話"><code>/goal</code> コマンドの活用例: Vitest の実行時間を 6 倍高速化した話</h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p><a href="https://azukiazusa.dev/blog/goal-command-use-case-vitest/">https://azukiazusa.dev/blog/goal-command-use-case-vitest/</a></p>
+<p>Claude Code の<code>/goal</code>コマンドを使って、既存のプロジェクトの Vitest の設定を<code>isolate: false</code>に移行することで、テストの実行時間を 12 分から 2 分にまで短縮した話。</p>
+<p>実際に自分が関係するプロジェクトでも、import の時間が大きかったので、<code>/goal</code>コマンドを使った<code>isolate: false</code>を試してみました。</p>
+<pre class="language-bash" data-language="bash"><code is:raw="" class="language-bash">Duration  <span class="token number">312</span>.84s <span class="token punctuation">(</span>transform <span class="token number">60</span>.08s, setup <span class="token number">26</span>.25s, <span class="token function">import</span> <span class="token number">475</span>.15s, tests <span class="token number">360</span>.95s, environment <span class="token number">91</span>.25s<span class="token punctuation">)</span>
+</code></pre>
+<p>結果として、<code>isolate: false</code>への移行完了まではいかなかったんですが、実際に試してみて、特に自分のプロジェクトだと以下の点は学びでした。</p>
+<ul>
+<li><code>/goal</code>でやっている作業内容を都度、マークダウンに残してもらう
+<ul>
+<li><code>/goal</code>コマンドでうまくいかなかった場合に、次に活かせるように</li>
+</ul>
+</li>
+<li><code>/goal</code>でも定期的に、このコマンド使って良いかの許可で止まってしまうことがあったので、DevContainer を使って、<code>--dangerously-skip-permissions</code>渡して、DevContainer 内で Claude さんに全部まかしてしまっても良さそう</li>
+</ul>
+<h3 id="javascript-pattern-matching-with-flow"><a href="https://medium.com/flow-type/javascript-pattern-matching-with-flow-a2a143108897">JavaScript Pattern Matching with Flow</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<h4 id="flow-における-match">Flow における　 match</h4>
+<p>Flow が新しく <code>match</code> 式を追加しました。以下のように書くことで、他言語にあるようなパターンマッチが簡単に書けるようになります。</p>
+<pre class="language-js" data-language="js"><code is:raw="" class="language-js"><span class="token keyword">const</span> description <span class="token operator">=</span> <span class="token function">match</span> <span class="token punctuation">(</span><span class="token parameter">action</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">{</span><span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'add'</span><span class="token punctuation">,</span> <span class="token keyword">const</span> text<span class="token punctuation">}</span> <span class="token operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Add: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>text<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span><span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'toggle'</span><span class="token punctuation">,</span> <span class="token keyword">const</span> id<span class="token punctuation">}</span> <span class="token operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Toggle </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span><span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'remove'</span><span class="token punctuation">,</span> <span class="token keyword">const</span> id<span class="token punctuation">}</span> <span class="token operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Remove </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>似たようなケースで使われる switch 文と違い、このパターンマッチは「式」なので、値を返せる点が非常に便利ですね。
+また、値の照合と同時に<code>const text</code>のような形で変数への抽出もできるので、マッチした値をそのまま使うこともできます。</p>
+<p>マッチする部分は<code>'delete' | 'remove'</code>のように or パターンで書くこともできますし、<code>_</code> でワイルドカードを扱うこともできます。</p>
+<pre class="language-ts" data-language="ts"><code is:raw="" class="language-ts"><span class="token function">match</span> <span class="token punctuation">(</span>command<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token string">'delete'</span> <span class="token operator">|</span> <span class="token string">'remove'</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    data<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token string">'add'</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    data<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  _ <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">show</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>また、ネストされたオブジェクトにマッチさせることもできるようです。</p>
+<h4 id="補足--ecmascript-における-pattern-matching-の提案">補足 : ECMAScript における pattern matching の提案</h4>
+<p>現在 ECMAScript 本体でも 「ECMAScript Pattern Matching」として Pattern Matching の提案が進められていますが、2026 年 6 月現在は Stage 1 の状態です。</p>
+<p><a href="https://github.com/tc39/proposal-pattern-matching">https://github.com/tc39/proposal-pattern-matching</a></p>
+<p>一方で配列や Object のマッチなどに関しては、Record &#x26; Tuple の後続となる <a href="https://github.com/tc39/proposal-composites">Composites</a> との協調も含め検討することは多そうで、今後の動向が気になるところです。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://storybook.js.org/blog/storybook-10-4/">Storybook 10.4 — Automatic setup with agents, review filters, TanStack React, and more</a>
+<ul>
+<li>AI エージェントによる Storybook の自動セットアップ、変更検出フィルター、TanStack React の公式サポートなどが追加されたアップデート。</li>
+</ul>
+</li>
+<li><a href="https://frontendmasters.com/blog/react-server-components-in-tanstack/">React Server Components in TanStack</a>
+<ul>
+<li>TanStack Start で RSC を使う方法と、サーバーのみで実行されるコンポーネントによるクライアントバンドルのサイズ削減効果を解説。</li>
+</ul>
+</li>
+<li><a href="https://tanstack.com/blog/tanstack-table-v9-taking-form">TanStack Table v9: Taking Form</a>
+<ul>
+<li>TanStack Table v9 がリリースされ、内部の状態管理として TanStack Store を採用。</li>
+</ul>
+</li>
+<li><a href="https://github.com/facebook/react/pull/36173#issuecomment-4608356402">react-compiler の Rust ポートがコミュニティ公開に近づく</a>
+<ul>
+<li>React Compiler の Rust ポートがコミュニティ公開できる状態になりつつあり、oxc も早期プレビュー版のインテグレーションを公開予定。</li>
+</ul>
+</li>
+<li><a href="https://www.chromatic.com/blog/vitest-visual-testing-sneak-peek/">Chromatic for Vitest — Visual Testing Sneak Peek</a>
+<ul>
+<li>Chromatic が Vitest Browser Mode に対応したビジュアルリグレッションテストを提供予定。クラウドスナップショットとチームレビュー機能が統合される。</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/Webwright">microsoft/Webwright</a>
+<ul>
+<li>LLM が Playwright を活用してブラウザ操作をコード化するブラウザエージェントフレームワーク。コード生成と実行を繰り返して Web タスクを完了し、再利用可能なスクリプトが成果として残る。</li>
+</ul>
+</li>
+<li><a href="https://tech.newmo.me/entry/playwright-ci-optimization">Playwright を使った CI の最適化事例 | newmo テックブログ</a>
+<ul>
+<li>Playwright 公式 Docker Image の導入と projects 機能による変更されたサブアプリのみのテスト選択実行で、CI 時間を平均 18% 削減。</li>
+</ul>
+</li>
+<li><a href="https://azukiazusa.dev/blog/goal-command-use-case-vitest/">Vitest の isolate: false で実行時間を 12 分から 2 分に短縮する</a>
+<ul>
+<li><code>isolate: false</code> オプションでワーカー間のモジュール評価を共有し、Vitest の実行時間を 6 倍高速化した事例を紹介。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://voidzero.dev/posts/voidzero-cloudflare">VoidZero is Joining Cloudflare</a>
+<ul>
+<li>Evan You が VoidZero の Cloudflare への参加を発表。Vite・Vitest・Rolldown・Oxc は MIT ライセンスのオープンソースとして引き続き開発が継続される。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/perf-reporting-devtools-for-agents?hl=ja">AI によるウェブ パフォーマンス レポートの自動化 | Chrome for Developers</a>
+<ul>
+<li>LY Corporation が Chrome DevTools for Agents を活用して AI エージェントによるパフォーマンス監査システムを構築し、手動作業を 96〜98% 削減した事例。</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/">Introducing the MDN MCP server | MDN Blog</a>
+<ul>
+<li>MDN が MCP 対応サーバーを公開。AI ツールや IDE から MDN のドキュメントとブラウザ互換性データに直接アクセスでき、最新のウェブプラットフォーム情報を取得可能。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://developer.chrome.com/blog/chrome-at-io26">15 updates from Google I/O 2026: Powering the agentic web with new capabilities, tools, and features in Chrome</a>
+<ul>
+<li>Google I/O 2026 で発表された WebMCP・ブラウザ内蔵 AI・Gemini in Chrome など、エージェント型 Web 時代を推進する 15 の新機能を紹介。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/chrome-150-beta?hl=en">Chrome 150 beta</a>
+<ul>
+<li>CSS <code>text-fit</code> プロパティや WebGPU 拡張、IndexedDB の SQLite バックエンド化など多数の新機能を含む Chrome 150 beta がリリース。</li>
+</ul>
+</li>
+<li><a href="https://blogs.windows.com/msedgedev/2026/06/11/faster-updates-enterprise-friendly-schedule-the-new-microsoft-edge-release-cycle/">Faster updates, enterprise-friendly schedule: the new Microsoft Edge release cycle</a>
+<ul>
+<li>Microsoft Edge がバージョン 152（2026 年 8 月予定）以降、2 週間ごとのリリースサイクルへ移行。エンタープライズ向けには 8 週間単位の Extended Stable も継続。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17974/web-technology-sessions-at-wwdc26/">Web Technology Sessions at WWDC26 | WebKit</a>
+<ul>
+<li>WWDC26 で公開された WebKit 関連の 6 セッション。CSS レイアウト、カスタマイズ可能なフォームコントロール、3D モデル、没入型体験などが対象。</li>
+</ul>
+</li>
+<li><a href="https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/">News from WWDC26: WebKit in Safari 27 beta | WebKit</a>
+<ul>
+<li>Safari 27 beta が 58 の新機能と 525 の修正を含んで発表。カスタマイズ可能な <code>&#x3C;select></code> 要素、WebAssembly JavaScript Promise Integration、CSS の <code>:heading</code> 疑似クラスなどが追加。</li>
+</ul>
+</li>
+<li><a href="https://developer.chrome.com/blog/ai-webmcp-origin-trial?hl=ja">WebMCP のオリジン トライアルが Chrome 149 から開始</a>
+<ul>
+<li>ウェブアプリと AI エージェントの連携を可能にする WebMCP のオリジン トライアルが Chrome 149 から開始。エージェントがウェブサイト上で構造化されたツールを使いタスクを実行できるように。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li>
+<p><a href="https://medium.com/flow-type/javascript-pattern-matching-with-flow-a2a143108897">JavaScript Pattern Matching with Flow</a></p>
+<ul>
+<li>Flow 型システムに新しい <code>match</code> 式が追加。<code>switch</code> 文より強力で、パターンマッチングと値の抽出、網羅性チェックが可能。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://zenn.dev/yasse/articles/a7240304af804c">TSKaigi 2026 発表資料まとめ</a></p>
+<ul>
+<li>2026 年 5 月開催の TypeScript 国際会議 TSKaigi 2026 の全 87 セッションの発表資料を一覧にまとめた記事。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://deno.com/blog/v2.8">Deno 2.8</a>
+<ul>
+<li>6 つの新サブコマンド（<code>deno audit fix</code>・<code>deno pack</code>・<code>deno transpile</code> など）を追加し、<code>npm:</code> プレフィックスの省略がデフォルトに。Node.js との互換性が 76.4% に向上。</li>
+</ul>
+</li>
+<li><a href="https://deno.com/blog/clawpatrol">Claw Patrol: Open Source MCP Security Firewall | Deno Blog</a>
+<ul>
+<li>Deno が AI エージェント向けオープンソースセキュリティゲートウェイ「Claw Patrol」を MIT ライセンスで公開。エージェントには本物の認証情報を渡さずプレースホルダーで安全に API を呼び出せる仕組み。</li>
+</ul>
+</li>
+<li><a href="https://docs.npmjs.com/staged-publishing">Staged publishing for npm packages</a>
+<ul>
+<li>npm v11.15.0 から <code>npm stage publish</code> コマンドが追加。パッケージ公開前にメンテナーによる 2FA 承認フローを挟めるようになり、不正リリースを防止。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/">Upcoming breaking changes for npm v12</a>
+<ul>
+<li>npm v12（7 月リリース予定）で <code>allowScripts</code> がデフォルト無効化。明示的な許可なしに依存関係のインストールスクリプトが実行されなくなる。</li>
+</ul>
+</li>
+<li><a href="https://github.com/npm/rfcs/pull/868">RFC: opt-in install scripts (allowScripts)</a>
+<ul>
+<li>npm のインストールスクリプト実行をデフォルト無効化する RFC で、npm v11.16.0 で Phase 1 が実装済み。<code>allowScripts</code> フィールドと <code>npm approve-scripts</code>・<code>npm deny-scripts</code> コマンドでサプライチェーン攻撃を防ぐ設計。</li>
+</ul>
+</li>
+<li><a href="https://pnpm.io/blog/2026/06/11/env-variables-in-repository-npmrc">Env variables in repository .npmrc | pnpm Blog</a>
+<ul>
+<li>セキュリティ上の理由で pnpm v10.34.2 以降、リポジトリの <code>.npmrc</code> ファイル内の環境変数展開が停止。認証トークンをユーザー設定や CI 環境変数へ移行する必要がある。</li>
+</ul>
+</li>
+<li><a href="https://github.com/nodejs/Release/issues/1161">Plans for npm 12 | nodejs/Release</a>
+<ul>
+<li>npm v12 を次の Node.js LTS v26 だけでなく、現行 LTS v24 にもセキュリティリリースとして含める可能性を議論するイシュー。</li>
+</ul>
+</li>
+<li><a href="https://github.com/marketplace/actions/setup-pnpm-with-runtime">Setup pnpm with runtime | GitHub Marketplace</a>
+<ul>
+<li>pnpm と JS ランタイム（Node.js・Bun・Deno）を 1 ステップでセットアップする GitHub Actions が公開。<code>pnpm install</code> 等もこの Action 内で実行できる。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vitest-dev/vitest/discussions/10271">Viteless Vitest: Propose an engine-agnostic API</a>
+<ul>
+<li>Vitest が Vite への依存を排除し、esbuild・Rolldown・Node.js・Deno・Bun など複数のエンジンを選択可能にするアーキテクチャを検討中。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://x.com/robpalmer2/status/2056900408430178586?s=20">Explicit Resource Management が TC39 Stage 4 に到達</a>
+<ul>
+<li><code>using</code> キーワードによるリソースの自動クリーンアップを可能にする Explicit Resource Management プロポーザルが Stage 4 になり、JavaScript の正式な標準となった。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://gihyo.jp/book/2026/978-4-297-15704-3">フロントエンド開発のためのテスト入門 | Gihyo</a>
+<ul>
+<li>TVer のエンジニアによるフロントエンドテスト入門書が技術評論社から刊行。</li>
+</ul>
+</li>
+<li><a href="https://github.com/react/react">react/react</a>
+<ul>
+<li>React の GitHub リポジトリが <code>facebook/react</code> から <code>react/react</code> に移動。</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
