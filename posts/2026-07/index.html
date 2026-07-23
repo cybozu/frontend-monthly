@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="Cybozu Frontend Expert Team"><meta name="twitter:title" content="Cybozu Frontend Monthly #70"><meta name="twitter:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:title" content="Cybozu Frontend Monthly #70"><meta property="og:description" content="サイボウズのフロントエンドエンジニアが月イチでお届けするフロントエンド情報"><meta property="og:type" content="website"><meta property="og:image" content="https://cybozu.github.io/frontend-monthly/img/header.png"><link rel="icon" type="image/png" sizes="32x32" href="/frontend-monthly/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/frontend-monthly/icons/favicon-16x16.png"><meta name="generator" content="Astro v5.5.6"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css"><title>Cybozu Frontend Monthly #70</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/frontend-monthly/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/frontend-monthly/_astro/_slug_.BKQHukwY.css">
+<style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}:root{--accent: 124, 58, 237;--accent-gradient: linear-gradient( 45deg, rgb(var(--accent)), #da62c4 30%, white 60% )}html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}body{margin:0;border-top:4px solid #64bdd4}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}.main{box-sizing:border-box;min-width:200px;max-width:980px;width:100%;margin:0 auto;padding:15px 45px;color:#24292e}@media (max-width: 767px){.main{padding:12px;font-size:14px}.main .markdown-body{font-size:14px}.main .markdown-body h1{font-size:1.55em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h2{font-size:1.3em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body h3{font-size:1.1em;margin-bottom:.25em;margin-top:.5em}.main .markdown-body img{max-width:100%;height:auto}.main hr{margin:12px 0}}.footer{background-color:#31424e;text-align:center;color:#f8f8ff;font-size:.75em;padding:5px 0;line-height:1.5}.footer a{color:inherit;text-decoration:none}.markdown-body li>*:first-child{padding-top:8px;padding-bottom:8px}.markdown-body li>ul{margin-top:8px}.markdown-body li+li{margin:8px 0}@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-6ynojplz-1"] { view-transition-name: astro-6ynojplz-1; }@layer astro { ::view-transition-old(astro-6ynojplz-1) { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-6ynojplz-1) { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-6ynojplz-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-6ynojplz-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 90ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-duration: 210ms, 220ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-delay: 30ms;
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6ynojplz-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6ynojplz-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style></head> <body> <main class="main" data-astro-transition-scope="astro-6ynojplz-1">  <h1 class="post-title" data-astro-cid-gjtny2mx>Cybozu Frontend Monthly #70</h1> <div class="markdown-body" data-astro-cid-gjtny2mx>  <img src="/frontend-monthly/_astro/header.Do3-qW-Q_Z21vF.webp" alt="タイトル画像" data-astro-cid-grpv5qb7="true" width="660" height="346" loading="lazy" decoding="async"> <h2 data-astro-cid-grpv5qb7>イベント概要</h2> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>サイボウズフロントエンドマンスリー</strong>
+は、サイボウズ社内で行っているフロントエンド情報共有会「フロントエンドウィークリー」の公開版です。
+</p> <p data-astro-cid-grpv5qb7>
+その月に気になったフロントエンドの情報を、サイボウズのフロントエンドエンジニアのメンバーが共有していきます。
+</p> <p data-astro-cid-grpv5qb7> <strong data-astro-cid-grpv5qb7>
+このイベントのハッシュタグは  <a href="https://twitter.com/search?q=%23%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E3%83%9E%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+#サイボウズフロントエンドマンスリー
+</a> 
+です。
+</strong> </p> <div class="note" data-astro-cid-grpv5qb7> <h3 data-astro-cid-grpv5qb7>※フロントエンドウィークリーとは</h3> <p data-astro-cid-grpv5qb7>
+毎週火曜の 17:00 〜 18:00
+    で社内向けに行っているフロントエンドの気になる記事を紹介する会です。<br data-astro-cid-grpv5qb7>
+2016年3月15日から行われています。<br data-astro-cid-grpv5qb7> </p> <p data-astro-cid-grpv5qb7>
+ZennのPublicationにてウィークリーのまとめを投稿していますので、ぜひこちらもご覧ください。
+<a href="https://zenn.dev/p/cybozu_frontend" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7>
+https://zenn.dev/p/cybozu_frontend
+</a> </p> </div> <h3 data-astro-cid-grpv5qb7>開催日</h3> <p data-astro-cid-grpv5qb7>2026年07月28日</p> <h3 data-astro-cid-grpv5qb7>イベントページ</h3> <p data-astro-cid-grpv5qb7> <a href="https://cybozu.connpass.com/event/401243/" target="_blank" rel="noopener noreferrer" data-astro-cid-grpv5qb7> https://cybozu.connpass.com/event/401243/ </a> </p>   <h2 data-astro-cid-5i3bjwe7>メンバー</h2> <div class="members" data-astro-cid-5i3bjwe7> <div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@mugi_uno.jpg" class="thumbnail" alt="@mugi_uno" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/mugi_uno" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @mugi_uno </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@nus3_.jpg" class="thumbnail" alt="@nus3_" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/nus3_" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @nus3_ </a> </div><div class="member" data-astro-cid-5i3bjwe7> <img src="/frontend-monthly/img/@sajikix.jpg" class="thumbnail" alt="@sajikix" width="100" height="100" data-astro-cid-5i3bjwe7> <a href="https://twitter.com/sajikix" target="_blank" rel="noopener noreferrer" data-astro-cid-5i3bjwe7> @sajikix </a> </div> </div>   <hr> <h2>コンテンツ</h2> <h2 id="-notable-articles">👀 Notable Articles</h2>
+<h3 id="nextjs-163-preview">Next.js 16.3 Preview</h3>
+<ul>
+<li>共有者: @mugi_uno</li>
+</ul>
+<p>Next.js 16.3 Preview における「Instant Navigations」「Turbopack の改善」「AI 連携の強化」といった内容を含むアップデートの詳細情報が公開されました。</p>
+<h4 id="instant-navigations">Instant Navigations</h4>
+<p><a href="https://nextjs.org/blog/next-16-3-instant-navigations">https://nextjs.org/blog/next-16-3-instant-navigations</a></p>
+<p>Next.js App Router の基本的な構成であるサーバー主体の構成を保ちつつ、SPA のような即時遷移を可能とする機能です。
+中でも新しく追加された Partial Prefetching が大きい変化で、従来は画面内のリンクごとにプリフェッチされていましたが、Partial Prefetching では、ルートごとに再利用可能なガワの部分（シェル）だけをプリフェッチしてキャッシュする仕様が取り入れられました。なお、これを “レイアウト” ではなく “シェル” と呼んでいるのは、レイアウトに限らず <code>&#x3C;Suspence></code> や <code>use cache</code> でマークされた箇所まで潜って判断するためのようです。（Next.js DevTools の機能追加で、どこまでをシェルとして扱っているかの確認も可能になっているようです）</p>
+<p>最終的に次のような形で SPA のような遷移が実現されます。</p>
+<ul>
+<li><code>cache components</code> の仕組みによって、<code>&#x3C;Suspence></code> および <code>use cache</code> のいずれかが強制されていく</li>
+<li><code>&#x3C;Suspence></code> および <code>use cache</code> の境界までを “シェル” としてプリフェッチする</li>
+<li>遷移時にはシェルまでを即時描画し、遷移後に動的な部分をストリーミングで描画する</li>
+</ul>
+<h4 id="turbopack-の改善">Turbopack の改善</h4>
+<p><a href="https://nextjs.org/blog/next-16-3-turbopack">https://nextjs.org/blog/next-16-3-turbopack</a></p>
+<p>主にパフォーマンスやメモリ使用量の大幅な改善が含まれます。</p>
+<p>また、experimental な機能として Rust React Compiler のサポートが含まれています。
+現状では React Compiler の有効化には Babel Transform が必須です。実行時のパフォーマンス改善が期待できますが、引き換えにビルドパフォーマンスが大幅に低下してしまうケースが珍しくありません。新たに React チームが開発している Rust 製の React Compiler によって、このビルドパフォーマンス問題の改善が期待できます。</p>
+<h4 id="ai-連携の強化">AI 連携の強化</h4>
+<p><a href="https://nextjs.org/blog/next-16-3-ai-improvements">https://nextjs.org/blog/next-16-3-ai-improvements</a></p>
+<p>AI Agent を主体とした開発を想定した機能が多数追加されており、基本的なナレッジ周りでは、<code>AGENTS.md</code> を参考にしたドキュメントのバンドルや、<code>llms.txt</code> のサポートが行われました。</p>
+<p>また、エラー画面にはエージェントへ修正指示を出すための「Copy prompt」ボタンが配置されたり、多くの Agent Skills の追加も行われています。
+特に、<code>next-cache-components-adoption</code> Skill や <code>next-cache-components-optimizer</code> Skill は、前述の Instant Navigations に関連して Cache Components 周りの有効化や最適化を行うためのスキルとなっており、新機能に関するサポートも AI を駆使してスムーズに実施できるようになっています。</p>
+<h3 id="npm-install-time-security-and-gat-bypass2fa-deprecation"><a href="https://github.blog/changelog/2026-07-08-npm-install-time-security-and-gat-bypass2fa-deprecation/">npm install-time security and GAT bypass2fa deprecation</a></h3>
+<ul>
+<li>共有者: @nus3</li>
+</ul>
+<p>npm v12 がリリースされ、npm install 時の動作が次のように変更されました。</p>
+<ul>
+<li><a href="https://docs.npmjs.com/cli/v12/commands/npm-install#allow-scripts"><code>allow-scripts</code></a>がデフォルト<code>""</code>に
+<ul>
+<li>インストール時のライフサイクルスクリプト（<code>preinstall</code>、<code>postinstall</code>など）がデフォルトでは実行しない</li>
+</ul>
+</li>
+<li><a href="https://docs.npmjs.com/cli/v12/commands/npm-install#allow-git"><code>allow-git</code></a>がデフォルト<code>none</code>に
+<ul>
+<li>デフォルトでは Git リポジトリから依存関係を取得しない</li>
+</ul>
+</li>
+<li><a href="https://docs.npmjs.com/cli/v12/commands/npm-install#allow-remote"><code>allow-remote</code></a>がデフォルト<code>none</code>に
+<ul>
+<li>デフォルトでは URL から依存関係を取得しない</li>
+</ul>
+</li>
+</ul>
+<p>改めて、各パッケージマネージャーの挙動をまとめてみました。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>パッケージマネージャー</th><th>ライフサイクルスクリプト</th></tr></thead><tbody><tr><td><a href="https://docs.npmjs.com/cli/v12/commands/npm-install#allow-scripts">npm v12</a></td><td>❌ デフォルト実行しない</td></tr><tr><td><a href="https://pnpm.io/settings#allowbuilds">pnpm v11</a></td><td>❌ デフォルト実行しない</td></tr><tr><td><a href="https://yarnpkg.com/features/security#postinstalls">Yarn v4.14 以降 (Berry)</a></td><td>❌ デフォルト実行しない</td></tr><tr><td><a href="https://bun.com/docs/pm/lifecycle">Bun</a></td><td>❌ デフォルト実行しない</td></tr><tr><td><a href="https://docs.deno.com/runtime/reference/cli/approve_scripts/">Deno</a></td><td>❌ デフォルト実行しない</td></tr></tbody></table>
+<p><a href="https://pnpm.io/cli/pnx#--allow-build"><code>pnpm dlx my-tool</code>の場合、my-tool 自身の postinstall は実行される</a>にあるように、dlx や npx で指定したパッケージのコマンドを実行する場合は、ライフサイクルスクリプトは実行されるかどうかは別途、調べたほうが良さそう。</p>
+<h3 id="announcing-typescript-70"><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0">Announcing TypeScript 7.0</a></h3>
+<ul>
+<li>共有者: @sajikix</li>
+</ul>
+<p>TypeScript 7.0 が、正式リリースされました。Go 言語によるネイティブポート化プロジェクトの成果で、元のコードベースの構造とロジックをできるだけ忠実に維持しつつ書き直すことで、2 つのコンパイラ間の結果の一貫性・互換性を保ちながら高速化を実現しています。</p>
+<p>vscode や sentry などの巨大 PJ では概ね 7 倍以上の高速化を実現しており、同時にメモリ使用量も削減しているそうです。Slack、Vanta、PowerBI、Canva など各社からの導入事例も紹介されており、Slack は CI の型チェック時間が 7.5 分から 1.25 分になったとしています。</p>
+<h4 id="並列化オプションについて">並列化オプションについて</h4>
+<p>また <code>--checkers</code> オプションと<code>--builders</code>オプションで型チェックや build の並列数をカスタマイズできるようになっています。<code>--checkers</code>はデフォルトが４ですが、コア数が多い大きめのマシン/大規模コードベースでは増やすとさらに高速化する可能性があります。一方で並列数を増やすほどメモリ使用量は増加するので、CI などでメモリ不足となる場合はむしろ減らすといった調整も可能です。<code>--builders</code>オプションは monorepo などの環境で有効としていますが、<code>--builders</code>と<code>--checkers</code>の数は掛け算になる点は注意が必要です。また全体を単一スレッド化するデバッグ用フラグとして<code>--singleThreaded</code>も用意されています。</p>
+<h4 id="v7-へのアップデート">v7 へのアップデート</h4>
+<p>v7 への移行ですが、v6 に上げられている人は大きな対応は不要なようですが、以下などは改めて注意すると良さそうです。</p>
+<ul>
+<li><code>strict: true</code>、<code>module: esnext</code>がデフォルトに</li>
+<li><code>rootDir</code>がデフォルトで./になり、src 配下に tsconfig がない構成では明示指定が必要</li>
+<li><code>types</code>のデフォルトが<code>[]</code>に変更（@types パッケージの暗黙読み込みがなくなる）</li>
+<li><code>target: es5</code>、<code>moduleResolution: node/node10/classic</code>、<code>module: amd/umd/systemjs/none</code>、<code>baseUrl</code>などが完全に非サポートに</li>
+</ul>
+<h4 id="開発者向け-api-について">開発者向け API について</h4>
+<p>7.0 時点ではプログラマティック API を提供しないことは明言されており、lint 系のツールなどは 6.0 API を再エクスポートする@typescript/typescript6 パッケージを使うことが推奨されています。(一部の lint ツールなどはカスタマイズして内部の API を露出させて使っている場合もありますが。)</p>
+<p>一方で後続の v7.1 では現行とは異なる新しい API が提供される見込みだとしており、今後 TypeScript の API がどのように変わるのかは注目です。</p>
+<h2 id="-monthly-articles">🗓 Monthly Articles</h2>
+<h3 id="-framework-library">📖 Framework, Library</h3>
+<ul>
+<li><a href="https://remix.run/blog/react-router-v8">React Router v8</a>
+<ul>
+<li>12 年の歴史を持つ React Router のメジャーバージョン v8 がリリースされ、ミドルウェア対応・分割ルートモジュール・型安全な<code>href</code>などが追加。破壊的変更は最小限に抑えられており、Node 22.22+や React 19.2.7+などベースラインの引き上げが主な変更点。</li>
+</ul>
+</li>
+<li><a href="https://pnpm.io/pnpr/">pnpr</a>
+<ul>
+<li>pnpm 発の Rust 製 npm レジストリサーバー<code>pnpr</code>が experimental として開発中で、verdaccio のようにプライベートレジストリの構築や upstream registry のプロキシ・キャッシングに利用できる。</li>
+</ul>
+</li>
+<li><a href="https://astro.build/blog/astro-7/">Astro 7.0</a>
+<ul>
+<li>速度向上に重点を置いた Astro 7.0 がリリースされ、Rust で書き直された<code>.astro</code>コンパイラや新しい Markdown/MDX パイプライン、キュー方式レンダリングエンジンの導入によりビルドが最大 61%高速化。Vite 8/Rolldown 統合やルートキャッシングの安定化、AI エージェント向けのバックグラウンド dev サーバーなども追加。</li>
+</ul>
+</li>
+<li><a href="https://socket.dev/blog/rolldown-pulls-rust-react-compiler-integration">Rolldown Pulls Rust React Compiler Integration After Binary Size Increase</a>
+<ul>
+<li>Rolldown は Rust 版 React Compiler の Rolldown/Vite 統合を、Oxc napi アドオンのバイナリサイズが 3.51MiB から 8.66MiB へ肥大化したことを理由に一旦中止した。Evan You はフレームワーク非依存の Vite に全ユーザー向けで React 固有コードを配布する負担を懸念しており、現在はより軽量な実装への切り替えが検討されている。</li>
+</ul>
+</li>
+<li><a href="https://rspack.rs/blog/announcing-2-1">Announcing Rspack 2.1</a>
+<ul>
+<li>Rspack 2.1 がリリースされ、Rust 版 React Compiler のサポートにより Babel 版比 7〜13 倍の高速化を実現。Vite/Turbopack 互換の<code>import.meta.glob</code>サポートも追加され、Rspack 自体ではないものの TanStack Start が Rsbuild を正式サポートするなどエコシステムも拡大している。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-16-3-turbopack">Turbopack: What’s New in Next.js 16.3</a>
+<ul>
+<li>Next.js 16.3 の Turbopack は、キャッシュ退避により dev サーバーのメモリ使用量を最大 90%削減し、<code>next build</code>にも対応した永続ファイルシステムキャッシュでビルドを最大 2.3 倍高速化した。experimental な Rust 版 React Compiler 統合や Vite 互換の<code>import.meta.glob</code>サポートも追加されている。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-16-3-instant-navigations">Next.js 16.3: Instant Navigations</a>
+<ul>
+<li><code>cacheComponents</code>と<code>partialPrefetching</code>を有効にすることで、Suspense によるストリーミングや<code>'use cache'</code>によるキャッシュを使い、サーバー駆動の Next.js アプリでも SPA のような瞬時のページ遷移を実現する新機能。リンク単位ではなくルート単位で再利用可能な「シェル」をプリフェッチする方式に変更し、Navigation Inspector やテスト用の<code>instant()</code>ヘルパーで遷移速度を検証できる。</li>
+</ul>
+</li>
+<li><a href="https://nextjs.org/blog/next-16-3-ai-improvements">Next.js 16.3: AI Improvements</a>
+<ul>
+<li>AGENTS.md へのドキュメント自動同期、<code>next-dev-loop</code>など複数の agent 向け一次 Skill の追加、React DevTools 統合を備えた<code>agent-browser</code>、Instant Insights のエラーをコピペ可能な修正プロンプトに変換する「Actionable errors」など、コーディングエージェント向け機能を多数追加した。</li>
+</ul>
+</li>
+<li><a href="https://ui.shadcn.com/docs/changelog">June 2026 - Components for Chat Interfaces</a>
+<ul>
+<li>shadcn/ui が会話 UI 向けの新コンポーネント群(MessageScroller、Message、Bubble、Attachment、Marker)を公開した。ストリーミング応答やスクロール制御を扱う小さな部品を組み合わせて、AI チャットやサポートインボックスなど様々な会話インターフェースを構築できる。</li>
+</ul>
+</li>
+<li><a href="https://github.com/vitest-dev/vitest/pull/9668">feat(experimental): support aria snapshot</a>
+<ul>
+<li>Vitest に Playwright の Aria Snapshot に着想を得た<code>toMatchAriaSnapshot()</code>/<code>toMatchAriaInlineSnapshot()</code>が実験的機能として追加され、DOM のアクセシビリティツリーをスナップショットとして比較できるようになった。</li>
+</ul>
+</li>
+<li><a href="https://wordgard.net/docs/">Wordgard Docs</a>
+<ul>
+<li>ProseMirror の後継として開発されているリッチテキスト編集ライブラリ「Wordgard」のドキュメント。ProseMirror からの移行ガイドが用意されている一方、ProseMirror 自体も今後サポートが継続される見込み。</li>
+</ul>
+</li>
+<li><a href="https://geajs.com/#code">Gea — Compiler-First Reactive UI</a>
+<ul>
+<li>通常の JavaScript のクラスと関数だけでビルド時に依存関係を解析し、Virtual DOM やフック・シグナルを使わずリアクティブな DOM 更新を実現する新しい UI フレームワーク「Gea」。Hello World のバンドルサイズは SolidJS の約 30 分の 1、React の約 420 分の 1 と非常に軽量。</li>
+</ul>
+</li>
+<li><a href="https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference/">LiteRT.js, Google’s high performance Web AI Inference</a>
+<ul>
+<li>TensorFlow Lite/TensorFlow.js の後継として開発された、ブラウザ上で機械学習モデルを高速推論できる JavaScript ライブラリ「LiteRT.js」。CPU 向け XNNPACK、GPU 向け WebGPU、NPU 向け WebNN など複数のバックエンドに対応する。</li>
+</ul>
+</li>
+<li><a href="https://github.com/tsz-org/tsz">tsz-org/tsz: A performance-first TypeScript checker</a>
+<ul>
+<li>AI コーディング支援を活用して Rust で開発されている高速な TypeScript チェッカー「tsz」。tsc の型チェック・出力・LanguageService の互換性テストで 9 割超のカバレッジを達成しており、tsgo の 2 倍速を目標に掲げている。</li>
+</ul>
+</li>
+<li><a href="https://trilon.io/blog/nestjs-12-is-coming">NestJS v12 is Coming: What’s New</a>
+<ul>
+<li>2026 年 Q3 リリース予定の NestJS v12 では、コアパッケージの ESM 移行、Webpack から Rspack へのビルドツール刷新、ESM プロジェクトでの Vitest と oxlint のデフォルト採用、ルートデコレーターの Standard Schema 対応(Zod/Valibot など)が予定されている。</li>
+</ul>
+</li>
+<li><a href="https://github.com/oxc-project/oxc/tree/8260096253611986e0071ee6948d51835832f307/crates/oxc_type_checker">Oxc Type Checker</a>
+<ul>
+<li>oxc プロジェクト内で開発が始まった実験的な JS/TypeScript 型チェッカーのスキャフォールド。パーサーとセマンティックアナライザーを組み合わせて AST を走査し診断を出す土台のみで、実際の型チェック機能はまだ実装されていない。</li>
+</ul>
+</li>
+<li><a href="https://voidzero.dev/posts/announcing-vite-plus-beta">Announcing Vite+ Beta</a>
+<ul>
+<li>Vite・Vitest・Rolldown・tsdown・Oxlint/Oxfmt を束ねた統合ツールチェーン「Vite+」のベータ版が公開された。<code>vp dev</code>/<code>vp build</code>など一貫した CLI を提供し、既に 1,300 以上のパブリックリポジトリで採用されている。</li>
+</ul>
+</li>
+<li><a href="https://www.arshad.fyi/writings/engineering-high-performance-parsers">Engineering High-Performance Parsers with Data-Oriented Design</a>
+<ul>
+<li>Zig 言語で書かれた JS/TS パーサー yuku の設計思想を解説する記事。文法の実装以上にメモリ上のデータ構造(平坦配列、ポインタではなくインデックスで参照、文字列をオフセットで管理、トークンのビットエンコーディングなど)が性能を左右するという考え方に基づき、既存パーサー比 3〜10 倍の高速化を実現している。</li>
+</ul>
+</li>
+<li><a href="https://useblume.dev/">Blume — fast, AI-ready, markdown-first docs</a>
+<ul>
+<li>Vite/Astro をベースにしたマークダウン優先の OSS ドキュメントフレームワーク。検索・SEO 最適化・ダークモード・多言語対応(36 言語)が標準装備な上、llms.txt 出力やページ内 AI アシスタント、MCP サーバーといった AI 連携機能が最初から組み込まれているのが特徴。</li>
+</ul>
+</li>
+<li><a href="https://rstest.rs/guide/advanced/playwright">Playwright | Rstest</a>
+<ul>
+<li>Rstest が Node.js ワーカー環境向けに Playwright のフィクスチャとリトライ可能なアサーションを提供するパッケージ<code>@rstest/playwright</code>を公開。<code>browser</code>/<code>context</code>/<code>page</code>/<code>request</code>/<code>serve</code>などのフィクスチャとトレース機能を備え、外部の完成したページ・アプリに対する E2E テストを実行できる。</li>
+</ul>
+</li>
+</ul>
+<h3 id="️-services">⚡️ Services</h3>
+<ul>
+<li><a href="https://vercel.com/changelog/websocket-support-is-now-in-public-beta">WebSocket support is now in Public Beta</a>
+<ul>
+<li>Vercel Functions が WebSocket 接続をパブリックベータでサポート開始し、チャットやリアルタイムコラボレーションなどの双方向通信が実装可能に。Fluid compute 上で動作し、課金は接続待機時間ではなくメッセージ処理時間ベースで、Node 標準の<code>ws</code>ライブラリや Socket.IO も利用できる。</li>
+</ul>
+</li>
+<li><a href="https://azu.github.io/slide/2026/hardening-npm-publishing/slide.html">Hardening npm Publishing</a>
+<ul>
+<li>azu さんによる、サプライチェーン侵害から npm パッケージの公開フローを守るためのスライド。ローカル(トークン非保存)・GitHub Actions(OIDC Trusted Publishing)・npm(Staged Publishing・MFA 必須化)の 3 層で承認プロセスを分散させ、悪意あるパッケージを公開前に食い止める設計を解説している。</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2026-07-08-npm-install-time-security-and-gat-bypass2fa-deprecation/">npm install-time security and GAT bypass2fa deprecation</a>
+<ul>
+<li>npm install 時にライフサイクルスクリプトの実行(allowScripts)や Git/リモート由来の依存関係解決(—allow-git、—allow-remote)がデフォルトでオプトインになった。サプライチェーン攻撃対策として、信頼できるスクリプトは <code>npm approve-scripts</code> で明示的に承認する運用に変わる。</li>
+</ul>
+</li>
+<li><a href="https://zenn.dev/hatsu/articles/github-actions-steps-parallel">GitHub Actions の parallel でデプロイは 8 分 →3 分、CI はコスト 3 割減になった</a>
+<ul>
+<li>2026 年 6 月 25 日に GA となった GitHub Actions のステップ並列実行機能(<code>parallel</code>ブロックや<code>background</code>/<code>wait</code>構文)を使った実践例を紹介する記事。同一ジョブ内で複数ステップを並列化することで、直列で 8 分かかっていたデプロイ処理が 3 分に短縮され、CI コストも 3 割削減できたという。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-browsers">🖥 Browsers</h3>
+<ul>
+<li><a href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/">Introducing the Safari MCP server for web developers</a>
+<ul>
+<li>WebKit が AI エージェント向けに Safari ブラウザへ接続できる MCP サーバーを発表。スクリーンショット取得や DOM 操作、アクセシビリティ・パフォーマンス検証など 15 以上のツールを備え、Safari 27 beta / Safari Technology Preview 247 以降で利用可能。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-languages">💬 Languages</h3>
+<ul>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/">Announcing TypeScript 7.0 RC</a>
+<ul>
+<li>既存の TypeScript コンパイラを Go で書き直したメジャーバージョン 7.0 の RC が公開され、ネイティブ実装と並列化により最大 10 倍の高速化を実現。型チェック・パース・エミットを複数スレッドで実行できる<code>--checkers</code>/<code>--builders</code>フラグが追加される一方、ES5 ターゲットや AMD/UMD 形式は非サポートとなる。</li>
+</ul>
+</li>
+<li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0">Announcing TypeScript 7.0</a>
+<ul>
+<li>Go 言語でネイティブ実装された TypeScript 7.0 が正式リリース。実プロジェクトで最大 11.9 倍のビルド高速化とメモリ使用量削減を達成し、<code>strict</code>のデフォルト有効化など設定面の変更も入っている。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-runtimes">🤖 Runtimes</h3>
+<ul>
+<li><a href="https://deno.com/blog/v2.9">Deno 2.9</a>
+<ul>
+<li>Deno 2.9 がリリースされ、UI を WebView・ロジックを Deno で実行する単一バイナリにコンパイルできる experimental な<code>deno desktop</code>機能や、CSS モジュールインポート、npm/pnpm/yarn/Bun からの移行時にロックファイルを引き継ぐ対応が追加された。サプライチェーン対策として min-release-age のデフォルト 24h 化や trust-policy サポートも実装され、HTML/CSS/SQL フォーマッタは lax ベースに再構築された。</li>
+</ul>
+</li>
+<li><a href="https://note.com/naoya_tech/n/n99f05affec01">JavaScript を事前コンパイルする。不可能と言われた挑戦に挑む開発者。</a>
+<ul>
+<li>JavaScript を WebAssembly やネイティブバイナリへ事前コンパイル(AOT)するプロジェクト「Porffor」の作者 Oliver Medhurst 氏へのポッドキャストインタビューを紹介する記事で、AWS Lambda のコールドスタートを 15ms まで短縮した事例やクロージャ・GC など AOT 特有の課題、Test262 テストスイートで 60%合格という進捗に触れている。</li>
+</ul>
+</li>
+<li><a href="https://bun.com/blog/bun-in-rust">Rewriting Bun in Rust</a>
+<ul>
+<li>Bun チームが約 53.5 万行あった Zig 実装を Rust へ全面移行したと発表。メモリ安全性の向上に加え、バイナリサイズ約 20%削減、パフォーマンス 2〜5%向上、128 件のバグ修正を実現した。</li>
+</ul>
+</li>
+<li><a href="https://antjs.org/">Ant, a lightweight JavaScript runtime</a>
+<ul>
+<li>独自エンジン「Ant Silver」をベースにした軽量 JS ランタイム。Node 互換 API・VM 分離サンドボックス・Wasm サポートを備え、9MB のシングルバイナリで npm パッケージや TypeScript をそのまま実行できる。</li>
+</ul>
+</li>
+<li><a href="https://nodejs.org/en/blog/release/v26.5.0">Node v26.5.0 (Current)</a>
+<ul>
+<li><code>blob.textStream()</code>の実装や、ESM でテキストファイルを直接 import できる<code>--experimental-import-text</code>フラグなどが追加された Node.js のマイナーリリース。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-specifications">📝 Specifications</h3>
+<ul>
+<li><a href="https://www.rfc-editor.org/info/rfc10008/">RFC 10008: The HTTP QUERY Method</a>
+<ul>
+<li>HTTP に新しい QUERY メソッドを追加する RFC 10008 が Proposed Standard として公開され、GET と POST の中間としてリクエストボディにクエリ内容を送りつつ安全性・冪等性を保てるようになる。キャッシュや条件付きリクエスト、Location/Content-Location による結果 URI の付与にも対応。</li>
+</ul>
+</li>
+<li><a href="https://webmcp-demo-sdras.netlify.app/">WebMCP — Give agents tools, not DOM</a>
+<ul>
+<li>AI エージェントが DOM 解析やスクリーンショットに頼るのではなく、Web ページ側が宣言した型付きツールを直接呼び出して操作できる WebMCP の考え方を、予約システムを題材に「従来の DOM 推測(40 以上の DOM ノード解析)」と「WebMCP での直接呼び出し(3 ツール)」を対比して示すデモサイト。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-others">🦆 Others</h3>
+<ul>
+<li><a href="https://helmlab.space">Helmlab — The Most Accurate Color Space</a>
+<ul>
+<li>UI デザインシステム向けに、色生成用の GenSpace と色差計算用の MetricSpace からなる新しい色空間ファミリー「Helmlab」が提案された。64,000 件超の人間による色差判定データで学習した解析的モデルで、90 件のベンチマークで OKLab に 62 勝 9 敗するが、グレースケール近傍や CVD(色覚異常)対応では OKLab の方が優れるとしている。</li>
+</ul>
+</li>
+</ul>  </div>  </main> <footer class="footer"> <a href="/frontend-monthly/">Cybozu Frontend Monthly</a> </footer>  </body></html> 
