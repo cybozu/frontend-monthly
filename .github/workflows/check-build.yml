@@ -14,19 +14,29 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      # takumi guard の OIDC 認証で必要
+      id-token: write
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           persist-credentials: false
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version-file: '.node-version'
+          node-version-file: ".node-version"
+          cache: "npm"
+      - name: Setup takumi guard
+        uses: flatt-security/setup-takumi-guard-npm@6d4182745c1e474c35a023573c2612c085be45a4 # v1.2.0
+        with:
+          bot-id: ${{ vars.TAKUMI_GUARD_BOT_ID }}
 
       # Runs a set of commands using the runners shell
       - name: Install and build
         run: |
-          npm install
+          npm ci --ignore-scripts
           npm run build
