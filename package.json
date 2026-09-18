@@ -14,7 +14,7 @@
     "@astrojs/check": "^0.9.10",
     "astro": "^7.3.1",
     "dayjs": "^1.11.23",
-    "github-markdown-css": "^4.0.0",
+    "github-markdown-css": "^5.9.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
