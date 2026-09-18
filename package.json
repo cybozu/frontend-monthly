@@ -11,16 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^5.5.6",
-    "dayjs": "^1.11.7",
-    "github-markdown-css": "^4.0.0",
-    "typescript": "^5.2.2"
+    "@astrojs/check": "^0.9.10",
+    "astro": "^7.3.1",
+    "dayjs": "^1.11.23",
+    "github-markdown-css": "^5.9.0",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "prettier": "^2.8.3",
-    "prettier-plugin-astro": "^0.7.2",
-    "sass": "^1.57.1"
+    "@types/node": "^24.13.3",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
+    "sass": "^1.104.0"
   }
 }
